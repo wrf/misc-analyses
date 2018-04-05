@@ -5,7 +5,7 @@ The master list of the transcriptome shotgun archive can be found here:
 
 This currently contains:
 
-![sra_trace_species_list_2018-04-05.png](![woce_p17n_t-s_diagram_v1.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/sra_trace_species_list_2018-04-05.png)
+![sra_trace_species_list_2018-04-05.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/sra_trace_species_list_2018-04-05.png)
 
 ## adding kingdom etc ##
 To add kingdom, phylum and class ranks to this table, so it can be more easily searched. Copy the `organism` column to a text file (here this is named as `sra_trace_species_list_2018-04-05.txt`). Then run:
