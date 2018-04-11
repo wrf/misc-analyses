@@ -1,7 +1,9 @@
 # taxonomy database #
-The master list of the transcriptome shotgun archive can be found here:
+The master list of the transcriptome shotgun archive can be found below, though the embedded links only download a GenBank format file:
 
 `ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/TSA_ORGANISM_LIST.html`
+
+Gzipped FASTA-format files can also be downloaded at the [NCBI Trace archive](https://www.ncbi.nlm.nih.gov/Traces/wgs/), by species name (e.g. *Hormiphora californensis*) or the 4-letter accessions (like GGLO01).
 
 This currently contains:
 
