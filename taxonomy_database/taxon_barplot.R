@@ -13,23 +13,29 @@ taxondata = read.table(inputfile, header=TRUE, sep="\t")
 kingdoms = sort(table(taxondata[["kingdom"]]),decreasing=FALSE)
 
 kingrefs = c("Fungi","Metazoa","None","Viridiplantae")
-kingcols = c("#389192","#6816b5","#bc3c0a","#18d025")
+kingcols = c("#389192","#9354cf","#bc3c0a","#18d025")
 kingdomorder = match(names(kingdoms),kingrefs)
 
 phyla = sort(table(taxondata[["phylum"]]),decreasing=FALSE)
-phylarefs = c("Arthropoda","Streptophyta","Chordata","None","Mollusca","Cnidaria","Ascomycota","Basidiomycota","Phaeophyceae","Chlorophyta","Echinodermata")
-phylacols = c("#888888","#6816b5","#18d025","#6816b5","#bc3c0a","#6816b5","#881685","#389192","#4075b2","#8d8f0d","#18d025","#800968")
+phylarefs = c("Arthropoda","Streptophyta","Chordata","None","Mollusca", "Cnidaria","Ascomycota","Basidiomycota","Phaeophyceae","Chlorophyta", "Echinodermata","Platyhelminthes","Nematoda","Annelida")
+phylacols = c("#888888","#9354cf","#18d025","#9354cf","#bc3c0a", "#9354cf","#881685","#389192","#4075b2","#8d8f0d", "#18d025","#800968","#9354cf","#9354cf","#9354cf")
 phylaorder = match(names(phyla),phylarefs,nomatch=0)+1
+
+
+is_arthropod = taxondata[["phylum"]]=="Arthropoda"
+arthclasses = sort(table(taxondata[["class"]][is_arthropod], exclude=0),decreasing=FALSE)
 
 xmax = max(pretty(max(kingdoms)))
 
 pdf(file=outputfile, width=8, height=11)
 par(mar=c(1,10,3,1.6))
 layout(matrix(c(1,2),nrow=2),heights=c(1,4))
-barplot(kingdoms, horiz=TRUE, las=1, xlim=c(0,xmax), col=kingcols[kingdomorder], main=inputfile, cex.lab=1.4, cex.axis=1.3)
+bp1 = barplot(kingdoms, horiz=TRUE, las=1, xlim=c(0,xmax), col=kingcols[kingdomorder], main=inputfile, cex.lab=1.4, cex.axis=1.3)
+text(kingdoms/2, bp1[,1], kingdoms)
 par(mar=c(4,10,1,1.6))
-barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
-text(xmax/2,10,"Note: None may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
+bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
+text(phyla+xmax*0.01, bp2[,1], phyla, pos=4)
+text(xmax*0.6,5,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
 dev.off()
 
 
