@@ -25,6 +25,12 @@ phylaorder = match(names(phyla),phylarefs,nomatch=0)+1
 is_arthropod = taxondata[["phylum"]]=="Arthropoda"
 arthclasses = sort(table(taxondata[["class"]][is_arthropod], exclude=0),decreasing=FALSE)
 
+is_streptophyte = taxondata[["phylum"]]=="Streptophyta"
+streptoclasses = sort(table(taxondata[["class"]][is_streptophyte], exclude=0),decreasing=FALSE)
+
+is_chordate = taxondata[["phylum"]]=="Chordata"
+chordclasses = sort(table(taxondata[["class"]][is_chordate], exclude=0),decreasing=FALSE)
+
 xmax = max(pretty(max(kingdoms)))
 
 pdf(file=outputfile, width=8, height=11)
@@ -35,7 +41,13 @@ text(kingdoms/2, bp1[,1], kingdoms)
 par(mar=c(4,10,1,1.6))
 bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
 text(phyla+xmax*0.01, bp2[,1], phyla, pos=4)
-text(xmax*0.6,5,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
+text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
+
+par(fig = c(grconvertX(c(xmax/2,xmax), from="user", to="ndc"), grconvertY(c(0.3,0.65)*max(bp2), from="user", to="ndc")), mar = c(2,0,0,0), new = TRUE)
+bp3 = barplot(arthclasses[arthclasses>0], horiz=TRUE, las=1, xlim=c(0,xmax/2), col=c("#9354cf"), cex.lab=1.3, axes=FALSE)
+text(arthclasses[arthclasses>0], bp3, arthclasses[arthclasses>0], pos=4, cex=0.9)
+
+
 dev.off()
 
 
