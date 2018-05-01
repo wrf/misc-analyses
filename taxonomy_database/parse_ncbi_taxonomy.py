@@ -2,7 +2,7 @@
 #
 # parse_ncbi_taxonomy.py  created by WRF 2018-04-05
 
-'''parse_ncbi_taxonomy.py  last modified 2018-04-05
+'''parse_ncbi_taxonomy.py  last modified 2018-05-01
 
 parse_ncbi_taxonomy.py -n names.dmp -o nodes.dmp -i species_list.txt
 
@@ -58,20 +58,21 @@ def names_to_nodes(namesfile):
 	print >> sys.stderr, "# counted {} scientific names from {}".format( len(name_to_node), namesfile), time.asctime()
 	return name_to_node, node_to_name
 
-def nodes_to_parents(nodesfile):
+def nodes_to_parents(nodesfilelist):
 	'''read nodes.dmp and return two dicts where keys are node numbers'''
 	node_to_rank = {}
 	node_to_parent = {}
-	print >> sys.stderr, "# reading nodes from {}".format(nodesfile), time.asctime()
-	for line in open(nodesfile,'r'):
-		line = line.strip()
-		if line:
-			lsplits = [s.strip() for s in line.split("|")]
-			node = lsplits[0]
-			parent = lsplits[1]
-			rank = lsplits[2]
-			node_to_rank[node] = rank
-			node_to_parent[node] = parent
+	for nodesfile in nodesfilelist:
+		print >> sys.stderr, "# reading nodes from {}".format(nodesfile), time.asctime()
+		for line in open(nodesfile,'r'):
+			line = line.strip()
+			if line:
+				lsplits = [s.strip() for s in line.split("|")]
+				node = lsplits[0]
+				parent = lsplits[1]
+				rank = lsplits[2]
+				node_to_rank[node] = rank
+				node_to_parent[node] = parent
 	print >> sys.stderr, "# counted {} nodes from {}".format( len(node_to_rank), nodesfile), time.asctime()
 	return node_to_rank, node_to_parent
 
@@ -83,12 +84,18 @@ def get_parent_tree(nodenumber, noderanks, nodeparents):
 	pclass = None
 	while nodenumber != "1":
 		#print >> sys.stderr, parent, kingdom, phylum, pclass, nodenumber
-		if noderanks[nodenumber] =="kingdom":
-			kingdom = nodenumber
-		elif noderanks[nodenumber] =="phylum":
-			phylum = nodenumber
-		elif noderanks[nodenumber] =="class":
-			pclass = nodenumber
+		try:
+			if noderanks[nodenumber] =="kingdom":
+				kingdom = nodenumber
+			elif noderanks[nodenumber] =="phylum":
+				phylum = nodenumber
+			elif noderanks[nodenumber] =="class":
+				pclass = nodenumber
+			if nodenumber=="2" or nodenumber=="2157": # for bacteria and archaea
+				kingdom = nodenumber
+		except KeyError:
+			print >> sys.stderr, "WARNING: NODE {} MISSING, CHECK delnodes.dmp".format(nodenumber)
+			return ["Deleted","Deleted","Deleted"]
 		parent = nodeparents[nodenumber]
 		nodenumber = parent
 	return [kingdom, phylum, pclass]
@@ -99,11 +106,19 @@ def main(argv, wayout):
 	parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=__doc__)
 	parser.add_argument('-i','--input', help="text file of species names")
 	parser.add_argument('-n','--names', help="NCBI taxonomy names.dmp")
-	parser.add_argument('-o','--nodes', help="NCBI taxonomy nodes.dmp")
+	parser.add_argument('-o','--nodes', nargs="*", help="NCBI taxonomy nodes.dmp, and possibly merged.dmp")
+	parser.add_argument('--header', action="store_true", help="write header line for output")
+	parser.add_argument('--numbers', action="store_true", help="input lines are NCBI ID numbers, not names")
+	parser.add_argument('--unique', action="store_true", help="only count first occurrence of a speices")
 	args = parser.parse_args(argv)
 
 	name_to_node, node_to_name = names_to_nodes(args.names)
 	node_to_rank, node_to_parent = nodes_to_parents(args.nodes)
+
+	if args.header:
+		print >> sys.stdout, "species\tkingdom\tphylum\tclass"
+
+	node_tracker = {}
 
 	nullentries = 0
 	foundentries = 0
@@ -111,12 +126,27 @@ def main(argv, wayout):
 	for line in open(args.input,'r'):
 		line = line.strip()
 		if line:
-			speciesname = line
-			node_id = name_to_node.get(speciesname,None)
+			if args.numbers: # input lines are NCBI numbers, meaning get species name from that
+				speciesname = node_to_name.get(line,None)
+				node_id = line
+			else: # meaning input lines are species names, like Danio rerio
+				speciesname = line
+				node_id = name_to_node.get(speciesname,None)
+			if speciesname is not None: # remove any # that would disrupt downstream analyses
+				speciesname = speciesname.replace("#","")
+
+			node_tracker[node_id] = node_tracker.get(node_id, 0) + 1
+			if args.unique and node_tracker.get(node_id,0) > 1:
+				continue
+
 			if node_id is not None:
 				foundentries += 1
 				finalnodes = get_parent_tree(node_id, node_to_rank, node_to_parent)
 				outputstring = "{}\t{}\t{}\t{}".format( speciesname, node_to_name.get(finalnodes[0],"None"), node_to_name.get(finalnodes[1],"None"), node_to_name.get(finalnodes[2],"None") )
+
+				# check for deleted nodes, add to null entries
+				if finalnodes[0]=="Deleted":
+					nullentries += 1
 			else:
 				nullentries += 1
 				outputstring = "{}\tNone\tNone\tNone".format( speciesname )
