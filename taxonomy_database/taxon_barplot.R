@@ -24,7 +24,7 @@ xmax = max(pretty(max(kingdoms)))
 ### define phyla and color
 
 phyla = sort(table(taxondata[["phylum"]]),decreasing=TRUE)
-phylamax = 50
+phylamax = min(c(50,length(phyla)))
 phyla = phyla[phylamax:1]
 
 # cnidaria was "#881685"
@@ -59,7 +59,7 @@ rogue_matches = match(rogue_classes,names(classes))
 rogue_matches = rogue_matches[!is.na(rogue_matches)]
 classcols[rogue_matches] = rogue_colors
 
-numclasses = 48
+numclasses = 40
 thirdgraph = classes[numclasses:1]
 
 
@@ -77,7 +77,7 @@ text(kt_positions, bp1[,1], kingdoms)
 par(mar=c(4,10,1,1.6))
 bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
 text(phyla+xmax*0.01, bp2[,1], phyla, pos=4)
-#text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
+text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
 
 par(fig = c(grconvertX(c(xmax*0.5,xmax), from="user", to="ndc"), grconvertY(c(-0.02,0.65)*max(bp2), from="user", to="ndc")), mar = c(0,0,0,0), new = TRUE)
 bp3 = barplot(thirdgraph[thirdgraph>0], horiz=TRUE, las=1, xlim=c(0,xmax/2), col=classcols[numclasses:1], cex.lab=1.1, axes=FALSE)
