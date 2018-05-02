@@ -6,20 +6,26 @@ args = commandArgs(trailingOnly=TRUE)
 
 inputfile = args[1]
 #inputfile = "~/git/misc-analyses/taxonomy_database/sra_trace_species_list_2018-04-05.tab"
+#inputfile = "~/git/misc-analyses/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.tab"
 outputfile = gsub("([\\w/]+)\\....$","\\1.pdf",inputfile,perl=TRUE)
 
 taxondata = read.table(inputfile, header=TRUE, sep="\t")
 
+### define kingdom and color
+
 kingdoms = sort(table(taxondata[["kingdom"]]),decreasing=FALSE)
 
-kingrefs = c("Fungi",   "Metazoa", "None",   "Viridiplantae", "Bacteria", "Archaea")
-kingcols = c("#4075b2", "#9354cf", "#888888", "#18d025",      "#c34741" , "#de851b")
+kingrefs = c( "None",   "Fungi",   "Metazoa", "Viridiplantae", "Bacteria", "Archaea")
+kingcols = c("#888888", "#4075b2", "#9354cf",  "#18d025",      "#c34741" , "#de851b")
 kingdomorder = match(names(kingdoms),kingrefs)
 
 xmax = max(pretty(max(kingdoms)))
 
-phyla = sort(table(taxondata[["phylum"]]),decreasing=FALSE)
-phyla = phyla[phyla>xmax*0.0002]
+### define phyla and color
+
+phyla = sort(table(taxondata[["phylum"]]),decreasing=TRUE)
+phylamax = 50
+phyla = phyla[phylamax:1]
 
 # cnidaria was "#881685"
 # echinodermata was "#800968"
@@ -38,20 +44,28 @@ phylacols = c("#888888",  rep(c("#c34741"),length(bactphyla)),  rep(c("#de851b")
 phylaorder = match(names(phyla),phylarefs,nomatch=0)+1
 
 
-is_arthropod = taxondata[["phylum"]]=="Arthropoda"
-is_arthropod = taxondata[["phylum"]]=="Arthropoda" | taxondata[["phylum"]]=="Chordata"
-arthclasses = sort(table(taxondata[["class"]][is_arthropod], exclude=0),decreasing=FALSE)
+### define class and color by matching kingdom, with a few rogue classes
+classes = sort(table(taxondata[["class"]]),decreasing=TRUE)
+classcols = rep(c("#888888"), length(classes)) # default is gray for all
+for (i in 2:length(kingrefs)) {
+within_king = taxondata[["kingdom"]]==kingrefs[i]
+cl_by_king = table(droplevels(taxondata[["class"]][within_king]))
+class_positions = match(names(cl_by_king),names(classes))
+classcols[class_positions] = kingcols[i]
+}
+rogue_classes = c("None","Aconoidasida","Bacillariophyceae", "Dinophyceae","Chrysophyceae", "Bangiophyceae","Florideophyceae")
+rogue_colors = c( "#888888", "#8d8f0d","#8d8f0d","#8d8f0d","#8d8f0d",   "#bf198a", "#bf198a")
+rogue_matches = match(rogue_classes,names(classes))
+rogue_matches = rogue_matches[!is.na(rogue_matches)]
+classcols[rogue_matches] = rogue_colors
 
-is_streptophyte = taxondata[["phylum"]]=="Streptophyta"
-streptoclasses = sort(table(taxondata[["class"]][is_streptophyte], exclude=0),decreasing=FALSE)
+numclasses = 48
+thirdgraph = classes[numclasses:1]
 
-is_chordate = taxondata[["phylum"]]=="Chordata"
-chordclasses = sort(table(taxondata[["class"]][is_chordate], exclude=0),decreasing=FALSE)
 
-### change classes here to arthclasses, streptoclasses, or chordclasses depending on the desired phylum
-thirdgraph = arthclasses
+### generate PDF
 
-pdf(file=outputfile, width=8, height=14)
+pdf(file=outputfile, width=8, height=11)
 
 par(mar=c(1,10,3,1.6))
 layout(matrix(c(1,2),nrow=2),heights=c(1,4))
@@ -63,10 +77,10 @@ text(kt_positions, bp1[,1], kingdoms)
 par(mar=c(4,10,1,1.6))
 bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
 text(phyla+xmax*0.01, bp2[,1], phyla, pos=4)
-text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
+#text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
 
-par(fig = c(grconvertX(c(xmax*0.5,xmax), from="user", to="ndc"), grconvertY(c(0.25,0.65)*max(bp2), from="user", to="ndc")), mar = c(0,0,0,0), new = TRUE)
-bp3 = barplot(thirdgraph[thirdgraph>0], horiz=TRUE, las=1, xlim=c(0,xmax/2), col=c("#9354cf"), cex.lab=1.3, axes=FALSE)
+par(fig = c(grconvertX(c(xmax*0.5,xmax), from="user", to="ndc"), grconvertY(c(-0.02,0.65)*max(bp2), from="user", to="ndc")), mar = c(0,0,0,0), new = TRUE)
+bp3 = barplot(thirdgraph[thirdgraph>0], horiz=TRUE, las=1, xlim=c(0,xmax/2), col=classcols[numclasses:1], cex.lab=1.1, axes=FALSE)
 text(thirdgraph[thirdgraph>0], bp3, thirdgraph[thirdgraph>0], pos=4, cex=0.9)
 
 
