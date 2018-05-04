@@ -19,7 +19,7 @@ NCBI Taxonomy files can be downloaded at from the `taxdump.tar.gz` file at:
 `ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/`
 
 ## for all of NCBI SRA ##
-At the time of writing (May 2018) [NCBI SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) contains over 3.5M entries, accounting for 6 petabases. Chordates (so probably human samples, or mouse) account for almost 1 million of those, and "uncategorized" samples (probably environmental metagenomic samples) account for over 600k.
+At the time of writing (May 2018) [NCBI SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) contains over 3.5M entries, accounting for 6 petabases. Chordates (so probably human samples, or mouse) account for over 1.3 million of those, and "uncategorized" samples (probably environmental metagenomic samples) account for almost 1 million.
 
 ![NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.png)
 
@@ -47,7 +47,7 @@ As the above command had counted each sample separately, species can instead be 
 
 `parse_ncbi_taxonomy.py -i NCBI_SRA_Metadata_Full_20180402.ncbi_ids.txt -n ~/db/taxonomy/names.dmp -o ~/db/taxonomy/nodes.dmp ~/db/taxonomy/merged.dmp --numbers --header --unique > NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.tab`
 
-The Rscript then creates the graph:
+The Rscript then creates the graph, displaying a similar pattern to the number of samples.
 
 `Rscript taxon_barplot.R NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.tab`
 
