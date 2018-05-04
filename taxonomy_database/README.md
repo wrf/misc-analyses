@@ -21,7 +21,7 @@ NCBI Taxonomy files can be downloaded at from the `taxdump.tar.gz` file at:
 ## for all of NCBI SRA ##
 At the time of writing (May 2018) [NCBI SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) contains over 3.5M entries, accounting for 6 petabases. Chordates (so probably human samples, or mouse) account for almost 1 million of those, and "uncategorized" samples (probably environmental metagenomic samples) account for over 600k.
 
-![NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.png)
+![NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.png)
 
 The entire [metadata library of SRA can be downloaded](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=mirroring), and then parsed directly from the `.tar.gz` file (which is 1.8Gb). Reading from the archive took a long time (rather slowly over several days with 1 CPU). This generates a 4-column table containing: sample name, the SRA number, the NCBI Taxonomy number, the scientific name (species or environment).
 
@@ -50,3 +50,5 @@ As the above command had counted each sample separately, species can instead be 
 The Rscript then creates the graph:
 
 `Rscript taxon_barplot.R NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.tab`
+
+![NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.png)

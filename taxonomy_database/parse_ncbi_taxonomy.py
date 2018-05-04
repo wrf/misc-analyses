@@ -2,7 +2,7 @@
 #
 # parse_ncbi_taxonomy.py  created by WRF 2018-04-05
 
-'''parse_ncbi_taxonomy.py  last modified 2018-05-01
+'''parse_ncbi_taxonomy.py  last modified 2018-05-04
 
 parse_ncbi_taxonomy.py -n names.dmp -o nodes.dmp -i species_list.txt
 
@@ -100,6 +100,11 @@ def get_parent_tree(nodenumber, noderanks, nodeparents):
 		nodenumber = parent
 	return [kingdom, phylum, pclass]
 
+def clean_name(seqname, symbollist="#[]()+=&'"):
+	for s in symbollist:
+		seqname = seqname.replace(s,"")
+	return seqname
+
 def main(argv, wayout):
 	if not len(argv):
 		argv.append('-h')
@@ -133,7 +138,7 @@ def main(argv, wayout):
 				speciesname = line
 				node_id = name_to_node.get(speciesname,None)
 			if speciesname is not None: # remove any # that would disrupt downstream analyses
-				speciesname = speciesname.replace("#","")
+				speciesname = clean_name(speciesname)
 
 			node_tracker[node_id] = node_tracker.get(node_id, 0) + 1
 			if args.unique and node_tracker.get(node_id,0) > 1:
