@@ -18,6 +18,35 @@ NCBI Taxonomy files can be downloaded at from the `taxdump.tar.gz` file at:
 
 `ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/`
 
+## rapid downloading and renaming ##
+Assemblies can be downloaded directly from the NCBI FTP using `wget`, which can be called through the script `download_ncbi_tsa.py`. The only input requirement (`-i`) is a file of the accession numbers.
+
+`download_ncbi_tsa.py -i download_codes.txt`
+
+The download codes are the 4-letter accessions, with one accession per line. Only the first 4 characters are used, so the names can be directly copied out of the table, and pasted into a text file like:
+
+```
+GAUS.gz
+GAUU.gz
+GAVC.gz
+```
+
+With each download, the FASTA headers are changed and written into a new file, in the format of `Genus_species_XXXX01.renamed.fasta`, where `XXXX` is the accession number. For example, from `GFGY01.1.fsa_nt.gz`, a new file would be made named `Paramacrobiotus_richtersi_GFGY01.renamed.fasta`, and the FASTA header of first sequence:
+
+```
+$ gzip -dc GFGY01.1.fsa_nt.gz | head
+>GFGY01000001.1 TSA: Paramacrobiotus richtersi comp116965_c2 transcribed RNA sequence
+```
+
+would be changed to:
+
+```
+$ head Paramacrobiotus_richtersi_GFGY01.renamed.fasta
+>Paramacrobiotus_richtersi_comp116965_c2
+```
+
+to preserve the information from Trinity components and allow better downstream identification of splice variants (perhaps from BLAST hits). This works for the vast majority of transcriptomes, which are assembled with Trinity, though it may be necessary to confirm for each sample.
+
 ## for all of NCBI SRA ##
 At the time of writing (May 2018) [NCBI SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) contains over 3.5M entries, accounting for 6 petabases. Chordates (so probably human samples, or mouse) account for over 1.3 million of those, and "uncategorized" samples (probably environmental metagenomic samples) account for almost 1 million.
 
