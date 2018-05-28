@@ -2,14 +2,21 @@
 #
 # parse_ncbi_taxonomy.py  created by WRF 2018-04-05
 
-'''parse_ncbi_taxonomy.py  last modified 2018-05-04
+'''parse_ncbi_taxonomy.py  last modified 2018-05-28
 
 parse_ncbi_taxonomy.py -n names.dmp -o nodes.dmp -i species_list.txt
 
     NCBI Taxonomy files can be downloaded at the FTP:
     ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/
+
+    if using the .csv file directly from NCBI WGS
+    https://www.ncbi.nlm.nih.gov/Traces/wgs/?page=1&view=tsa
+    use the --csv tag as:
+
+parse_ncbi_taxonomy.py -n names.dmp -o nodes.dmp --csv -i wgs_selector.csv
 '''
 
+import csv
 import sys
 import time
 import argparse
@@ -112,6 +119,7 @@ def main(argv, wayout):
 	parser.add_argument('-i','--input', help="text file of species names")
 	parser.add_argument('-n','--names', help="NCBI taxonomy names.dmp")
 	parser.add_argument('-o','--nodes', nargs="*", help="NCBI taxonomy nodes.dmp, and possibly merged.dmp")
+	parser.add_argument('--csv', action="store_true", help="read directly from NCBI WGS csv file")
 	parser.add_argument('--header', action="store_true", help="write header line for output")
 	parser.add_argument('--numbers', action="store_true", help="input lines are NCBI ID numbers, not names")
 	parser.add_argument('--unique', action="store_true", help="only count first occurrence of a speices")
@@ -128,34 +136,60 @@ def main(argv, wayout):
 	nullentries = 0
 	foundentries = 0
 	print >> sys.stderr, "# reading species IDs from {}".format(args.input), time.asctime()
-	for line in open(args.input,'r'):
-		line = line.strip()
-		if line:
-			if args.numbers: # input lines are NCBI numbers, meaning get species name from that
-				speciesname = node_to_name.get(line,None)
-				node_id = line
-			else: # meaning input lines are species names, like Danio rerio
-				speciesname = line
+	if args.csv:
+		with open(args.input,'r') as csvfile:
+			ncbicsv = csv.reader(csvfile)
+			for lsplits in ncbicsv:
+			#	print >> sys.stderr, lsplits
+				speciesname = lsplits[4]
 				node_id = name_to_node.get(speciesname,None)
-			if speciesname is not None: # remove any # that would disrupt downstream analyses
-				speciesname = clean_name(speciesname)
-
-			node_tracker[node_id] = node_tracker.get(node_id, 0) + 1
-			if args.unique and node_tracker.get(node_id,0) > 1:
-				continue
-
-			if node_id is not None:
-				foundentries += 1
-				finalnodes = get_parent_tree(node_id, node_to_rank, node_to_parent)
-				outputstring = "{}\t{}\t{}\t{}".format( speciesname, node_to_name.get(finalnodes[0],"None"), node_to_name.get(finalnodes[1],"None"), node_to_name.get(finalnodes[2],"None") )
-
-				# check for deleted nodes, add to null entries
-				if finalnodes[0]=="Deleted":
+				if speciesname is not None: # remove any # that would disrupt downstream analyses
+					speciesname = clean_name(speciesname)
+				node_tracker[node_id] = node_tracker.get(node_id, 0) + 1
+				if node_id is not None:
+					foundentries += 1
+					finalnodes = get_parent_tree(node_id, node_to_rank, node_to_parent)
+					finalnodes = [node_to_name.get(n,"None") for n in finalnodes]
+					outputlist = lsplits[0:5] + finalnodes + lsplits[6:]
+					# check for deleted nodes, add to null entries
+					if finalnodes[0]=="Deleted":
+						nullentries += 1
+				elif speciesname == "organism_an":
+					outputlist = lsplits[0:5] + ["kingdom", "phylum", "class"] + lsplits[6:]
+				else:
 					nullentries += 1
-			else:
-				nullentries += 1
-				outputstring = "{}\tNone\tNone\tNone".format( speciesname )
-			print >> sys.stdout, outputstring
+					outputlist = lsplits[0:5] + ["None", "None", "None"] + lsplits[6:]
+				outputstring = clean_name("\t".join(outputlist))
+				print >> sys.stdout, outputstring
+	else:
+		for line in open(args.input,'r'):
+			line = line.strip()
+			if line:
+				if args.numbers: # input lines are NCBI numbers, meaning get species name from that
+					speciesname = node_to_name.get(line,None)
+					node_id = line
+				else: # meaning input lines are species names, like Danio rerio
+					speciesname = line
+					node_id = name_to_node.get(speciesname,None)
+				if speciesname is not None: # remove any # that would disrupt downstream analyses
+					speciesname = clean_name(speciesname)
+
+				node_tracker[node_id] = node_tracker.get(node_id, 0) + 1
+				if args.unique and node_tracker.get(node_id,0) > 1:
+					continue
+
+				if node_id is not None:
+					foundentries += 1
+					finalnodes = get_parent_tree(node_id, node_to_rank, node_to_parent)
+					outputstring = "{}\t{}\t{}\t{}".format( speciesname, node_to_name.get(finalnodes[0],"None"), node_to_name.get(finalnodes[1],"None"), node_to_name.get(finalnodes[2],"None") )
+
+					# check for deleted nodes, add to null entries
+					if finalnodes[0]=="Deleted":
+						nullentries += 1
+				else:
+					nullentries += 1
+					outputstring = "{}\tNone\tNone\tNone".format( speciesname )
+				print >> sys.stdout, outputstring
 	print >> sys.stderr, "# found tree for {} nodes, could not find for {}".format( foundentries, nullentries), time.asctime()
 
 if __name__ == "__main__":
