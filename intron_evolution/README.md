@@ -1,5 +1,5 @@
 # intron evolution #
-A model of intron evolution, as a follow up to [Similar ratios of introns to intergenic sequence across animal genomes.](https://doi.org/10.1093/gbe/evx103)
+A model of intron evolution, as a follow up to Francis and Wörheide (2018) [Similar ratios of introns to intergenic sequence across animal genomes.](https://doi.org/10.1093/gbe/evx103)
 
 The total amount of intronic bases and intergenic bases are linearly related to the total size of the genome. The similar ratio of introns and intergenic sequences suggests that, on average, the forces that shape the amount of intron and amount of intergenic sequence are the same, and operate in a random manner. In such case, this has certain predictions as to the distribution of the sizes of individual introns. The theory is that each intron is subject to random expansion, i.e. by insertions, transposition, replication errors.
 
@@ -17,4 +17,12 @@ Histograms of the final lengths are shown below. Under equal probability (orange
 
 ![random_intron_length_plot.png](https://github.com/wrf/misc-analyses/blob/master/intron_evolution/random_intron_length_plot.png)
 
-For real genomes, l would be some reasonable value, say 300bp, which is a convenient value for the length of an exon or of some repetitive elements (such as Alu). This would give the average initial intron size of 300bp, and final size of 3300bp, seen for genomes of around 1.5Gb.
+For real genomes, l would be some reasonable value, say 300bp, which is a convenient value for the length of an exon or of some repetitive elements (such as Alu). This would give the average initial intron size of 300bp, and final size of 3300bp, seen for genomes of around 1.5Gb. 
+
+For a larger genome, like human, the total size is 3.2Gb, which predicts an average intron length around 6500bp. Precise intron information can be extracted directly from the [human genome GFF annotation file](https://www.ncbi.nlm.nih.gov/genome/51?genome_assembly_id=368248) using the [Python script](https://bitbucket.org/wrf/sequences/src) `gtfstats.py`.
+
+`gtfstats.py -i ~/genomes/human/GCF_000001405.37_GRCh38.p11_genomic.gff.gz --print-introns > human_introns.tab`
+
+The intron size distribution clearly resembles the length-dependent model, indicating the main determinants of intron size are random indels, subject to runaway expansion, and ultimately consistent with the model proposed by [Petrov 2002](https://doi.org/10.1006/tpbi.2002.1605).
+
+![human_GRCh38_intron_hist.png](https://github.com/wrf/misc-analyses/blob/master/intron_evolution/human_GRCh38_intron_hist.png)
