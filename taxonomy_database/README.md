@@ -18,6 +18,21 @@ NCBI Taxonomy files can be downloaded at from the `taxdump.tar.gz` file at:
 
 `ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/`
 
+## using CSV from NCBI WGS ##
+On the [trace archive](https://www.ncbi.nlm.nih.gov/Traces/wgs/?page=1&view=tsa), select only the `TSA` projects, and download the file `wgs_selector.csv` (renaming as desired).
+
+Extract the names with `cut`, using `grep` to remove the header line `organism_an`:
+
+`cut -f 5 -d , wgs_selector_tsa_only_2018-08-23.csv | grep -v organism_an > wgs_selector_tsa_only_2018-08-23.names_only`
+
+Then use the names and the taxonomy files to regenerate the table including kingdom:
+
+`parse_ncbi_taxonomy.py -i wgs_selector_tsa_only_2018-08-23.names_only -n ~/db/taxonomy/names.dmp -o ~/db/taxonomy/nodes.dmp --header > wgs_selector_tsa_only_2018-08-23.w_kingdom.tab`
+
+Then generate the summary barplot:
+
+`Rscript taxon_barplot.R wgs_selector_tsa_only_2018-08-23.w_kingdom.tab`
+
 ## rapid downloading and renaming ##
 Assemblies can be downloaded directly from the NCBI FTP using `wget`, which can be called through the script `download_ncbi_tsa.py`. The only input requirement (`-i`) is a file of the accession numbers.
 

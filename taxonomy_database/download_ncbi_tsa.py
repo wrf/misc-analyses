@@ -2,7 +2,7 @@
 #
 # download_ncbi_tsa.py  created 2018-05-04
 
-'''download_ncbi_tsa.py  last modified 2018-05-08
+'''download_ncbi_tsa.py  last modified 2018-05-14
   download NCBI transcriptome assemblies and rename fasta sequences
 
 download_ncbi_tsa.py -i arachnida_codes
@@ -51,6 +51,7 @@ def main(argv, wayout):
 
 	species_collected = {}
 	errorcount = 0
+	filecollector = []
 	print >> sys.stderr, "# reading species IDs from {}".format(args.input), time.asctime()
 	for line in open(args.input,'r'):
 		line = line.strip()
@@ -87,9 +88,11 @@ def main(argv, wayout):
 							print >> rf, newheader
 						else:
 							print >> rf, gfline
+					filecollector.append(renamedfile)
 			else:
 				errorcount += 1
 	print >> sys.stderr, "# found data for {} codes, could not find for {}".format( len(species_collected), errorcount), time.asctime()
+	print >> sys.stderr, "# renamed sequences for:\n{}".format( "\n".join(filecollector)
 
 if __name__ == "__main__":
 	main(sys.argv[1:], sys.stdout)

@@ -7,6 +7,7 @@ args = commandArgs(trailingOnly=TRUE)
 inputfile = args[1]
 #inputfile = "~/git/misc-analyses/taxonomy_database/sra_trace_species_list_2018-04-05.tab"
 #inputfile = "~/git/misc-analyses/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.tab"
+#inputfile = "~/git/misc-analyses/taxonomy_database/NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.tab"
 outputfile = gsub("([\\w/]+)\\....$","\\1.pdf",inputfile,perl=TRUE)
 
 taxondata = read.table(inputfile, header=TRUE, sep="\t")
@@ -62,7 +63,6 @@ classcols[rogue_matches] = rogue_colors
 numclasses = 40
 thirdgraph = classes[numclasses:1]
 
-
 ### generate PDF
 
 pdf(file=outputfile, width=8, height=11)
@@ -77,12 +77,13 @@ text(kt_positions, bp1[,1], kingdoms)
 par(mar=c(4,10,1,1.6))
 bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
 text(phyla+xmax*0.01, bp2[,1], phyla, pos=4)
-text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
+#text(xmax*0.6,max(bp2)*0.8,"Note: 'None' may include many bacterial\nor single-celled eukaryotic groups\nthat lack higher-level rankings\nin the NCBI Taxonomy database.", cex=1.5)
 
-par(fig = c(grconvertX(c(xmax*0.5,xmax), from="user", to="ndc"), grconvertY(c(-0.02,0.65)*max(bp2), from="user", to="ndc")), mar = c(0,0,0,0), new = TRUE)
+par(fig = c(grconvertX(c(xmax*0.5,xmax), from="user", to="ndc"), grconvertY(c(-0.02,0.85)*max(bp2), from="user", to="ndc")), mar = c(0,0,0,0), new = TRUE)
 bp3 = barplot(thirdgraph[thirdgraph>0], horiz=TRUE, las=1, xlim=c(0,xmax/2), col=classcols[numclasses:1], cex.lab=1.1, axes=FALSE)
-text(thirdgraph[thirdgraph>0], bp3, thirdgraph[thirdgraph>0], pos=4, cex=0.9)
-
+classpos = thirdgraph[thirdgraph>0]
+classpos[classpos>xmax/2] = classpos[classpos>xmax/2]/3
+text(classpos, bp3, thirdgraph[thirdgraph>0], pos=4, cex=0.9)
 
 dev.off()
 
