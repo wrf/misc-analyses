@@ -26,3 +26,7 @@ For a larger genome, like human, the total size is 3.2Gb, which predicts an aver
 The intron size distribution clearly resembles the length-dependent model, indicating the main determinants of intron size are random indels, subject to runaway expansion, and ultimately consistent with the model of insertions and deletions proposed by [Petrov 2002](https://doi.org/10.1006/tpbi.2002.1605).
 
 ![human_GRCh38_intron_hist.png](https://github.com/wrf/misc-analyses/blob/master/intron_evolution/human_GRCh38_intron_hist.png)
+
+For an even larger genome, like the 32Gb genome of the axolotl [*Ambystoma mexicanum*](https://www.axolotl-omics.org/), the measured average intron size is 42kb. A sixth of the introns are 1kb or shorter (47k out of 283k in the GFF file). It is again evident that the average size is driven by a small number of extremely long introns.
+
+![Am_34_intron_hist.png](https://github.com/wrf/misc-analyses/blob/master/intron_evolution/Am_34_intron_hist.png)
