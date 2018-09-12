@@ -2,15 +2,18 @@
 #
 # random_intron_expansion.py v1 created 2018-06-25
 
-'''random_intron_expansion.py v1 last modified 2018-07-02
+'''random_intron_expansion.py v1 last modified 2018-09-12
+generate table of intron lengths by a random iterative expansion model
 
-    generate table of intron lengths, as multiples of an arbitrary length n
+    considering N introns with lengths as multiples of an arbitrary length l,
+    expand a random intron by 1l with each iteration for i iterations
+
     for example
-     one iteration on 10 introns would result in 9 introns of length n
-     and one intron of length 2n
+     one iteration on 10 introns would result in:
+     9 introns of length 1l
+     and one intron of length 2l
 
 random_intron_expansion.py -i 1000000 > intron_n_length_histogram.tab
-
 '''
 
 import sys
@@ -25,7 +28,7 @@ def main(argv, wayout):
 	parser.add_argument('-i','--iterations', type=int,  help="number of iterations [1000000]", required=True)
 	parser.add_argument('-n','--number', type=int, default=100000, help="starting number of introns [100000]")
 	parser.add_argument('-r','--replicates', type=int,  default=1, help="number of replicates [1]")
-	parser.add_argument('-e','--elongate', action="store_true", help="elongate introns with each iteration")
+	parser.add_argument('-e','--elongate', action="store_true", help="elongate introns with each iteration, allowing for higher probability of elongation")
 	args = parser.parse_args(argv)
 
 	if args.replicates < 1:
@@ -40,7 +43,9 @@ def main(argv, wayout):
 		print >> sys.stderr, "# Starting random length increase replicate {}, for {} iterations of {} initial introns".format( rep+1, args.iterations, args.number)
 		repstrings.append( "rep{}".format(rep+1) )
 		if args.elongate:
-			print >> sys.stderr, "# extending introns with each iteration"
+			print >> sys.stderr, "# changing expansion probabilities with each iteration"
+		else:
+			print >> sys.stderr, "# expansion probabilities stay constant"
 
 		# initialize lengths
 		randomcounts = {} # key is identifier number of intron, value is accumulated length
@@ -48,11 +53,11 @@ def main(argv, wayout):
 			randomcounts[i] = 1
 
 		# build list of intron lengths, and iterate random selection
-		intronindex = range(args.number)
+		intronindex = range(args.number) # list of numbers from 0 to N
 		for i in xrange(args.iterations):
-			randomindex = random.choice(intronindex)
+			randomindex = random.choice(intronindex) # pick random number between 0 and N
 			randomcounts[randomindex] = randomcounts.get(randomindex) + 1
-			if args.elongate:
+			if args.elongate: # if expanding, add another instance of that index to the list
 				intronindex.append(randomindex)
 		print >> sys.stderr, "# {} total intron lengths counted".format(sum(randomcounts.values()))
 
@@ -61,6 +66,8 @@ def main(argv, wayout):
 			freqdict = Counter(intronindex)
 		else:
 			freqdict = randomcounts
+
+		# count frequency for histogram
 		lengthhist = defaultdict(int)
 		for k,v in freqdict.iteritems():
 			lengthhist[v] += 1
