@@ -20,6 +20,8 @@ kingrefs = c( "None",   "Fungi",   "Metazoa", "Viridiplantae", "Bacteria", "Arch
 kingcols = c("#888888", "#4075b2", "#9354cf",  "#18d025",      "#c34741" , "#de851b")
 kingdomorder = match(names(kingdoms),kingrefs)
 
+totalspecies = sum(kingdoms)
+
 xmax = max(pretty(max(kingdoms)))
 
 ### define phyla and color
@@ -73,6 +75,7 @@ bp1 = barplot(kingdoms, horiz=TRUE, las=1, xlim=c(0,xmax), col=kingcols[kingdomo
 kt_positions = kingdoms/2
 kt_positions[kingdoms<xmax*0.06] = kingdoms[kingdoms<xmax*0.06]+xmax*0.05
 text(kt_positions, bp1[,1], kingdoms)
+text(xmax,bp1[1,1], paste("Total species:",totalspecies), cex=1.3, pos=2)
 
 par(mar=c(4,10,1,1.6))
 bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])

@@ -7,7 +7,7 @@ Gzipped FASTA-format files can also be downloaded at the [NCBI Trace archive](ht
 
 This currently contains transcriptomes of:
 
-![sra_trace_species_list_2018-04-05.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/sra_trace_species_list_2018-04-05.png)
+![wgs_selector_tsa_only_2019-01-11.w_kingdom.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/wgs_selector_tsa_only_2019-01-11.w_kingdom.png)
 
 ## adding kingdom etc ##
 To add kingdom, phylum and class ranks to this table, so it can be more easily searched. Copy the `organism` column to a text file (here this is named as `sra_trace_species_list_2018-04-05.txt`). Then run:
