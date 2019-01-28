@@ -75,7 +75,7 @@ bp1 = barplot(kingdoms, horiz=TRUE, las=1, xlim=c(0,xmax), col=kingcols[kingdomo
 kt_positions = kingdoms/2
 kt_positions[kingdoms<xmax*0.06] = kingdoms[kingdoms<xmax*0.06]+xmax*0.05
 text(kt_positions, bp1[,1], kingdoms)
-text(xmax,bp1[1,1], paste("Total species:",totalspecies), cex=1.3, pos=2)
+text(xmax,bp1[1,1], paste("Total:",totalspecies), cex=1.3, pos=2)
 
 par(mar=c(4,10,1,1.6))
 bp2 = barplot(phyla, horiz=TRUE, xlim=c(0,xmax), las=1, cex.axis=1.3, col=phylacols[phylaorder])
