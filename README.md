@@ -17,6 +17,6 @@ Data digitized from *Ecology and Evolution in Anoxic Worlds* by Fenchel and Finl
 ![fenchel_finlay_1995_km_by_size.png](https://github.com/wrf/misc-analyses/blob/master/animal_oxygen/fenchel_finlay_1995_km_by_size.png)
 
 ## [success in ERC grants](https://github.com/wrf/misc-analyses/tree/master/erc) ##
-Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics)
+Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics), and from [MSCA-IF 2018 table](http://ec.europa.eu/research/participants/portal/doc/call/h2020/msca-if-2018/1847614-if2018_percentiles_en.pdf)
 
 ![erc_2018_StG_granted_projects_all_panels_ratio.png](https://github.com/wrf/misc-analyses/blob/master/erc/erc_2018_StG_granted_projects_all_panels_ratio.png)
