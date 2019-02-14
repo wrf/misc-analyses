@@ -21,7 +21,6 @@ stg_grant_sums = rev(colSums(stg_grant[,]))
 stg_eval_sums
 
 country_cols = rainbow(stg_N_countries)
-
 plot(stg_grant_sums/stg_eval_sums, type='l', ylim=c(0,1), frame.plot=FALSE, axes=FALSE, ylab="Granted projects", xlab="Year", cex.lab=1.4, lwd=3)
 axis(2, cex.axis=1.3)
 axis(1,at=1:stg_N_yrs, label=rev(names(stg_grant)), cex.axis=1.3)
@@ -90,7 +89,7 @@ countriesnoNA = stg_countries[!is.na(euronums)]
 
 euromap$names[euronumnoNA]
 colorby_ga_noNA = colorby_ga[!is.na(euronums)]
-vecbycountry = rep("#ffffff", length(euromap$names) )
+vecbycountry = rep("#dddddd", length(euromap$names) )
 vecbycountry[euronumnoNA] = colorby_ga_noNA
 vecbycountry[euronumnoNA]
 vecbycountry
@@ -107,7 +106,7 @@ euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry
 rect(seq(-5, -5+length(ga_colors)-1 ,1),rep(32,length(ga_colors)), seq(-4,-4+length(ga_colors)-1,1) ,rep(33,length(ga_colors)),col=ga_colors)
 text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)-1,34, length(ga_colors) , cex=2)
-rect(-9,30,20,32,border=FALSE,col="white")
+rect(-9,30,20,32,border=FALSE,col="#dddddd")
 text(-5+(length(ga_colors)/2),31,"% ERC Starting Grants Awarded", cex=2)
 dev.off()
 
