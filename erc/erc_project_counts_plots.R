@@ -60,8 +60,8 @@ stg_countryaverage
 range(stg_countryaverage)/min(stg_countryaverage)
 
 
-ga_colors = c( colorRampPalette(c("#8e0152","#ffffbf"))(12), colorRampPalette(c("#ffffbf","#006837"))(12) )
-plot(1:24,1:24,cex=5,pch=16,type="p",col=ga_colors)
+ga_colors = colorRampPalette(c("#8e0152","#ffffbf","#006837"))(24)
+plot(1:length(ga_colors),1:length(ga_colors),cex=5,pch=16,type="p",col=ga_colors)
 
 ga_colors
 
@@ -146,7 +146,7 @@ cog_countryaverage = cog_null_eval_sums/rowSums(cog_eval)
 cog_countryaverage
 max(cog_countryaverage)
 
-ga_colors = c( colorRampPalette(c("#8e0152","#ffffbf"))(13), colorRampPalette(c("#ffffbf","#313695"))(13) )
+ga_colors = colorRampPalette(c("#8e0152","#ffffbf","#313695"))(26)
 plot(1:length(ga_colors),1:length(ga_colors),cex=5,pch=16,type="p",col=ga_colors)
 
 colorby_ga = ga_colors[floor(cog_countryaverage*100)+1]
@@ -164,8 +164,10 @@ countriesnoNA = cog_countries[!is.na(euronums)]
 countriesnoNA
 colorby_ga_noNA = colorby_ga[!is.na(euronums)]
 colorby_ga_noNA
-vecbycountry = rep("#ffffff", length(euromap$names) )
+vecbycountry = rep("#dddddd", length(euromap$names) )
 vecbycountry[euronumnoNA] = colorby_ga_noNA
+
+countriesnoNA[length(countriesnoNA)] = "UK"
 for (ctry in countriesnoNA){
 	vecbycountry[grep(ctry,euromap$names)] = colorby_ga_noNA[ grep(ctry,countriesnoNA)]
 } 
@@ -178,7 +180,7 @@ euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry
 rect(seq(-5, -5+length(ga_colors)/2-0.5 ,0.5),rep(32,length(ga_colors)), seq(-4,-4+length(ga_colors)/2-0.5,0.5) ,rep(33,length(ga_colors)),col=ga_colors)
 text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)/2,34, length(ga_colors) , cex=2)
-rect(-8,30,24,32,border=FALSE,col="white")
+rect(-8,30,24,32,border=FALSE,col="#dddddd")
 text(-8,31,"% Consolidator Grants Awarded", cex=2,pos=4)
 dev.off()
 
@@ -196,9 +198,66 @@ adg_eval
 adg_grant
 
 
+pdf(file="~/git/misc-analyses/erc/erc_2018_AdG_all_panels_overview_barplot.pdf", width=7, height=6)
+par(mar=c(3,4.5,4,1))
+barmain = "ERC Advanced Grants 2008-2017"
+barplot( rev(colSums(adg_eval)), names=rev(sub("X","",names(adg_eval))), ylim=c(0,3000), col="#ffffbf", cex.names=1.1, cex.axis=1.4, main=barmain  )
+par(new=TRUE)
+barplot( rev(colSums(adg_grant[,1:10])), names=FALSE, ylim=c(0,3000), col="#317785", cex.names=1.3, cex.axis=1.4, axes=FALSE  )
+legend(4,3000,legend=c("Submitted", "Granted"), fill=c("#ffffbf", "#317785"), bty='n', cex=1.5)
+par(new=FALSE)
+dev.off()
 
+adg_N_countries = dim(adg_grant)[1]
+adg_N_yrs = dim(adg_eval)[2]
 
+adg_granted_countries = match( row.names(adg_grant), row.names(adg_eval))
+adg_granted_countries
+adg_eval_sums = rev(colSums(adg_eval[,]))
+adg_grant_sums = rev(colSums(adg_grant[,]))
 
+adg_null_eval_sums = rep(0, dim(adg_eval)[1])
+adg_null_eval_sums[adg_granted_countries] = rowSums(adg_grant[,])
+adg_null_eval_sums
+rowSums(adg_eval)
+adg_countryaverage = adg_null_eval_sums/rowSums(adg_eval)
+adg_countryaverage
+max(adg_countryaverage)
+
+ga_colors = colorRampPalette(c("#8e0152","#ffffbf","#317785"))(28)
+plot(1:length(ga_colors),1:length(ga_colors),cex=5,pch=16,type="p",col=ga_colors)
+
+colorby_ga = ga_colors[floor(adg_countryaverage*100)+1]
+colorby_ga
+
+adg_countries = row.names(adg_eval)
+adg_countries[length(adg_countries)] = "UK:Great Britain"
+euronums = match(adg_countries, euromap$names)
+euronums
+euronumnoNA = euronums[!is.na(euronums)]
+euronumnoNA
+countriesnoNA = adg_countries[!is.na(euronums)]
+countriesnoNA
+colorby_ga_noNA = colorby_ga[!is.na(euronums)]
+colorby_ga_noNA
+vecbycountry = rep("#dddddd", length(euromap$names) )
+vecbycountry[euronumnoNA] = colorby_ga_noNA
+
+countriesnoNA[length(countriesnoNA)] = "UK"
+for (ctry in countriesnoNA){
+	vecbycountry[grep(ctry,euromap$names)] = colorby_ga_noNA[ grep(ctry,countriesnoNA)]
+}
+
+pdf(file="~/git/misc-analyses/erc/erc_2018_adg_granted_projects_all_panels_ratio.pdf", width=8, height=8)
+# make map
+euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
+# make legend in north africa
+rect(seq(-5, -5+length(ga_colors)/2-0.5 ,0.5),rep(32,length(ga_colors)), seq(-4,-4+length(ga_colors)/2-0.5,0.5) ,rep(33,length(ga_colors)),col=ga_colors)
+text(-5,34,"0", cex=2)
+text(-5+length(ga_colors)/2,34, length(ga_colors) , cex=2)
+rect(-8,30,24,32,border=FALSE,col="#dddddd")
+text(-8,31,"% Consolidator Grants Awarded", cex=2,pos=4)
+dev.off()
 
 
 
