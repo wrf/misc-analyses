@@ -1,0 +1,162 @@
+Country	2017	2016	C2	C1
+Morocco	10.3	10.2	1.5	-1
+South Africa	10	8.9	12.8	-6.8
+Tunisia	5.7	5.4	6.8	-25.2
+Egypt	5.3	9.1	-42.5	5.1
+Zimbabwe	2.2	2	5.4	9.4
+Algeria	2	1.7	19.2	-25.7
+Nigeria	1.9	1.3	50.5	0
+Mozambique	1.6	1.6	5.6	-6.6
+Ivory Coast	1.6	1.4	9.9	205.9
+Namibia	1.5	1.4	5.8	5.1
+Sudan	0	0.8	0	0
+Angola	0	0.397	0	0
+Benin	0	0.267	0	0
+Burkina Faso	0.143	0.152	0	0
+Burundi	0	0.187	0	0
+Eritrea	0	0.142	0	0
+Ethiopia	0	0.871	0	0
+Gambia	0	0.161	0	0
+Kenya	1.364	1.268	0	0
+Madagascar	0.255	0.293	0	0
+Malawi	0	0.849	0	0
+Mali	0.192	0.173	0	0
+Niger	0	0.152	0	0
+Rwanda	0	0.932	0	0
+Seychelles	0.35	0.303	0	0
+Swaziland	0.921	0.947	0	0
+Tanzania	0	1.233	0	0
+Togo	0.496	0.338	0	0
+Uganda	0	1.323	0	0
+Zambia	0	0.956	0	0
+USA	76.9	76.4	0.7	-1.8
+Mexico	39.3	35.1	12	9.3
+Canada	20.8	20	4.1	11.1
+Argentina	6.7	6.6	1	15.7
+Brazil	6.6	6.5	0.6	3.8
+Chile	6.5	5.6	14.3	26
+Dominican Republic	6.2	6	3.8	6.4
+Cuba	0	4	0	13.4
+Peru	4	3.7	7.7	8.4
+Colombia	4	3.3	21.4	11.4
+Aruba	1.071	1.102	0	0
+Bahamas	0	1.482	0	0
+Barbados	0.664	0.632	0	0
+Bermuda	0.27	0.244	0	0
+Curacao	0.399	0.441	0	0
+Grenada	0.146	0.135	0	0
+Guadeloupe	0.65	0.58	0	0
+Jamaica	2.353	2.182	0	0
+Puerto Rico	3.797	3.736	0	0
+Trinidad and Tobago	0.395	0.409	0	0
+Martinique	0.536	0.519	0	0
+Belize	0.427	0.386	0	0
+Costa Rica	2.96	2.925	0	0
+El Salvador	1.556	1.424	0	0
+Guatemala	1.66	1.585	0	0
+Honduras	0.936	0.908	0	0
+Nicaragua	1.787	1.504	0	0
+Panama	1.843	1.921	0	0
+Bolivia	0	0.959	0	0
+Ecuador	1.608	1.418	0	0
+French Guiana	0	0.189	0	0
+Guyana	0.247	0.235	0	0
+Paraguay	1.537	1.308	0	0
+Uruguay	3.674	3.037	0	0
+Venezuela	0	0.601	0	0
+Suriname	0.278	0.257	0	0
+China	60.7	59.3	2.5	4.2
+Thailand	35.4	32.6	8.6	8.9
+Japan	28.7	24	19.4	21.8
+Hong Kong	27.9	26.6	5	-0.5
+Malaysia	26	26.8	-3	4
+Macau	17.3	15.7	9.9	9.8
+India	15.5	14.6	6.7	9.7
+Singapore	13.9	12.9	7.7	7.2
+South Korea	13.3	17.2	-22.7	30.3
+Indonesia	12.9	11	16.9	11.1
+Mongolia	0.469	0.404	0	0
+Brunei	0.259	0.219	0	0
+Cambodia	5.602	5.012	0	0
+Laos	3.257	3.315	0	0
+Myanmar	3.443	2.907	0	0
+Philippines	6.621	5.967	0	0
+Vietnam	12.922	10.013	0	0
+Australia	8.815	8.269	0	0
+Fiji	0.843	0.792	0	0
+Guam	1.544	1.536	0	0
+New Zealand	3.555	3.37	0	0
+Palau	0.123	0.138	0	0
+Papua New Guinea	0	0.179	0	0
+Samoa	0.146	0.134	0	0
+Tonga	0.062	0.061	0	0
+Vanuatu	0.109	0.095	0	0
+Bhutan	0.255	0.21	0	0
+Maldives	1.39	1.286	0	0
+Nepal	0.94	0.753	0	0
+Sri Lanka	2.116	2.051	0	0
+Saudi Arabia	16.109	18.044	0.3	-1.5
+United Arab Emirates	15.79	14.9	4.7	7.6
+Iran	4.867	4.9	-5.6	5.4
+Jordan	3.844	3.6	-5.2	-5.7
+Qatar	2.256	2.9	-0.1	3.7
+Israel	3.613	2.9	3.6	-4.4
+Oman	0	2.3	20.1	17.8
+Lebanon	1.857	1.7	11.2	12.1
+Bahrain	4.372	3.99	0	0
+Iraq	0	1.518	0	0
+Palestine	0.503	0.4	0	0
+Syria	0	8.546	0	0
+Yemen	0	1.025	0	0
+France	86.9	82.7	5.1	-2.1
+Spain	81.8	75.3	8.6	10.5
+Italy	58.3	52.4	11.2	3.2
+UK	37.7	35.8	5.1	4
+Turkey	37.6	30.3	24.1	-23.3
+Germany	37.5	35.6	5.2	1.8
+Austria	29.5	28.1	4.8	5.2
+Greece	27.2	24.8	9.7	5.1
+Russia	24.4	24.6	-0.7	-8.5
+Portugal	21.2	18.2	16.5	0
+Denmark	10.781	8.744	0	0
+Finland	3.181	2.789	0	0
+Iceland	2.224	1.792	0	0
+Ireland	10.388	10.1	0	0
+Norway	6.252	5.96	0	0
+Sweden	6.865	6.559	0	0
+Belgium	8.358	7.481	0	0
+Liechtenstein	0.079	0.069	0	0
+Luxembourg	1.046	1.054	0	0
+Monaco	0.355	0.336	0	0
+Netherlands	17.924	15.828	0	0
+Switzerland	11.133	10.402	0	0
+Armenia	1.495	1.26	0	0
+Azerbaijan	2.454	2.045	0	0
+Belarus	2	1.929	0	0
+Bulgaria	8.883	8.252	0	0
+Czech Republic	0	12.808	0	0
+Estonia	3.245	3.131	0	0
+Georgia	3.479	2.721	0	0
+Hungary	15.785	15.256	0	0
+Kazakhstan	0	2.991	0	0
+Kyrgyzstan	0	2.93	0	0
+Latvia	1.95	1.793	0	0
+Lithuania	2.523	2.296	0	0
+Poland	18.4	17.463	0	0
+Moldova	0.145	0.121	0	0
+Romania	2.76	2.481	0	0
+Slovakia	0	5.415	0	0
+Tajikistan	0	0.16	0	0
+Ukraine	14.23	13.33	0	0
+Uzbekistan	0	0.975	0	0
+Albania	4.643	4.07	0	0
+Andorra	3.003	2.831	0	0
+Bosnia and Herzegovina	0.922	0.777	0	0
+Croatia	15.593	13.809	0	0
+Cyprus	3.652	3.187	0	0
+Macedonia	0.631	0.51	0	0
+Malta	2.27	1.966	0	0
+Montenegro	1.877	1.662	0	0
+San Marino	0.078	0.06	0	0
+Serbia	1.497	1.281	0	0
+Slovenia	3.586	3.032	0	0
