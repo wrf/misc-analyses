@@ -89,7 +89,7 @@ Because the NCBI taxonomy numbers are also given, rather than just samples, thos
 
 This is then processed as above from the taxonomy database to make a 4-column table, of species name, kingdom, phylum and class. This can be added to any existing spreadsheet or processed into the barplot. Here, the numbers are used as input by adding the option `--numbers` to `parse_ncbi_taxonomy.py`.
 
-`parse_ncbi_taxonomy.py -i NCBI_SRA_Metadata_Full_20180402.ncbi_ids.txt -n ~/db/taxonomy/names.dmp -o ~/db/taxonomy/nodes.dmp ~/db/taxonomy/merged.dmp --numbers --header > NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.tab`
+`parse_ncbi_taxonomy.py -i NCBI_SRA_Metadata_Full_20180402.ncbi_ids.txt -n ~/db/taxonomy/names.dmp -o ~/db/taxonomy/nodes.dmp --numbers --header > NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.tab`
 
 `Rscript taxon_barplot.R NCBI_SRA_Metadata_Full_20180402.ncbi_ids_w_kingdom.tab`
 
@@ -102,3 +102,13 @@ The Rscript then creates the graph, displaying a similar pattern to the number o
 `Rscript taxon_barplot.R NCBI_SRA_Metadata_Full_20180402.unique_ncbi_ids_w_king.tab`
 
 ![NCBI_SRA_Metadata_Full_20181203.unique_ncbi_ids_w_kingdom.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/NCBI_SRA_Metadata_Full_20181203.unique_ncbi_ids_w_kingdom.png)
+
+Almost a quarter of the samples are metagenomic, i.e. those in the "None" category for kingdom, etc. These can be parsed out of the samples file, as the `names.dmp` contains specific numbers for a number of environmental or biological categories. The option `--metagenomes-only` restricts the analysis to the 258 current metagenomic numbers.
+
+`parse_ncbi_taxonomy.py -i NCBI_SRA_Metadata_Full_20181203.samples.tab -n ~/db/taxonomy/names.dmp -o ~/db/taxonomy/nodes.dmp --numbers --samples --metagenomes-only > NCBI_SRA_Metadata_Full_20181203.metagenomes.tab`
+
+This is again used as input for the Rscript, to generate another barplot. Obviously, human samples account for a major part.
+
+`Rscript metagenomes_barplot.R NCBI_SRA_Metadata_Full_20181203.metagenomes.tab`
+
+![NCBI_SRA_Metadata_Full_20181203.metagenomes.png](https://github.com/wrf/misc-analyses/blob/master/taxonomy_database/NCBI_SRA_Metadata_Full_20181203.metagenomes.png)

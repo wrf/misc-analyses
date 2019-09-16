@@ -2,7 +2,7 @@
 #
 # parse_ncbi_taxonomy.py  created by WRF 2018-04-05
 
-'''parse_ncbi_taxonomy.py  last modified 2018-05-28
+'''parse_ncbi_taxonomy.py  last modified 2019-09-16
 
 parse_ncbi_taxonomy.py -n names.dmp -o nodes.dmp -i species_list.txt
 
@@ -18,6 +18,7 @@ parse_ncbi_taxonomy.py -n names.dmp -o nodes.dmp --csv -i wgs_selector.csv
 
 import csv
 import sys
+import os
 import time
 import argparse
 
@@ -47,7 +48,7 @@ import argparse
 #	unique name				-- the unique variant of this name if name not unique
 #	name class				-- (synonym, common name, ...)
 
-def names_to_nodes(namesfile):
+def names_to_nodes(namesfile, metagenomes_only=False):
 	'''read names.dmp and return a dict where name is key and value is the node number'''
 	name_to_node = {}
 	node_to_name = {}
@@ -60,6 +61,9 @@ def names_to_nodes(namesfile):
 			if nameclass=="scientific name":
 				node = lsplits[0]
 				species = lsplits[1]
+				# if in metagenome mode, skip species names that do not have "metagenome"
+				if metagenomes_only and species.find("metagenome") == -1:
+					continue
 				name_to_node[species] = node
 				node_to_name[node] = species
 	print >> sys.stderr, "# counted {} scientific names from {}".format( len(name_to_node), namesfile), time.asctime()
@@ -121,17 +125,20 @@ def main(argv, wayout):
 	parser.add_argument('-o','--nodes', nargs="*", help="NCBI taxonomy nodes.dmp, and possibly merged.dmp")
 	parser.add_argument('--csv', action="store_true", help="read directly from NCBI WGS csv file")
 	parser.add_argument('--header', action="store_true", help="write header line for output")
+	parser.add_argument('--metagenomes-only', action="store_true", help="only count metagenomic samples")
 	parser.add_argument('--numbers', action="store_true", help="input lines are NCBI ID numbers, not names")
+	parser.add_argument('--samples', action="store_true", help="read directly from parsed samples file")
 	parser.add_argument('--unique', action="store_true", help="only count first occurrence of a speices")
 	args = parser.parse_args(argv)
 
-	name_to_node, node_to_name = names_to_nodes(args.names)
+	name_to_node, node_to_name = names_to_nodes(args.names, args.metagenomes_only)
 	node_to_rank, node_to_parent = nodes_to_parents(args.nodes)
 
-	if args.header:
+	# metagenome mode overrides making a header
+	if args.header and not args.metagenomes_only:
 		print >> sys.stdout, "species\tkingdom\tphylum\tclass"
 
-	node_tracker = {}
+	node_tracker = {} # keys are node IDs, values are counts
 
 	nullentries = 0
 	foundentries = 0
@@ -165,27 +172,47 @@ def main(argv, wayout):
 		for line in open(args.input,'r'):
 			line = line.strip()
 			if line:
-				if args.numbers: # input lines are NCBI numbers, meaning get species name from that
-					speciesname = node_to_name.get(line,None)
-					node_id = line
+				# if reading directly from 4-column samples file, extract sample ID
+				if args.samples:
+					lsplits = line.split("\t")
+					if len(lsplits) < 4: # columns missing somehow, skip
+						sys.stderr.write("# ERROR: MISSING COLUMNS IN:\n" + line + os.linesep)
+						continue
+					if args.numbers:
+						taxid = lsplits[2]
+						if len(lsplits) > 4: # likely tabs in sample alias
+							taxid = lsplits[3]
+					else: # use species name
+						taxid = lsplits[3]
+				else: # otherwise each line is a sample name or number
+					taxid = line
+
+				# input lines are NCBI numbers, meaning get species name from that
+				if args.numbers:
+					speciesname = node_to_name.get(taxid,None)
+					node_id = taxid
 				else: # meaning input lines are species names, like Danio rerio
-					speciesname = line
+					speciesname = taxid
 					node_id = name_to_node.get(speciesname,None)
 				if speciesname is not None: # remove any # that would disrupt downstream analyses
 					speciesname = clean_name(speciesname)
-
+				# add one for each node
 				node_tracker[node_id] = node_tracker.get(node_id, 0) + 1
+				# in unique mode, if node has been seen before then skip it
 				if args.unique and node_tracker.get(node_id,0) > 1:
 					continue
 
 				if node_id is not None:
 					foundentries += 1
-					finalnodes = get_parent_tree(node_id, node_to_rank, node_to_parent)
-					outputstring = "{}\t{}\t{}\t{}".format( speciesname, node_to_name.get(finalnodes[0],"None"), node_to_name.get(finalnodes[1],"None"), node_to_name.get(finalnodes[2],"None") )
+					if args.metagenomes_only:
+						outputstring = "{}".format( speciesname )
+					else: # normal mode
+						finalnodes = get_parent_tree(node_id, node_to_rank, node_to_parent)
+						outputstring = "{}\t{}\t{}\t{}".format( speciesname, node_to_name.get(finalnodes[0],"None"), node_to_name.get(finalnodes[1],"None"), node_to_name.get(finalnodes[2],"None") )
 
-					# check for deleted nodes, add to null entries
-					if finalnodes[0]=="Deleted":
-						nullentries += 1
+						# check for deleted nodes, add to null entries
+						if finalnodes[0]=="Deleted":
+							nullentries += 1
 				else:
 					nullentries += 1
 					outputstring = "{}\tNone\tNone\tNone".format( speciesname )
