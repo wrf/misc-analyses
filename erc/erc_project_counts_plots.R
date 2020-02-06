@@ -99,6 +99,36 @@ for (ctry in countriesnoNA){
 
 grayscale = colorRampPalette(c("#999999","#eeeeee"))(4)
 
+
+wc = world.cities
+
+wcaps = wc[wc$capital==1,]
+# Montenegro not included, because data are from 2006
+# get data manually
+mnc = c("Podgorica","Montenegro",1, 42.441286, 19.262892,1)
+
+# extract capitals for relevant countries
+capsonly = wcaps[match(c(countriesnoNA), wcaps[1:(dim(wcaps)[1]),2],nomatch=FALSE),]
+capsonly
+dim(capsonly)
+
+#
+grantedcounts_w_null = rep(0,length(stg_eval))
+grantedcounts_w_null[stg_granted_countries] = rowSums(stg_grant)
+grantedcounts_w_null[is.na(grantedcounts_w_null)] = 0
+printvals = paste(grantedcounts_w_null,rowSums(stg_eval),sep="/")
+printvals
+cbind( printvals, row.names(stg_eval), caps_no_na_match )
+# filter for thosee on the map
+
+capslat = c( capsonly[["lat"]], 51.507222 )
+capslon = c( capsonly[["long"]], -0.1275 )
+# plot numbers on top of each capital
+countriesnoNA
+capsonly[["country.etc"]]
+caps_no_na_match = c ( match( capsonly[["country.etc"]], stg_countries ), 40 )
+caps_no_na_match
+
 pdf(file="~/git/misc-analyses/erc/erc_2018_StG_granted_projects_all_panels_ratio.pdf", width=8, height=8)
 # make map
 euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
@@ -108,6 +138,18 @@ text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)-1,34, length(ga_colors) , cex=2)
 rect(-9,30,20,32,border=FALSE,col="#dddddd")
 text(-5+(length(ga_colors)/2),31,"% ERC Starting Grants Awarded", cex=2)
+dev.off()
+
+pdf(file="~/git/misc-analyses/erc/erc_2018_StG_granted_projects_all_panels_ratio_w_counts.pdf", width=8, height=8)
+# make map
+euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
+# make legend in north africa
+rect(seq(-5, -5+length(ga_colors)-1 ,1),rep(32,length(ga_colors)), seq(-4,-4+length(ga_colors)-1,1) ,rep(33,length(ga_colors)),col=ga_colors)
+text(-5,34,"0", cex=2)
+text(-5+length(ga_colors)-1,34, length(ga_colors) , cex=2)
+rect(-9,30,20,32,border=FALSE,col="#dddddd")
+text(-5+(length(ga_colors)/2),31,"% ERC Starting Grants Awarded", cex=2)
+text(capslon, capslat, printvals[caps_no_na_match], cex=1 )
 dev.off()
 
 ###
@@ -256,7 +298,7 @@ rect(seq(-5, -5+length(ga_colors)/2-0.5 ,0.5),rep(32,length(ga_colors)), seq(-4,
 text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)/2,34, length(ga_colors) , cex=2)
 rect(-8,30,24,32,border=FALSE,col="#dddddd")
-text(-8,31,"% Consolidator Grants Awarded", cex=2,pos=4)
+text(-8,31,"% Advanced Grants Awarded", cex=2,pos=4)
 dev.off()
 
 
