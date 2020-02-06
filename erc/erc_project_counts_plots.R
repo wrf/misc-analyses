@@ -294,7 +294,7 @@ pdf(file="~/git/misc-analyses/erc/erc_2018_adg_granted_projects_all_panels_ratio
 # make map
 euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
 # make legend in north africa
-rect(seq(-5, -5+length(ga_colors)/2-0.5 ,0.5),rep(32,length(ga_colors)), seq(-4,-4+length(ga_colors)/2-0.5,0.5) ,rep(33,length(ga_colors)),col=ga_colors)
+rect(seq(-5, -5+length(ga_colors)/2-0.5 ,0.5),rep(32,length(ga_colors)), seq(-4.5,-4.5+length(ga_colors)/2-0.5,0.5) ,rep(33,length(ga_colors)),col=ga_colors)
 text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)/2,34, length(ga_colors) , cex=2)
 rect(-8,30,24,32,border=FALSE,col="#dddddd")
