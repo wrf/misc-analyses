@@ -1,9 +1,12 @@
-
+# plot ERC grant success as color coded map
+# one map for each Starting Grants, Consolidator, and Advanced
+# data from:
+# https://erc.europa.eu/projects-figures/statistics
 
 library(stats)
 
-stg_eval = read.table("~/git/misc-analyses/erc/erc_2018_StG_evaluated_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
-stg_grant = read.table("~/git/misc-analyses/erc/erc_2018_StG_granted_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
+stg_eval = read.table("~/git/misc-analyses/erc/erc_2019_StG_evaluated_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
+stg_grant = read.table("~/git/misc-analyses/erc/erc_2019_StG_granted_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
 
 stg_eval
 stg_grant
@@ -32,10 +35,10 @@ for (i in 1:stg_N_countries) {
 ### OVERVIEW BARPLOT
 ###
 
-pdf(file="~/git/misc-analyses/erc/erc_2018_StG_all_panels_overview_barplot.pdf", width=7, height=6)
+pdf(file="~/git/misc-analyses/erc/erc_2019_StG_all_panels_overview_barplot.pdf", width=7, height=6)
 par(mar=c(3,4.5,4,1))
-barmain = "ERC Starting Grants 2007-2018"
-barplot( rev(colSums(stg_eval)), names=rev(sub("X","",names(stg_eval))), ylim=c(0,9000), col="#ffffbf", cex.names=0.9, cex.axis=1.4, main=barmain  )
+barmain = "ERC Starting Grants 2007-2019"
+barplot( rev(colSums(stg_eval)), names=rev(sub("X","",names(stg_eval))), ylim=c(0,9000), col="#ffffbf", cex.names=0.8, cex.axis=1.4, main=barmain  )
 par(new=TRUE)
 #barplot( rev(colSums(stg_grant)), names=rev(sub("X","",names(stg_grant))), ylim=c(0,9000), col="#006837", cex.names=1.3, cex.axis=1.4  )
 barplot( rev(colSums(stg_grant)), names=FALSE, ylim=c(0,9000), col="#006837", cex.names=1.3, cex.axis=1.4, axes=FALSE )
@@ -71,7 +74,7 @@ colorby_ga = ga_colors[floor(stg_countryaverage*100)+1]
 colorby_ga
 
 latrange = c(30,62)
-lonrange = c(-10,39)
+lonrange = c(-11,38)
 
 euromap = map('world', ylim=latrange, xlim=lonrange)
 #attributes(euromap)
@@ -118,18 +121,19 @@ grantedcounts_w_null[stg_granted_countries] = rowSums(stg_grant)
 grantedcounts_w_null[is.na(grantedcounts_w_null)] = 0
 printvals = paste(grantedcounts_w_null,rowSums(stg_eval),sep="/")
 printvals
-cbind( printvals, row.names(stg_eval), caps_no_na_match )
-# filter for thosee on the map
+
+# filter for those on the map
 
 capslat = c( capsonly[["lat"]], 51.507222 )
 capslon = c( capsonly[["long"]], -0.1275 )
 # plot numbers on top of each capital
 countriesnoNA
 capsonly[["country.etc"]]
-caps_no_na_match = c ( match( capsonly[["country.etc"]], stg_countries ), 40 )
+caps_no_na_match = c( match( capsonly[["country.etc"]], stg_countries, ), 40 )
 caps_no_na_match
+cbind( printvals, row.names(stg_eval), caps_no_na_match )
 
-pdf(file="~/git/misc-analyses/erc/erc_2018_StG_granted_projects_all_panels_ratio.pdf", width=8, height=8)
+pdf(file="~/git/misc-analyses/erc/erc_2019_StG_granted_projects_all_panels_ratio.pdf", width=8, height=8)
 # make map
 euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
 # make legend in north africa
@@ -140,10 +144,9 @@ rect(-9,30,20,32,border=FALSE,col="#dddddd")
 text(-5+(length(ga_colors)/2),31,"% ERC Starting Grants Awarded", cex=2)
 dev.off()
 
-pdf(file="~/git/misc-analyses/erc/erc_2018_StG_granted_projects_all_panels_ratio_w_counts.pdf", width=8, height=8)
+pdf(file="~/git/misc-analyses/erc/erc_2019_StG_granted_projects_all_panels_ratio_w_counts.pdf", width=8, height=8)
 # make map
 euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
-# make legend in north africa
 rect(seq(-5, -5+length(ga_colors)-1 ,1),rep(32,length(ga_colors)), seq(-4,-4+length(ga_colors)-1,1) ,rep(33,length(ga_colors)),col=ga_colors)
 text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)-1,34, length(ga_colors) , cex=2)
@@ -156,18 +159,18 @@ dev.off()
 ### SAME PLOTS FOR CONSOLIDATOR GRANTS
 ###
 
-cog_eval = read.table("~/git/misc-analyses/erc/erc_2018_CoG_evaluated_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
-cog_grant = read.table("~/git/misc-analyses/erc/erc_2018_CoG_granted_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
+cog_eval = read.table("~/git/misc-analyses/erc/erc_2019_CoG_evaluated_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
+cog_grant = read.table("~/git/misc-analyses/erc/erc_2019_CoG_granted_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
 
 cog_eval
 cog_grant
 
-pdf(file="~/git/misc-analyses/erc/erc_2018_CoG_all_panels_overview_barplot.pdf", width=7, height=6)
+pdf(file="~/git/misc-analyses/erc/erc_2019_CoG_all_panels_overview_barplot.pdf", width=7, height=6)
 par(mar=c(3,4.5,4,1))
-barmain = "ERC Consolidator Grants 2013-2017"
+barmain = "ERC Consolidator Grants 2013-2019"
 barplot( rev(colSums(cog_eval)), names=rev(sub("X","",names(cog_eval))), ylim=c(0,4000), col="#ffffbf", cex.names=1.2, cex.axis=1.4, main=barmain  )
 par(new=TRUE)
-barplot( rev(colSums(cog_grant[,1:5])), names=FALSE, ylim=c(0,4000), col="#313695", cex.names=1.3, cex.axis=1.4, axes=FALSE  )
+barplot( rev(colSums(cog_grant[,])), names=FALSE, ylim=c(0,4000), col="#313695", cex.names=1.3, cex.axis=1.4, axes=FALSE  )
 legend(4,4000,legend=c("Submitted", "Granted"), fill=c("#ffffbf", "#313695"), bty='n', cex=1.5)
 par(new=FALSE)
 dev.off()
@@ -178,10 +181,10 @@ cog_N_yrs = dim(cog_eval)[2]
 cog_granted_countries = match( row.names(cog_grant), row.names(cog_eval))
 cog_granted_countries
 cog_eval_sums = rev(colSums(cog_eval[,]))
-cog_grant_sums = rev(colSums(cog_grant[,1:5]))
+cog_grant_sums = rev(colSums(cog_grant[,]))
 
 cog_null_eval_sums = rep(0, dim(cog_eval)[1])
-cog_null_eval_sums[cog_granted_countries] = rowSums(cog_grant[,1:5])
+cog_null_eval_sums[cog_granted_countries] = rowSums(cog_grant[,])
 cog_null_eval_sums
 rowSums(cog_eval)
 cog_countryaverage = cog_null_eval_sums/rowSums(cog_eval)
@@ -212,10 +215,9 @@ vecbycountry[euronumnoNA] = colorby_ga_noNA
 countriesnoNA[length(countriesnoNA)] = "UK"
 for (ctry in countriesnoNA){
 	vecbycountry[grep(ctry,euromap$names)] = colorby_ga_noNA[ grep(ctry,countriesnoNA)]
-} 
+}
 
-
-pdf(file="~/git/misc-analyses/erc/erc_2018_CoG_granted_projects_all_panels_ratio.pdf", width=8, height=8)
+pdf(file="~/git/misc-analyses/erc/erc_2019_CoG_granted_projects_all_panels_ratio.pdf", width=8, height=8)
 # make map
 euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
 # make legend in north africa
@@ -224,6 +226,7 @@ text(-5,34,"0", cex=2)
 text(-5+length(ga_colors)/2,34, length(ga_colors) , cex=2)
 rect(-8,30,24,32,border=FALSE,col="#dddddd")
 text(-8,31,"% Consolidator Grants Awarded", cex=2,pos=4)
+#text(capslon, capslat, printvals[caps_no_na_match], cex=1 )
 dev.off()
 
 
@@ -233,19 +236,19 @@ dev.off()
 ###
 
 
-adg_eval = read.table("~/git/misc-analyses/erc/erc_2018_AdG_evaluated_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
-adg_grant = read.table("~/git/misc-analyses/erc/erc_2018_AdG_granted_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
+adg_eval = read.table("~/git/misc-analyses/erc/erc_2019_AdG_evaluated_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
+adg_grant = read.table("~/git/misc-analyses/erc/erc_2019_AdG_granted_projects_all_panels.tab",header=TRUE,sep="\t",row.names=1)
 
 adg_eval
 adg_grant
 
 
-pdf(file="~/git/misc-analyses/erc/erc_2018_AdG_all_panels_overview_barplot.pdf", width=7, height=6)
+pdf(file="~/git/misc-analyses/erc/erc_2019_AdG_all_panels_overview_barplot.pdf", width=7, height=6)
 par(mar=c(3,4.5,4,1))
-barmain = "ERC Advanced Grants 2008-2017"
+barmain = "ERC Advanced Grants 2008-2019"
 barplot( rev(colSums(adg_eval)), names=rev(sub("X","",names(adg_eval))), ylim=c(0,3000), col="#ffffbf", cex.names=1.1, cex.axis=1.4, main=barmain  )
 par(new=TRUE)
-barplot( rev(colSums(adg_grant[,1:10])), names=FALSE, ylim=c(0,3000), col="#317785", cex.names=1.3, cex.axis=1.4, axes=FALSE  )
+barplot( rev(colSums(adg_grant[,])), names=FALSE, ylim=c(0,3000), col="#317785", cex.names=1.3, cex.axis=1.4, axes=FALSE  )
 legend(4,3000,legend=c("Submitted", "Granted"), fill=c("#ffffbf", "#317785"), bty='n', cex=1.5)
 par(new=FALSE)
 dev.off()
@@ -290,7 +293,7 @@ for (ctry in countriesnoNA){
 	vecbycountry[grep(ctry,euromap$names)] = colorby_ga_noNA[ grep(ctry,countriesnoNA)]
 }
 
-pdf(file="~/git/misc-analyses/erc/erc_2018_adg_granted_projects_all_panels_ratio.pdf", width=8, height=8)
+pdf(file="~/git/misc-analyses/erc/erc_2019_adg_granted_projects_all_panels_ratio.pdf", width=8, height=8)
 # make map
 euromap = map('world', ylim=latrange, xlim=lonrange, fill=TRUE, col=vecbycountry, mar=c(1,1,1,1))
 # make legend in north africa
