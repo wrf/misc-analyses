@@ -70,9 +70,11 @@ for (country in country_list){
              caption=caption_text) +
         geom_line(aes(colour=Year), alpha=0.3, size=3, lineend = "round")
     country_w_underscores = gsub(" ","_",country)
-    plot_list[[i]] = cgg
-    outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".UNdata_20210419.pdf")
-    ggsave(outputfilename, cgg, device="pdf", width=8, height=6)
+    if (yearly_mean_range[2] > 100) {
+        plot_list[[i]] = cgg
+        outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".UNdata_20210419.pdf")
+        ggsave(outputfilename, cgg, device="pdf", width=8, height=6)
+    }
 } # end for loop
 
 #pdf("~/git/misc-analyses/birth_rate_by_month/all_countries_tiled.UNdata_20210419.pdf", paper="a4", width=8, height=10)
