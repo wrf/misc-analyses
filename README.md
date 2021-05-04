@@ -1,6 +1,11 @@
 # misc-analyses
 other analyses of diverse topics
 
+## [global consumption of seafood](https://github.com/wrf/misc-analyses/tree/master/fisheries) ##
+Many countries with long coastlines import most of their fish. Data from [UN FAO](http://www.fao.org/faostat/en/#data/FBS)
+
+![global_fish_imports_only_2017.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/global_fish_imports_only_2017.png)
+
 ## [seasonality of human births](https://github.com/wrf/misc-analyses/tree/master/birth_rate_by_month) ##
 Month of birth has real effects, like astrology, something known by all of humanity for thousands of years.
 
