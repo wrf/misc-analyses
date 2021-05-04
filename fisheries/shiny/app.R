@@ -27,7 +27,7 @@ fishdata$region = recode(fishdata$region,
                          "Cote d'Ivoire" = "Ivory Coast",
                          "Czechia" = "Czech Republic" )
 fishdata_recode = mutate(fishdata, net_human_consumed = production_2017_Gg + imports_2017_Gg - exports_2017_Gg - feed_2017_Gg,
-         import_v_prod = pmin(imports_2017_Gg / (production_2017_Gg+0.01),22.22) )
+         imports_vs_production = pmin(imports_2017_Gg / (production_2017_Gg+0.01),22.22) )
 #head(fishdata_recode)
 countries_w_data = sort(unique(fishdata_recode$region))
 
@@ -66,23 +66,28 @@ ui <- fluidPage(
                                         "Exports" = "exports_2017_Gg",
                                         "Use as animal feed" = "feed_2017_Gg", 
                                         "Net food for humans" = "net_human_consumed", 
-                                        "Ratio of import/production" =  "import_v_prod"
+                                        "Ratio of import/production" =  "imports_vs_production"
                                         )
                         ),
              helpText("Note: Net = imports + prod - exports - feed")
              ), # end column
       column(4,
-             selectInput("chosenCountry", "Country to display tabular data below", 
-                         choices = countries_w_data
-                         )
+             selectInput("chosenCountry", "Country or region to display tabular data", 
+                         choices = countries_w_data,
+                         selected = "Africa"
+                         ),
+             h5(strong("Save current map view as PDF")),
+             downloadButton("printpdf", label = "Print")
              )
     ), # end fluidRow
 
     mainPanel(width="100%",
-              #verbatimTextOutput(outputId = "showingWhat"),
+              verbatimTextOutput(outputId = "showingWhat"),
+              h3("Scroll down for raw data."),
               plotOutput(outputId = "worldMap",
                  height="600px"
                  ),
+              h3("Country or region data:"),
               tableOutput("countryInfo")
     ) # end mainPanel
   ) # end verticalLayout
@@ -90,7 +95,7 @@ ui <- fluidPage(
 
 #
 server <- function(input, output) {
-  #output$showingWhat <- renderText({ print(input$fishtype) })
+  #output$showingWhat <- renderPrint({ sub("_2017_Gg","",input$displaytype) })
   
   output$worldMap <- renderPlot({
     # subset fish data
@@ -99,15 +104,18 @@ server <- function(input, output) {
     filldata = select(fishdata_subset, input$displaytype)[,1]
     
     # adjust parameters for the one measurement that is a ratio
-    if (input$displaytype=="import_v_prod") {
+    if (input$displaytype=="imports_vs_production") {
       color_set = colorRampPalette(c("#4393c3", "#addd8e", "#d6604d"))(7)
       color_bins = c(0.01, 0.05, 0.1, 0.5, 1, 5, 10 )
     }
     # otherwise just use light-green to dark-blue palette
     else {
-      color_set = colorRampPalette(c("#b0e6cd","#063e6f"))(7)
+      color_set = colorRampPalette(c("#b0e6cd","#06246f"))(7)
       color_bins = c(0, 1, 10, 100, 1000, 10000, 100000)
     }
+    
+    # generate title text
+    full_title = paste("2017 global seafood", gsub("_"," ",sub("_2017_Gg","",input$displaytype)) )
     
     # generate the map
     fishgg = ggplot(fishdata_subset, aes(long,lat, group=group)) +
@@ -122,13 +130,19 @@ server <- function(input, output) {
                            breaks = color_bins,
                            na.value="gray70", trans = "log10") +
       labs(x=NULL, y=NULL, fill="Quantity\n(M kg)",
+           title=full_title,
            subtitle= paste("showing:", input$fishtype ),
            caption="Data from UN Food and Agriculture Organization (FAO) 2017\nwww.fao.org/fishery/statistics/global-consumption/en") +
       geom_polygon( aes(x=long, y = lat, group = group, fill=filldata), colour="#ffffff")
     fishgg
 
   })
-  
+  output$printpdf <- downloadHandler(
+    filename = function() {"plot.pdf"},
+    content = function(filename){
+      ggsave(filename, device="pdf", width=11, height=6)
+    }
+  )
   output$countryInfo <- renderTable({
     filter(fishdata_recode, region==input$chosenCountry)
   },
