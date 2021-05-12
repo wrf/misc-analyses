@@ -11,6 +11,8 @@ This is then used for making choropleth maps, like this one, showing imports of 
 
 ![global_fish_imports_only_2017.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/global_fish_imports_only_2017.png)
 
+Units are in 1000 tonnes, or M kg, or properly in gigagrams - Gg. 1 tonne of water, 1000kg, would be a 1m cube. A shipping container (40*8*10 ft) would be 86 cubic meters, a bit less than 100 tonnes. So 1 Gg would be about 10-12 shipping containers. Switzerland imports 146 Gg per year (eating 144 Gg), so roughly 5 shipping containers per day, for a population of about 8.5M. If a portion of fish is 150g with the same density of water (assuming no bones or shells), that would be about 2.5 million portions per day. Thus, one third of the country would be having seafood for either lunch or dinner each day.
+
 ## shinyapp ##
 Here, another [shinyapp](https://shiny.rstudio.com/) can redraw the choropleth map based on imports, exports, and production of various seafood products around the world. It should run on another system with only the data file in the `/data` folder. The drop down menu will change whatever is displayed. All will have the same color scheme except the `imports vs production`, since it is a ratio. Lat-lon can be changed, but the rendering is likely to distort. 
 

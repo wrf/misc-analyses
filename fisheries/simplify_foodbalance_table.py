@@ -65,15 +65,16 @@ def parse_balancetable_csv(csvfile, do_summary):
 		item = row[3]
 		element = row[5]
 		y2017 = row[13]
+		# all values are rounded to nearest integer in the original data csv
 		if item in fishery_allowed_items:
 			if element   == "Production":
-				production_counts[country][item] = float(y2017)
+				production_counts[country][item] = int(y2017)
 			elif element == "Import Quantity":
-				import_counts[country][item] = float(y2017)
+				import_counts[country][item] = int(y2017)
 			elif element == "Export Quantity":
-				export_counts[country][item] = float(y2017)
+				export_counts[country][item] = int(y2017)
 			elif element == "Feed":
-				feed_counts[country][item] = float(y2017)
+				feed_counts[country][item] = int(y2017)
 
 	# make header line
 	header_line = "region\titem\tproduction_2017_Gg\timports_2017_Gg\texports_2017_Gg\tfeed_2017_Gg\n"
@@ -86,7 +87,7 @@ def parse_balancetable_csv(csvfile, do_summary):
 			import_quant = import_counts.get(country,{}).get(fish_item,0)
 			export_quant = export_counts.get(country,{}).get(fish_item,0)
 			feed_quant = feed_counts.get(country,{}).get(fish_item,0)
-			outline = "{}\t{}\t{:.1f}\t{:.1f}\t{:.1f}\t{:.1f}\n".format(country, fish_item, prod_quant, import_quant, export_quant, feed_quant)
+			outline = "{}\t{}\t{}\t{}\t{}\t{}\n".format(country, fish_item, prod_quant, import_quant, export_quant, feed_quant)
 			sys.stdout.write(outline)
 
 def main(argv, wayout):
