@@ -18,3 +18,20 @@ Data of proposals by score are only reported down to the score of 70, out of 100
 
 ![erc_2019_msca_if_cumulative_pct_standard_all_cats.png](https://github.com/wrf/misc-analyses/blob/master/erc/erc_2019_msca_if_cumulative_pct_standard_all_cats.png)
 
+## Are evaluations fair? ##
+Of course not. But how unfair are they? What is the "noise" level on the evaluations? How variable are reports of the same proposal by two different "experts"?
+
+* a study by [Cole in 1981 in Science](https://doi.org/10.1126/science.7302566) of 150 proposals stated this: "The degree of disagreement within the population of eligible reviewers is such that whether or not a proposal is funded depends in a large proportion of cases upon which reviewers happen to be selected for it". Based on both the reviewer scores from the NSF, and from their own subsequent review at the NAS, between 40-60% of variation in total ratings derives from differences in reviewers.
+* [Jayasinghe 2003](https://doi.org/10.1111/1467-985X.00278), examining 2331 proposals by 6233 reviewers for the Australian Research Council, calculated a measure of reviewer reliability of 0.25, indicating an extremely low correlation between any two reviews of the same proposal; they also noted that applicant-nominated reviewers gave higher scores
+* [Gallo 2016](https://doi.org/10.1371/journal.pone.0165147), examining 725 proposals, found an expertise bias where self-declared experts evaluate more harshly, especially if they are younger; this study also finds 77% of variance is due to differences in reviewers
+
+Clearly, dice-rolling would be about as effective as actual reviewers, but substantially faster and more fun. This would seem to undermine the entire institution of public science. Even outside the realm of intellectual quality of the proposal, other studies have reported demographic biases:
+
+There are contradictory results of gender bias. [Severin 2020](https://doi.org/10.1136/bmjopen-2019-035058 ) had reported a gender bias in scores from 12294 proposals among 26829 reviewers of actual Swiss Science Foundation applications. However, [Forscher 2019](https://doi.org/10.1038/s41562-018-0517-y) found in an experiment of switching the names of 48 applications (among 446 reviewers) that there was no detectable gender bias for that level of evaluation. That study used real proposals, but the reviewers were in an experiment, not an actual evaluation. [Ginther 2011](https://doi.org/10.1126/science.1196783) reported an ethnicity bias in NIH applications, but this was not found either in the [Forscher 2019](https://doi.org/10.1038/s41562-018-0517-y).
+
+## What is the strategy of success? ##
+The intense competition is clearly driven by high numbers of people. Around [10% of PhDs will eventually land a professor job](http://www.nature.com/articles/472276a), meaning the production of PhDs is 10x higher than the [replacement value](https://en.wikipedia.org/wiki/Sub-replacement_fertility) for professors. This was [criticized in 2011](https://www.nature.com/news/2011/110420/full/472261a.html), and probably other times before, but has not improved as I can see. Selection needs to take place at some stage in the system, so at 10% success rate of large grants also serves as a hiring requirement for professors, so the average PhD student therefore wastes 7-10 years of their life before dropping out of the academic path. The alternative is resorting to [unethical practices](https://doi.org/10.1089/ees.2016.0223) to get ahead that [eventually will become commonplace](https://doi.org/10.1016/S0191-3085(03)25001-2).
+
+All these things taken together ultimately indicates that choosing a mediocre and incremental idea, rather than novel or risky, overstating and presenting it as though it is novel and groundbreaking, and getting a lucky set of reviewers is key to success.
+
+
