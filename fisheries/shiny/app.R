@@ -17,6 +17,18 @@ fishdatafile = "~/git/misc-analyses/fisheries/data/FoodBalanceSheets_E_reformat_
 fishdata = read.table(fishdatafile, header=TRUE, sep="\t", stringsAsFactors = FALSE)
 #head(fishdata)
 
+is_not_country = c("World", "Asia", "Europe", "Africa", "Oceania",
+                   "Eastern Asia", "Central Asia", "Southern Asia", "Western Asia", "South-Eastern Asia",
+                   "Western Africa", "Middle Africa", "Southern Africa", "Northern Africa", "Eastern Africa",
+                   "Americas", "Northern America", "Central America", "South America",
+                   "Northern Europe", "Western Europe", "Southern Europe", "Eastern Europe",
+                   "Australia and New Zealand", "China, mainland",
+                   "Small Island Developing States",
+                   "Land Locked Developing Countries", 
+                   "Least Developed Countries",
+                   "Low Income Food Deficit Countries", 
+                   "Net Food Importing Developing Countries")
+
 worldpolygons = map_data("world")
 #head(worldpolygons)
 #unique(worldpolygons$region)
@@ -69,13 +81,17 @@ ui <- fluidPage(
                                         "Ratio of import/production" =  "imports_vs_production"
                                         )
                         ),
-             helpText("Note: Net = imports + prod - exports - feed")
+             helpText("Note: Net food = imports + prod - exports - feed")
              ), # end column
       column(4,
-             selectInput("chosenCountry", "Country or region to display tabular data", 
+             selectInput("chosenCountry1", "Country or region to display tabular data", 
                          choices = countries_w_data,
                          selected = "Africa"
                          ),
+             selectInput("chosenCountry2", NULL, 
+                         choices = countries_w_data,
+                         selected = "European Union"
+             ),
              h5(strong("Save current map view as PDF")),
              downloadButton("printpdf", label = "Print")
              )
@@ -85,17 +101,37 @@ ui <- fluidPage(
               verbatimTextOutput(outputId = "showingWhat"),
               h3("Scroll down for raw data."),
               plotOutput(outputId = "worldMap",
-                 height="600px"
-                 ),
+                height="600px"
+                ),
+              plotOutput(outputId = "rankedBarplot",
+                         height="200px"
+              ),
               h3("Country or region data:"),
               tableOutput("countryInfo")
     ) # end mainPanel
   ) # end verticalLayout
 )
 
+
 #
 server <- function(input, output) {
   #output$showingWhat <- renderPrint({ sub("_2017_Gg","",input$displaytype) })
+  #output$showingWhat <- renderPrint({ input$displaytype })
+  
+  output$rankedBarplot <- renderPlot({
+    # only display actual countries
+    fd_filt <- filter(fishdata_recode, ! region %in% is_not_country &
+                                 item == input$fishtype )
+    # use normal order, and take top 20 items
+    # some reason arrange() slice_max() and head() do not work correctly
+    fd_filt_n20 = fd_filt[order(fd_filt[[input$displaytype]], decreasing=TRUE),][1:20,]
+
+    ggplot(fd_filt_n20, aes(x=region, y=input$displaytype ) ) +
+      coord_flip() +
+      labs(x=NULL, y=paste(input$displaytype,"of",input$fishtype) ) +
+      geom_bar( stat="identity", fill="#06246f", aes(reorder(region,.data[[input$displaytype]]),.data[[input$displaytype]]))
+    #, 
+  })
   
   output$worldMap <- renderPlot({
     # subset fish data
@@ -129,6 +165,7 @@ server <- function(input, output) {
       scale_fill_gradientn(colours = color_set, 
                            breaks = color_bins,
                            na.value="gray70", trans = "log10") +
+      # possibly add oob = scales::squish_infinite
       labs(x=NULL, y=NULL, fill="Quantity\n(M kg)",
            title=full_title,
            subtitle= paste("showing:", input$fishtype ),
@@ -144,7 +181,7 @@ server <- function(input, output) {
     }
   )
   output$countryInfo <- renderTable({
-    filter(fishdata_recode, region==input$chosenCountry)
+    filter(fishdata_recode, region==input$chosenCountry1 | region==input$chosenCountry2 )
   },
   hover = TRUE,
   spacing = 'xs',
