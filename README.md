@@ -46,8 +46,8 @@ Data digitized from *Ecology and Evolution in Anoxic Worlds* by Fenchel and Finl
 
 ![fenchel_finlay_1995_km_by_size.png](https://github.com/wrf/misc-analyses/blob/master/animal_oxygen/fenchel_finlay_1995_km_by_size.png)
 
-## [bioluminescence spectra - on bitbucket]](https://bitbucket.org/wrf/biolum-spectra) ##
-Bioluminescence spectra, some original, and some digitized from old papers
+## [bioluminescence spectra - on bitbucket](https://bitbucket.org/wrf/biolum-spectra) ##
+Collection of bioluminescence spectra, some original, and some digitized from old papers
 
 ![cnidarian_spectra_v2.png](https://bitbucket.org/wrf/biolum-spectra/raw/81f1cc0661362493e195f7a94317b57548b36d84/cnidarian_spectra_v2.png)
 
