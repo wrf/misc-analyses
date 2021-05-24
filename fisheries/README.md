@@ -20,4 +20,4 @@ The `Print PDF` button will print a file `plot.pdf` of whatever fish category is
 
 ![fisheries_shinyapp_screenshot.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/fisheries_shinyapp_screenshot.png)
 
-This probably could be redone to include all the food items above, and may be implemented in the future.
+This has been redone to include all the food items above, and can be found [at the olive-butter page](https://github.com/wrf/misc-analyses/tree/master/olive_v_butter).
