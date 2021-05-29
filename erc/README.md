@@ -44,4 +44,5 @@ All these things taken together ultimately indicates that choosing a mediocre an
 
 Is there a better way? Universities and research programs cannot expand forever. If the numbers of people entering the system (through PhD training) and leaving (through retirement) are equal, then there is no expansion, and the national research budget does not need to change other than to match inflation. At this point, researchers can receive a set funding at some interval, which [has been proposed before for several countries](https://doi.org/10.1371/journal.pone.0183967), but is not implemented as far as I know.
 
+![academia_highlander_bloody_v2.svg](https://github.com/wrf/misc-analyses/blob/master/erc/images/academia_highlander_bloody_v2.svg)
 
