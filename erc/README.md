@@ -33,10 +33,12 @@ Even outside the realm of intellectual quality of the proposal, other studies ha
 
 There are contradictory results of gender bias. [Severin 2020](https://doi.org/10.1136/bmjopen-2019-035058 ) had reported a gender bias in scores from 12294 proposals among 26829 reviewers of actual Swiss Science Foundation applications. However, [Forscher 2019](https://doi.org/10.1038/s41562-018-0517-y) found in an experiment of switching the names of 48 applications (among 446 reviewers) that there was no detectable gender bias for that level of evaluation. That study used real proposals, but the reviewers were in an experiment, not an actual evaluation. [Ginther 2011](https://doi.org/10.1126/science.1196783) reported an ethnicity bias in NIH applications, but this was not found either in the [Forscher 2019](https://doi.org/10.1038/s41562-018-0517-y).
 
+A recent study reports [a proximity bias favoring home institutions in the ERC](https://www.researchgate.net/publication/344461606_Do_interests_affect_grant_application_success_The_role_of_organizational_proximity), for some countries. This only examined the year of 2014.
+
 ## What is the strategy of success? ##
 The intense competition is clearly driven by high numbers of people. Around [10% of PhDs will eventually land a professor job](http://www.nature.com/articles/472276a), meaning the production of PhDs is 10x higher than the [replacement value](https://en.wikipedia.org/wiki/Sub-replacement_fertility) for professors. This practice was [criticized in 2014](https://doi.org/10.1073/pnas.1404402111), [2011](https://www.nature.com/news/2011/110420/full/472261a.html), and probably other times before, but has not improved as I can see. Selection needs to take place at some stage in the system, and a 10% success rate of large grants also serves as a hiring requirement for professors, so the average PhD student therefore wastes 7-10 years of their life before dropping out of the academic path. For an individual, the alternative is resorting to [unethical practices](https://doi.org/10.1089/ees.2016.0223) to get ahead that [eventually will become commonplace](https://doi.org/10.1016/S0191-3085(03)25001-2).
 
-![academia_mass_balance_v1.png](https://github.com/wrf/misc-analyses/blob/master/erc/images/academia_mass_balance_v1.png)
+![academia_mass_balance_v3.png](https://github.com/wrf/misc-analyses/blob/master/erc/images/academia_mass_balance_v3.png)
 
 All these things taken together ultimately indicates that choosing a mediocre and incremental idea, rather than novel or risky, overstating and presenting it as though it is novel and groundbreaking, and getting a lucky set of reviewers is key to success.
 
