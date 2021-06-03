@@ -31,6 +31,11 @@ Occurrence of samples from each kingdom, phylum and class in public databases. D
 
 ![NCBI_SRA_Metadata_Full_20191130.ncbi_ids_w_kingdom.png](https://github.com/wrf/taxonomy_database/blob/master/images/NCBI_SRA_Metadata_Full_20191130.ncbi_ids_w_kingdom.png)
 
+## [remaking overview figures for the MMETSP](https://github.com/wrf/misc-analyses/tree/master/marine_meta) ##
+In addition to a [poor choice in color scheme](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001889#pbio-1001889-g001), the [original paper figures](https://doi.org/10.1371/journal.pbio.1001889) did not explain much about the diversity of samples. Additional processing of this dataset was used for [Orsi 2018](https://bitbucket.org/wrf/subsurface2017)
+
+![sample-attr_oceanography.png](https://github.com/wrf/misc-analyses/blob/master/marine_meta/sample-attr_oceanography.png)
+
 ## [model of intron evolution](https://github.com/wrf/misc-analyses/tree/master/intron_evolution) ##
 Introns become longer by a runaway expansion model, creating an exponential distribution of length. This was a follow up to Francis 2017 [Similar ratios of introns to intergenic sequence across animal genomes.](https://doi.org/10.1093/gbe/evx103)
 
@@ -40,6 +45,11 @@ Introns become longer by a runaway expansion model, creating an exponential dist
 Data for the paper of [Francis 2017](https://doi.org/10.1093/gbe/evx103) showing the ratio of intronic bases to intergenic bases. Original version had 68 species, though many more have been added since.
 
 ![large_intron_intergenic_log_plot.png](https://raw.githubusercontent.com/wrf/misc-analyses/master/figures_for_repo/large_intron_intergenic_log_plot.png)
+
+## [model of phylogenetic bootstrap as a random draw of marbles](https://github.com/wrf/misc-analyses/tree/master/random_bootstrap) ##
+A simple model about [bootstrapping in phylogenetics](https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29), showing that bootstrap replicates do not reflect the uncertainty in the data. This topic came up following the work of [Shen 2017](http://dx.doi.org/10.1038/s41559-017-0126).
+
+![bootstrap_marble_example_v1_w_results.png](https://github.com/wrf/misc-analyses/blob/master/random_bootstrap/bootstrap_marble_example_v1_w_results.png)
 
 ## [oxygen usage in animals](https://github.com/wrf/misc-analyses/tree/master/animal_oxygen) ##
 Data digitized from *Ecology and Evolution in Anoxic Worlds* by Fenchel and Finlay (1995).
