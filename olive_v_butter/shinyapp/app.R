@@ -41,16 +41,18 @@ is_plant = c("Cereals - Excluding Beer", "Wheat and products",
              "Sugar beet", "Pulses",  "Beans", "Peas", "Pulses, Other and products", 
              "Treenuts", "Nuts and products", "Oilcrops",  "Soyabeans",  "Groundnuts (Shelled Eq)", 
              "Sunflower seed", "Rape and Mustardseed",  "Cottonseed",  "Coconuts - Incl Copra",
-             "Sesame seed", "Palm kernels",   "Olives (including preserved)", 
-             "Vegetables",  "Tomatoes and products", "Onions", "Vegetables, Other", 
+             "Sesame seed", "Palm kernels", 
+             "Vegetables",  "Olives (including preserved)", 
+             "Tomatoes and products", "Onions", "Vegetables, Other", 
              "Fruits - Excluding Wine", "Oranges, Mandarines",   "Lemons, Limes and products", 
              "Grapefruit and products", "Citrus, Other", "Bananas",  "Plantains",  
              "Apples and products",  "Pineapples and products" , "Dates", 
-             "Grapes and products (excl wine)",  "Fruits, Other", "Oilcrops, Other",
+             "Grapes and products (excl wine)",  "Fruits, Other", 
              "Vegetable Oils", "Soyabean Oil",   "Groundnut Oil", "Sunflowerseed Oil" , 
              "Rape and Mustard Oil" , "Cottonseed Oil", "Palmkernel Oil", "Palm Oil", 
              "Coconut Oil",   "Sesameseed Oil", "Olive Oil", "Ricebran Oil", "Maize Germ Oil",
-             "Oilcrops Oil, Other", "Miscellaneous",  "Infant food" )
+             "Oilcrops Oil, Other", "Oilcrops, Other",
+             "Miscellaneous",  "Infant food" )
 
 is_alcohol = c( "Alcoholic Beverages", "Wine", "Beer", "Beverages, Fermented", 
                 "Beverages, Alcoholic", "Alcohol, Non-Food")
@@ -141,7 +143,9 @@ ui <- fluidPage(
                          min = -180,
                          max = 180,
                          value = c(-180,180)
-                        )
+                        ),
+             h5(strong("Save current map view as PDF")),
+             downloadButton("printpdf", label = "Print")
              ), # end column
       column(4,
              selectInput("year", "Year", 
@@ -162,18 +166,22 @@ ui <- fluidPage(
              #helpText("Note: Net food = imports + prod - exports - feed")
              ), # end column
       column(4,
-             radioButtons("tableformat", "Show table by",
+             radioButtons("tableformat", "Show table of",
                           choices = list("Item + Measure (for all countries)" = "itemelement",
                                          "Item + Country (for all measures)" = "itemcountry",
                                          "Measure + Country (for all items)" = "countrymeasure"
                           )
              ),
+             radioButtons("tablesorting", "Sort table by",
+                          choices = list("Alphabetical by country/region" = "alphabetical",
+                                         "Sorted by value descending" = "sortdescend",
+                                         "Sorted by value ascending" = "sortascend"
+                          )
+             ),
              selectInput("chosenCountry", "Country or region to display tabular data", 
                          choices = countries_w_data,
                          selected = "European Union (excluding UK)"
-                         ),
-             h5(strong("Save current map view as PDF")),
-             downloadButton("printpdf", label = "Print")
+                         )
              )
     ), # end fluidRow
 
@@ -244,7 +252,7 @@ server <- function(input, output) {
     ggplot(fd_filt_n20, aes(x=region, y=input$year ) ) +
       coord_flip() +
       scale_y_continuous(expand = c(0,0) ) +
-      labs(x=NULL, y=paste(input$elementType,"of",input$itemType) ) +
+      labs(x=NULL, y=paste(input$year, input$elementType,"of",input$itemType) ) +
       scale_fill_gradientn(colours = color_set, 
                            breaks = color_bins,
                            na.value="gray70", trans = "log10") +
@@ -306,13 +314,23 @@ server <- function(input, output) {
     }
   )
   output$countryInfo <- renderTable({
+    # filter table
     if (input$tableformat == "itemelement"){
-      filter(fooddata_recode, Item==input$itemType & Element==input$elementType)
+      ft = filter(fooddata_recode, Item==input$itemType & Element==input$elementType)
     } else if (input$tableformat == "itemcountry"){
-      filter(fooddata_recode, Item==input$itemType & region==input$chosenCountry)
+      ft = filter(fooddata_recode, Item==input$itemType & region==input$chosenCountry)
     } else {
-      filter(fooddata_recode, Element==input$elementType & region==input$chosenCountry)
+      ft = filter(fooddata_recode, Element==input$elementType & region==input$chosenCountry)
     }
+    # sort if required, default is alphabetical
+    if (input$tablesorting == "sortdescend"){
+      arrange(ft, desc( get(input$year) ) )
+    } else if (input$tablesorting == "sortascend"){
+      arrange(ft, get(input$year) )
+    } else {
+      ft
+    }
+    
   },
   hover = TRUE,
   spacing = 'xs',
