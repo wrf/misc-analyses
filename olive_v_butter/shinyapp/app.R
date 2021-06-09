@@ -245,13 +245,12 @@ server <- function(input, output) {
     }
   })
   
-  output$rankedBarplot <- renderPlot({
+  
+  ggbars = reactive({
     # only display actual countries
     fd_filt <- filter(fooddata_recode, ! region %in% is_not_country,
-                      Item==input$itemType, Element==input$elementType  )
-    # use normal order, and take top 20 items
-    # some reason arrange() slice_max() and head() do not work correctly
-    fd_filt_n20 = fd_filt[order(fd_filt[[input$year]], decreasing=TRUE),][1:20,]
+                      Item==input$itemType, Element==input$elementType  ) %>%
+      slice_max(order_by=get(input$year), n=20)
     
     if (input$itemType %in% is_meat) {
       color_set = colorRampPalette(c("#e9e9a3","#632121"))(7)
@@ -266,7 +265,7 @@ server <- function(input, output) {
     }
     color_bins = c(0, 1, 10, 100, 1000, 10000, 100000)
     
-    ggplot(fd_filt_n20, aes(x=region, y=input$year ) ) +
+    ggplot(fd_filt, aes(x=region, y=input$year ) ) +
       coord_flip() +
       scale_y_continuous(expand = c(0,0) ) +
       labs(x=NULL, y=paste(input$year, input$elementType,"of",input$itemType) ) +
@@ -275,12 +274,15 @@ server <- function(input, output) {
                            na.value="gray70", trans = "log10") +
       geom_bar( stat="identity", show.legend = FALSE,
                 aes(reorder(region, .data[[input$year]]), .data[[input$year]], fill=.data[[input$year]]) )
-    #, 
+
   })
   
+  output$rankedBarplot <- renderPlot({
+    ggbars()
+  })
   
-  output$worldMap <- renderPlot({
-    # subset fish data
+  mapgg = reactive({
+    # subset food data
     fooddata_subset = left_join(worldpolygons, filter(fooddata_recode, Item==input$itemType & Element==input$elementType), by="region" )
     # choose the measurement to display
     filldata = select(fooddata_subset, input$year)[,1]
@@ -303,7 +305,7 @@ server <- function(input, output) {
     full_title = paste( gsub("Y","",input$year), "Global",  input$elementType, "of", input$itemType )
     
     # generate the map
-    foodgg = ggplot(fooddata_subset, aes(long,lat, group=group)) +
+    ggplot(fooddata_subset, aes(long,lat, group=group)) +
       coord_cartesian(xlim=input$long, ylim=input$lat ) +
       theme(plot.title = element_text(size=20),
             axis.text = element_blank(),
@@ -321,14 +323,17 @@ server <- function(input, output) {
            #subtitle= paste("showing:", input$itemType ),
            caption="Data from UN Food and Agriculture Organization (FAO) 2021\nwww.fao.org/faostat/en/#data/FBS") +
       geom_polygon( aes(x=long, y = lat, group = group, fill=filldata), colour="#ffffff")
-    foodgg
   })
-  
 
+  output$worldMap <- renderPlot({
+    mapgg()
+  })
+    
   output$printpdf <- downloadHandler(
     filename = function() {"plot.pdf"},
     content = function(filename){
-      ggsave(filename, device="pdf", width=11, height=6)
+      printmap = mapgg()
+      ggsave(filename, printmap, device="pdf", width=11, height=6)
     }
   )
   output$countryInfo <- renderTable({
