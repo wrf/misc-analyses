@@ -1,4 +1,8 @@
 # Global fish imports and exports #
+See [here](https://wrfbiolum.shinyapps.io/butterline/) for a live version of the current app, or here for the [updated code](https://github.com/wrf/misc-analyses/tree/master/olive_v_butter) of the second version.
+
+This page discusses the initial version, which was only related to fish and seafood products.
+
 The data were downloaded in 2020 from the [UN FAO Food Balance Sheets](http://www.fao.org/faostat/en/#data/FBS), which included years 2014-2017. Currently the same website appears have included year 2018 data.
 
 The original `.csv` file from the UN is large (45Mb, 315k lines), containing all food items (over 100), not just seafood. It includes other things like: Alcohol, Animal fats, Aquatic Plants, Bananas, Barley and products, Beans, Beer, Butter, Cereals - Excluding Beer, Citrus, Coconut Oil, Dates, Eggs, Fruits - Excluding Wine, Grapefruit and products, Honey, Lemons, Olive Oil, Onions, Pigmean, Plantains, Sesameseed Oil, Soybeans, Sweet potatoes, Vegetables, Wine, and many more. Some categories appear redundant (like Citrus), as they are just sums of other ones (Grapefruit, Lemons, Oranges), probably for convenience.
@@ -20,4 +24,3 @@ The `Print PDF` button will print a file `plot.pdf` of whatever fish category is
 
 ![fisheries_shinyapp_screenshot.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/fisheries_shinyapp_screenshot.png)
 
-This has been redone to include all the food items above, and can be found [at the olive-butter page](https://github.com/wrf/misc-analyses/tree/master/olive_v_butter).
