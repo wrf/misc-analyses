@@ -1,7 +1,7 @@
 # olive_v_butter/shinyapp/app.R
 # make interactive choropleth plot of food production data from the UN
 #
-# data at:
+# original dataset at:
 # http://www.fao.org/faostat/en/#data/FBS
 #
 # created by WRF 2021-05-16
@@ -9,16 +9,21 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
-
+library(maps)
 
 # current host of this file at:
-fooddatafile = "~/git/misc-analyses/olive_v_butter/data/FoodBalanceSheets_E_All_Data.csv"
+fooddatafile = "data/FoodBalanceSheets_E_All_Data_2021-04-09.csv"
 # read as latin1 to later deal with cote d'ivoire
 fooddata = read.csv(fooddatafile, header=TRUE, stringsAsFactors = FALSE, encoding="latin1")
 #head(fooddata)
 #unique(fooddata$Unit)
 #unique(fooddata$Area)
 
+# read tabular food definitions file, listing sub-items of some foods
+food_definitions_file = "data/fsb_item_descriptions_2021.tab"
+food_definitions = read.table(food_definitions_file, header=TRUE, sep="\t")
+
+################################################################################
 # these are summary items only
 is_not_item = c("Population", "Grand Total", "Animal Products", "Vegetal Products")
 
@@ -34,12 +39,12 @@ is_fish = c("Fish, Seafood",  "Freshwater Fish", "Meat, Aquatic Mammals",
             "Aquatic Products, Other",  "Aquatic Animals, Others" , "Aquatic Plants"  )
 
 is_plant = c("Cereals - Excluding Beer", "Wheat and products", 
-             "Rice (Milled Equivalent)" , "Barley and products",  "Maize and products",  
+             "Rice and products" , "Barley and products",  "Maize and products",  
              "Rye and products",  "Oats", "Millet and products",  "Sorghum and products",  
              "Cereals, Other", "Starchy Roots",  "Cassava and products", "Potatoes and products", 
              "Sweet potatoes", "Yams", "Roots, Other",  "Sugar Crops",  "Sugar cane",  
              "Sugar beet", "Pulses",  "Beans", "Peas", "Pulses, Other and products", 
-             "Treenuts", "Nuts and products", "Oilcrops",  "Soyabeans",  "Groundnuts (Shelled Eq)", 
+             "Treenuts", "Nuts and products", "Oilcrops",  "Soyabeans",  "Groundnuts", 
              "Sunflower seed", "Rape and Mustardseed",  "Cottonseed",  "Coconuts - Incl Copra",
              "Sesame seed", "Palm kernels", 
              "Vegetables",  "Olives (including preserved)", 
@@ -127,8 +132,9 @@ worldpolygons = map_data("world")
 #unique(worldpolygons$region)
 
 
+################################################################################
 ui <- fluidPage(
-  titlePanel(h1("UN FAO Food Balance Sheets", style="color:#21632e; text-align:center; font-weight:bold;"), windowTitle="UN FAO Food Balance Sheets"),
+  titlePanel(h1("UN FAO Food Balance Sheets v1.1", style="color:#21632e; text-align:center; font-weight:bold;"), windowTitle="UN FAO Food Balance Sheets"),
   verticalLayout(
     fluidRow(
       column(4,
@@ -144,44 +150,45 @@ ui <- fluidPage(
                          max = 180,
                          value = c(-180,180)
                         ),
-             h5(strong("Save current map view as PDF")),
-             downloadButton("printpdf", label = "Print")
-             ), # end column
-      column(4,
-             selectInput("year", "Year", 
+             selectInput("year", "Year (on map and plot)", 
                          choices = list("2018" = "Y2018",
                                         "2017" = "Y2017",
                                         "2016" = "Y2016",
                                         "2015" = "Y2015",
                                         "2014" = "Y2014"
-                                        ),
+                                        ), 
                          selected="Y2018"
-             ),
-             selectInput("itemType", "Food item type", 
+                         )
+             ), # end column
+      column(4,
+
+             selectInput("itemType", "Food item type (on map, plot and table)", 
                          choices = all_items_food_only
                          ),
-             selectInput("elementType", "Measurement", 
+             selectInput("elementType", "Measurement (on map, plot and table)", 
                          choices = valid_element_types
-                        )
+                        ),
+             selectInput("chosenCountry", "Country or region (to show on table)", 
+                         choices = countries_w_data,
+                         selected = "European Union (excluding UK)"
+             )
              #helpText("Note: Net food = imports + prod - exports - feed")
              ), # end column
       column(4,
-             radioButtons("tableformat", "Show table of",
+             radioButtons("tableformat", "Show table of:",
                           choices = list("Item + Measure (for all countries)" = "itemelement",
                                          "Item + Country (for all measures)" = "itemcountry",
                                          "Measure + Country (for all items)" = "countrymeasure"
-                          )
-             ),
-             radioButtons("tablesorting", "Sort table by",
+                                         )
+                          ),
+             radioButtons("tablesorting", "Sort table by:",
                           choices = list("Alphabetical by country/region" = "alphabetical",
                                          "Sorted by value descending" = "sortdescend",
                                          "Sorted by value ascending" = "sortascend"
-                          )
-             ),
-             selectInput("chosenCountry", "Country or region to display tabular data", 
-                         choices = countries_w_data,
-                         selected = "European Union (excluding UK)"
-                         )
+                                         )
+                          ),
+             h5(strong("Save current map view as PDF")),
+             downloadButton("printpdf", label = "Print")
              )
     ), # end fluidRow
 
@@ -194,6 +201,7 @@ ui <- fluidPage(
               plotOutput(outputId = "rankedBarplot",
                          height="200px"
                  ),
+              htmlOutput(outputId = "foodDesc"),
               h3("Country or region data:", style="color:#21632e"),
               p("Note: all units are in 1000 tonnes, i.e. M kg"),
               tableOutput("countryInfo"),
@@ -208,7 +216,7 @@ ui <- fluidPage(
               p("For the first version, the dataset from the UN was filtered to display only seafood, 
                 but the second version of the app was modified to include all food items."),
               p("Source code for this app can be found here:"),
-              a("https://github.com/wrf/misc-analyses/tree/master/fisheries", href="https://github.com/wrf/misc-analyses/tree/master/fisheries"),
+              a("https://github.com/wrf/misc-analyses/tree/master/olive_v_butter", href="https://github.com/wrf/misc-analyses/tree/master/olive_v_butter"),
               br(), br(),
               p("For all measures, units are in 1000 tonnes, or M kg, or properly in gigagrams - Gg. 
                 One tonne of water, 1000kg, would be a 1m cube. 
@@ -217,7 +225,7 @@ ui <- fluidPage(
               p("To download the raw data from the UN FAO Statistics Division, go to:"),
               a("www.fao.org/faostat/en/#data/FBS", href="https://www.fao.org/faostat/en/#data/FBS"),
               br(), br(),
-              p("App created by WRF, last modified by WRF 2021-05-24"),
+              p("App created by WRF, last modified by WRF 2021-06-09"),
               br()
     ) # end mainPanel
   ) # end verticalLayout
@@ -227,6 +235,15 @@ ui <- fluidPage(
 server <- function(input, output) {
   #output$showingWhat <- renderPrint({ sub("_2017_Gg","",input$displaytype) })
   
+  output$foodDesc <- renderUI({
+    item_def_desc = food_definitions[match(input$itemType, food_definitions$item),3]
+    if ( is.na(item_def_desc) ){
+      reformat_desc = input$itemType # do nothing
+    } else if (item_def_desc != ""){
+      reformat_desc = gsub("Default composition: ", "", item_def_desc)
+      HTML(paste( input$itemType, "includes:<br/>", reformat_desc) )
+    }
+  })
   
   output$rankedBarplot <- renderPlot({
     # only display actual countries
@@ -257,7 +274,7 @@ server <- function(input, output) {
                            breaks = color_bins,
                            na.value="gray70", trans = "log10") +
       geom_bar( stat="identity", show.legend = FALSE,
-                aes(reorder(region,.data[[input$year]]),.data[[input$year]], fill=.data[[input$year]]) )
+                aes(reorder(region, .data[[input$year]]), .data[[input$year]], fill=.data[[input$year]]) )
     #, 
   })
   
@@ -296,12 +313,13 @@ server <- function(input, output) {
             legend.justification = "left") +
       scale_fill_gradientn(colours = color_set, 
                            breaks = color_bins,
-                           na.value="gray70", trans = "log10") +
+                           na.value="gray70", trans = "log10",
+                           oob = scales::squish_infinite) +
       # possibly add oob = scales::squish_infinite
       labs(x=NULL, y=NULL, fill="Quantity\n(M kg)",
            title=full_title,
            #subtitle= paste("showing:", input$itemType ),
-           caption="Data from UN Food and Agriculture Organization (FAO) 2017\nwww.fao.org/faostat/en/#data/FBS") +
+           caption="Data from UN Food and Agriculture Organization (FAO) 2021\nwww.fao.org/faostat/en/#data/FBS") +
       geom_polygon( aes(x=long, y = lat, group = group, fill=filldata), colour="#ffffff")
     foodgg
   })
