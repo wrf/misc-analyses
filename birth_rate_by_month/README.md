@@ -49,6 +49,8 @@ Overall, the birth trend is different from Germany and Austria, with a sharp spi
 ![UNdata_Export_20210419_scand_by_year.png](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/UNdata_Export_20210419_scand_by_year.png)
 
 ## Tropics ##
+Cuba is a good example of a tropical pattern country, showing a very low springtime birth rate, and high autumn birth rate, reflecting low conceptions in summertime. Other countries or regions with this pattern include other Caribbean countries like the Bahamas, Barbados, Jamaica, Martinique, Suriname, or Trinidad, other tropical areas like Hong Kong and Macau, and even some Mediterranean countries like Cyprus or Israel.
+
 ![Cuba.UNdata_20210419.png](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/Cuba.UNdata_20210419.png)
 
 ### Notes ###
