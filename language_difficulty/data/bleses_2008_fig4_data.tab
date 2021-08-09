@@ -1,0 +1,9 @@
+age_months	DK_danish	SW_swedish	NL_dutch	EN_UK	EN_US	ES_MX	ES_ES	GL_galician	EU_basque	FR_french	HR_croatian	IT_italian	FI_finnish
+8	0	0	0	NA	0	0	0	0	0	0	4	NA	NA
+9	0	0	0	NA	1	1	0	1	0	0	6	0	NA
+10	0	1	0	NA	3	3	2	3	0	1	10	0	NA
+11	1	2	1	NA	3	3	2	4	0.5	2	14	1.1406	NA
+12	3	4	3	0	5	7	3.5293	8	2	4	20	3.3142	3.5293
+13	5	6	6	8	11	8	8	16.528	2	7	22	6	6.2626
+14	7	9	10.5022	4	17	8	11	9	5	5.5308	25	9	10
+15	9	12.4605	16	12	18	12	18	23	7	10	27	13.3214	NA
