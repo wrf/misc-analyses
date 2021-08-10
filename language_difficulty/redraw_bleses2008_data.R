@@ -65,7 +65,28 @@ legend(8,30, legend=country_list, bty='n', lwd=6, col=colorset_fig1, pch=pointse
 dev.off()
 
 
-#
 
 
+# figure 7
+fig7data_file = "~/git/misc-analyses/language_difficulty/data/bleses_2008_fig7_data.tab"
+fig7data = read.table(fig7data_file, header=TRUE, sep="\t")
 
+# reassign names and symbols
+country_list = c("Danish", "Swedish", "Dutch", "UK-english", "US-english", "MX-spanish", "ES-spanish", "Galician", "Hebrew", "French", "Croatian", "Italian", "Finnish")
+# point 13 is changed to 11
+pointset_fig1 = c(1,2,4,5,6,8,9,12,11,15,17,18,25)
+
+pdf(file="~/git/misc-analyses/language_difficulty/images/bleses_2008_fig7_data.pdf", width=8, height=7)
+par(mar=c(4.5,4.5,3,1))
+plot(0,0, type="n", xlim=c(16,30), ylim=c(0,600), xlab="Age (months)", ylab="Number of items", main="Fig 7 from Bleses 2008: Median vocabulary production scores", frame.plot=FALSE, cex.axis=1.4, cex.lab=1.4)
+for (i in 2:14){
+  word_comp_data_raw = fig7data[,i]
+  word_comp_not_na = !is.na(word_comp_data_raw)
+  lines(fig7data[,1][word_comp_not_na], fig7data[,i][word_comp_not_na], lwd=10, col=colorset_fig1[i-1])
+  points(fig7data[,1][word_comp_not_na], fig7data[,i][word_comp_not_na], pch=pointset_fig1[i-1], col=colorset_fig1[i-1], cex=2)
+}
+legend(16,600, legend=country_list, bty='n', lwd=6, col=colorset_fig1, pch=pointset_fig1, cex=1.1, pt.cex=1.4, pt.lwd=1)
+dev.off()
+
+
+###

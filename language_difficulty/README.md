@@ -66,7 +66,9 @@ The analyses below only deal with spoken language, though potentially parallels 
 
 The authors note that between ages 2-3, much of this trend disappears, as children across most languages begin to acquire more extensive vocabulary at a similar pace. However, they do not propose a reason for the relatively high performance of [Croatian](https://en.wikipedia.org/wiki/Croatian_language) children.
 
-They also mention the systematically slower progression of children between UK English and US English. One reason for this may be differences in pronunciation between dialects, resulting in difficulties for British children. For example, the word "[water](https://en.wiktionary.org/wiki/water)" has different pronunciations in different English dialects, ranging from US /woter/, all letters pronounced), Australian or [UK RP](https://en.wikipedia.org/wiki/Received_Pronunciation) /wo:ta/, r dropped, or other UK /wo:?a/, t as a glottal stop, r dropped, sounding closer to two vowels in a row. Such words may be harder to parse at a young age.
+![bleses_2008_fig7_data.png](https://github.com/wrf/misc-analyses/blob/master/language_difficulty/images/bleses_2008_fig7_data.png)
+
+They also mention the systematically slower progression of children between UK English and US English. One reason for this may be differences in pronunciation between dialects, resulting in difficulties for British children. For example, the word "[water](https://en.wiktionary.org/wiki/water)" has different pronunciations in different English dialects, ranging from US /woter/, all letters pronounced, Australian or [UK RP](https://en.wikipedia.org/wiki/Received_Pronunciation) /wo:ta/, r dropped, or other UK /wo:?a/, t as a glottal stop, r dropped, sounding closer to two vowels in a row. Such words may be harder to parse at a young age.
 
 
 
