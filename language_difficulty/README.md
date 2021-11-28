@@ -71,5 +71,8 @@ The authors note that between ages 2-3, much of this trend disappears, as childr
 They also mention the systematically slower progression of children between UK English and US English. One reason for this may be differences in pronunciation between dialects, resulting in difficulties for British children. For example, the word "[water](https://en.wiktionary.org/wiki/water)" has different pronunciations in different English dialects, ranging from US /woter/, all letters pronounced, Australian or [UK RP](https://en.wikipedia.org/wiki/Received_Pronunciation) /wo:ta/, r dropped, or other UK /wo:?a/, t as a glottal stop, r dropped, sounding closer to two vowels in a row. Such words may be harder to parse at a young age.
 
 
+## Increasing difficulty in learning kanji ##
+For the [Kyouiku Kanji](https://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji), the strokes per character increase on average with each school year. If this equates to difficulty in remembering the characters, then there is a rapid increase in difficulty. The most strokes per character in the first grade is 12, for [mori / forest](https://jisho.org/search/%E6%A3%AE%20%23kanji), while by 2nd grade, the max stroke count jumps to 18, for both [kao / face](https://jisho.org/search/%E9%A1%94%20%23kanji) and [you / weekday](https://jisho.org/search/%E6%9B%9C%20%23kanji).
 
+![kanji_by_school_year_w_outliers.png](https://github.com/wrf/misc-analyses/blob/master/language_difficulty/images/kanji_by_school_year_w_outliers.png)
 

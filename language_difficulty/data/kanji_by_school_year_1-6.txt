@@ -1,0 +1,1027 @@
+grade	number	Kanji	Strokes	Meaning	Onyomi	Kunyomi
+1	1	一	1	one	ichi, itsu	hito-tsu
+1	2	二	2	two	ni, ji	futa-tsu
+1	3	三	3	three	san	mit-tsu
+1	4	四	5	four	shi	yot-tsu, yon
+1	5	五	4	five	go	itsu-tsu
+1	6	六	4	six	roku	mut-tsu
+1	7	七	2	seven	shichi	nana-tsu
+1	8	八	2	eight	hachi	yat-tsu
+1	9	九	2	nine	ku, kyū	kokono-tsu
+1	10	十	2	ten	jū	tō
+1	11	百	6	hundred	hyaku	momo
+1	12	千	3	thousand	sen	chi
+1	13	上	3	top, above	jō	ue
+1	14	下	3	bottom, below	ka, ge	shita, shimo, moto
+1	15	左	5	left	sa	hidari
+1	16	右	5	right	u, yū	migi
+1	17	中	4	inside, middle	chū, jū	naka
+1	18	大	3	large	dai, tai	ō-kii
+1	19	小	3	small	shō	chii-sai, ko, o
+1	20	月	4	month; moon	gatsu, getsu	tsuki
+1	21	日	4	day; sun	nichi, jitsu	hi, ka
+1	22	年	6	year	nen	toshi
+1	23	早	6	early	sō, sa	haya-i
+1	24	木	4	tree	moku, boku	ki
+1	25	林	8	woods	rin	hayashi
+1	26	山	3	mountain	san, zan	yama
+1	27	川	3	river	sen	kawa
+1	28	土	3	soil	do, to	tsuchi
+1	29	空	8	sky	kū	sora, a-ku, kara
+1	30	田	5	rice field	den	da, ta
+1	31	天	4	heaven, sky	ten	ame, ama
+1	32	生	5	living, birth, raw	sei, shō	i-kiru, u-mu, nama
+1	33	花	7	flower	ka	hana
+1	34	草	9	grass	sō	kusa
+1	35	虫	6	insect	chū	mushi
+1	36	犬	4	dog	ken	inu
+1	37	人	2	person	jin, nin	hito
+1	38	名	6	name	mei, myō	na
+1	39	女	3	female	jo, nyo	onna
+1	40	男	7	male	dan, nan	otoko
+1	41	子	3	child	shi, su	ko
+1	42	目	5	eye	moku	me
+1	43	耳	6	ear	ji, ni	mimi
+1	44	口	3	mouth	kou	kuchi
+1	45	手	4	hand	shu	te
+1	46	足	7	foot	soku	ashi
+1	47	見	7	see	ken, gen	mi-ru
+1	48	音	9	sound	on	ne, oto
+1	49	力	2	power	riki, ryoku	chikara
+1	50	気	6	spirit; air	ki, ke	iki
+1	51	円	4	yen; circle	en	maru
+1	52	入	2	enter	nyū	hai-ru, i-ru
+1	53	出	5	exit	shutsu	de-ru
+1	54	立	5	stand up	ritsu	ta-tsu
+1	55	休	6	rest	kyū	yasu-mu
+1	56	先	6	previous	sen	saki
+1	57	夕	3	evening	seki	yū
+1	58	本	5	book	hon	moto
+1	59	文	4	text	bun, mon	fumi
+1	60	字	6	character	ji	aza
+1	61	学	8	study	gaku	mana-bu
+1	62	校	10	school	kō	kase
+1	63	村	7	village	son	mura
+1	64	町	7	town	chō	machi
+1	65	森	12	forest	shin	mori
+1	66	正	5	correct	sei, shō	tada-shii, masa
+1	67	水	4	water	sui	mizu
+1	68	火	4	fire	ka	hi
+1	69	玉	5	ball	gyoku	tama
+1	70	王	4	king	ou	kimi
+1	71	石	5	stone	seki, koku	ishi
+1	72	竹	6	bamboo	chiku	take
+1	73	糸	6	thread	shi	ito
+1	74	貝	7	shellfish	bai	kai
+1	75	車	7	vehicle	sha	kuruma
+1	76	金	8	gold, money	kin	kane, kana
+1	77	雨	8	rain	u	ame, ama
+1	78	赤	7	red	seki	aka
+1	79	青	8	blue	sei, shō	ao
+1	80	白	5	white	haku	shiro, shira
+2	81	数	13	number, count	sū	kazu
+2	82	多	6	many, much	ta	oo-i
+2	83	少	4	a few, a little	shō	suku-nai, suko-shi
+2	84	万	3	ten thousand	ban, man	yorozu
+2	85	半	5	half	han	naka-ba
+2	86	形	7	shape	kei, gyō	katachi
+2	87	太	4	thick	ta	futo-i
+2	88	細	11	thin	sai	hoso-i
+2	89	広	5	wide	kō	hiro-i
+2	90	長	8	long; leader	chō	naga-i
+2	91	点	9	point	ten	bochi
+2	92	丸	3	circle	gan	maru
+2	93	交	6	intersect	kou	maji-waru
+2	94	光	6	light	kou	hikari
+2	95	角	7	corner; horn	kaku	kado, tsuno, sumi
+2	96	計	9	measure	kei	haka-ru
+2	97	直	8	straight; fix	choku, jiki	tada-chi, nao-su
+2	98	線	15	line	sen	suji
+2	99	矢	5	arrow	shi	ya
+2	100	弱	10	weak	jaku	yowa-i
+2	101	強	11	strong	kyō	tsuyo-i
+2	102	高	10	high	kō	taka-i
+2	103	同	6	same	dō	ona-ji
+2	104	親	16	parent	shin	oya
+2	105	母	5	mother	bo	haha, kaa
+2	106	父	4	father	fu	chichi, tou
+2	107	姉	8	older sister	shi	ane
+2	108	兄	5	older brother	kei, kyō	ani
+2	109	弟	7	younger brother	tei, dai	otōto
+2	110	妹	8	younger sister	mai	imōto
+2	111	自	6	oneself	ji, shi	mizuka-ra
+2	112	友	4	friend	yū	tomo
+2	113	体	7	body	tai	karada
+2	114	毛	4	hair	mou	ke
+2	115	頭	16	head	tou	atama
+2	116	顔	18	face	gan	kao
+2	117	首	9	neck	shu	kubi
+2	118	心	4	heart	shin	kokoro
+2	119	時	10	time	ji	toki
+2	120	曜	18	weekday	yō	
+2	121	朝	12	morning	chō	asa
+2	122	昼	9	daytime	chū	hiru
+2	123	夜	8	night	ya	yoru
+2	124	分	4	minute; understand	fun, bun	wa-karu
+2	125	週	11	week	shū	
+2	126	春	9	spring	shun	haru
+2	127	夏	10	summer	ka	natsu
+2	128	秋	9	autumn	shū	aki
+2	129	冬	5	winter	tō	fuyu
+2	130	今	4	now	kon	ima
+2	131	新	13	new	shin	atara-shii
+2	132	古	5	old	ko	furu-i
+2	133	間	12	interval	kan, ken	ma, aida
+2	134	方	4	direction	hō	kata
+2	135	北	5	north	hoku	kita
+2	136	南	9	south	nan	minami
+2	137	東	8	east	tou	higashi, azuma
+2	138	西	6	west	sei, sai	nishi
+2	139	遠	13	far	en	tō-i
+2	140	近	7	near	kin	chika-i
+2	141	前	9	before	zen	mae
+2	142	後	9	after	go, kō	nochi, ushi-ro, ato
+2	143	内	4	inside	nai	uchi
+2	144	外	5	outside	gai, ge	soto, hoka, hazu-su
+2	145	場	12	place	jou	ba
+2	146	地	6	ground	chi, ji	
+2	147	国	8	country	koku	kuni
+2	148	園	13	garden	en	sono
+2	149	谷	7	valley	koku	tani
+2	150	野	11	field	ya	no
+2	151	原	10	meadow	gen	hara
+2	152	里	7	hometown	ri	sato
+2	153	市	5	city	shi	ichi
+2	154	京	8	capital	kyou, kei	miyako
+2	155	風	9	wind; -like	fū	kaze
+2	156	雪	11	snow	setsu	yuki
+2	157	雲	12	cloud	un	kumo
+2	158	池	6	pond	chi	ike
+2	159	海	9	sea	kai	umi
+2	160	岩	8	rock	gan	iwa
+2	161	星	9	star	sei	hoshi
+2	162	室	9	room	shitsu	muro
+2	163	戸	4	door	ko	to, be
+2	164	家	10	house	ka, ke	ie
+2	165	寺	6	Buddhist temple	ji	tera
+2	166	通	10	pass through, commute	tsū	tō-ru, kayo-u
+2	167	門	8	gates	mon	kado
+2	168	道	12	road	dou	michi
+2	169	話	13	talk	wa	hanashi, hana-su
+2	170	言	7	say	gen, gon	i-u, koto
+2	171	答	12	answer	tou	kota-eru
+2	172	声	7	voice	sei	koe
+2	173	聞	14	hear	bun, mon	ki-ku
+2	174	語	14	language	go	kata-ru
+2	175	読	14	read	doku	yo-mu
+2	176	書	10	write	sho	ka-ku
+2	177	記	10	record	ki	shiru-su
+2	178	紙	10	paper	shi	kami
+2	179	画	8	brush stroke	ga, kaku	
+2	180	絵	12	picture	kai, e	
+2	181	図	7	drawing	zu	haka-ru
+2	182	工	3	craft	kō, ku	
+2	183	教	11	teach	kyō	oshi-eru
+2	184	晴	12	clear	sei	hare
+2	185	思	9	think	shi	omo-u
+2	186	考	6	consider	kō	kanga-eru
+2	187	知	8	know	chi	shi-ru
+2	188	才	3	ability	sai, zai	wazukani, zae
+2	189	理	11	reason	ri	kotowari
+2	190	算	14	calculate	san	
+2	191	作	7	make	saku	tsuku-ru
+2	192	元	4	origin	gen, gan	moto
+2	193	食	9	eat	shoku	ta-beru, ku-u
+2	194	肉	6	meat	niku	
+2	195	馬	10	horse	ba	uma, ma
+2	196	牛	4	cow	gyū	ushi
+2	197	魚	11	fish	gyo	uo, sakana
+2	198	鳥	11	bird	chō	tori
+2	199	羽	6	feather	u	ha, hane
+2	200	鳴	14	chirp	mei	na-ku
+2	201	麦	7	wheat	baku	mugi
+2	202	米	6	rice	bei, mai	kome
+2	203	茶	9	tea	cha, sa	
+2	204	色	6	colour	shoku	iro
+2	205	黄	11	yellow	ō	ki
+2	206	黒	11	black	koku	kuro
+2	207	来	7	come	rai	ku-ru
+2	208	行	6	go	kou, gyō	i-ku, yu-ku, okona-u
+2	209	帰	10	return	ki	kae-ru
+2	210	歩	8	walk	ho, fu, bu	aru-ku, ayu-mu
+2	211	走	7	run	sou	hashi-ru
+2	212	止	4	stop	shi	to-maru
+2	213	活	9	active	katsu	i-kiru
+2	214	店	8	store	ten	mise
+2	215	買	12	buy	bai	ka-u
+2	216	売	7	sell	bai	u-ru
+2	217	午	4	noon	go	uma
+2	218	汽	7	steam	ki	
+2	219	弓	3	bow	kyū	yumi
+2	220	回	6	number of times; revolve	kai	mawa-ru
+2	221	会	6	meet	kai, e	a-u
+2	222	組	11	team	so	kumi
+2	223	船	11	ship	sen	fune
+2	224	明	8	bright	mei	aka-rui
+2	225	社	7	company	sha	yashiro
+2	226	切	4	cut	setsu	ki-ru
+2	227	電	13	electricity	den	inazuma
+2	228	毎	6	every	mai	goto
+2	229	合	6	fit	gou	a-u
+2	230	当	6	this; hit	tō	a-taru
+2	231	台	5	pedestal	dai, tai	
+2	232	楽	13	music; pleasure	gaku, raku	tano-shii
+2	233	公	4	public	kou	ōyake
+2	234	引	4	pull	in	hi-ku
+2	235	科	9	section	ka	
+2	236	歌	14	song	ka	uta
+2	237	刀	2	sword	tou	katana
+2	238	番	12	number	ban	
+2	239	用	5	use	you	mochi-iru
+2	240	何	7	what	ka	nani, nan
+3	241	丁	2	town section; measure word	chō	hinoto
+3	242	世	5	generation	sei, se	yo
+3	243	両	6	both	ryō	teru, futatsu
+3	244	主	5	master; main	shu	nushi, omo
+3	245	乗	9	ride	jō	no-ru
+3	246	予	4	beforehand	yo	arakaji-me
+3	247	事	8	untangible thing	ji	koto
+3	248	仕	5	serve	shi	tsuka-eru
+3	249	他	5	other	ta	hoka
+3	250	代	5	substitute	dai, tai	ka-waru, yo
+3	251	住	7	dwell	jū	su-mu
+3	252	使	8	use	shi	tsuka-u
+3	253	係	9	person in charge	kei	kakari, kaka-ru
+3	254	倍	10	double	bai	
+3	255	全	6	whole	zen	matta-ku
+3	256	具	8	tool	gu	sona-eru, tsubusa-ni
+3	257	写	5	copy	sha	utsu-su
+3	258	列	6	row	retsu	
+3	259	助	7	help	jo	tasu-keru
+3	260	勉	10	diligence	ben	tsuto-meru
+3	261	動	11	move	dō	ugo-ku
+3	262	勝	12	win	shō	ka-tsu
+3	263	化	4	change	ka	ba-keru
+3	264	区	4	ward	ku	
+3	265	医	7	doctor	i	iya-su, i-suru
+3	266	去	5	leave	kyo, ko	sa-ru
+3	267	反	4	anti-	han	so-ru
+3	268	取	8	take	shu	to-ru
+3	269	受	8	receive	ju	u-keru
+3	270	号	5	number	gō	yobina, sake-bu
+3	271	向	6	face	kō	mu-kau
+3	272	君	7	you; monarch	kun	kimi
+3	273	味	8	flavor	mi	aji, aji-wau
+3	274	命	8	fate, life	mei	inochi
+3	275	和	8	harmony; Japanese	wa	yawa-ragu, nago-yaka
+3	276	品	9	article	hin	shina
+3	277	員	10	employee	in	
+3	278	商	11	commerce	shō	
+3	279	問	11	question	mon	to-u, ton
+3	280	坂	7	slope	han	saka
+3	281	央	5	center	ō	
+3	282	始	8	begin	shi	haji-meru
+3	283	委	8	committee	i	yuda-neru
+3	284	守	6	protect	shu	mamo-ru
+3	285	安	6	cheap; calm	an	yasu-i
+3	286	定	8	determine	tei, jō	sada-meru
+3	287	実	8	fruit; realization	jitsu	mi, mino-ru
+3	288	客	9	guest	kyaku	
+3	289	宮	10	Shinto shrine; prince	kyū, gū	miya
+3	290	宿	11	inn	shuku	yado, yado-ru
+3	291	寒	12	cold (weather)	kan	samu-i
+3	292	対	7	opposite, against	tai, tsui	aite, soro-i
+3	293	局	7	office	kyoku	tsubone
+3	294	屋	9	roof	oku	ya
+3	295	岸	8	shore	gan	kishi
+3	296	島	10	island	tō	shima
+3	297	州	6	state; province	shū	su
+3	298	帳	11	notebook	chō	tobari
+3	299	平	5	flat	hei, byō	tai-ra, hira
+3	300	幸	8	happiness	kō	saiwa-i, shiawa-se
+3	301	度	9	degree	do	tabi
+3	302	庫	10	warehouse	ko, ku	kura
+3	303	庭	10	yard	tei	niwa
+3	304	式	6	style; ceremony; numerical formula	shiki	
+3	305	役	7	role	yaku	
+3	306	待	9	wait	tai	ma-tsu
+3	307	急	9	hurry	kyū	iso-gu
+3	308	息	10	breath	soku	iki
+3	309	悪	11	bad	aku	waru-i
+3	310	悲	12	sad	hi	kana-shii
+3	311	想	13	thought	sō	
+3	312	意	13	idea	i	
+3	313	感	13	feel	kan	kan-jiru
+3	314	所	8	place	sho	tokoro
+3	315	打	5	hit	da	u-tsu
+3	316	投	7	throw	tō	na-geru
+3	317	拾	9	pick up	shū	hiro-u
+3	318	持	9	hold	ji	mo-tsu
+3	319	指	9	finger; point	shi	yubi, sa-su
+3	320	放	8	release	hō	hana-su
+3	321	整	16	organize	sei	totono-eru
+3	322	旅	10	trip	ryo	tabi
+3	323	族	11	tribe	zoku	
+3	324	昔	8	long ago	seki, shaku	mukashi
+3	325	昭	9	shine	shō	
+3	326	暑	12	hot	sho	atsu-i
+3	327	暗	13	dark	an	kura-i
+3	328	曲	6	melody; curve	kyoku	ma-garu
+3	329	有	6	possess	yū	a-ru
+3	330	服	8	clothes	fuku	
+3	331	期	12	period of time	ki	
+3	332	板	8	board	han, ban	ita
+3	333	柱	9	pillar	chū	hashira
+3	334	根	10	root	kon	ne
+3	335	植	12	plant	shoku	u-eru
+3	336	業	13	business	gyō	
+3	337	様	14	appearance	yō	sama
+3	338	横	15	horizontal	ō	yoko
+3	339	橋	16	bridge	kyō	hashi
+3	340	次	6	next	ji	tsugi, tsu-gu
+3	341	歯	12	tooth	shi	ha
+3	342	死	6	death	shi	shi-nu
+3	343	氷	5	ice	hyō	kōri
+3	344	決	7	decide	ketsu	ki-meru
+3	345	油	8	oil	yu	abura
+3	346	波	8	wave	ha	nami
+3	347	注	8	pour	chū	soso-gu
+3	348	泳	8	swim	ei	oyo-gu
+3	349	洋	9	ocean	yō	
+3	350	流	10	stream	ryū	naga-reru
+3	351	消	10	extinguish	shō	ki-eru, ke-su
+3	352	深	11	deep	shin	fuka-i
+3	353	温	12	warm	on	atata-kai
+3	354	港	12	harbor	kō	minato
+3	355	湖	12	lake	ko	mizūmi
+3	356	湯	12	hot water	tō	yu
+3	357	漢	13	Chinese	kan	
+3	358	炭	9	charcoal	tan	sumi
+3	359	物	8	(tangible) thing	butsu, motsu	mono
+3	360	球	11	ball	kyū	tama
+3	361	由	5	reason	yū, yu	yoshi
+3	362	申	5	say	shin	mō-su
+3	363	界	9	world	kai	
+3	364	畑	9	farm		hata, hatake
+3	365	病	10	sick	byō	yamai
+3	366	発	9	departure	hatsu	
+3	367	登	12	climb	tō, to	nobo-ru
+3	368	皮	5	skin	hi	kawa
+3	369	皿	5	dish	bei	sara
+3	370	相	9	mutual	sō	ai
+3	371	県	9	prefecture	ken	ka-keru
+3	372	真	10	true	shin	ma
+3	373	着	12	wear	chaku	ki-ru, tsu-ku
+3	374	短	12	short	tan	mijika-i
+3	375	研	9	sharpen	ken	to-gu
+3	376	礼	5	salute	rei	
+3	377	神	9	deity	shin, jin	kami
+3	378	祭	11	festival	sai	matsu-ri
+3	379	福	13	luck	fuku	
+3	380	秒	9	second	byō	
+3	381	究	7	research	kyū	kiwa-meru
+3	382	章	11	chapter	shō	
+3	383	童	12	juvenile	dō	warabe
+3	384	笛	11	flute	teki	fue
+3	385	第	11	ordinal	dai	
+3	386	筆	12	writing brush	hitsu	fude
+3	387	等	12	class	tō	hito-shii
+3	388	箱	15	box	sō	hako
+3	389	級	9	rank	kyū	
+3	390	終	11	end	shū	o-waru, o-eru
+3	391	緑	14	green	ryoku	midori
+3	392	練	14	practice	ren	ne-ru
+3	393	羊	6	sheep	yō	hitsuji
+3	394	美	9	beauty	bi	utsuku-shii
+3	395	習	11	learn	shū	nara-u
+3	396	者	8	someone	sha	mono
+3	397	育	8	nurture	iku	soda-tsu
+3	398	苦	8	suffer; bitter	ku	kuru-shii, niga-i
+3	399	荷	10	luggage	ka	ni
+3	400	落	12	fall	raku	o-chiru, o-tosu
+3	401	葉	12	leaf	yō	ha
+3	402	薬	16	medicine	yaku	kusuri
+3	403	血	6	blood	ketsu	chi
+3	404	表	8	express	hyō	omote, arawa-su
+3	405	詩	13	poem	shi	uta
+3	406	調	15	tone; find	chō	shira-beru
+3	407	談	15	discuss	dan	
+3	408	豆	7	beans	tō, zu	mame
+3	409	負	9	lose	fu	ma-keru, o-u
+3	410	起	10	awaken	ki	o-kiru
+3	411	路	13	path	ro	ji
+3	412	身	7	body	shin	mi
+3	413	転	11	revolve	ten	koro-bu
+3	414	軽	12	light	kei	karu-i
+3	415	農	13	agriculture	nō	
+3	416	返	7	repay	hen	kae-su
+3	417	追	9	follow	tsui	o-u
+3	418	送	9	send	sō	oku-ru
+3	419	速	10	fast	soku	haya-i
+3	420	進	11	progress	shin	susu-mu
+3	421	遊	12	play	yū	aso-bu
+3	422	運	12	carry	un	hako-bu
+3	423	部	11	part	bu	
+3	424	都	11	metropolis	to, tsu	miyako
+3	425	配	10	distribute	hai	kuba-ru
+3	426	酒	10	liquor	shu	sake, saka
+3	427	重	9	heavy, gravity; pile	jū, chō	omo-i, kasa-neru
+3	428	鉄	13	iron	tetsu	kurogane
+3	429	銀	14	silver	gin	shirogane
+3	430	開	12	open	kai	hira-ku, a-ku
+3	431	院	10	institution	in	
+3	432	陽	12	sun	yō	hi
+3	433	階	12	storey	kai	kizahashi
+3	434	集	12	gather	shū	atsu-maru
+3	435	面	9	surface	men	omote, tsura
+3	436	題	18	topic	dai	
+3	437	飲	12	drink	in	no-mu
+3	438	館	16	public building	kan	tate
+3	439	駅	14	station	eki	
+3	440	鼻	14	nose	bi	hana
+4	441	不	4	not	fu, bu	
+4	442	争	6	conflict	sō	araso-u
+4	443	付	5	attach	fu	tsu-ku
+4	444	令	5	orders	rei	
+4	445	以	5	since	i	
+4	446	仲	6	relationship	chū	naka
+4	447	伝	6	convey	den	tsuta-eru
+4	448	位	7	rank	i	kurai
+4	449	低	7	low	tei	hiku-i
+4	450	例	8	example	rei	tato-eru
+4	451	便	9	convenience; letter	ben, bin	tayo-ri
+4	452	信	9	trust	shin	
+4	453	倉	10	storage	sō	kura
+4	454	候	10	climate	kō	
+4	455	借	10	borrow	shaku	ka-riru
+4	456	停	11	halt	tei	to-maru, to-meru
+4	457	健	11	healthy	ken	suko-yaka
+4	458	側	11	side	soku	kawa
+4	459	働	13	work	dō	hatara-ku
+4	460	億	15	hundred million	oku	
+4	461	兆	6	portent; trillion	chō	kiza-shi
+4	462	児	7	offspring	ji, ni	ko
+4	463	共	6	together	kyō	tomo
+4	464	兵	7	soldier	hei, hyō	tsuwamono
+4	465	典	8	code	ten	
+4	466	冷	7	cool	rei	tsume-tai, hi-eru, sa-meru
+4	467	初	7	first	sho	hatsu, haji-me
+4	468	別	7	separate	betsu	waka-reru
+4	469	利	7	profit	ri	
+4	470	刷	8	printing	satsu	su-ru
+4	471	副	11	vice-	fuku	
+4	472	功	5	achievement	kō	
+4	473	加	5	add	ka	kuwa-eru
+4	474	努	7	toil	do	tsuto-meru
+4	475	労	7	labor	rō	negira-u
+4	476	勇	9	courage	yū	isa-mu
+4	477	包	5	wrap	hō	tsutsu-mu
+4	478	卒	8	graduate	sotsu	
+4	479	協	8	cooperation	kyō	
+4	480	単	9	simple	tan	
+4	481	博	12	wide knowledge; Dr.	haku	
+4	482	印	6	mark	in	shirushi
+4	483	参	8	participate	san	mai-ru
+4	484	史	5	history	shi	
+4	485	司	5	director	shi	
+4	486	各	6	each	kaku	ono-ono
+4	487	告	7	tell	koku	tsu-geru
+4	488	周	8	circumference	shū	mawa-ri
+4	489	唱	11	chant	shō	tona-eru
+4	490	喜	12	rejoice, joy	ki	yoroko-bu
+4	491	器	15	container	ki	utsuwa
+4	492	囲	7	surround	i	kako-u
+4	493	固	8	harden	ko	kata-maru
+4	494	型	9	model	kei	kata
+4	495	堂	11	public chamber	dō	
+4	496	塩	13	salt	en	shio
+4	497	士	3	gentleman	shi	
+4	498	変	9	change; strange	hen	ka-waru
+4	499	夫	4	husband	fu fū bu	otto
+4	500	失	5	lose	shitsu	ushina-u
+4	501	好	6	like	kō	su-ku, kono-mu
+4	502	季	8	seasons	ki	
+4	503	孫	10	grandchild	son	mago
+4	504	完	7	perfect	kan	
+4	505	官	8	government official	kan	
+4	506	害	10	harm	gai	
+4	507	察	14	guess	satsu	
+4	508	巣	11	nest	sō	su
+4	509	差	10	distinction	sa	
+4	510	希	7	hope	ki	mare
+4	511	席	10	seat	seki	
+4	512	帯	10	sash	tai	obi
+4	513	底	8	bottom	tei	soko
+4	514	府	8	urban prefecture	fu	
+4	515	康	11	ease	kō	
+4	516	建	9	build	ken	ta-teru
+4	517	径	8	diameter	kei	
+4	518	徒	10	junior	to	
+4	519	得	11	acquire	toku	e-ru
+4	520	必	5	inevitable	hitsu	kanara-zu
+4	521	念	8	thought	nen	
+4	522	愛	13	love	ai	
+4	523	成	6	become	sei	na-ru
+4	524	戦	13	war	sen	ikusa, tataka-u
+4	525	折	7	fold, break	setsu	o-ru
+4	526	挙	10	raise	kyo	a-geru
+4	527	改	7	reformation	kai	arata-meru
+4	528	救	11	salvation	kyū	suku-u
+4	529	敗	11	break, failure	hai	yabu-reru
+4	530	散	12	scatter	san	chi-ru
+4	531	料	10	fee	ryō	
+4	532	旗	14	flag	ki	hata
+4	533	昨	9	yesterday	saku	
+4	534	景	12	scenery	kei	
+4	535	最	12	superlative	sai	mo, motto-mo
+4	536	望	11	hope	bō	nozo-mu
+4	537	未	5	un-	mi	ima-da
+4	538	末	5	end	matsu	sue
+4	539	札	5	bill, plate, tag	satsu	fuda
+4	540	材	7	lumber, material	zai	
+4	541	束	7	bundle	soku	taba, tsuka
+4	542	松	8	pine	shō	matsu
+4	543	果	8	accomplish, fruit	ka	ha-tasu
+4	544	栄	9	prosperity	ei	saka-eru
+4	545	案	10	plan	an	
+4	546	梅	10	plum	bai	ume
+4	547	械	11	contraption	kai	
+4	548	極	12	poles	kyoku	kiwa-meru
+4	549	標	15	signpost	hyō	
+4	550	機	16	machine	ki	hata
+4	551	欠	4	lack	ketsu	ka-keru
+4	552	歴	14	curriculum	reki	
+4	553	残	10	remainder, left	zan	noko-ru
+4	554	殺	10	kill	satsu	koro-su
+4	555	毒	8	poison	doku	
+4	556	氏	4	surname, Mr.	shi	uji
+4	557	民	5	people	min	tami
+4	558	求	7	request	kyū	moto-mu
+4	559	治	8	govern	chi, ji	osa-meru, nao-ru
+4	560	法	8	method	hō	
+4	561	泣	8	cry	kyū	na-ku
+4	562	浅	9	shallow	sen	asa-i
+4	563	浴	10	bathe; bask	yoku	a-biru
+4	564	清	11	pure	sei, shō	kiyo-raka
+4	565	満	12	full	man	mi-chiru
+4	566	漁	14	fishing	ryō, gyo	asa-ru
+4	567	灯	6	lamp	tō	hi
+4	568	無	12	nothing	mu, bu	na-i
+4	569	然	12	so, although	zen, nen	shika-shi
+4	570	焼	12	bake	shō	ya-ku
+4	571	照	13	illuminate	shō	te-rasu
+4	572	熱	15	heat	netsu	atsu-i
+4	573	牧	8	pasture; breed	boku	maki
+4	574	特	10	special	toku	
+4	575	産	11	give birth	san	u-mu
+4	576	的	8	target	teki	mato
+4	577	省	9	government ministry; omit; look back	shō, sei	habu-ku
+4	578	祝	9	celebrate	shuku	iwa-u
+4	579	票	11	ballot	hyō	
+4	580	種	14	species; seed	shu	tane
+4	581	積	16	accumulate; pile	seki	tsu-mu
+4	582	競	20	emulate	kyō	kiso-u
+4	583	笑	10	laugh	shō	wara-u
+4	584	管	14	pipe	kan	kuda
+4	585	節	13	node	setsu	fushi
+4	586	粉	10	flour	fun	ko, kona
+4	587	紀	9	chronicle	ki	
+4	588	約	9	promise	yaku	
+4	589	結	12	tie	ketsu	musu-bu, yu-u
+4	590	給	12	salary	kyū	tama-u
+4	591	続	13	continue	zoku	tsuzu-ku
+4	592	置	13	put	chi	o-ku
+4	593	老	6	old man	rō	o-iru
+4	594	胃	9	stomach	i	
+4	595	脈	10	vein	myaku	
+4	596	腸	13	intestines	chō	harawata
+4	597	臣	7	retainer	shin	
+4	598	航	10	cruise	kō	
+4	599	良	7	good	ryō	yo-i
+4	600	芸	7	art	gei	
+4	601	芽	8	bud	ga	me
+4	602	英	8	England	ei	
+4	603	菜	11	vegetable	sai	na
+4	604	街	12	street, city	gai	machi
+4	605	衣	6	garment	i	koromo
+4	606	要	9	need	yō	i-ru
+4	607	覚	12	memorize	kaku	obo-eru, sa-meru
+4	608	観	18	observe	kan	mi-ru
+4	609	訓	10	instruction	kun	
+4	610	試	13	test	shi	kokoro-miru, tame-su
+4	611	説	14	theory	setsu	to-ku
+4	612	課	15	section	ka	
+4	613	議	20	deliberation	gi	
+4	614	象	12	elephant; figure	zō, shō	
+4	615	貨	11	currency; cargo	ka	
+4	616	貯	12	savings	cho	ta-meru
+4	617	費	12	expense	hi	tsui-yasu
+4	618	賞	15	prize	shō	
+4	619	軍	9	army	gun	
+4	620	輪	15	wheel	rin	wa
+4	621	辞	13	resign; speech; encyclopedia	ji	kotoba, ya-meru
+4	622	辺	5	environs	hen	ata-ri
+4	623	連	10	take along	ren	tsu-reru, tsura-neru
+4	624	達	12	attain	tatsu	tachi
+4	625	選	15	choose	sen	era-bu
+4	626	郡	10	county	gun	
+4	627	量	12	quantity	ryō	
+4	628	録	16	transcript	roku	
+4	629	鏡	19	mirror	kyō	kagami
+4	630	関	14	related	kan	seki
+4	631	陸	11	land	riku	
+4	632	隊	12	squad	tai	
+4	633	静	14	quiet	sei	shizu-ka
+4	634	順	12	obey	jun	
+4	635	願	19	request	gan	nega-u
+4	636	類	18	sort	rui	
+4	637	飛	9	fly	hi	to-bu
+4	638	飯	12	meal	han	meshi
+4	639	養	15	foster	yō	yashina-u
+4	640	験	18	verify	ken	
+5	641	久	3	long time	kyū	hisa
+5	642	仏	4	Buddha	futsu, butsu	hotoke
+5	643	仮	6	sham	ka, ke	kari
+5	644	件	6	affair	ken	
+5	645	任	6	responsibility	nin	maka-seru
+5	646	似	7	resemble	ji	ni-ru
+5	647	余	7	surplus	yo	ama-ru
+5	648	価	8	value	ka	atai
+5	649	保	9	preserve	ho	tamo-tsu
+5	650	修	10	discipline	shū	osa-meru
+5	651	俵	10	straw bag	hyō	tawara
+5	652	個	10	individual	ko	
+5	653	備	12	provide	bi	sona-eru
+5	654	像	14	statue	zō	
+5	655	再	6	again	sai, sa	futata-bi
+5	656	刊	5	publish	kan	
+5	657	判	7	judge	han	waka-ru
+5	658	制	8	control	sei	
+5	659	券	8	ticket	ken	
+5	660	則	9	rule	soku	notto-ru
+5	661	効	8	effect	kō	ki-ku
+5	662	務	11	duty	mu	tsuto-meru
+5	663	勢	13	energy	sei	ikio-i
+5	664	厚	9	rich	kō	atsu-i
+5	665	句	5	phrase	ku	
+5	666	可	5	possible	ka	
+5	667	営	12	manage	ei	itona-mu
+5	668	因	6	cause	in	yo-ru
+5	669	団	6	association	dan, ton	
+5	670	圧	5	pressure	atsu	
+5	671	在	6	exist	zai	a-ru
+5	672	均	7	level	kin	
+5	673	基	11	foundation	ki	moto-zuku
+5	674	報	12	report	hō	muku-iru
+5	675	境	14	boundary	kyō	sakai
+5	676	墓	13	grave	bo	haka
+5	677	増	14	increase	zō	ma-su, fu-eru
+5	678	夢	13	dream	mu	yume
+5	679	妻	8	wife	sai	tsuma
+5	680	婦	11	lady	fu	
+5	681	容	10	contain	yō	
+5	682	寄	11	approach	ki	yo-ru
+5	683	富	12	abundant	fu	tomi
+5	684	導	15	guide	dō	michibi-ku
+5	685	居	8	reside	kyo	i-ru
+5	686	属	12	belong	zoku	
+5	687	布	5	linen	fu	nuno
+5	688	師	10	expert	shi	
+5	689	常	11	normal	jō	tsune
+5	690	幹	13	tree trunk	kan	miki
+5	691	序	7	preface	jo	
+5	692	弁	5	valve	ben	
+5	693	張	11	stretch	chō	ha-ru
+5	694	往	8	journey	ō	
+5	695	復	12	recovery	fuku	
+5	696	徳	14	virtue	toku	
+5	697	志	7	intention	shi	kokorozashi
+5	698	応	7	respond	ō	
+5	699	快	7	cheerful	kai	kokoroyo-i
+5	700	性	8	gender	sei, shō	saga
+5	701	恩	10	grace	on	
+5	702	情	11	feelings	jō	nasa-ke
+5	703	態	14	condition	tai	
+5	704	慣	14	accustomed	kan	na-reru
+5	705	承	8	acquiesce	shō	uketamawa-ru
+5	706	技	7	skill	gi	waza
+5	707	招	8	beckon	shō	mane-ku
+5	708	授	11	instruct	ju	sazu-keru
+5	709	採	11	pick	sai	to-ru
+5	710	接	11	contact	setsu	tsu-gu
+5	711	提	12	propose	tei	sa-geru
+5	712	損	13	loss	son	soko-neru
+5	713	支	4	support	shi	sasa-eru
+5	714	政	9	politics	sei	matsurigoto
+5	715	故	9	circumstances	ko	yue
+5	716	敵	15	enemy	teki	kataki
+5	717	断	11	cut off	dan	ta-tsu, kotowa-ru
+5	718	旧	5	old times	kyū	
+5	719	易	8	easy	eki	yasa-shii
+5	720	暴	15	outburst	bō	aba-ku
+5	721	条	7	clause	jō	kudari
+5	722	枝	8	branch	shi	eda
+5	723	査	9	investigate	sa	
+5	724	格	10	status	kaku	
+5	725	桜	10	cherry	ō	sakura
+5	726	検	12	examine	ken	
+5	727	構	14	construct	kō	kama-eru
+5	728	武	8	military	bu, mu	
+5	729	比	4	compare	hi	kura-beru
+5	730	永	5	eternity	ei	naga-i
+5	731	河	8	stream	ka	kawa
+5	732	液	11	fluid	eki	
+5	733	混	11	mix	kon	ma-zeru
+5	734	減	12	decrease	gen	he-ru
+5	735	測	12	fathom	soku	haka-ru
+5	736	準	13	standard	jun	
+5	737	演	14	perform	en	
+5	738	潔	15	undefiled	ketsu	isagiyo-i
+5	739	災	7	disaster	sai	wazawa-i
+5	740	燃	16	burn	nen	mo-eru
+5	741	版	8	printing block	han	
+5	742	犯	5	crime	han	oka-su
+5	743	状	7	form	jō	
+5	744	独	9	alone	doku	hito-ri
+5	745	率	11	rate	ritsu, sotsu	hiki-iru
+5	746	現	11	appear	gen	arawa-reru
+5	747	留	10	detain	ryū, ru	todo-maru
+5	748	略	11	abbreviation	ryaku	
+5	749	益	10	benefit	eki	
+5	750	眼	11	eyeball	gan	me
+5	751	破	10	rend	ha	yabu-ru
+5	752	確	15	certain	kaku	tashi-ka
+5	753	示	5	indicate	shi	shime-su
+5	754	祖	9	ancestor	so	
+5	755	禁	13	prohibition	kin	
+5	756	移	11	shift	i	utsu-ru
+5	757	程	12	extent	tei	hodo
+5	758	税	12	tax	zei	
+5	759	築	16	fabricate	chiku	kizu-ku
+5	760	精	14	refined	sei	
+5	761	素	10	elementary	su, so	moto
+5	762	経	11	manage	kei, kyō	he-ru
+5	763	統	12	relationship	tō	su-beru
+5	764	絶	12	discontinue	zetsu	ta-tsu
+5	765	綿	14	cotton	men	wata
+5	766	総	14	whole	sō	
+5	767	編	15	compile	hen	a-mu
+5	768	績	17	exploits	seki	
+5	769	織	18	weave	shiki	o-ru
+5	770	罪	13	guilt	zai	tsumi
+5	771	群	13	flock	gun	mu-reru
+5	772	義	13	righteousness	gi	
+5	773	耕	10	till	kō	tagaya-su
+5	774	職	18	employment	shoku	
+5	775	肥	8	fertilizer	hi	ko-yasu
+5	776	能	10	ability	nō	
+5	777	興	16	entertain	kyō	oko-su
+5	778	舌	6	tongue	zetsu	shita
+5	779	舎	8	cottage	sha	
+5	780	術	11	art	jutsu	sube
+5	781	衛	16	defense	ei	
+5	782	製	14	manufacture	sei	
+5	783	複	14	duplicate	fuku	
+5	784	規	11	rule	ki	
+5	785	解	13	untie	ge, kai	to-ku
+5	786	設	11	establish	setsu	mou-keru
+5	787	許	11	permit	kyo	yuru-su
+5	788	証	12	evidence	shō	akashi
+5	789	評	12	evaluate	hyō	
+5	790	講	17	lecture	kō	
+5	791	謝	17	apologize	sha	ayama-ru
+5	792	識	19	discriminating	shiki	
+5	793	護	20	safeguard	go	mamo-ru
+5	794	豊	13	bountiful	hō	yuta-ka
+5	795	財	10	wealth	zai	
+5	796	貧	11	poor	hin	mazu-shii
+5	797	責	11	blame	seki	se-meru
+5	798	貸	12	lend	tai	ka-su
+5	799	貿	12	trade	bō	
+5	800	賀	12	congratulations	ga	
+5	801	資	13	resources	shi	
+5	802	賛	15	approve	san	
+5	803	質	15	quality	shitsu	
+5	804	輸	16	transport	yu	
+5	805	述	8	mention	jutsu	no-beru
+5	806	迷	9	astray	mei	mayo-u
+5	807	退	9	retreat	tai	shirizo-ku
+5	808	逆	9	inverted	gyaku	saka-rau
+5	809	造	10	create	zō	tsuku-ru
+5	810	過	12	overdo	ka	ayama-chi
+5	811	適	14	suitable	teki	
+5	812	酸	14	acid	san	
+5	813	鉱	13	mineral	kō	
+5	814	銅	14	copper	dō	
+5	815	銭	14	coin	sen	zeni
+5	816	防	7	resist	bō	fuse-gu
+5	817	限	9	limit	gen	kagi-ru
+5	818	険	11	precipitous	ken	kewa-shii
+5	819	際	14	occasion	sai	kiwa
+5	820	雑	14	miscellaneous	zatsu	
+5	821	非	8	negative	hi	ara-zu
+5	822	預	13	deposit	yo	azu-keru
+5	823	領	14	territory	ryō	
+5	824	額	18	amount	gaku	hitai
+5	825	飼	13	domesticate	shi	ka-u
+6	826	並	8	row	hei	nami, nara-bu
+6	827	乱	7	chaos	ran	mida-reru
+6	828	乳	8	milk	nyū	chichi
+6	829	亡	3	deceased	bō	na-kunaru
+6	830	仁	4	kindness	jin	
+6	831	供	8	offer	kyō, ku	tomo
+6	832	俳	10	actor	hai	
+6	833	値	10	value	chi	atai
+6	834	傷	13	wound	shō	kizu
+6	835	優	17	superior	yū	yasa-shii
+6	836	党	10	political party	tō	
+6	837	冊	5	counter for books	satsu	
+6	838	処	5	dispose	sho	
+6	839	刻	8	engrave	koku	kiza-mu
+6	840	割	12	divide	katsu	wa-ru
+6	841	創	12	create	sō	tsuku-ru
+6	842	劇	15	drama	geki	
+6	843	勤	12	diligence	kin	tsuto-meru
+6	844	危	6	dangerous	ki	abu-nai
+6	845	卵	7	egg	ran	tamago
+6	846	厳	17	strict	gen	kibi-shii
+6	847	収	4	obtain	shū	osa-meru
+6	848	后	6	queen	kō, gō	kisaki
+6	849	否	7	negate	hi	ina, iya
+6	850	吸	6	suck	kyū	su-u
+6	851	呼	8	call	ko	yo-bu
+6	852	善	12	virtue	zen	yo-i
+6	853	困	7	quandary	kon	koma-ru
+6	854	垂	8	droop	sui	ta-reru
+6	855	城	9	castle	jō	shiro
+6	856	域	11	range	iki	
+6	857	奏	9	play music	sō	kana-deru
+6	858	奮	16	stirred up	fun	furu-u
+6	859	姿	9	shape	shi	sugata
+6	860	存	6	suppose	son	
+6	861	孝	7	filial piety	kō	
+6	862	宅	6	home	taku	ie
+6	863	宇	6	eaves	u	
+6	864	宗	8	religion	shū	sō
+6	865	宙	8	mid-air	chū	
+6	866	宝	8	treasure	hō	takara
+6	867	宣	9	proclaim	sen	notama-u
+6	868	密	11	secrecy	mitsu	
+6	869	寸	3	measurement	sun	
+6	870	専	9	specialty	sen	moppa-ra
+6	871	射	10	shoot	sha	i-ru
+6	872	将	10	leader	shō	
+6	873	尊	12	revered	son	touto-bu
+6	874	就	12	concerning	shū	tsu-ku
+6	875	尺	4	measure of length	shaku	
+6	876	届	8	deliver	kai	todo-ku
+6	877	展	10	expand	ten	
+6	878	層	14	stratum	sō	
+6	879	己	3	self	ko	onore
+6	880	巻	9	scroll	kan	maki
+6	881	幕	13	curtain	maku, baku	
+6	882	干	3	dry	kan	ho-su
+6	883	幼	5	infancy	yō	osana-i
+6	884	庁	5	government office	chō	
+6	885	座	10	sit	za	suwa-ru
+6	886	延	8	prolong	en	no-basu
+6	887	律	9	rhythm	ritsu	
+6	888	従	10	obey	jū	shitaga-u
+6	889	忘	7	forget	bō	wasu-reru
+6	890	忠	8	loyalty	chū	
+6	891	憲	16	constitution	ken	
+6	892	我	7	ego	ga	ware
+6	893	批	7	criticism	hi	
+6	894	担	8	shouldering	tan	nina-u
+6	895	拝	8	worship	hai	oga-mu
+6	896	拡	8	broaden	kaku	hiro-geru
+6	897	捨	11	discard	sha	su-teru
+6	898	探	11	look for, search	tan	saga-su
+6	899	推	11	infer	sui	
+6	900	揮	12	brandish	ki	
+6	901	操	16	maneuver	sō	ayatsu-ru
+6	902	敬	12	respect	kei	uyama-u
+6	903	映	9	reflect	ei	utsu-ru
+6	904	晩	12	nightfall	ban	
+6	905	暖	13	warmth	dan	atata-kai
+6	906	暮	14	livelihood	bo	ku-rasu
+6	907	朗	10	melodious	rō	hoga-raka
+6	908	机	6	desk	ki	tsukue
+6	909	枚	8	sheet of...	mai	
+6	910	染	9	dye	sen	so-meru
+6	911	株	10	stocks	shu	kabu
+6	912	棒	12	rod	bō	
+6	913	模	14	imitation	mo, bo	
+6	914	権	15	rights	ken	
+6	915	樹	16	trees	ju	ki
+6	916	欲	11	longing	yoku	ho-shii
+6	917	段	9	steps	dan	
+6	918	沿	8	run alongside	en	so-u
+6	919	泉	9	fountain	sen	izumi
+6	920	洗	9	wash	sen	ara-u
+6	921	派	9	sect	ha	
+6	922	済	11	settle	sai	su-mu
+6	923	源	13	source	gen	minamoto
+6	924	潮	15	tide	chō	shio
+6	925	激	16	violent	geki	hage-shii
+6	926	灰	6	ashes	kai	hai
+6	927	熟	15	ripen	juku	u-reru
+6	928	片	4	one-sided	hen	kata
+6	929	班	10	corps	han	
+6	930	異	11	uncommon	i	koto-naru
+6	931	疑	14	doubt	gi	utaga-u
+6	932	痛	12	pain	tsū	ita-i
+6	933	皇	9	emperor	kō, ō	
+6	934	盛	11	prosper	sei	mo-ru
+6	935	盟	13	alliance	mei	
+6	936	看	9	watch over	kan	
+6	937	砂	9	sand	sa, sha	suna
+6	938	磁	14	magnet	ji	
+6	939	私	7	me	shi	watakushi, watashi
+6	940	秘	10	secret	hi	hi-meru
+6	941	穀	14	cereal	koku	
+6	942	穴	5	hole	ketsu	ana
+6	943	窓	11	window	sō	mado
+6	944	筋	12	muscle	kin	suji
+6	945	策	12	scheme	saku	
+6	946	簡	18	simplicity	kan	
+6	947	糖	16	sugar	tō	
+6	948	系	7	lineage	kei	
+6	949	紅	9	crimson	kō	beni, kurenai
+6	950	納	10	settlement	nō	osa-meru
+6	951	純	10	genuine	jun	
+6	952	絹	13	silk	ken	kinu
+6	953	縦	16	vertical	jū	tate
+6	954	縮	17	shrink	shuku	chidi-mu
+6	955	署	13	government office	sho	
+6	956	翌	11	forthcoming	yoku	
+6	957	聖	13	holy	sei	
+6	958	肺	9	lung	hai	
+6	959	背	9	back	hai	se
+6	960	胸	10	bosom	kyō	mune
+6	961	脳	11	brain	nō	
+6	962	腹	13	abdomen	fuku	hara
+6	963	臓	19	entrails	zō	
+6	964	臨	18	lookover	rin	nozo-mu
+6	965	至	6	climax	shi	ita-ru
+6	966	若	8	young	jaku	waka-i
+6	967	著	11	renowned	cho	arawa-su, ichijiru-shii
+6	968	蒸	13	foment	jō	mu-su
+6	969	蔵	15	storehouse	zō	kura
+6	970	蚕	10	silkworm	san	kaiko
+6	971	衆	12	masses	shū	
+6	972	裁	12	judge	sai	saba-ku
+6	973	装	12	attire	sō, shō	yosoo-u
+6	974	裏	13	rear	ri	ura
+6	975	補	12	supplement	ho	ogina-u
+6	976	視	11	look at	shi	mi-ru
+6	977	覧	17	perusal	ran	
+6	978	討	10	chastise	tō	u-tsu
+6	979	訪	11	visit	hō	tazu-neru
+6	980	訳	11	translate; reason	yaku	wake
+6	981	詞	12	poetry	shi	kotoba
+6	982	誌	14	document	shi	
+6	983	認	14	recognize	nin	mito-meru
+6	984	誕	15	born	tan	
+6	985	誠	13	sincerity	sei	makoto
+6	986	誤	14	mistake	go	ayama-ru
+6	987	論	15	theory	ron	
+6	988	諸	15	various	sho	moro
+6	989	警	19	admonish	kei	imashi-meru
+6	990	貴	12	precious	ki	tatto-i
+6	991	賃	13	fare	chin	
+6	992	遺	15	bequeath	i	
+6	993	郵	11	mail	yū	
+6	994	郷	11	home town	kyō	gō
+6	995	針	10	needle	shin	hari
+6	996	鋼	16	steel	kō	hagane
+6	997	閉	11	closed	hei	shi-meru
+6	998	閣	14	tower	kaku	
+6	999	降	10	descend	kō	o-riru
+6	1000	陛	10	majesty	hei	
+6	1001	除	10	exclude	jo, ji	nozo-ku
+6	1002	障	14	hurt	shō	sawa-ru
+6	1003	難	18	difficult	nan	muzuka-shii
+6	1004	革	9	leather	kaku	kawa
+6	1005	頂	11	place on the head	chō	itada-ku
+6	1006	骨	10	bone	kotsu	hone
+4	1007	茨	9	caltrop	shi, ji	ibara, kusabuki, kaya
+4	1008	媛	12	beauty	en	hime
+4	1009	岡	8	ridge of crest of hill	kou	oka
+4	1010	潟	15	land impregnated with salt from the tide	seki	kata
+4	1011	岐	7	high	ki, gi	edamichi
+4	1012	熊	14	bear	yuu	kuma
+4	1013	香	9	fragrant	kou, kyou	kaori, ka
+4	1014	佐	7	assist	sa	tasuke, tasukeru, suke
+4	1015	埼	11	headland	ki	saki
+4	1016	崎	11	rough	ki	saki, kewashii
+4	1017	滋	12	grow	ju, shi	shigeru, masu, masumasu
+4	1018	鹿	11	deer	roku	shika, ka
+4	1019	縄	15	rope	jou, bin, you	nawa
+4	1020	井	4	well	sei, shou	i, ido
+4	1021	沖	7	pour	chuu	oki, waku
+4	1022	栃	9	type of oak		tochi
+4	1023	奈	8	but	na, dai	karanashi
+4	1024	梨	11	pear	ri	nashi
+4	1025	阪	6	hillside farmland	han	saka
+4	1026	阜	8	mound	fu	oka
