@@ -72,7 +72,74 @@ They also mention the systematically slower progression of children between UK E
 
 
 ## Increasing difficulty in learning kanji ##
-For the [Kyouiku Kanji](https://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji), the strokes per character increase on average with each school year. If this equates to difficulty in remembering the characters, then there is a rapid increase in difficulty. The most strokes per character in the first grade is 12, for [mori / forest](https://jisho.org/search/%E6%A3%AE%20%23kanji), while by 2nd grade, the max stroke count jumps to 18, for both [kao / face](https://jisho.org/search/%E9%A1%94%20%23kanji) and [you / weekday](https://jisho.org/search/%E6%9B%9C%20%23kanji).
+For the [Kyouiku Kanji](https://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji), the strokes per character increase on average with each school year. If this equates to difficulty in remembering the characters, then there is a rapid increase in difficulty. The most strokes per character in the first grade is 12, for [森 *mori* / forest](https://jisho.org/search/%E6%A3%AE%20%23kanji), while by 2nd grade, the max stroke count jumps to 18, for both [顔 *kao* / face](https://jisho.org/search/%E9%A1%94%20%23kanji) and [曜 *you* / weekday](https://jisho.org/search/%E6%9B%9C%20%23kanji).
 
 ![kanji_by_school_year_w_outliers.png](https://github.com/wrf/misc-analyses/blob/master/language_difficulty/images/kanji_by_school_year_w_outliers.png)
+
+The *onyomi* may be especially difficult, as there is a high degree of convergence, ie. [homophones](https://en.wikipedia.org/wiki/Homophone), likely due to loss of [tonality](https://en.wikipedia.org/wiki/Tone_(linguistics)) for words imported from Chinese. Of the Kyouiku Kanji, many readings occur over ten times. Conversely, for the *kunyomi*, the most common reading is *kawa* with only 5 words.
+
+### Most common onyomi readings ###
+| onyomi (unique only) | number of characters |
+| ---    | --- |
+| shi | 33 |
+| kou | 22 |
+| ki | 21 |
+| shou | 19 |
+| kan | 16 |
+| ka | 16 |
+| sou | 14 |
+| sen | 14 |
+| sei | 14 |
+| shuu | 13 |
+| kyuu | 13 |
+| ken | 13 |
+| chou | 13 |
+| shin | 12 |
+| tou  | 11 |
+| kyou | 11 |
+| i | 11 |
+| you | 10 |
+| sai | 10 |
+| kai | 10 |
+| hi | 10 |
+
+
+[Pinyin](https://en.wikipedia.org/wiki/Pinyin) are taken from [MDBG](https://www.mdbg.net/chinese/dictionary). For *sen*, there are common words that have different tones in Chinese, like 先生 *sensei* / teacher, but also 洗濯 *sentaku* / laundry. These are all merged into one reading in Japanese.
+
+### Kanji with *sen* as the onyomi ###
+| grade | number | Kanji | Strokes | Meaning | Onyomi | Kunyomi | Mandarin |
+| ---:  | ---:   | ---   | ---:    | ---     | ---    | ---     | ---      |
+| 1 | 12  | 千 | 3  | thousand | sen | chi  | qian1  |
+| 1 | 27  | 川 | 3  | river    | sen | kawa | chuan1 |
+| 1 | 56  | 先 | 6  | previous | sen | saki | xian1 |
+| 2 | 98  | 線 | 15 | line     | sen | suji | xian4  |
+| 2 | 223 | 船 | 11 | ship     | sen | fune | chuan2 |
+| 4 | 524 | 戦 | 13 | war      | sen | ikusa, tataka-u | zhan4 |
+| 4 | 562 | 浅 | 9  | shallow  | sen | asa-i | qian3  |
+| 4 | 625 | 選 | 15 | choose   | sen | era-bu | xuan3  |
+| 5 | 815 | 銭 | 14 | coin     | sen | zeni | qian2  |
+| 6 | 867 | 宣 | 9  | proclaim | sen | notama-u | xuan1  |
+| 6 | 870 | 専 | 9  | specialty | sen | moppa-ra | zhuan1 |
+| 6 | 910 | 染 | 9  | dye      | sen | so-meru | ran3  |
+| 6 | 919 | 泉 | 9  | fountain | sen | izumi | quan2  |
+| 6 | 920 | 洗 | 9  | wash     | sen | ara-u | xi3  |
+
+Likewise, for *shin*, some common words include 両親 *ryoushin* / parents, 新聞 *shinbun* / newspaper, 深海 *shinkai* / deep sea, 心臓 *shinzou* / heart, and 神道 *shintou* / Shinto.
+
+### Kanji with *shin* as the onyomi ###
+| grade | number | Kanji | Strokes | Meaning | Onyomi | Kunyomi | Mandarin |
+| ---:  | ---:   | ---   | ---:    | ---     | ---    | ---     | ---      |
+| 1 | 65 | 森 | 12 | forest | shin | mori | sen1  |
+| 2 | 104 | 親 | 16 | parent | shin | oya | qin1  |
+| 2 | 118 | 心 | 4 | heart | shin | kokoro | xin1  |
+| 2 | 131 | 新 | 13 | new | shin | atara-shii | xin1  |
+| 3 | 352 | 深 | 11 | deep | shin | fuka-i | shen1  |
+| 3 | 362 | 申 | 5 | say | shin | mō-su | shen1  |
+| 3 | 372 | 真 | 10 | true | shin | ma | zhen1  |
+| 3 | 377 | 神 | 9 | deity | shin, jin | kami | shen2  |
+| 3 | 412 | 身 | 7 | body | shin | mi | shen1  |
+| 3 | 420 | 進 | 11 | progress | shin | susu-mu | jin4  |
+| 4 | 452 | 信 | 9 | trust | shin |  | xin4  |
+| 4 | 597 | 臣 | 7 | retainer | shin |  | chen2  |
+| 6 | 995 | 針 | 10 | needle | shin | hari | zhen1  |
 
