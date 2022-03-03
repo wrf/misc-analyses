@@ -1,5 +1,10 @@
-# misc-analyses
+# misc-analyses #
 other analyses of diverse topics, all work and opinions are my own
+
+## [language difficulty](https://github.com/wrf/misc-analyses/tree/master/language_difficulty) ##
+Not all children learn their native language at the same rate.
+
+![bleses_2008_fig3_data.png](https://github.com/wrf/misc-analyses/blob/master/language_difficulty/images/bleses_2008_fig3_data.png)
 
 ## [global consumption of seafood](https://github.com/wrf/misc-analyses/tree/master/fisheries) ##
 Many countries with long coastlines still import a lot of their fish. Data from [UN FAO](http://www.fao.org/faostat/en/#data/FBS)
