@@ -6,6 +6,11 @@ Not all children learn their native language at the same rate.
 
 ![bleses_2008_fig3_data.png](https://github.com/wrf/misc-analyses/blob/master/language_difficulty/images/bleses_2008_fig3_data.png)
 
+## [land usage](https://github.com/wrf/misc-analyses/tree/master/land_usage) ##
+Some replots of data regarding efficiency of land usage, carbon emissions, and crop yields
+
+![per_hectare_protein_Poore2018.png](https://github.com/wrf/misc-analyses/blob/master/land_usage/image/per_hectare_protein_Poore2018.png)
+
 ## [global consumption of seafood](https://github.com/wrf/misc-analyses/tree/master/fisheries) ##
 Many countries with long coastlines still import a lot of their fish. Data from [UN FAO](http://www.fao.org/faostat/en/#data/FBS)
 

@@ -79,32 +79,32 @@ For the [Kyouiku Kanji](https://en.wikipedia.org/wiki/Ky%C5%8Diku_kanji), the st
 The *onyomi* may be especially difficult, as there is a high degree of convergence, ie. [homophones](https://en.wikipedia.org/wiki/Homophone), likely due to loss of [tonality](https://en.wikipedia.org/wiki/Tone_(linguistics)) for words imported from Chinese. Of the Kyouiku Kanji, many readings occur over ten times. Conversely, for the *kunyomi*, the most common reading is *kawa* with only 5 words.
 
 ### Most common onyomi readings ###
-| onyomi (unique only) | number of characters |
-| ---    | --- |
-| shi | 33 |
-| kou | 22 |
-| ki | 21 |
-| shou | 19 |
-| kan | 16 |
-| ka | 16 |
-| sou | 14 |
-| sen | 14 |
-| sei | 14 |
-| shuu | 13 |
-| kyuu | 13 |
-| ken | 13 |
-| chou | 13 |
-| shin | 12 |
-| tou  | 11 |
-| kyou | 11 |
-| i | 11 |
-| you | 10 |
-| sai | 10 |
-| kai | 10 |
-| hi | 10 |
+| onyomi (unique only) | number of characters | character list |
+| ---    | --- | :--- |
+| shi | 33 | 四 糸 矢 姉 市 紙 思 止 仕 使 始 指 歯 死 詩 史 司 士 氏 試 師 志 支 枝 示 資 飼 姿 私 至 視 詞 誌 |
+| kou | 22 | 校 広 高 考 向 幸 港 候 功 好 康 航 効 厚 構 耕 講 鉱 孝 紅 鋼 降 |
+| ki | 21 | 記 帰 汽 期 起 喜 器 季 希 旗 機 紀 基 寄 規 危 揮 机 貴 埼 崎 |
+| shou | 19 | 小 少 勝 商 昭 消 章 唱 松 焼 照 笑 賞 承 招 証 傷 将 障 |
+| kan | 16 | 寒 感 漢 館 完 官 管 観 関 刊 幹 慣 巻 干 看 簡 |
+| ka | 16 | 花 火 夏 科 歌 何 化 荷 加 果 課 貨 価 可 河 過 |
+| sou | 14 | 草 想 相 箱 送 争 倉 巣 総 創 奏 層 操 窓 |
+| sen | 14 | 千 川 先 線 船 戦 浅 選 銭 宣 専 染 泉 洗 |
+| sei | 14 | 星 声 晴 整 成 静 制 勢 政 精 製 盛 聖 誠 |
+| shuu | 13 | 週 秋 州 拾 終 習 集 周 修 収 宗 就 衆 |
+| kyuu | 13 | 休 弓 急 球 究 級 救 求 泣 給 久 旧 吸 |
+| ken | 13 | 犬 県 研 健 建 験 件 券 検 険 憲 権 絹 |
+| chou | 13 | 町 長 朝 鳥 丁 帳 調 兆 腸 張 庁 潮 頂 |
+| shin | 12 | 森 親 心 新 深 申 真 身 進 信 臣 針 |
+| tou  | 11 | 冬 当 島 投 湯 等 灯 統 党 糖 討 |
+| kyou | 11 | 強 教 橋 共 協 競 鏡 境 興 胸 郷 |
+| i | 11 | 医 委 意 以 位 囲 胃 衣 移 異 遺 |
+| you | 10 | 曜 様 洋 羊 葉 陽 要 養 容 幼 |
+| sai | 10 | 細 祭 最 菜 妻 採 災 際 済 裁 |
+| kai | 10 | 海 回 界 開 階 改 械 快 届 灰 |
+| hi | 10 | 悲 皮 費 飛 比 肥 非 否 批 秘 |
 
 
-[Pinyin](https://en.wikipedia.org/wiki/Pinyin) are taken from [MDBG](https://www.mdbg.net/chinese/dictionary). For *sen*, there are common words that have different tones in Chinese, like 先生 *sensei* / teacher, but also 洗濯 *sentaku* / laundry. These are all merged into one reading in Japanese.
+[Pinyin](https://en.wikipedia.org/wiki/Pinyin) are taken from [MDBG](https://www.mdbg.net/chinese/dictionary). For *sen*, there are common words that have different tones in Chinese, like [先生 *sensei* / teacher](https://jisho.org/word/%E5%85%88%E7%94%9F), but also [洗濯 *sentaku* / laundry](https://jisho.org/word/%E6%B4%97%E6%BF%AF). These are all merged into one reading in Japanese.
 
 ### Kanji with *sen* as the onyomi ###
 | grade | number | Kanji | Strokes | Meaning | Onyomi | Kunyomi | Mandarin |
@@ -124,7 +124,7 @@ The *onyomi* may be especially difficult, as there is a high degree of convergen
 | 6 | 919 | 泉 | 9  | fountain | sen | izumi | quan2  |
 | 6 | 920 | 洗 | 9  | wash     | sen | ara-u | xi3  |
 
-Likewise, for *shin*, some common words include 両親 *ryoushin* / parents, 新聞 *shinbun* / newspaper, 深海 *shinkai* / deep sea, 心臓 *shinzou* / heart, and 神道 *shintou* / Shinto.
+Likewise, for *shin*, some common words include [両親 *ryoushin* / parents](https://jisho.org/word/%E4%B8%A1%E8%A6%AA), [新聞 *shinbun* / newspaper](https://jisho.org/word/%E6%96%B0%E8%81%9E), [深海 *shinkai* / deep sea](https://jisho.org/word/%E6%B7%B1%E6%B5%B7), [心臓 *shinzou* / heart](https://jisho.org/word/%E5%BF%83%E8%87%93), and [神道 *shintou* / Shinto](https://jisho.org/word/%E7%A5%9E%E9%81%93).
 
 ### Kanji with *shin* as the onyomi ###
 | grade | number | Kanji | Strokes | Meaning | Onyomi | Kunyomi | Mandarin |
