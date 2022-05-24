@@ -4,7 +4,13 @@
 # original dataset at:
 # http://www.fao.org/faostat/en/#data/FBS
 #
+# definitions from:
+# https://www.fao.org/faostat/en/#definitions
+#
 # created by WRF 2021-05-16
+# v1.2 2022-04-01 updated to 2022 dataset (including 2019, and back-added 2010-2013)
+# v1.3 2022-05-03 autoname pdf file
+# v1.31 2022-05-23 use csv of descriptions
 
 library(shiny)
 library(ggplot2)
@@ -12,7 +18,8 @@ library(dplyr)
 library(maps)
 
 # current host of this file at:
-fooddatafile = "data/FoodBalanceSheets_E_All_Data_2021-04-09.csv"
+setwd("~/git/misc-analyses/olive_v_butter/butterline")
+fooddatafile = "./data/FoodBalanceSheets_E_All_Data_2022-04-01.csv"
 # read as latin1 to later deal with cote d'ivoire
 fooddata = read.csv(fooddatafile, header=TRUE, stringsAsFactors = FALSE, encoding="latin1")
 #head(fooddata)
@@ -20,8 +27,16 @@ fooddata = read.csv(fooddatafile, header=TRUE, stringsAsFactors = FALSE, encodin
 #unique(fooddata$Area)
 
 # read tabular food definitions file, listing sub-items of some foods
-food_definitions_file = "data/fsb_item_descriptions_2021.tab"
-food_definitions = read.table(food_definitions_file, header=TRUE, sep="\t")
+food_definitions_file = "./data/fbs_item_descriptions_2022.csv"
+#food_definitions = read.table(food_definitions_file, header=TRUE, sep="\t")
+food_definitions = read.csv(food_definitions_file, header=TRUE)
+# check for duplicated items in definitions, which are in the whole table as well
+food_definitions_item_counts = table(food_definitions$Item)
+food_definitions_item_counts[food_definitions_item_counts > 1]
+# appears to include
+# Eggs
+# Milk - Excluding Butter
+# Miscellaneous
 
 ################################################################################
 # these are summary items only
@@ -48,11 +63,11 @@ is_plant = c("Cereals - Excluding Beer", "Wheat and products",
              "Sunflower seed", "Rape and Mustardseed",  "Cottonseed",  "Coconuts - Incl Copra",
              "Sesame seed", "Palm kernels", 
              "Vegetables",  "Olives (including preserved)", 
-             "Tomatoes and products", "Onions", "Vegetables, Other", 
+             "Tomatoes and products", "Onions", "Vegetables, other", 
              "Fruits - Excluding Wine", "Oranges, Mandarines",   "Lemons, Limes and products", 
              "Grapefruit and products", "Citrus, Other", "Bananas",  "Plantains",  
              "Apples and products",  "Pineapples and products" , "Dates", 
-             "Grapes and products (excl wine)",  "Fruits, Other", 
+             "Grapes and products (excl wine)",  "Fruits, other", 
              "Vegetable Oils", "Soyabean Oil",   "Groundnut Oil", "Sunflowerseed Oil" , 
              "Rape and Mustard Oil" , "Cottonseed Oil", "Palmkernel Oil", "Palm Oil", 
              "Coconut Oil",   "Sesameseed Oil", "Olive Oil", "Ricebran Oil", "Maize Germ Oil",
@@ -87,14 +102,17 @@ valid_element_types = c("Import Quantity", "Export Quantity", "Production",
 # this is the order of items in the dropdown menu
 all_items_food_only = c( is_plant, is_meat, is_fish, is_alcohol, is_spice)
 
-
-# confirm that all items are in a division
 all_items_combined = c(is_not_item, is_meat, is_fish, is_plant, is_alcohol, is_spice )
-not_found_items = match( names( table(fooddata$Item) ), all_items_combined)
+# confirm that all items are in a division
+# will print items not in vector all_items_food_only
+# may include spelling/capitalization changes like
+# 2022: "Fruits, Other" to "Fruits, other" ; "Vegetables, Other" to "Vegetables, other"
+not_found_items = match( names( table(fooddata$Item) ), all_items_combined )
 if (sum(is.na(not_found_items)) > 0){names( table(fooddata$Item) )[is.na(not_found_items)]}
 
+# table for display, and for recoding step
 fooddata_recode = fooddata %>%
-                  select(Area, Item, Element, Y2014, Y2015, Y2016, Y2017, Y2018) %>%
+                  select(Area, Item, Element, Y2011, Y2012, Y2013, Y2014, Y2015, Y2016, Y2017, Y2018, Y2019) %>%
                   filter(! Item %in% is_not_item &
                          Element %in% valid_element_types ) %>%
                   rename(region=Area )
@@ -124,6 +142,10 @@ fooddata_recode$region = recode(fooddata_recode$region,
                          "European Union (28)" = "European Union (with UK)",
                          "European Union (27)" = "European Union (excluding UK)")
 
+###TODO allow divide by population
+# country_population = fooddata %>%
+#                     filter( Item=="Population", Element=="Total Population - Both sexes" ) %>%
+#                     select(Area, Item, Element, Y2011, Y2012, Y2013, Y2014, Y2015, Y2016, Y2017, Y2018, Y2019)
 
 countries_w_data = sort(unique(fooddata_recode$region))
 
@@ -134,7 +156,7 @@ worldpolygons = map_data("world")
 
 ################################################################################
 ui <- fluidPage(
-  titlePanel(h1("UN FAO Food Balance Sheets v1.1", style="color:#21632e; text-align:center; font-weight:bold;"), windowTitle="UN FAO Food Balance Sheets"),
+  titlePanel(h1("UN FAO Food Balance Sheets v1.31", style="color:#21632e; text-align:center; font-weight:bold;"), windowTitle="UN FAO Food Balance Sheets"),
   verticalLayout(
     fluidRow(
       column(4,
@@ -151,13 +173,16 @@ ui <- fluidPage(
                          value = c(-180,180)
                         ),
              selectInput("year", "Year (on map and plot)", 
-                         choices = list("2018" = "Y2018",
+                         choices = list("2019" = "Y2019",
+                                        "2018" = "Y2018",
                                         "2017" = "Y2017",
                                         "2016" = "Y2016",
                                         "2015" = "Y2015",
-                                        "2014" = "Y2014"
+                                        "2014" = "Y2014",
+                                        "2013" = "Y2013",
+                                        "2012" = "Y2012"
                                         ), 
-                         selected="Y2018"
+                         selected="Y2019"
                          )
              ), # end column
       column(4,
@@ -220,12 +245,12 @@ ui <- fluidPage(
               br(), br(),
               p("For all measures, units are in 1000 tonnes, or M kg, or properly in gigagrams - Gg. 
                 One tonne of water, 1000kg, would be a 1m cube. 
-                A shipping container (40x8x10 ft) would be 86 cubic meters, a bit less than 100 tonnes. 
-                So 1 Gg would be about 10-12 shipping containers."),
+                A shipping container (40 x 8 x 8.5 ft) would be about 68 cubic meters of internal space. 
+                So 1 Gg would be about 15 shipping containers."),
               p("To download the raw data from the UN FAO Statistics Division, go to:"),
               a("www.fao.org/faostat/en/#data/FBS", href="https://www.fao.org/faostat/en/#data/FBS"),
               br(), br(),
-              p("App created by WRF, last modified by WRF 2021-06-09"),
+              p("App created by WRF, last modified by WRF 2022-05-23"),
               br()
     ) # end mainPanel
   ) # end verticalLayout
@@ -234,18 +259,22 @@ ui <- fluidPage(
 #
 server <- function(input, output) {
   #output$showingWhat <- renderPrint({ sub("_2017_Gg","",input$displaytype) })
+  #output$showingWhat <- renderPrint({ gsub( " ","_", as.character(paste( input$itemType, input$elementType, input$year, ".pdf", sep="_" ))) })
   
   output$foodDesc <- renderUI({
-    item_def_desc = food_definitions[match(input$itemType, food_definitions$item),3]
-    if ( is.na(item_def_desc) ){
+    #item_def_desc = food_definitions[match(input$itemType, food_definitions$item),3]
+    item_def_desc = food_definitions[match(input$itemType, food_definitions$Item),5]
+
+    if ( is.na(item_def_desc) | item_def_desc=="" ){
       reformat_desc = input$itemType # do nothing
+      print(reformat_desc)
     } else if (item_def_desc != ""){
       reformat_desc = gsub("Default composition: ", "", item_def_desc)
       HTML(paste( input$itemType, "includes:<br/>", reformat_desc) )
     }
   })
   
-  
+  # create barplot ggplot object
   ggbars = reactive({
     # only display actual countries
     fd_filt <- filter(fooddata_recode, ! region %in% is_not_country,
@@ -264,23 +293,24 @@ server <- function(input, output) {
       color_set = colorRampPalette(c("#e9e9a3","#a37d17"))(7)
     }
     color_bins = c(0, 1, 10, 100, 1000, 10000, 100000)
-    
+
     ggplot(fd_filt, aes(x=region, y=input$year ) ) +
       coord_flip() +
       scale_y_continuous(expand = c(0,0) ) +
       labs(x=NULL, y=paste(input$year, input$elementType,"of",input$itemType) ) +
-      scale_fill_gradientn(colours = color_set, 
+      scale_fill_gradientn(colours = color_set,
                            breaks = color_bins,
                            na.value="gray70", trans = "log10") +
       geom_bar( stat="identity", show.legend = FALSE,
                 aes(reorder(region, .data[[input$year]]), .data[[input$year]], fill=.data[[input$year]]) )
-
   })
   
+  # draw updated plot
   output$rankedBarplot <- renderPlot({
     ggbars()
   })
   
+  # create map ggplot object
   mapgg = reactive({
     # subset food data
     fooddata_subset = left_join(worldpolygons, filter(fooddata_recode, Item==input$itemType & Element==input$elementType), by="region" )
@@ -321,21 +351,25 @@ server <- function(input, output) {
       labs(x=NULL, y=NULL, fill="Quantity\n(M kg)",
            title=full_title,
            #subtitle= paste("showing:", input$itemType ),
-           caption="Data from UN Food and Agriculture Organization (FAO) 2021\nwww.fao.org/faostat/en/#data/FBS") +
+           caption="Data from UN Food and Agriculture Organization (FAO) 2022\nwww.fao.org/faostat/en/#data/FBS") +
       geom_polygon( aes(x=long, y = lat, group = group, fill=filldata), colour="#ffffff")
   })
 
+  # draw map
   output$worldMap <- renderPlot({
     mapgg()
   })
-    
+  
+  # print map ggplot object
   output$printpdf <- downloadHandler(
-    filename = function() {"plot.pdf"},
+    filename = function() { paste0( gsub( " ","_", paste( input$itemType, input$elementType, input$year, sep="_" )),".pdf") },
     content = function(filename){
       printmap = mapgg()
       ggsave(filename, printmap, device="pdf", width=11, height=6)
     }
   )
+  
+  # make table
   output$countryInfo <- renderTable({
     # filter table
     if (input$tableformat == "itemelement"){
@@ -353,7 +387,7 @@ server <- function(input, output) {
     } else {
       ft
     }
-    
+  # a few last options
   },
   hover = TRUE,
   spacing = 'xs',
