@@ -32,7 +32,10 @@ food_definitions_file = "./data/fbs_item_descriptions_2022.csv"
 food_definitions = read.csv(food_definitions_file, header=TRUE)
 # check for duplicated items in definitions, which are in the whole table as well
 food_definitions_item_counts = table(food_definitions$Item)
-food_definitions_item_counts[food_definitions_item_counts > 1]
+if (max(food_definitions_item_counts) > 1){
+  print("Duplicated entries in definitions file:")
+  print(food_definitions_item_counts[food_definitions_item_counts > 1])
+}
 # appears to include
 # Eggs
 # Milk - Excluding Butter
@@ -180,7 +183,8 @@ ui <- fluidPage(
                                         "2015" = "Y2015",
                                         "2014" = "Y2014",
                                         "2013" = "Y2013",
-                                        "2012" = "Y2012"
+                                        "2012" = "Y2012",
+                                        "2011" = "Y2011"
                                         ), 
                          selected="Y2019"
                          )
@@ -263,15 +267,19 @@ server <- function(input, output) {
   
   output$foodDesc <- renderUI({
     #item_def_desc = food_definitions[match(input$itemType, food_definitions$item),3]
-    item_def_desc = food_definitions[match(input$itemType, food_definitions$Item),5]
-
+    #item_def_desc = food_definitions[match(input$itemType, food_definitions$Item),5]
+    # set everything to lowercase to correct for 
+    # "Fruits, Other" to "Fruits, other"
+    # "Vegetables, Other" to "Vegetables, other"
+    item_def_desc = food_definitions[match( tolower(input$itemType), tolower(food_definitions$Item)),5]
+    
+    
     if ( is.na(item_def_desc) | item_def_desc=="" ){
-      reformat_desc = input$itemType # do nothing
-      print(reformat_desc)
+      reformat_desc = as.character(input$itemType) # do nothing
     } else if (item_def_desc != ""){
       reformat_desc = gsub("Default composition: ", "", item_def_desc)
-      HTML(paste( input$itemType, "includes:<br/>", reformat_desc) )
     }
+    HTML(paste( input$itemType, "includes:<br/>", reformat_desc) )
   })
   
   # create barplot ggplot object
