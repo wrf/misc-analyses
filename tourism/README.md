@@ -26,7 +26,9 @@ By comparison, several very large countries appear to have a low rate of tourism
 ### Notes ###
 Two countries changed names in the past year, Swaziland to Eswatini, and the Former Yugoslavian Republic of Macedonia to North Macedonia. Both of these use the old names in the datasets to enable consistent matching in the code.
 
-### Table 1 : Arrivals by country ###
+Arrival data for 2019 are from [UN WTO International Tourism Highlights 2020 Edition](https://www.e-unwto.org/doi/book/10.18111/9789284422456).
+
+### Appendix Table 1 : Arrivals by country (millions of people) ###
 | Country | 2019 | 2018 | 2017 | 2016 |
 | :---    | ---: | ---: | ---: | ---: |
 | Albania | 5.9 | 5.34 | 4.643 | 4.07 |
