@@ -17,9 +17,14 @@ Many countries with long coastlines still import a lot of their fish. This is vi
 ![global_fish_imports_only_2017.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/global_fish_imports_only_2017.png)
 
 ## [seasonality of human births](https://github.com/wrf/misc-analyses/tree/master/birth_rate_by_month) ##
-Month of birth has real effects, like astrology, something known by all of humanity for thousands of years.
+Month of birth has real effects, like astrology, something known by all of humanity for thousands of years. Data from the [UN data portal](https://data.un.org/Data.aspx?d=POP&f=tableCode:55).
 
 ![UNdata_Export_20210419_scand_by_year.png](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/UNdata_Export_20210419_scand_by_year.png)
+
+## [food cravings during pregnancy](https://github.com/wrf/misc-analyses/tree/master/nausea_pregnancy) ##
+Replots of food aversions and cravings during pregnancy, [NVP](https://en.wikipedia.org/wiki/Morning_sickness), and related things
+
+![food_cravings_flaxman_2000_fig7.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/food_cravings_flaxman_2000_fig7.png)
 
 ## [success in ERC grants](https://github.com/wrf/misc-analyses/tree/master/erc) ##
 Countries like France and Spain have the same number of applications, but France is twice as successful. Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics), and from [MSCA-IF 2018 table](http://ec.europa.eu/research/participants/portal/doc/call/h2020/msca-if-2018/1847614-if2018_percentiles_en.pdf)
