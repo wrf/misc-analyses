@@ -1,0 +1,11 @@
+#data from Flaxman 2000 Figure 7
+food_item	aversions	cravings
+Meat	27.7959	11.8163
+Non-alcoholic drinks	15.7959	3
+Vegetables	8.1429	6
+Alcohol	4.1633	0.4285
+Spicy foods	4.0408	4.3469
+Dairy	3.1837	12.3061
+Sweets	3.1837	17.2652
+Grains and starches	1.8367	8.5102
+Fruits	1.7143	19.6531
