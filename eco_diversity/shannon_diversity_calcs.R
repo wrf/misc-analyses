@@ -1,8 +1,11 @@
-#
+# calculations for diversity index
 
-
-HvalsR = c()
+# SET THIS
 nmax = 100
+
+
+# all even, as 1, 1, 1...
+HvalsR = c()
 for (n in seq(1,nmax,1)){
   counts = rep(1,n)
   s = sum(counts)
@@ -25,6 +28,7 @@ plot(seq(1,nmax,1), HvalsR, ylab="H", xlab="Num taxa", type='l', col="#12bc88", 
 # max(HvalsR)
 # #[1] 13.81551
 
+# sequential, as 1, 2, 3, 4...
 HvalsC = c()
 for (n in 1:nmax){
   counts = seq(1,n,1)
@@ -34,7 +38,7 @@ for (n in 1:nmax){
   HvalsC = c(HvalsC,H)
 }
 
-
+# increase as cumulative sum, so 1, 3, 6, 10, 15...
 HvalsE = c()
 for (n in 1:nmax){
   counts = cumsum(seq(1,n,1))
@@ -44,23 +48,44 @@ for (n in 1:nmax){
   HvalsE = c(HvalsE,H)
 }
 
+# first equals n , rest equal 1
+HvalsD = c()
+for (n in 1:nmax){
+  counts = c(n, rep(1, n-1))
+  s = sum(counts)
+  p = counts/ s
+  H = -1 * sum(p * log(p))
+  HvalsD = c(HvalsD,H)
+}
+
 #plot(1:10000, counts)
-pdf(file="~/git/misc-analyses/eco_diversity/shannon_diversity_model_v1.pdf", width=6, height=5)
+pdf(file="~/git/misc-analyses/eco_diversity/images/shannon_diversity_model_v2.pdf", width=6, height=5)
 par(mar=c(4.5,4.5,1,1))
 plot(1:nmax, HvalsR, ylab="H (Shannon Index)", xlab="Num taxa", type='l', 
      cex.axis=1.4, cex.lab=1.4, frame.plot = FALSE, ylim=c(0,5),
      col="#12bc88", lwd=4)
 lines(1:nmax, HvalsC, type='l', col="#1066dc", lwd=4)
 lines(1:nmax, HvalsE, type='l', col="#fd8d3c", lwd=4)
-legend(40,3,legend=c("All equal", "Increase by 1", "Square/2"), lwd=5, cex=1.1,
-       col=c("#12bc88","#1066dc","#fd8d3c"), bty='n' )
-legend(75,3,legend=c("(1,1,1...)", "(1,2,3...)", "(1,3,6...)"), cex=1.1, bty='n')
-text(15,1,"Calculated as:\nH = -1 * sum(p * log(p))\nwhere p is proportion of taxon i in sample", pos=4)
+lines(1:nmax, HvalsD, type='l', col="#8d253c", lwd=4)
+legend(30,2,legend=c("All equal", "Increase by 1", "Square/2", "First = N, rest = 1"), lwd=5, cex=1.1,
+       col=c("#12bc88","#1066dc","#fd8d3c","#8d253c"), bty='n' )
+legend(75,2,legend=c("(1,1,1...)", "(1,2,3...)", "(1,3,6...)", "(N,1,1...)"), cex=1.1, bty='n')
+text(-2,4.6,"Calculated as:\nH = -1 * sum(p * log(p))\nwhere p is proportion of taxon i in sample", pos=4)
+text(-2,4.0,"When all equal, H = ln (N)", pos=4)
 dev.off()
 
-
-
-
+# make PDF of evenness
+pdf(file="~/git/misc-analyses/eco_diversity/images/evenness_model_v1.pdf", width=6, height=5)
+par(mar=c(4.5,4.5,1,1))
+plot(1:nmax, HvalsC/HvalsR, ylab="J (evenness)", xlab="Num taxa", type='l', 
+     cex.axis=1.4, cex.lab=1.4, frame.plot = FALSE, ylim=c(0,1),
+     col="#1066dc", lwd=4)
+lines(1:nmax, HvalsE/HvalsR, type='l', col="#fd8d3c", lwd=4)
+lines(1:nmax, HvalsD/HvalsR, type='l', col="#8d253c", lwd=4)
+lines(1:nmax, HvalsR/HvalsR, type='l', col="#12bc88", lwd=4)
+legend(40,0.5,legend=c("All equal","Increase by 1", "Square/2", "First = n, rest = 1"), lwd=5, cex=1.1,
+       col=c("#12bc88", "#1066dc", "#fd8d3c", "#8d253c"), bty='n' )
+dev.off()
 
 
 #
