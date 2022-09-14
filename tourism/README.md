@@ -28,7 +28,7 @@ Two countries changed names in the past year, Swaziland to Eswatini, and the For
 
 Arrival data for 2019 are from [UN WTO International Tourism Highlights 2020 Edition](https://www.e-unwto.org/doi/book/10.18111/9789284422456).
 
-### Appendix Table 1 : Arrivals by country (millions of people) ###
+### Appendix Table 1 : Arrivals by country (millions of people), sorted alphabetically ###
 | Country | **2020 Population** | 2019 Arrivals | 2018 | 2017 | 2016 |
 | :---    |            ---: | ---: | ---: | ---: | ---: |
 | [Albania](https://en.wikipedia.org/wiki/Albania) | **2.878** | 5.9 | 5.34 | 4.643 | 4.07 |
@@ -185,7 +185,7 @@ Arrival data for 2019 are from [UN WTO International Tourism Highlights 2020 Edi
 | [Tunisia](https://en.wikipedia.org/wiki/Tunisia) | **11.819** | 0 | 8.299 | 5.7 | 5.4 |
 | [Turkey](https://en.wikipedia.org/wiki/Turkey) | **84.339** | 51.2 | 45.768 | 37.6 | 30.3 |
 | [Uganda](https://en.wikipedia.org/wiki/Uganda) | **45.741** | 0 | 1.85 | 1.402 | 1.323 |
-| [UK](https://en.wikipedia.org/wiki/UK) | **67.886** | 39.4 | 36.316 | 37.7 | 35.8 |
+| [UK](https://en.wikipedia.org/wiki/United_Kingdom) | **67.886** | 39.4 | 36.316 | 37.7 | 35.8 |
 | [Ukraine](https://en.wikipedia.org/wiki/Ukraine) | **43.734** | 0 | 14.207 | 14.23 | 13.33 |
 | [United Arab Emirates](https://en.wikipedia.org/wiki/United_Arab_Emirates) | **9.89** | 16.7 | 15.92 | 15.79 | 14.9 |
 | [Uruguay](https://en.wikipedia.org/wiki/Uruguay) | **3.474** | 3.1 | 3.469 | 3.674 | 3.037 |
@@ -197,5 +197,178 @@ Arrival data for 2019 are from [UN WTO International Tourism Highlights 2020 Edi
 | [Yemen](https://en.wikipedia.org/wiki/Yemen) | **29.826** | 0 | 0 | 0 | 1.025 |
 | [Zambia](https://en.wikipedia.org/wiki/Zambia) | **18.384** | 0 | 1.1 | 1.083 | 0.956 |
 | [Zimbabwe](https://en.wikipedia.org/wiki/Zimbabwe) | **14.863** | 0 | 2.567 | 2.2 | 2 |
-| 
+
+
+### Appendix Table 2 : Arrivals by country (millions of people) sorted by ratio of arrivals to population ###
+| Country | **ratio A/P** | 2019 Arrivals | 2018 | 2017 | 2016 |
+| :---    |          ---: | ---: | ---: | ---: | ---: |
+| [Andorra](https://en.wikipedia.org/wiki/Andorra) | **39.5065** | 0 | 3.042 | 3.003 | 2.831 |
+| [Macau](https://en.wikipedia.org/wiki/Macau) | **28.6595** | 18.6 | 18.493 | 17.3 | 15.7 |
+| [Liechtenstein](https://en.wikipedia.org/wiki/Liechtenstein) | **22.3684** | 0 | 0.85 | 0.079 | 0.069 |
+| [Aruba](https://en.wikipedia.org/wiki/Aruba) | **10.2804** | 0 | 1.1 | 1.071 | 1.102 |
+| [Guam](https://en.wikipedia.org/wiki/Guam) | **9.1834** | 0 | 1.552 | 1.544 | 1.536 |
+| [Monaco](https://en.wikipedia.org/wiki/Monaco) | **8.8974** | 0 | 0.347 | 0.355 | 0.336 |
+| [Cayman Islands](https://en.wikipedia.org/wiki/Cayman_Islands) | **7.0152** | 0 | 0.463 | 0.418 | 0.385 |
+| [Palau](https://en.wikipedia.org/wiki/Palau) | **6.4444** | 0 | 0.116 | 0.123 | 0.138 |
+| [Malta](https://en.wikipedia.org/wiki/Malta) | **6.3348** | 2.8 | 2.599 | 2.27 | 1.966 |
+| [Iceland](https://en.wikipedia.org/wiki/Iceland) | **5.8651** | 2 | 2.344 | 2.224 | 1.792 |
+| [Bermuda](https://en.wikipedia.org/wiki/Bermuda) | **4.8387** | 0.3 | 0.282 | 0.27 | 0.244 |
+| [Bahamas](https://en.wikipedia.org/wiki/Bahamas) | **4.5802** | 1.8 | 1.627 | 1.439 | 1.482 |
+| [Croatia](https://en.wikipedia.org/wiki/Croatia) | **4.2387** | 17.4 | 16.645 | 15.593 | 13.809 |
+| [Seychelles](https://en.wikipedia.org/wiki/Seychelles) | **4.0816** | 0.4 | 0.362 | 0.35 | 0.303 |
+| [Montenegro](https://en.wikipedia.org/wiki/Montenegro) | **3.9809** | 2.5 | 2.077 | 1.877 | 1.662 |
+| [Austria](https://en.wikipedia.org/wiki/Austria) | **3.5421** | 31.9 | 30.816 | 29.5 | 28.1 |
+| [Cyprus](https://en.wikipedia.org/wiki/Cyprus) | **3.3140** | 4 | 3.939 | 3.652 | 3.187 |
+| [Hong Kong](https://en.wikipedia.org/wiki/Hong_Kong) | **3.1746** | 23.8 | 29.263 | 27.9 | 26.6 |
+| [Maldives](https://en.wikipedia.org/wiki/Maldives) | **3.1423** | 1.7 | 1.484 | 1.39 | 1.286 |
+| [Curacao](https://en.wikipedia.org/wiki/Curacao) | **3.0488** | 0.5 | 0.463 | 0.399 | 0.441 |
+| [Greece](https://en.wikipedia.org/wiki/Greece) | **3.0030** | 31.3 | 30.123 | 27.2 | 24.8 |
+| [Singapore](https://en.wikipedia.org/wiki/Singapore) | **2.5812** | 15.1 | 14.673 | 13.9 | 12.9 |
+| [Estonia](https://en.wikipedia.org/wiki/Estonia) | **2.4868** | 3.3 | 3.234 | 3.245 | 3.131 |
+| [San Marino](https://en.wikipedia.org/wiki/San_Marino) | **2.4706** | 0 | 0.084 | 0.078 | 0.06 |
+| [Portugal](https://en.wikipedia.org/wiki/Portugal) | **2.4125** | 24.6 | 22.8 | 21.2 | 18.2 |
+| [Barbados](https://en.wikipedia.org/wiki/Barbados) | **2.3693** | 0 | 0.68 | 0.664 | 0.632 |
+| [Denmark](https://en.wikipedia.org/wiki/Denmark) | **2.2963** | 13.3 | 12.7 | 10.781 | 8.744 |
+| [Slovenia](https://en.wikipedia.org/wiki/Slovenia) | **2.2607** | 4.7 | 4.425 | 3.586 | 3.032 |
+| [Bahrain](https://en.wikipedia.org/wiki/Bahrain) | **2.2327** | 3.8 | 0 | 4.372 | 3.99 |
+| [Ireland](https://en.wikipedia.org/wiki/Ireland) | **2.2074** | 0 | 10.9 | 10.388 | 10.1 |
+| [Albania](https://en.wikipedia.org/wiki/Albania) | **2.0500** | 5.9 | 5.34 | 4.643 | 4.07 |
+| [Spain](https://en.wikipedia.org/wiki/Spain) | **1.7902** | 83.7 | 82.773 | 81.8 | 75.3 |
+| [Grenada](https://en.wikipedia.org/wiki/Grenada) | **1.7699** | 0.2 | 0.161 | 0.146 | 0.135 |
+| [Hungary](https://en.wikipedia.org/wiki/Hungary) | **1.7495** | 16.9 | 17.152 | 15.785 | 15.256 |
+| [United Arab Emirates](https://en.wikipedia.org/wiki/United_Arab_Emirates) | **1.6886** | 16.7 | 15.92 | 15.79 | 14.9 |
+| [Guadeloupe](https://en.wikipedia.org/wiki/Guadeloupe) | **1.6250** | 0 | 0 | 0.65 | 0.58 |
+| [Luxembourg](https://en.wikipedia.org/wiki/Luxembourg) | **1.5974** | 1 | 1.018 | 1.046 | 1.054 |
+| [Martinique](https://en.wikipedia.org/wiki/Martinique) | **1.4320** | 0 | 0.537 | 0.536 | 0.519 |
+| [France](https://en.wikipedia.org/wiki/France) | **1.3696** | 0 | 89.4 | 86.9 | 82.7 |
+| [Switzerland](https://en.wikipedia.org/wiki/Switzerland) | **1.3634** | 11.8 | 11.715 | 11.133 | 10.402 |
+| [Bulgaria](https://en.wikipedia.org/wiki/Bulgaria) | **1.3385** | 9.3 | 9.273 | 8.883 | 8.252 |
+| [Czech Republic](https://en.wikipedia.org/wiki/Czech_Republic) | **1.3353** | 0 | 14.3 | 13.665 | 12.808 |
+| [Georgia](https://en.wikipedia.org/wiki/Georgia) | **1.2785** | 5.1 | 4.757 | 3.479 | 2.721 |
+| [Belize](https://en.wikipedia.org/wiki/Belize) | **1.2563** | 0.5 | 0.489 | 0.427 | 0.386 |
+| [Netherlands](https://en.wikipedia.org/wiki/Netherlands) | **1.1730** | 20.1 | 19.014 | 17.924 | 15.828 |
+| [Mauritius](https://en.wikipedia.org/wiki/Mauritius) | **1.1006** | 1.4 | 1.4 | 1.3 | 1.3 |
+| [Norway](https://en.wikipedia.org/wiki/Norway) | **1.0884** | 5.9 | 5.7 | 6.252 | 5.96 |
+| [Puerto Rico](https://en.wikipedia.org/wiki/Puerto_Rico) | **1.0724** | 0 | 3.068 | 3.797 | 3.736 |
+| [Italy](https://en.wikipedia.org/wiki/Italy) | **1.0668** | 64.5 | 62.146 | 58.3 | 52.4 |
+| [Lithuania](https://en.wikipedia.org/wiki/Lithuania) | **1.0654** | 2.9 | 2.825 | 2.523 | 2.296 |
+| [Kyrgyzstan](https://en.wikipedia.org/wiki/Kyrgyzstan) | **1.0576** | 0 | 6.9 | 4.568 | 2.93 |
+| [Samoa](https://en.wikipedia.org/wiki/Samoa) | **1.0101** | 0.2 | 0.164 | 0.146 | 0.134 |
+| [Latvia](https://en.wikipedia.org/wiki/Latvia) | **1.0074** | 1.9 | 1.946 | 1.95 | 1.793 |
+| [Slovakia](https://en.wikipedia.org/wiki/Slovakia) | **1.0073** | 0 | 0 | 5.5 | 5.415 |
+| [Fiji](https://en.wikipedia.org/wiki/Fiji) | **1.0045** | 0.9 | 0.87 | 0.843 | 0.792 |
+| [Tonga](https://en.wikipedia.org/wiki/Tonga) | **0.9434** | 0 | 0.1 | 0.062 | 0.061 |
+| [Uruguay](https://en.wikipedia.org/wiki/Uruguay) | **0.8923** | 3.1 | 3.469 | 3.674 | 3.037 |
+| [Jamaica](https://en.wikipedia.org/wiki/Jamaica) | **0.8352** | 0 | 2.473 | 2.353 | 2.182 |
+| [Malaysia](https://en.wikipedia.org/wiki/Malaysia) | **0.8064** | 26.1 | 25.832 | 26 | 26.8 |
+| [Belgium](https://en.wikipedia.org/wiki/Belgium) | **0.8024** | 9.3 | 9.154 | 8.358 | 7.481 |
+| [New Zealand](https://en.wikipedia.org/wiki/New_Zealand) | **0.7644** | 0 | 3.686 | 3.555 | 3.37 |
+| [French Guiana](https://en.wikipedia.org/wiki/French_Guiana) | **0.7492** | 0 | 0 | 0.224 | 0.189 |
+| [Sweden](https://en.wikipedia.org/wiki/Sweden) | **0.7327** | 0 | 7.4 | 6.865 | 6.559 |
+| [Qatar](https://en.wikipedia.org/wiki/Qatar) | **0.7289** | 2.1 | 1.819 | 2.256 | 2.9 |
+| [Tunisia](https://en.wikipedia.org/wiki/Tunisia) | **0.7022** | 0 | 8.299 | 5.7 | 5.4 |
+| [Brunei](https://en.wikipedia.org/wiki/Brunei) | **0.6865** | 0.3 | 0.278 | 0.259 | 0.219 |
+| [Eswatini (Swaziland)](https://en.wikipedia.org/wiki/Eswatini_(Swaziland)) | **0.6741** | 0 | 0.782 | 0.921 | 0.947 |
+| [Armenia](https://en.wikipedia.org/wiki/Armenia) | **0.6412** | 1.9 | 1.652 | 1.495 | 1.26 |
+| [Namibia](https://en.wikipedia.org/wiki/Namibia) | **0.6297** | 0 | 1.6 | 1.499 | 1.4 |
+| [Costa Rica](https://en.wikipedia.org/wiki/Costa_Rica) | **0.6086** | 3.1 | 3.017 | 2.96 | 2.925 |
+| [Turkey](https://en.wikipedia.org/wiki/Turkey) | **0.6071** | 51.2 | 45.768 | 37.6 | 30.3 |
+| [Finland](https://en.wikipedia.org/wiki/Finland) | **0.5956** | 3.3 | 3.221 | 3.181 | 2.789 |
+| [Dominican Republic](https://en.wikipedia.org/wiki/Dominican_Republic) | **0.5900** | 6.4 | 6.569 | 6.2 | 6 |
+| [Canada](https://en.wikipedia.org/wiki/Canada) | **0.5856** | 22.1 | 21.134 | 20.8 | 20 |
+| [UK](https://en.wikipedia.org/wiki/United_Kingdom) | **0.5804** | 39.4 | 36.316 | 37.7 | 35.8 |
+| [Thailand](https://en.wikipedia.org/wiki/Thailand) | **0.5702** | 39.8 | 38.277 | 35.4 | 32.6 |
+| [Poland](https://en.wikipedia.org/wiki/Poland) | **0.5602** | 21.2 | 19.623 | 18.4 | 17.463 |
+| [Israel](https://en.wikipedia.org/wiki/Israel) | **0.5314** | 4.6 | 4.121 | 3.613 | 2.9 |
+| [Laos](https://en.wikipedia.org/wiki/Laos) | **0.5181** | 0 | 3.77 | 3.257 | 3.315 |
+| [Saudi Arabia](https://en.wikipedia.org/wiki/Saudi_Arabia) | **0.5027** | 17.5 | 15.293 | 16.109 | 18.044 |
+| [Taiwan](https://en.wikipedia.org/wiki/Taiwan) | **0.4996** | 11.9 | 11.1 | 10.7 | 10.7 |
+| [Syria](https://en.wikipedia.org/wiki/Syria) | **0.4883** | 0 | 0 | 0 | 8.546 |
+| [Suriname](https://en.wikipedia.org/wiki/Suriname) | **0.4736** | 0 | 0 | 0.278 | 0.257 |
+| [Germany](https://en.wikipedia.org/wiki/Germany) | **0.4726** | 39.6 | 38.881 | 37.5 | 35.6 |
+| [Oman](https://en.wikipedia.org/wiki/Oman) | **0.4645** | 0 | 0 | 2.372 | 2.3 |
+| [Jordan](https://en.wikipedia.org/wiki/Jordan) | **0.4410** | 4.5 | 4.15 | 3.844 | 3.6 |
+| [Panama](https://en.wikipedia.org/wiki/Panama) | **0.4171** | 1.8 | 1.779 | 1.843 | 1.921 |
+| [Cuba](https://en.wikipedia.org/wiki/Cuba) | **0.4135** | 0 | 4.684 | 4.594 | 4 |
+| [Cambodia](https://en.wikipedia.org/wiki/Cambodia) | **0.3948** | 6.6 | 6.201 | 5.602 | 5.012 |
+| [Bhutan](https://en.wikipedia.org/wiki/Bhutan) | **0.3886** | 0.3 | 0.274 | 0.255 | 0.21 |
+| [North Macedonia](https://en.wikipedia.org/wiki/North_Macedonia) | **0.3841** | 0.8 | 0.707 | 0.631 | 0.51 |
+| [Vanuatu](https://en.wikipedia.org/wiki/Vanuatu) | **0.3779** | 0 | 0.116 | 0.109 | 0.095 |
+| [Australia](https://en.wikipedia.org/wiki/Australia) | **0.3725** | 9.5 | 9.246 | 8.815 | 8.269 |
+| [Bosnia and Herzegovina](https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina) | **0.3657** | 1.2 | 1.053 | 0.922 | 0.777 |
+| [Guyana](https://en.wikipedia.org/wiki/Guyana) | **0.3647** | 0 | 0.287 | 0.247 | 0.235 |
+| [Morocco](https://en.wikipedia.org/wiki/Morocco) | **0.3495** | 12.9 | 12.289 | 10.3 | 10.2 |
+| [Mexico](https://en.wikipedia.org/wiki/Mexico) | **0.3490** | 45 | 41.447 | 39.3 | 35.1 |
+| [South Korea](https://en.wikipedia.org/wiki/South_Korea) | **0.3413** | 17.5 | 15.347 | 13.3 | 17.2 |
+| [Ukraine](https://en.wikipedia.org/wiki/Ukraine) | **0.3249** | 0 | 14.207 | 14.23 | 13.33 |
+| [Trinidad and Tobago](https://en.wikipedia.org/wiki/Trinidad_and_Tobago) | **0.2859** | 0.4 | 0.375 | 0.395 | 0.409 |
+| [Lebanon](https://en.wikipedia.org/wiki/Lebanon) | **0.2784** | 1.9 | 1.964 | 1.857 | 1.7 |
+| [El Salvador](https://en.wikipedia.org/wiki/El_Salvador) | **0.2775** | 1.8 | 1.677 | 1.556 | 1.424 |
+| [Belarus](https://en.wikipedia.org/wiki/Belarus) | **0.2646** | 2.5 | 2.142 | 2 | 1.929 |
+| [Azerbaijan](https://en.wikipedia.org/wiki/Azerbaijan) | **0.2570** | 0 | 2.606 | 2.454 | 2.045 |
+| [Japan](https://en.wikipedia.org/wiki/Japan) | **0.2546** | 32.2 | 31.192 | 28.7 | 24 |
+| [Gambia](https://en.wikipedia.org/wiki/Gambia) | **0.2482** | 0 | 0.6 | 0.162 | 0.161 |
+| [USA](https://en.wikipedia.org/wiki/USA) | **0.2396** | 79.3 | 79.618 | 76.9 | 76.4 |
+| [Chile](https://en.wikipedia.org/wiki/Chile) | **0.2354** | 4.5 | 5.723 | 6.5 | 5.6 |
+| [Serbia](https://en.wikipedia.org/wiki/Serbia) | **0.2060** | 1.8 | 1.711 | 1.497 | 1.281 |
+| [Uzbekistan](https://en.wikipedia.org/wiki/Uzbekistan) | **0.2002** | 6.7 | 5.3 | 2.7 | 0.975 |
+| [Nicaragua](https://en.wikipedia.org/wiki/Nicaragua) | **0.1962** | 1.3 | 1.3 | 1.787 | 1.504 |
+| [Vietnam](https://en.wikipedia.org/wiki/Vietnam) | **0.1849** | 18 | 15.498 | 12.922 | 10.013 |
+| [Mongolia](https://en.wikipedia.org/wiki/Mongolia) | **0.1830** | 0.6 | 0.529 | 0.469 | 0.404 |
+| [Zimbabwe](https://en.wikipedia.org/wiki/Zimbabwe) | **0.1727** | 0 | 2.567 | 2.2 | 2 |
+| [South Africa](https://en.wikipedia.org/wiki/South_Africa) | **0.1720** | 10.2 | 10.472 | 10 | 8.9 |
+| [Paraguay](https://en.wikipedia.org/wiki/Paraguay) | **0.1682** | 1.2 | 1.181 | 1.537 | 1.308 |
+| [Russia](https://en.wikipedia.org/wiki/Russia) | **0.1672** | 24.4 | 24.551 | 24.4 | 24.6 |
+| [Argentina](https://en.wikipedia.org/wiki/Argentina) | **0.1637** | 7.4 | 6.942 | 6.7 | 6.6 |
+| [Kazakhstan](https://en.wikipedia.org/wiki/Kazakhstan) | **0.1593** | 0 | 0 | 0 | 2.991 |
+| [Romania](https://en.wikipedia.org/wiki/Romania) | **0.1403** | 2.7 | 2.797 | 2.76 | 2.481 |
+| [Peru](https://en.wikipedia.org/wiki/Peru) | **0.1334** | 4.4 | 4.419 | 4 | 3.7 |
+| [Tajikistan](https://en.wikipedia.org/wiki/Tajikistan) | **0.1311** | 0 | 1.25 | 0.431 | 0.16 |
+| [Egypt](https://en.wikipedia.org/wiki/Egypt) | **0.1270** | 13 | 11.346 | 5.3 | 9.1 |
+| [Ecuador](https://en.wikipedia.org/wiki/Ecuador) | **0.1190** | 2.1 | 2.429 | 1.608 | 1.418 |
+| [Palestine](https://en.wikipedia.org/wiki/Palestine) | **0.1175** | 0 | 0.606 | 0.503 | 0.4 |
+| [Bolivia](https://en.wikipedia.org/wiki/Bolivia) | **0.1028** | 1.2 | 1.1 | 1.134 | 0.959 |
+| [Guatemala](https://en.wikipedia.org/wiki/Guatemala) | **0.1005** | 1.8 | 1.781 | 1.66 | 1.585 |
+| [Sri Lanka](https://en.wikipedia.org/wiki/Sri_Lanka) | **0.0887** | 1.9 | 2.334 | 2.116 | 2.051 |
+| [Iran](https://en.wikipedia.org/wiki/Iran) | **0.0869** | 0 | 7.295 | 4.867 | 4.9 |
+| [Mozambique](https://en.wikipedia.org/wiki/Mozambique) | **0.0864** | 0 | 2.7 | 1.447 | 1.6 |
+| [Colombia](https://en.wikipedia.org/wiki/Colombia) | **0.0825** | 4.2 | 3.898 | 4 | 3.3 |
+| [Timor-Leste](https://en.wikipedia.org/wiki/Timor-Leste) | **0.0759** | 0.1 | 0.075 | 0.074 | 0.066 |
+| [Philippines](https://en.wikipedia.org/wiki/Philippines) | **0.0757** | 8.3 | 7.129 | 6.621 | 5.967 |
+| [Ivory Coast](https://en.wikipedia.org/wiki/Ivory_Coast) | **0.0745** | 0 | 1.965 | 1.8 | 1.4 |
+| [Rwanda](https://en.wikipedia.org/wiki/Rwanda) | **0.0720** | 0 | 0 | 0 | 0.932 |
+| [Honduras](https://en.wikipedia.org/wiki/Honduras) | **0.0707** | 0.7 | 0.865 | 0.936 | 0.908 |
+| [Togo](https://en.wikipedia.org/wiki/Togo) | **0.0692** | 0 | 0.573 | 0.514 | 0.338 |
+| [Myanmar](https://en.wikipedia.org/wiki/Myanmar) | **0.0653** | 0 | 3.551 | 3.443 | 2.907 |
+| [Zambia](https://en.wikipedia.org/wiki/Zambia) | **0.0598** | 0 | 1.1 | 1.083 | 0.956 |
+| [Indonesia](https://en.wikipedia.org/wiki/Indonesia) | **0.0567** | 15.5 | 13.396 | 12.9 | 11 |
+| [Algeria](https://en.wikipedia.org/wiki/Algeria) | **0.0547** | 2.4 | 2.7 | 2.451 | 1.7 |
+| [Moldova](https://en.wikipedia.org/wiki/Moldova) | **0.0496** | 0.2 | 0.16 | 0.145 | 0.121 |
+| [Kuwait](https://en.wikipedia.org/wiki/Kuwait) | **0.0475** | 0 | 0 | 0 | 0.203 |
+| [Malawi](https://en.wikipedia.org/wiki/Malawi) | **0.0470** | 0 | 0.9 | 0.837 | 0.849 |
+| [China](https://en.wikipedia.org/wiki/China) | **0.0456** | 65.7 | 62.9 | 60.7 | 59.3 |
+| [Nepal](https://en.wikipedia.org/wiki/Nepal) | **0.0412** | 1.2 | 1.173 | 0.94 | 0.753 |
+| [Uganda](https://en.wikipedia.org/wiki/Uganda) | **0.0404** | 0 | 1.85 | 1.402 | 1.323 |
+| [Eritrea](https://en.wikipedia.org/wiki/Eritrea) | **0.0400** | 0 | 0 | 0 | 0.142 |
+| [Iraq](https://en.wikipedia.org/wiki/Iraq) | **0.0377** | 0 | 0 | 0 | 1.518 |
+| [Yemen](https://en.wikipedia.org/wiki/Yemen) | **0.0344** | 0 | 0 | 0 | 1.025 |
+| [Brazil](https://en.wikipedia.org/wiki/Brazil) | **0.0301** | 6.4 | 6.621 | 6.6 | 6.5 |
+| [Kenya](https://en.wikipedia.org/wiki/Kenya) | **0.0274** | 0 | 1.475 | 1.39 | 1.268 |
+| [Burundi](https://en.wikipedia.org/wiki/Burundi) | **0.0251** | 0 | 0 | 0.299 | 0.187 |
+| [Benin](https://en.wikipedia.org/wiki/Benin) | **0.0243** | 0 | 0.295 | 0.281 | 0.267 |
+| [Tanzania](https://en.wikipedia.org/wiki/Tanzania) | **0.0234** | 0 | 1.4 | 1.275 | 1.233 |
+| [Sudan](https://en.wikipedia.org/wiki/Sudan) | **0.0182** | 0 | 0.8 | 0.813 | 0.8 |
+| [Venezuela](https://en.wikipedia.org/wiki/Venezuela) | **0.0150** | 0 | 0 | 0.427 | 0.601 |
+| [Madagascar](https://en.wikipedia.org/wiki/Madagascar) | **0.0144** | 0.4 | 0.257 | 0.255 | 0.293 |
+| [India](https://en.wikipedia.org/wiki/India) | **0.0130** | 17.9 | 17.427 | 15.5 | 14.6 |
+| [Papua New Guinea](https://en.wikipedia.org/wiki/Papua_New_Guinea) | **0.0112** | 0 | 0.1 | 0.143 | 0.179 |
+| [Mali](https://en.wikipedia.org/wiki/Mali) | **0.0100** | 0 | 0.203 | 0.192 | 0.173 |
+| [Nigeria](https://en.wikipedia.org/wiki/Nigeria) | **0.0092** | 0 | 0 | 1.9 | 1.3 |
+| [Ethiopia](https://en.wikipedia.org/wiki/Ethiopia) | **0.0070** | 0 | 0.8 | 0.933 | 0.871 |
+| [Burkina Faso](https://en.wikipedia.org/wiki/Burkina_Faso) | **0.0069** | 0 | 0.144 | 0.143 | 0.152 |
+| [Niger](https://en.wikipedia.org/wiki/Niger) | **0.0065** | 0 | 0.157 | 0.164 | 0.152 |
+| [Angola](https://en.wikipedia.org/wiki/Angola) | **0.0061** | 0.2 | 0.2 | 0.261 | 0.397 |
+
+* Note: ratio is calculated by most recent arrival figure against the 2020 population values, where available
+
 
