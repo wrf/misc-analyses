@@ -1,0 +1,182 @@
+Region	country	tax_revenue_pct_GDP	GDP_GUSD_PPP	tax_revenue_GUSD	govt_expenditure_pct_GDP	public_debt_pct_GDP
+Europe	France	46.2	2962.80	1368.81	56.4	98.6
+Europe	Denmark	46	301.30	138.60	51.7	34.3
+Europe	Belgium	44.6	550.50	245.52	52.5	101.4
+Europe	Sweden	44	542.00	238.48	49.7	39
+Europe	Finland	43.3	256.50	111.06	54.4	60.5
+Europe	Italy	42.4	2397.40	1016.50	48.8	132.1
+Europe	Austria	41.8	463.20	193.62	49.3	74.2
+Americas	Cuba	40.6	155.90	63.30	64.8	51
+Europe	Greece	39.4	312.70	123.20	47.8	183.3
+Europe	Netherlands	38.8	969.20	376.05	42.7	54.4
+Europe	Luxembourg	38.7	64.20	24.85	42.7	21.8
+Europe	Croatia	38.6	107.40	41.46	46.6	73.9
+Europe	Norway	38.2	395.90	151.23	49.8	36.8
+Europe	Bosnia and Herzegovina	37.9	47.30	17.93	41.1	37
+Europe	Hungary	37.7	311.90	117.59	46.7	69.4
+Europe	Iceland	37.7	19.50	7.35	43.2	35.4
+Europe	Germany	37.5	4356.40	1633.65	43.9	59.8
+Europe	Serbia	36.1	122.80	44.33	40.9	54.3
+Europe	Montenegro	36	11.90	4.28	47.6	72.1
+Europe	Slovenia	36	76.00	27.36	43.6	68.5
+Europe	Czech Republic	34.9	395.90	138.17	39.7	33
+Europe	Portugal	34.7	329.20	114.23	44.8	121.4
+Europe	Ukraine	34.2	390.30	133.48	42	63.9
+Europe	Poland	33.9	1212.90	411.17	41.3	48.4
+Europe	Cyprus	33.7	34.50	11.63	37.1	102.5
+Europe	Spain	33.7	1864.40	628.30	41.5	97
+Europe	United Kingdom	33.3	3037.80	1011.59	41	86.9
+Europe	Moldova	33.2	25.90	8.60	30.8	27.1
+Europe	Estonia	33	45.00	14.85	39.4	8.1
+Europe	Slovakia	32.9	191.20	62.90	40.8	48.8
+Middle East and North Africa	Israel	32.7	337.20	110.26	39.4	59.6
+Europe	Malta	32.7	21.30	6.97	36.5	45.4
+Americas	Brazil	32.3	3365.30	1086.99	38.9	87.9
+Americas	Canada	32.2	1836.80	591.45	40.5	90.6
+Asia-Pacific	New Zealand	32	197.80	63.30	37.5	29.4
+Americas	Barbados	31.8	5.30	1.69	32	124.5
+Sub-Saharan Africa	Seychelles	31.7	2.90	0.92	37	58.2
+Americas	Uruguay	30.9	81.60	25.21	33.4	70
+Sub-Saharan Africa	Djibouti	30.8	4.00	1.23	39.3	67.4
+Asia-Pacific	Japan	30.6	5594.50	1711.92	38.4	237.1
+Asia-Pacific	Solomon Islands	30.6	1.40	0.43	46.8	12.1
+Europe	Latvia	30.4	57.80	17.57	37.3	37.6
+Americas	Argentina	30.3	915.10	277.28	40.5	86.3
+Sub-Saharan Africa	Namibia	30.1	27.10	8.16	37.4	47.1
+Europe	Lithuania	29.8	97.00	28.91	33.7	35.9
+Sub-Saharan Africa	Lesotho	29.1	6.90	2.01	46.8	39
+Sub-Saharan Africa	Eswatini	29.1	12.10	3.52	35.2	34.9
+Asia-Pacific	Macau	28.9	77.30	22.34	18.5	0
+Americas	Dominica	28.7	0.70	0.20	52.9	83.1
+Sub-Saharan Africa	South Africa	28.6	789.40	225.77	33	56.7
+Europe	Switzerland	28.5	548.50	156.32	34	40.5
+Americas	Belize	28.2	3.40	0.96	33.5	94.8
+Asia-Pacific	Australia	27.8	1318.20	366.46	35.8	40.7
+Americas	Saint Vincent and the Grenadines	27.8	1.30	0.36	29.6	73.1
+Europe	Bulgaria	27.7	162.30	44.96	33.6	20.5
+Americas	Jamaica	27.3	27.00	7.37	29	99.4
+Americas	United States	27.1	20494.10	5553.90	38.1	105.8
+Asia-Pacific	South Korea	26.9	2136.30	574.66	32.8	40.7
+Middle East and North Africa	Algeria	26.6	657.50	174.90	39.8	36.9
+Asia-Pacific	Fiji	26.6	9.10	2.42	32.2	49.7
+Americas	Guyana	26.2	6.70	1.76	34.5	57
+Asia-Pacific	Brunei Darussalam	26	34.60	9.00	35.8	2.5
+Europe	Albania	25.7	38.40	9.87	29.1	68.6
+Europe	Georgia	25.7	42.60	10.95	29.6	44.5
+Europe	North Macedonia	25.5	32.60	8.31	31.1	39.5
+Europe	Belarus	25.1	189.20	47.49	39.1	47.8
+Europe	Turkey	24.9	2292.50	570.83	34.6	29.1
+Europe	Romania	24.7	516.30	127.53	31.4	36.6
+Europe	Russia	24.2	4213.40	1019.64	34.7	14
+Americas	Costa Rica	24.1	88.20	21.26	19.7	53.5
+Asia-Pacific	Samoa	24.1	1.20	0.29	35.3	50.2
+Americas	Bolivia	23.9	84.10	20.10	39.1	53.9
+Americas	Nicaragua	23.8	35.70	8.50	27.4	37.2
+Europe	Kosovo	23.3	20.90	4.87	28	17
+Asia-Pacific	Mongolia	23.2	43.50	10.09	33.4	73.3
+Sub-Saharan Africa	Mozambique	23.2	39.20	9.09	31.8	100.4
+Americas	Honduras	22.8	49.20	11.22	26.9	40.3
+Europe	Ireland	22.8	385.90	87.99	26.6	65.2
+Americas	Saint Lucia	22.5	2.50	0.56	25.5	66.8
+Sub-Saharan Africa	Togo	22.2	14.00	3.11	26.7	74.6
+Americas	Trinidad and Tobago	22.2	44.40	9.86	33.4	45.3
+Sub-Saharan Africa	Republic of the Congo	22.1	30.30	6.70	38.2	98.5
+Sub-Saharan Africa	Zimbabwe	22.1	42.50	9.39	20	29.8
+Sub-Saharan Africa	Senegal	22	59.50	13.09	22.8	64.4
+Middle East and North Africa	Morocco	21.8	314.60	68.58	30.1	65.2
+Middle East and North Africa	Tunisia	21.4	144.20	30.86	30	77
+Asia-Pacific	Tonga	21.3	0.60	0.13	43.7	49.2
+Sub-Saharan Africa	Gabon	21.1	38.00	8.02	18.9	58.2
+Europe	Armenia	20.8	30.40	6.32	25.4	48.5
+Asia-Pacific	Tajikistan	20.6	31.10	6.41	34	47.9
+Asia-Pacific	Maldives	20.5	8.00	1.64	32.7	61.5
+Americas	El Salvador	20.4	53.40	10.89	23.9	67.1
+Asia-Pacific	Nepal	20.3	86.10	17.48	27.2	30.4
+Americas	Chile	20.2	481.80	97.32	25.3	25.6
+Americas	Venezuela	20.2	277.80	56.12	33.5	175.6
+Sub-Saharan Africa	Mauritius	20	30.00	6.00	24.4	65.2
+Americas	Ecuador	19.9	199.50	39.70	37.5	46.1
+Asia-Pacific	Kyrgyz Republic	19.8	24.50	4.85	37.2	56
+Sub-Saharan Africa	Mauritania	19.7	18.10	3.57	28	83.9
+Americas	Colombia	18.8	744.70	140.00	27.7	50.5
+Asia-Pacific	Vietnam	18.6	710.30	132.12	28.3	57.5
+Sub-Saharan Africa	Burkina Faso	18.1	38.80	7.02	27.7	43
+Sub-Saharan Africa	Kenya	18.1	177.30	32.09	26.1	57.2
+Asia-Pacific	India	18.08	10505.30	1899.36	31.15	89.6
+Americas	Bahamas	17.9	12.60	2.26	20.5	61
+Sub-Saharan Africa	Ghana	17.6	190.70	33.56	20	59.6
+Asia-Pacific	Thailand	17.6	1320.40	232.39	21.7	42.1
+Asia-Pacific	China	17.5	25270.10	4422.27	32.7	50.5
+Asia-Pacific	Kiribati	17.5	0.20	0.04	125.7	21.9
+Sub-Saharan Africa	Côte d'Ivoire	17.4	107.00	18.62	24.2	52.2
+Asia-Pacific	Uzbekistan	17.3	250.30	43.30	29	23.5
+Sub-Saharan Africa	Malawi	17.3	23.70	4.10	30.7	61.3
+Sub-Saharan Africa	Gambia	17.2	6.10	1.05	21.9	83.2
+Asia-Pacific	Vanuatu	17.1	0.80	0.14	36	50.5
+Sub-Saharan Africa	Rwanda	16.6	27.40	4.55	26	40.7
+Asia-Pacific	Kazakhstan	16.4	508.60	83.41	22	21.9
+Asia-Pacific	Cambodia	16.2	70.50	11.42	23.2	29.4
+Americas	Mexico	16.2	2569.80	416.31	26.3	53.6
+Sub-Saharan Africa	Mali	16.1	44.20	7.12	21.8	36.6
+Asia-Pacific	Turkmenistan	15.6	112.70	17.58	15.1	29.3
+Sub-Saharan Africa	Comoros	15.5	1.40	0.22	29.7	31.2
+Americas	Peru	15.3	457.50	70.00	21.3	26.8
+Middle East and North Africa	Lebanon	15.3	89.50	13.69	30.3	150.9
+Middle East and North Africa	Egypt	15.2	1296.30	197.04	31.7	92.6
+Sub-Saharan Africa	Zambia	15.2	72.90	11.08	24.7	72.4
+Middle East and North Africa	Jordan	15	93.40	14.01	29.7	94.2
+Americas	Panama	14.7	106.80	15.70	21.8	39.4
+Americas	Suriname	14.6	8.90	1.30	29	69.6
+Sub-Saharan Africa	Cameroon	14.4	95.30	13.72	19.8	37.7
+Sub-Saharan Africa	Niger	14.4	23.50	3.38	26.5	55.1
+Asia-Pacific	Philippines	14.2	952.60	135.27	20.1	39.6
+Asia-Pacific	Hong Kong	14.1	480.50	67.75	18	0.1
+Asia-Pacific	Singapore	14.1	565.80	79.78	17.2	108.3
+Sub-Saharan Africa	Botswana	14	41.90	5.87	32.1	12.9
+Americas	Dominican Republic	13.9	189.20	26.30	17.8	41.6
+Americas	Paraguay	13.8	94.50	13.04	19.5	21.6
+Asia-Pacific	Papua New Guinea	13.7	30.90	4.23	21.3	36.9
+Asia-Pacific	Bhutan	13.6	7.80	1.06	31.1	102.6
+Sub-Saharan Africa	Burundi	13.6	8.20	1.12	21.8	58.4
+Asia-Pacific	Malaysia	13.6	999.40	135.92	22.6	56.2
+Europe	Azerbaijan	13.3	179.70	23.90	35.1	19.4
+Sub-Saharan Africa	Guinea	13.3	30.70	4.08	16.9	38.7
+Americas	Haiti	13.3	20.70	2.75	18.8	33
+Sub-Saharan Africa	Benin	13.2	27.70	3.66	23	54.6
+Asia-Pacific	Timor-Leste	13.1	6.70	0.88	56.2	5.4
+Sub-Saharan Africa	Uganda	13.1	97.00	12.71	19.7	42.2
+Asia-Pacific	Micronesia	13	0.40	0.05	63.2	20.2
+Asia-Pacific	Sri Lanka	12.6	290.60	36.62	19.2	84.1
+Asia-Pacific	Pakistan	12.5	1141.40	142.68	21	72.1
+Americas	Guatemala	12.4	145.60	18.05	12.1	24.5
+Sub-Saharan Africa	São Tomé and Príncipe	12.1	0.70	0.08	27.6	81.3
+Asia-Pacific	Laos	12	53.70	6.44	21.1	63
+Sub-Saharan Africa	Liberia	11.9	6.30	0.75	33.9	40.5
+Sub-Saharan Africa	Tanzania	11.8	175.80	20.74	16.8	36
+Sub-Saharan Africa	Ethiopia	11.6	219.50	25.46	17.5	61.1
+Asia-Pacific	Indonesia	11.5	3494.70	401.89	16.7	29.2
+Sub-Saharan Africa	Madagascar	11.5	42.90	4.93	16.8	39.7
+Sub-Saharan Africa	Sierra Leone	11.1	12.30	1.37	23.4	71.3
+Sub-Saharan Africa	Guinea-Bissau	10.3	3.40	0.35	21.1	56.1
+Sub-Saharan Africa	Angola	9.2	199.30	18.34	21.8	88.1
+Middle East and North Africa	United Arab Emirates	9.2	723.70	66.58	30.5	18.7
+Asia-Pacific	Bangladesh	9.1	761.70	69.31	13.7	34.8
+Asia-Pacific	Taiwan	8.9	1251.50	111.38	17.8	35
+Sub-Saharan Africa	Eritrea	8	10.00	0.80	29.1	129.4
+Sub-Saharan Africa	Sudan	8	177.70	14.22	13.6	163
+Middle East and North Africa	Bahrain	7.8	74.10	5.78	33.6	93.4
+Sub-Saharan Africa	Chad	7.7	30.20	2.33	14.8	46.6
+Asia-Pacific	Afghanistan|Taliban	7.6	72.60	5.52	26.3	7.1
+Sub-Saharan Africa	Democratic Republic of the Congo	7.6	72.90	5.54	12.4	15.7
+Middle East and North Africa	Yemen	7.4	73.30	5.42	10.8	63.2
+Middle East and North Africa	Iran	7.3	1610.70	117.58	19	33.2
+Sub-Saharan Africa	Cabo Verde	6.9	4.00	0.28	30.7	127.7
+Sub-Saharan Africa	Central African Republic	6.9	3.60	0.25	14.7	48.5
+Asia-Pacific	Burma	6.1	328.40	20.03	20.4	38.2
+Sub-Saharan Africa	Equatorial Guinea	5.9	29.80	1.76	21.3	35.9
+Middle East and North Africa	Qatar	4.9	354.80	17.39	34.3	48.4
+Middle East and North Africa	Oman	4.2	198.50	8.34	46.1	50.9
+Sub-Saharan Africa	Nigeria	3.6	1168.50	42.07	11.2	28.4
+Middle East and North Africa	Saudi Arabia	3.4	1857.50	63.16	35.7	19.1
+Middle East and North Africa	Iraq	2	673.30	13.47	36.7	48.4
+Middle East and North Africa	Kuwait	1.4	306.40	4.29	50.9	14.8
