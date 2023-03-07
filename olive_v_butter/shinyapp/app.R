@@ -17,14 +17,22 @@ library(ggplot2)
 library(dplyr)
 library(maps)
 
+DEBUG=TRUE
+app_version="v1.32"
+
 # current host of this file at:
 setwd("~/git/misc-analyses/olive_v_butter/butterline")
-fooddatafile = "./data/FoodBalanceSheets_E_All_Data_2022-04-01.csv"
+fooddatafile = "./data/FoodBalanceSheets_E_All_Data_2022-04-01.csv.gz"
 # read as latin1 to later deal with cote d'ivoire
 fooddata = read.csv(fooddatafile, header=TRUE, stringsAsFactors = FALSE, encoding="latin1")
 #head(fooddata)
 #unique(fooddata$Unit)
 #unique(fooddata$Area)
+
+#commdatafile = "./data/CommodityBalances_(non-food)_E_All_Data_NOFLAG_1962-2013.csv"
+#commdata = read.csv(commdatafile, header=TRUE, stringsAsFactors = FALSE, encoding="latin1")
+#head(commdata)
+#table(commdata$Item)
 
 # read tabular food definitions file, listing sub-items of some foods
 food_definitions_file = "./data/fbs_item_descriptions_2022.csv"
@@ -33,13 +41,17 @@ food_definitions = read.csv(food_definitions_file, header=TRUE)
 # check for duplicated items in definitions, which are in the whole table as well
 food_definitions_item_counts = table(food_definitions$Item)
 if (max(food_definitions_item_counts) > 1){
-  print("Duplicated entries in definitions file:")
-  print(food_definitions_item_counts[food_definitions_item_counts > 1])
+  if (DEBUG){
+    print("Excluding duplicated entries in definitions file:")
+    print(food_definitions_item_counts[food_definitions_item_counts > 1])
+  }
 }
-# appears to include
+# appears to include, unsure why
 # Eggs
 # Milk - Excluding Butter
 # Miscellaneous
+# these must be filtered out to get correct estimates and table display
+dup_item_codes = c(2948, 2949, 2928)
 
 ################################################################################
 # these are summary items only
@@ -84,6 +96,15 @@ is_spice = c("Honey", "Stimulants",  "Coffee and products", "Cocoa Beans and pro
              "Tea (including mate)",  "Spices",  "Pepper", "Pimento", "Cloves","Spices, Other",
              "Sweeteners, Other", "Sugar & Sweeteners", "Sugar non-centrifugal", "Sugar (Raw Equivalent)")
 
+# commodity balance sheet items
+is_fiber = c("Abaca", "Cotton lint", "Hard Fibres, Other", "Jute", "Jute-Like Fibres",
+             "Silk","Sisal", "Soft-Fibres, Other", "Wool (Clean Eq.)", "Rubber")
+is_oil_crop = c("Copra Cake", "Cottonseed", "Cottonseed Cake", "Groundnut Cake", "Oilcrops", 
+                "Oilseed Cakes, Other", "Palm kernels", "Palmkernel Cake",
+                "Rape and Mustard Cake", "Rape and Mustardseed", "Sesameseed Cake",
+                "Soyabean Cake", "Sunflowerseed Cake")
+is_commodity = c("Alcohol, Non-Food", "Alcoholic Beverages", "Brans", "Tobacco")
+
 # make list of regions to exclude from barplot, otherwise they always end up as top 20
 is_not_country = c("World", "Asia", "Europe", "Africa", "Oceania",
                    "Eastern Asia", "Central Asia", "Southern Asia", "Western Asia", "South-Eastern Asia", "South-eastern Asia",
@@ -102,10 +123,17 @@ valid_element_types = c("Import Quantity", "Export Quantity", "Production",
                         "Feed", "Food", "Seed", "Domestic supply quantity",
                         "Tourist consumption", 
                         "Stock Variation", "Losses", "Processing", "Residuals", "Other uses (non-food)")
+valid_element_types.short = c("Import Quantity", "Export Quantity", "Production")
+
 # this is the order of items in the dropdown menu
 all_items_food_only = c( is_plant, is_meat, is_fish, is_alcohol, is_spice)
 
 all_items_combined = c(is_not_item, is_meat, is_fish, is_plant, is_alcohol, is_spice )
+# check that everything is included
+if (length(all_items_combined) != length(unique(fooddata$Item)) ){
+  print( paste("ERROR: item missing, set contains", length(unique(fooddata$Item)), 
+               "and file contains", length(all_items_combined)) )}
+
 # confirm that all items are in a division
 # will print items not in vector all_items_food_only
 # may include spelling/capitalization changes like
@@ -115,9 +143,10 @@ if (sum(is.na(not_found_items)) > 0){names( table(fooddata$Item) )[is.na(not_fou
 
 # table for display, and for recoding step
 fooddata_recode = fooddata %>%
-                  select(Area, Item, Element, Y2011, Y2012, Y2013, Y2014, Y2015, Y2016, Y2017, Y2018, Y2019) %>%
+                  filter( ! fooddata$Item.Code %in% dup_item_codes ) %>%
                   filter(! Item %in% is_not_item &
                          Element %in% valid_element_types ) %>%
+                  select(Area, Item, Element, Y2011, Y2012, Y2013, Y2014, Y2015, Y2016, Y2017, Y2018, Y2019) %>%
                   rename(region=Area )
 
 # adjust names for certain remaining countries
@@ -146,9 +175,10 @@ fooddata_recode$region = recode(fooddata_recode$region,
                          "European Union (27)" = "European Union (excluding UK)")
 
 ###TODO allow divide by population
-# country_population = fooddata %>%
-#                     filter( Item=="Population", Element=="Total Population - Both sexes" ) %>%
-#                     select(Area, Item, Element, Y2011, Y2012, Y2013, Y2014, Y2015, Y2016, Y2017, Y2018, Y2019)
+country_population = fooddata %>%
+                    filter( Item=="Population", Element=="Total Population - Both sexes" ) %>%
+                    select(Area, Item, Element, Y2011, Y2012, Y2013, Y2014, Y2015, Y2016, Y2017, Y2018, Y2019)
+#country_population
 
 countries_w_data = sort(unique(fooddata_recode$region))
 
@@ -156,25 +186,25 @@ worldpolygons = map_data("world")
 #head(worldpolygons)
 #unique(worldpolygons$region)
 
-
 ################################################################################
+
 ui <- fluidPage(
-  titlePanel(h1("UN FAO Food Balance Sheets v1.31", style="color:#21632e; text-align:center; font-weight:bold;"), windowTitle="UN FAO Food Balance Sheets"),
+  titlePanel(h1(paste("UN FAO Food Balance Sheets", app_version), style="color:#21632e; text-align:center; font-weight:bold;"), windowTitle="UN FAO Food Balance Sheets"),
   verticalLayout(
     fluidRow(
       column(4,
-             sliderInput(inputId = "lat",
-                         label = "Latitude",
-                         min = -90,
-                         max = 90,
-                         value = c(-50,70)
-                        ),
-             sliderInput(inputId = "long",
-                         label = "Longitude",
-                         min = -180,
-                         max = 180,
-                         value = c(-180,180)
-                        ),
+             # sliderInput(inputId = "lat",
+             #             label = "Latitude",
+             #             min = -90,
+             #             max = 90,
+             #             value = c(-50,70)
+             #            ),
+             # sliderInput(inputId = "long",
+             #             label = "Longitude",
+             #             min = -180,
+             #             max = 180,
+             #             value = c(-180,180)
+             #            ),
              selectInput("year", "Year (on map and plot)", 
                          choices = list("2019" = "Y2019",
                                         "2018" = "Y2018",
@@ -187,7 +217,14 @@ ui <- fluidPage(
                                         "2011" = "Y2011"
                                         ), 
                          selected="Y2019"
-                         )
+                         ),
+             sliderInput(inputId = "tableYearRange",
+                         label = "Years (for table display)",
+                         min = 2011,
+                         max = 2019,
+                         value = c(2016,2019),
+                         step=1, sep=""
+                        ),
              ), # end column
       column(4,
 
@@ -223,14 +260,14 @@ ui <- fluidPage(
 
     mainPanel(width="100%",
               verbatimTextOutput(outputId = "showingWhat"),
-              h3("Scroll down for raw data.", style="color:#21632e"),
+              h3("Scroll down for raw data table.", style="color:#21632e"),
+              htmlOutput(outputId = "foodDesc"),
               plotOutput(outputId = "worldMap",
-                 height="600px"
+                 height="650px"
                  ),
               plotOutput(outputId = "rankedBarplot",
                          height="200px"
                  ),
-              htmlOutput(outputId = "foodDesc"),
               h3("Country or region data:", style="color:#21632e"),
               p("Note: all units are in 1000 tonnes, i.e. M kg"),
               tableOutput("countryInfo"),
@@ -273,7 +310,6 @@ server <- function(input, output) {
     # "Vegetables, Other" to "Vegetables, other"
     item_def_desc = food_definitions[match( tolower(input$itemType), tolower(food_definitions$Item)),5]
     
-    
     if ( is.na(item_def_desc) | item_def_desc=="" ){
       reformat_desc = as.character(input$itemType) # do nothing
     } else if (item_def_desc != ""){
@@ -281,6 +317,19 @@ server <- function(input, output) {
     }
     HTML(paste( input$itemType, "includes:<br/>", reformat_desc) )
   })
+
+  #TODO  
+  # output$rankDesc <- renderText({
+  #   # rank top 3 for each item and element
+  #   rankdf = data.frame(matrix(nrow = 0, ncol = ncol(fooddata_recode) ))
+  #   colnames(rankdf) = names(fooddata_recode)
+  #   for (rankitem in all_items_food_only){
+  #     for (rankelement in valid_element_types.short){
+  #       xf = filter(fooddata_recode, ! region %in% is_not_country, Item==rankitem, Element==rankelement)
+  #       rankdf = rbind(rankdf, slice_max(xf, order_by = get(input$year), n = 3))
+  #       filter(rankdf, region==input$chosenCountry )
+  #     }}
+  # })
   
   # create barplot ggplot object
   ggbars = reactive({
@@ -342,9 +391,12 @@ server <- function(input, output) {
     # generate title text
     full_title = paste( gsub("Y","",input$year), "Global",  input$elementType, "of", input$itemType )
     
+    DEFAULT_LON = c(-180,180)
+    DEFAULT_LAT = c(-50,70)
     # generate the map
     ggplot(fooddata_subset, aes(long,lat, group=group)) +
-      coord_cartesian(xlim=input$long, ylim=input$lat ) +
+      #coord_cartesian( xlim = input$long, ylim = input$lat ) +
+      coord_cartesian( xlim = DEFAULT_LON, ylim = DEFAULT_LAT ) +
       theme(plot.title = element_text(size=20),
             axis.text = element_blank(),
             axis.ticks = element_blank(),
