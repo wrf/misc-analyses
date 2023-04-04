@@ -47,5 +47,5 @@ Table 2 from [Lariviere 2016](https://www.biorxiv.org/content/10.1101/062109v2)
 
 Because the differences between journals in their citation distributions are small, a better idea would be to report the percentile of your paper *within* the journal. Again, a consequence of the distribution of scores is that most papers fall below the impact factor of that journal, meaning that a few highly-cited papers are dragging up the impact factor, while about 70% are lower for all journals. The top 1% of *ALL* journals still have more citations than the impact factor for Nature. **Thus, the most impactful work is the top 1% of papers for each journal, regardless of which journal**. It is also clear that 2 years is insufficient to measure this, but that is a separate issue.
 
-
+![citation_distributions_2014_v1.png](https://github.com/wrf/misc-analyses/blob/master/h_index_predictions/citation_distributions_2014_v1.png)
 
