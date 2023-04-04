@@ -20,6 +20,8 @@ Many researchers can get a high H-index from other reasons, such as running a sh
 
 Because the H-index [requires high citations](https://science.sciencemag.org/content/286/5437/53), but also a [high number of papers](https://science.sciencemag.org/content/337/6098/1019.summary), the [strategy of gaming](https://doi.org/10.1080/13504851.2016.1164812) the stat is obvious: [get on as many papers as possible](https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2047#d1e649) and [demand authorship for minor things](https://doi.org/10.1371/journal.pone.0187394). This is [commonly reported](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0187394) and nearly everyone I know does this to some extent.
 
+![h_index_gaming_strategy_v2.png](https://github.com/wrf/misc-analyses/blob/master/h_index_predictions/h_index_gaming_strategy_v2.png)
+
 Journals like [peerJ](https://peerj.com/about/author-instructions/#basic-manuscript-organization) try to apply strict criteria for authorship, but this also fails in the online implementation. It requires a minimum number of author tasks to be added for each author, but users can just keep adding contributions for all authors during the submission step until the "Continue to Next Step" button allows them to continue, even if they didn't actually do anything. Hence, the failure is that users or submitting authors are not honest about the contributions of other authors.
 
 # An equally lazy, but better solution #
