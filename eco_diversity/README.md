@@ -22,9 +22,9 @@ where `Hn` is measured diversity index, and `H1` is the diversity where all spec
 
 In a real world example from the sponge microbiome by [Schuster 2021](https://doi.org/10.1128/msphere.00991-20), an increase of 1 unit of Shannon diversity is associated about roughly a 2-fold increase in species number. In other examples, one unit of diversity index is closer to a 3-fold change.
 
-![ireland_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_otus_vs_diversity_index_v1.png)
+![ireland_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_otus_vs_diversity_index_v1.png) ![busch2022_species_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/busch2022_species_vs_diversity_index_v1.png)
 
 Point size was proporitional to the number of reads per sample. This is replotted another way below, showing that more reads does not strongly affect the diversity index, that is, more reads of a lower diversity sample is only resampling the species that have already been found. This is evident in other studies as well.
 
-![ireland_sponge_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_sponge_reads_vs_diversity_index_v1.png)
+![ireland_sponge_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_sponge_reads_vs_diversity_index_v1.png) ![busch2022_sample_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/busch2022_sample_diversity_index_v1.png)
 
