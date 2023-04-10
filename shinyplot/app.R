@@ -29,6 +29,9 @@ ui <- fluidPage(
                        ),
            checkboxInput("xlog", "Log X-axis", FALSE),
            checkboxInput("ylog", "Log Y-axis", FALSE),
+           sliderInput(inputId = "hue", label = "Point color",
+                       min = 0, max = 1,
+                       value = 0.4, step=0.01, sep="" ),
            downloadButton("printpdf", label = "Print graph to PDF")
     ), # end column
     column(8,
@@ -61,6 +64,7 @@ server <- function(input, output) {
     req(input$fileName)
     d = getUserDataset()
     if (!is.null(d)){
+      point_color = hsv(h = input$hue, s=0.95, v=0.25 )
       ggplot(data = d, aes(x = .data[[input$x_select]], y = .data[[input$y_select]] ) ) +
         theme(legend.position="none",
               axis.text=element_text(size=16),
@@ -69,7 +73,7 @@ server <- function(input, output) {
         scale_x_continuous(trans = ifelse(input$xlog==TRUE,"log10","identity") ) +
         scale_y_continuous(trans = ifelse(input$ylog==TRUE,"log10","identity") ) +
         labs(x=input$x_select, y=input$y_select) +
-        geom_point( colour="#016c59", size=5, alpha=0.75 )
+        geom_point( colour=point_color, size=5, alpha=0.6 )
     }
   })
   
