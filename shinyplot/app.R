@@ -1,13 +1,17 @@
 # generic shinyapp created by WRF 2023-01-22
-# last modified 2023-01-22
+# last modified 2023-04-17
 
 library(shiny)
 library(ggplot2)
 library(dplyr)
 
+APP_VERSION = "v1.1"
+# v1.1 add point alpha slider
+
 # begin app interface
 ui <- fluidPage(
-  titlePanel("Generic plot viewer shinyapp", windowTitle = "Generic plot viewer shinyapp"),
+  titlePanel(paste("Generic plot viewer shinyapp",APP_VERSION), 
+             windowTitle = paste("Generic plot viewer shinyapp",APP_VERSION)),
   fluidRow(
     column(4,
            fileInput("fileName", label = "Select file", 
@@ -20,7 +24,8 @@ ui <- fluidPage(
                         choices = c(Tab = "\t",
                                     Comma = ",",
                                     Semicolon = ";"),
-                        selected = "\t"),
+                        selected = "\t",
+                        inline = TRUE),
            selectInput("x_select", label="X-axis control of plot",
                        choices = c()
                        ),
@@ -29,9 +34,12 @@ ui <- fluidPage(
                        ),
            checkboxInput("xlog", "Log X-axis", FALSE),
            checkboxInput("ylog", "Log Y-axis", FALSE),
-           sliderInput(inputId = "hue", label = "Point color",
+           sliderInput(inputId = "ptHue", label = "Point color",
                        min = 0, max = 1,
                        value = 0.4, step=0.01, sep="" ),
+           sliderInput(inputId = "ptAlpha", label = "Point alpha",
+                       min = 0, max = 1,
+                       value = 0.6, step=0.01, sep="" ),
            downloadButton("printpdf", label = "Print graph to PDF")
     ), # end column
     column(8,
@@ -64,7 +72,7 @@ server <- function(input, output) {
     req(input$fileName)
     d = getUserDataset()
     if (!is.null(d)){
-      point_color = hsv(h = input$hue, s=0.95, v=0.25 )
+      point_color = hsv(h = input$ptHue, s=0.95, v=0.25 )
       ggplot(data = d, aes(x = .data[[input$x_select]], y = .data[[input$y_select]] ) ) +
         theme(legend.position="none",
               axis.text=element_text(size=16),
@@ -73,7 +81,7 @@ server <- function(input, output) {
         scale_x_continuous(trans = ifelse(input$xlog==TRUE,"log10","identity") ) +
         scale_y_continuous(trans = ifelse(input$ylog==TRUE,"log10","identity") ) +
         labs(x=input$x_select, y=input$y_select) +
-        geom_point( colour=point_color, size=5, alpha=0.6 )
+        geom_point( colour=point_color, size=5, alpha=input$ptAlpha )
     }
   })
   
