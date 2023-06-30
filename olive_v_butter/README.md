@@ -17,4 +17,32 @@ Units are in 1000 tonnes, or M kg, or properly in gigagrams - Gg. One tonne of w
 
 For example, Switzerland imports 180 Gg of wine per year (plus producing 111Gg and exporting 1Gg). For ease of math, suppose that each 1kg is 1 bottle of 750mL of wine, whereby 1Gg would be 1M bottles (this actually would probably be about 1.25kg per bottle). Thus, the imports sum to roughly 7 shipping containers per day, for a population of about 8.5M. The final consumption is 290Gg/year, coming out to 794k bottles per day. On average, 1 in 10 people have wine for dinner. This makes more sense to imagine that 2/10 have wine with dinner, and that any given couple would be finishing a bottle once or twice a week.
 
+# some food anecdotes from the data #
+## wine ##
+Grapevine growth tends to be restricted to around 35-45 degrees north or south, making a stripe across both hemispheres. This passes across known wine regions - [Chile](https://en.wikipedia.org/wiki/Chilean_wine), [Argentina](https://en.wikipedia.org/wiki/Argentine_wine), [South Africa](https://en.wikipedia.org/wiki/South_African_wine), [Australia](https://en.wikipedia.org/wiki/Australian_wine), and [New Zealand](https://en.wikipedia.org/wiki/New_Zealand_wine) in the southern hemisphere, and in the northern, [California](https://en.wikipedia.org/wiki/California_wine), the Mediterranean, and [Georgia](https://en.wikipedia.org/wiki/Georgian_wine). The missing piece was [China](https://en.wikipedia.org/wiki/Wine_in_China), which has the correct latitude and climate in the central part of the country. China is clearly rapidly increasing their wine production, as well as their imports. The 2019 data put China in 5th place for highest production (over 2Gg, appx. half of France), though under 1% of this is exported.
+
+Most of the new world wine production (rather, anywhere other than the old world) tends to plant typically French cultivars ([Cabernet](https://en.wikipedia.org/wiki/Cabernet_Sauvignon), [Pinot Noir](https://en.wikipedia.org/wiki/Pinot_noir), [Chardonnay](https://en.wikipedia.org/wiki/Chardonnay), [Sauvignon Blanc](https://en.wikipedia.org/wiki/Sauvignon_blanc), etc) which is possibly why French people get so fussy about new world wines.
+
+## dairy production ##
+
+The major exporter in the world is [New Zealand](https://www.dcanz.com/about-the-nz-dairy-industry/).
+
+## chocolate ##
+We focus a lot about origins of coffee (e.g Ethiopia, Java, Costa Rica, etc), but somehow chocolate gets once removed, being attributed to [Belgium](https://en.wikipedia.org/wiki/Belgian_chocolate), [Switzerland](https://en.wikipedia.org/wiki/Swiss_chocolate), or Italy. Obviously, [cocoa](https://en.wikipedia.org/wiki/Theobroma_cacao) does not grow in any of those places.
+
+![Cocoa_Beans_and_products_Production_Y2019.png](https://github.com/wrf/misc-analyses/blob/master/olive_v_butter/images/Cocoa_Beans_and_products_Production_Y2019.png)
+
+Despite the actual origins from Ivory Coast, Ghana, Indonesia, and Nigeria, chocolate becomes famous within Europe for processing steps after the cultivation. The largest importer, it appears, is the Netherlands, potentially for the [Dutch process](https://en.wikipedia.org/wiki/Dutch_process_cocoa) for downstream resale to the rest of Europe. Direct exports account for about 1/3 of the imports. The argument for this is that downstream steps and materials contribute more in chocolate than in some other foods. Although, coffee is still subject to place of origin, differences in roasting, grinding, preparation, and possibly also addition of milk.
+
+Why does the milk matter so much more than the [terroir](https://en.wikipedia.org/wiki/Terroir) of the cocoa? Apparently, this stems from a number of lawsuits in Europe (see [Cidell 2006](https://doi.org/10.1016/j.geoforum.2006.02.006) for discussion over the "Chocolate War").
+
+## soybeans ##
+Global soybean production is dominated by the USA, Brazil, and Argentina. Most of this is exported, and used as animal feed (i.e. probably mostly pigs and cows). This is NOT mostly used to feed people in the form of tofu, so unfortunately there is no [international vegan conspiracy](https://en.wikipedia.org/wiki/Veganism#Philosophy). As these soybeans end up being transported across the planet to feed animals in Europe and China, this transport has been the subject of recent concern (see [Hong 2022](https://www.science.org/doi/10.1126/science.abj1572) - paywalled).
+
+![Soyabeans_Production_Y2019.png](https://github.com/wrf/misc-analyses/blob/master/olive_v_butter/images/Soyabeans_Production_Y2019.png)
+
+## pork and dates ##
+These two have an inverse relationship, particularly evident in the North Africa / Middle East region.
+
+
 
