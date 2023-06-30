@@ -13,8 +13,9 @@ library(dplyr)
 library(gridExtra)
 
 # read data here
-birthrate_file = "~/git/misc-analyses/birth_rate_by_month/data/UNdata_Export_20210419_155726210.txt"
-birthdata = read.table(birthrate_file, header=TRUE, sep=";", stringsAsFactors = FALSE)
+#birthrate_file = "~/git/misc-analyses/birth_rate_by_month/data/UNdata_Export_20210419_155726210.txt.gz"
+birthrate_file = "~/git/misc-analyses/birth_rate_by_month/data/UNdata_Export_20230630_084956534.txt"
+birthdata = read.table(birthrate_file, header=TRUE, sep=";", stringsAsFactors = FALSE )
 
 summary(birthdata)
 
@@ -72,8 +73,10 @@ for (country in country_list){
     country_w_underscores = gsub(" ","_",country)
     if (yearly_mean_range[2] > 100) {
         plot_list[[i]] = cgg
-        outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".UNdata_20210419.pdf")
-        ggsave(outputfilename, cgg, device="pdf", width=8, height=6)
+        #outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".UNdata_20210419.pdf")
+        outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".UNdata_20230630.png")
+        #ggsave(outputfilename, cgg, device="pdf", width=8, height=6)
+        ggsave(outputfilename, cgg, device="png", width=8, height=6, dpi = 90)
     }
 } # end for loop
 
