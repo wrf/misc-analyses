@@ -26,10 +26,10 @@ Replots of food aversions and cravings during pregnancy, [NVP](https://en.wikipe
 
 ![food_cravings_flaxman_2000_fig7.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/food_cravings_flaxman_2000_fig7.png)
 
-## [success in ERC grants](https://github.com/wrf/misc-analyses/tree/master/erc) ##
+## [success in ERC grants - moved to own repo](https://github.com/wrf/erc-success) ##
 Countries like France and Spain have the same number of applications, but France is twice as successful. Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics), and from [MSCA-IF 2018 table](http://ec.europa.eu/research/participants/portal/doc/call/h2020/msca-if-2018/1847614-if2018_percentiles_en.pdf)
 
-![erc_2018_StG_granted_projects_all_panels_ratio_w_counts.png](https://github.com/wrf/misc-analyses/blob/master/erc/erc_2018_StG_granted_projects_all_panels_ratio_w_counts.png)
+![map of 2019 ERC StG success across all panels](https://github.com/wrf/erc-success/blob/main/images/erc_2019_StG_granted_projects_all_panels_ratio_w_counts.png)
 
 ## [ratio of annual tourists to population](https://github.com/wrf/misc-analyses/tree/master/tourism) ##
 Some countries with a peak tourism season need to run at double capacity for 2-3 months, or are at half capacity for the rest of the year. Tourism arrivals data from [UN World Tourism Organization 2019 Tourism Highlights](https://www.e-unwto.org/doi/book/10.18111/9789284421152) containing counts for 2018, population data are from [World Population Clock](https://www.worldometers.info/world-population/population-by-country/).
