@@ -1,6 +1,7 @@
 # diversity replots of published datasets
 # https://github.com/wrf/misc-analyses/tree/master/eco_diversity
 
+
 library(vegan)
 
 
@@ -185,6 +186,42 @@ dev.off()
 ################################################################################
 ################################################################################
 
+# Junqueira et al 2017 The microbiomes of blowflies and houseflies as bacterial transmission reservoirs
+# https://www.nature.com/articles/s41598-017-16353-x/
+# https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-017-16353-x/MediaObjects/41598_2017_16353_MOESM4_ESM.xlsx
+
+
+otu_counts_file = "~/git/misc-analyses/eco_diversity/data/41598_2017_16353_MOESM4_ESM.table3.tab"
+otu_counts = read.table(otu_counts_file, header = TRUE , sep = "\t" , comment.char = "" )
+otu_counts.n = otu_counts[1:430,3:118]
+names()
+
+sample_type = sapply( strsplit(names(otu_counts.n),"\\."), "[", 1 )
+sample_type_counts = table(sample_type)
+category_color_index = match(sample_type, names(sample_type_counts) )
+category_color = c( "#3ca22fcc", "#9b6514cc" )
+
+# counts are normalized to 10000 reads
+otu_n_species = colSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
+sample_counts_by_all_sp = colSums(otu_counts.n)
+sp_counts_by_all_samples = rowSums(otu_counts.n)
+otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
+
+pdf(file="~/git/misc-analyses/eco_diversity/images/junqueira2017_otus_vs_diversity_index_v1.pdf", height=5, width=5, useDingbats = FALSE)
+par(mar=c(4.5,4.5,2,1.2))
+plot(otu_n_species, otu_shannon_index, 
+     xlim=c(0,120), main="Data from Junqueira et al 2017 Sci Rep",
+     xlab="Total species per sample (by mapped reads)", ylab="Shannon Index", cex.axis=1.3, cex.lab=1.3,
+     frame.plot = TRUE,
+     pch=16, cex=2, col=category_color[category_color_index])
+text(60,0.8,"blowflies-63", cex=1.1, col="#3ca22f", pos=4)
+text(60,0.4,"houseflies-53", cex=1.1, col="#9b6514", pos=4)
+dev.off()
+
+
+
+################################################################################
+################################################################################
 
 # data from
 # Galand 2023 Diversity of the Pacific Ocean coral reef microbiome
