@@ -1,5 +1,5 @@
 # Global fish imports and exports #
-See [here](https://wrfbiolum.shinyapps.io/butterline/) for a live version of the current app, or here for the [updated code](https://github.com/wrf/misc-analyses/tree/master/olive_v_butter) of the second version.
+See [here](https://wrfbiolum.shinyapps.io/foodbalance/) for a live version of the current app, or here for the [updated code](https://github.com/wrf/foodbalance) of the second version.
 
 This page discusses the initial version, which was only related to fish and seafood products.
 
