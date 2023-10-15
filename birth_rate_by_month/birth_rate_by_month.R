@@ -14,7 +14,7 @@ library(gridExtra)
 
 # read data here
 #birthrate_file = "~/git/misc-analyses/birth_rate_by_month/data/UNdata_Export_20210419_155726210.txt.gz"
-birthrate_file = "~/git/misc-analyses/birth_rate_by_month/data/UNdata_Export_20230630_084956534.txt"
+birthrate_file = "~/git/misc-analyses/birth_rate_by_month/data/UNdata_Export_20230630_084956534.txt.gz"
 birthdata = read.table(birthrate_file, header=TRUE, sep=";", stringsAsFactors = FALSE )
 
 summary(birthdata)
@@ -24,7 +24,6 @@ months = c("January", "February", "March", "April", "May", "June",
            "July", "August", "September", "October", "November", "December")
 # adjusted number of days per month
 d_per_month = (365/12) / c(31,28,31,30,31,30,31,31,30,31,30,31)
-
 
 #
 # big loop to make plots for all countries
@@ -87,7 +86,7 @@ for (country in country_list){
 #dev.off()
 
 
-
+################################################################################
 # vector of countries by region, arbitrarily
 is_M_europe = c("Germany", "Austria")
 
@@ -236,7 +235,76 @@ gritspgg = ggplot(GRITSP_final_only, aes(x=match(Month,months),
 gritspgg
 ggsave("~/git/misc-analyses/birth_rate_by_month/images/UNdata_Export_20210419_medeurope.pdf", gritspgg, device="pdf", width=8, height=6)
 
-#
+################################################################################
+################################################################################
+
+
+# wood fire earth metal water, X4 and X5 of each decade are wood
+#                        wood       fire       earth     metal      water
+element_colors = rep(c("#12934d","#a72c01", "#bca626", "#8a78c1", "#2689bc"), each=2 )
+
+# 1960 metal rat   rat   ox  tiger rabbit dragon snake
+zodiac_symbols = c("鼠", "牛", "虎", "兔", "龍", "蛇", 
+                   "馬", "羊", "猴", "雞", "狗", "豬" )
+#                 horse  goat monkey chicken dog pig
+
+
+i = 0
+plot_list = list()
+mo_yr_country_list = list()
+country_list = c( "China, Hong Kong SAR", "China, Macao SAR", "Japan", "Malaysia", 
+                  "Philippines", "Republic of Korea", "Singapore" )
+
+country = "Singapore"
+country_final_only = filter(birthdata, Reliability == "Final figure, complete",
+                            Month %in% months,
+                            Country.or.Area==country) %>%
+  select( Country.or.Area, Month, Year, Value ) %>%
+  arrange(Country.or.Area, Year, match(Month,months))
+months_by_year_by_country = c(table(country_final_only[["Year"]],country_final_only[["Country.or.Area"]]))
+months_by_year_by_country = months_by_year_by_country[months_by_year_by_country>0]
+
+yearly_averages = country_final_only %>% group_by(Country.or.Area, Year) %>% summarise( yearly_mean = mean(Value) )
+yearmonth_index = country_final_only$Year + (0.0833 * (match(country_final_only$Month, months )-1))
+yearmonth_index
+number_of_years = length(yearly_averages$Year)
+yearly_mean_range = round(range(yearly_averages$yearly_mean))
+year_range = range(country_final_only$Year)
+subtitle_text = paste("Data from UN Demographic Statistics Database, including",number_of_years,"years from",year_range[1],"to",year_range[2])
+caption_text = paste("Monthly range from", min(country_final_only$Value) ,"to", max(country_final_only$Value))
+zodiac_year = zodiac_symbols[(((unique(country_final_only$Year)-1960)%%12)+1)]
+zodiac_color = element_colors[(((unique(country_final_only$Year)-1964)%%10)+1)]
+
+cgg = ggplot(country_final_only, aes(x=yearmonth_index,y=Value)) + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        axis.text.y=element_text(size=13),
+        axis.title.y=element_text(size=16),
+        legend.position=c(1,0.8),
+        legend.justification = "right",
+        legend.title = element_text(size=16),
+        legend.key.size = unit(1, 'cm'),
+        plot.title = element_text(size=25)) +
+  coord_cartesian(xlim=year_range) +
+  scale_x_continuous(breaks=unique(country_final_only$Year), labels=unique(country_final_only$Year), 
+                     minor_breaks = NULL, expand = c(0.01,0)) +
+  labs(x=NULL, y = "Births per month",
+       title=country, subtitle=subtitle_text,
+       caption=caption_text) +
+  geom_line(alpha=0.9, size=1, lineend = "round") +
+  annotate( geom="text", x=unique(country_final_only$Year)+0.5, y=max(country_final_only$Value), label=zodiac_year, color=zodiac_color )
+
+country_w_underscores = gsub(" ","_",country)
+outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".timeline.UNdata_20230630.pdf")
+outputfilename
+#outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".timeline.UNdata_20230630.png")
+#ggsave(outputfilename, cgg, device="pdf", width=12, height=6, family="Japan1")
+#ggsave(outputfilename, cgg, device="png", width=8, height=6, dpi = 90)
+cairo_pdf(filename = outputfilename, width=12, height=6, family="Arial Unicode MS")
+cgg
+dev.off()
+  
+#} # end for loop
+
 
 
 #

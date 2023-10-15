@@ -53,5 +53,17 @@ Cuba is a good example of a tropical pattern country, showing a very low springt
 
 ![Cuba.UNdata_20210419.png](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/Cuba.UNdata_20210419.png)
 
+## Year of the Dragon ##
+Like the Western Zodiac, the [Chinese Zodiac](https://en.wikipedia.org/wiki/Chinese_calendar_correspondence_table) has 12 symbols, each representing an animal. These are combined with 5 elements (wood, fire, earth, metal, and water), each spanning 2 years, to end up with a 60 year cycle of the 5 elements and 12 animals. 
+
+There is a year effect on birth numbers that is evident in a few places in Asia, related to the good luck in the year of the [dragon](https://en.wikipedia.org/wiki/Dragon_(zodiac)) (龍), and corresponding bad luck in the year of the [dragon](https://en.wikipedia.org/wiki/Tiger_(zodiac)) (虎). Data are available for Hong Kong, Macau, and Singapore, all show a relative *increase* in births during the year of the dragon (eg. 1976, 1988, 2000), and a *decrease* during the year of the tiger (eg. 1986, 1998, 2010). Data for South Korea and Japan do not show this effect. Next year, 2024, would then be expected to show this effect again.
+
+![plot of births in Hong Kong](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/China_Hong_Kong_SAR.timeline.UNdata_20230630.png)
+
+![plot of births in Macau](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/China_Macao_SAR.timeline.UNdata_20230630.png)
+
+![plot of births in Singapore](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/Singapore.timeline.UNdata_20230630.png)
+
+
 ### Notes ###
 
