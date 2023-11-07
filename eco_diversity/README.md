@@ -26,7 +26,8 @@ In a real world example from the sponge microbiome by [Schuster 2021](https://do
 
 ![ireland_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_otus_vs_diversity_index_v1.png) ![busch2022_species_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/busch2022_species_vs_diversity_index_v1.png) 
 ![aronson2016_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_otus_vs_diversity_index_v1.png) ![junqueira2017_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/junqueira2017_otus_vs_diversity_index_v1.png)
-![blyton2019_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/blyton2019_otus_vs_diversity_index_v1.png) ![albert2015_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/albert2015_otus_vs_diversity_index_v1.png)
+![ravel2011_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_otus_vs_diversity_index_v1.png) ![albert2015_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/albert2015_otus_vs_diversity_index_v1.png)
+![blyton2019_otus_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/blyton2019_otus_vs_diversity_index_v1.png) 
 
 Point size was proporitional to the number of reads per sample. This is replotted another way below, showing that more reads does not strongly affect the diversity index, that is, more reads of a lower diversity sample is only resampling the species that have already been found. This is evident in other studies as well.
 
