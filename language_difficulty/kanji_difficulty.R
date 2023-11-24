@@ -8,6 +8,7 @@ kanjidata_file = "~/git/misc-analyses/language_difficulty/data/kanji_by_school_y
 
 kanjidata = read.table(kanjidata_file, header=TRUE, sep="\t", encoding="UTF-8", stringsAsFactors=FALSE)
 
+# draw box plot of kanji strokes per school grade
 strokejitter=jitter(kanjidata$Strokes, factor=0.5)
 gradejitter=jitter(kanjidata$grade)
 
@@ -48,5 +49,46 @@ print(p)
 dev.off()
 
 #ggsave("~/git/misc-analyses/language_difficulty/images/kanji_by_school_year_w_outliers.pdf", p, device="pdf", encoding="default", height=7, width=8, fonts="Japan1")
+
+#
+
+# tables of most common onyomi and kunyomi
+rev( sort( table(kanjidata$Onyomi) ) )[1:50]
+
+kanjidata [ kanjidata$Onyomi=="sen" , ]
+
+kanjidata [ kanjidata$Onyomi=="i" , ]
+
+kanjidata [ kanjidata$Onyomi=="shō" , ]
+
+kanjidata [ kanjidata$Onyomi=="kyū" , ]
+
+kanjidata [ kanjidata$Onyomi=="shi" , 3]
+kanjidata [ kanjidata$Onyomi=="kō" , 3]
+kanjidata [ kanjidata$Onyomi=="ki" , 3]
+kanjidata [ kanjidata$Onyomi=="shō" , 3]
+kanjidata [ kanjidata$Onyomi=="kan" , 3]
+kanjidata [ kanjidata$Onyomi=="ka" , 3]
+kanjidata [ kanjidata$Onyomi=="sō" , 3]
+kanjidata [ kanjidata$Onyomi=="sen" , 3]
+kanjidata [ kanjidata$Onyomi=="sei" , 3]
+kanjidata [ kanjidata$Onyomi=="shū" , 3]
+kanjidata [ kanjidata$Onyomi=="kyū" , 3]
+kanjidata [ kanjidata$Onyomi=="ken" , 3]
+kanjidata [ kanjidata$Onyomi=="chō" , 3]
+kanjidata [ kanjidata$Onyomi=="shin" , 3]
+kanjidata [ kanjidata$Onyomi=="tō" , 3]
+kanjidata [ kanjidata$Onyomi=="kyō" , 3]
+kanjidata [ kanjidata$Onyomi=="i" , 3]
+kanjidata [ kanjidata$Onyomi=="yō" , 3]
+kanjidata [ kanjidata$Onyomi=="sai" , 3]
+kanjidata [ kanjidata$Onyomi=="kai" , 3]
+kanjidata [ kanjidata$Onyomi=="hi" , 3]
+
+
+rev( sort( table(kanjidata$Kunyomi) ) )[2:21]
+kanjidata [ kanjidata$Kunyomi=="kawa" , 3]
+
+
 
 #

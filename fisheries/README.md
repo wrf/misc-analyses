@@ -24,3 +24,9 @@ The `Print PDF` button will print a file `plot.pdf` of whatever fish category is
 
 ![fisheries_shinyapp_screenshot.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/fisheries_shinyapp_screenshot.png)
 
+## notes ##
+
+[Oceana 2013 report on mislabeling of seafood](https://oceana.org/wp-content/uploads/sites/18/National_Seafood_Fraud_Testing_Results_FINAL.pdf), noting the largest problem was in sushi restaurants, not grocery stores
+
+
+
