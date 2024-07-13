@@ -256,6 +256,7 @@ country_list = c( "China, Hong Kong SAR", "China, Macao SAR", "Japan", "Malaysia
                   "Philippines", "Republic of Korea", "Singapore" )
 
 country = "Singapore"
+print(country)
 country_final_only = filter(birthdata, Reliability == "Final figure, complete",
                             Month %in% months,
                             Country.or.Area==country) %>%
@@ -272,8 +273,10 @@ yearly_mean_range = round(range(yearly_averages$yearly_mean))
 year_range = range(country_final_only$Year)
 subtitle_text = paste("Data from UN Demographic Statistics Database, including",number_of_years,"years from",year_range[1],"to",year_range[2])
 caption_text = paste("Monthly range from", min(country_final_only$Value) ,"to", max(country_final_only$Value))
-zodiac_year = zodiac_symbols[(((unique(country_final_only$Year)-1960)%%12)+1)]
-zodiac_color = element_colors[(((unique(country_final_only$Year)-1964)%%10)+1)]
+#zodiac_year = zodiac_symbols[(((unique(country_final_only$Year)-1960)%%12)+1)]
+zodiac_year = zodiac_symbols[(((seq(year_range[1],year_range[2],1)-1960)%%12)+1)]
+#zodiac_color = element_colors[(((unique(country_final_only$Year)-1964)%%10)+1)]
+zodiac_color = element_colors[(((seq(year_range[1],year_range[2],1)-1964)%%10)+1)]
 
 cgg = ggplot(country_final_only, aes(x=yearmonth_index,y=Value)) + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
@@ -287,15 +290,17 @@ cgg = ggplot(country_final_only, aes(x=yearmonth_index,y=Value)) +
   coord_cartesian(xlim=year_range) +
   scale_x_continuous(breaks=unique(country_final_only$Year), labels=unique(country_final_only$Year), 
                      minor_breaks = NULL, expand = c(0.01,0)) +
+  #scale_y_continuous(limits = c(0,max(country_final_only$Value))) +
   labs(x=NULL, y = "Births per month",
        title=country, subtitle=subtitle_text,
        caption=caption_text) +
   geom_line(alpha=0.9, size=1, lineend = "round") +
-  annotate( geom="text", x=unique(country_final_only$Year)+0.5, y=max(country_final_only$Value), label=zodiac_year, color=zodiac_color )
+  annotate( geom="text", x=seq(year_range[1],year_range[2],1)+0.5, y=max(country_final_only$Value), label=zodiac_year, color=zodiac_color )
+  #annotate( geom="text", x=unique(country_final_only$Year)+0.5, y=max(country_final_only$Value), label=zodiac_year, color=zodiac_color )
 
-country_w_underscores = gsub(" ","_",country)
-outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".timeline.UNdata_20230630.pdf")
-outputfilename
+country_w_underscores = gsub(",","",gsub(" ","_",country))
+outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/images/", country_w_underscores, ".timeline.UNdata_20230630.pdf")
+print(outputfilename)
 #outputfilename = paste0("~/git/misc-analyses/birth_rate_by_month/countries/", country_w_underscores, ".timeline.UNdata_20230630.png")
 #ggsave(outputfilename, cgg, device="pdf", width=12, height=6, family="Japan1")
 #ggsave(outputfilename, cgg, device="png", width=8, height=6, dpi = 90)
@@ -304,6 +309,8 @@ cgg
 dev.off()
   
 #} # end for loop
+
+
 
 
 
