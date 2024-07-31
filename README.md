@@ -26,15 +26,25 @@ Replots of food aversions and cravings during pregnancy, [NVP](https://en.wikipe
 
 ![food_cravings_flaxman_2000_fig7.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/food_cravings_flaxman_2000_fig7.png)
 
-## [success in ERC grants - moved to own repo](https://github.com/wrf/erc-success) ##
-Countries like France and Spain have the same number of applications, but France is twice as successful. Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics), and from [MSCA-IF 2018 table](http://ec.europa.eu/research/participants/portal/doc/call/h2020/msca-if-2018/1847614-if2018_percentiles_en.pdf)
+## [generic interactive plotter](https://github.com/wrf/misc-analyses/tree/master/shinyplot) ##
+Generic interactive plotter using [Rshiny](https://shiny.rstudio.com/). The app can read in a file, and plot any X against any Y (as a scatterplot). The graph can be printed as a PDF for easy sharing.
 
-![map of 2019 ERC StG success across all panels](https://github.com/wrf/erc-success/blob/main/images/erc_2019_StG_granted_projects_all_panels_ratio_w_counts.png)
+![shinyplot_demo_screenshot.png](https://github.com/wrf/misc-analyses/blob/master/shinyplot/shinyplot_demo_screenshot.png)
 
 ## [ratio of annual tourists to population](https://github.com/wrf/misc-analyses/tree/master/tourism) ##
 Some countries with a peak tourism season need to run at double capacity for 2-3 months, or are at half capacity for the rest of the year. Tourism arrivals data from [UN World Tourism Organization 2019 Tourism Highlights](https://www.e-unwto.org/doi/book/10.18111/9789284421152) containing counts for 2018, population data are from [World Population Clock](https://www.worldometers.info/world-population/population-by-country/).
 
 ![2018_annual_tourism_by_countries.png](https://github.com/wrf/misc-analyses/blob/master/tourism/2018_annual_tourism_by_countries.png)
+
+## [quality of life index](https://github.com/wrf/misc-analyses/tree/master/quality_of_life) ##
+Quality of life index vs tax revenue of each country. A lot of the world is not represented there.
+
+![plot of quality of life against tax revenue](https://github.com/wrf/misc-analyses/blob/master/quality_of_life/images/qol_vs_tax_revenue_v1.png)
+
+## [success in ERC grants - moved to own repo](https://github.com/wrf/erc-success) ##
+Countries like France and Spain have the same number of applications, but France is twice as successful. Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics), and from [MSCA-IF 2018 table](http://ec.europa.eu/research/participants/portal/doc/call/h2020/msca-if-2018/1847614-if2018_percentiles_en.pdf)
+
+![map of 2019 ERC StG success across all panels](https://github.com/wrf/erc-success/blob/main/images/erc_2019_StG_granted_projects_all_panels_ratio_w_counts.png)
 
 ## [prospective H-index](https://github.com/wrf/misc-analyses/tree/master/h_index_predictions) ##
 Any formula can be used on any person, even if it should not, reminding us that "[when a measure becomes a target, it ceases to be a good measure](https://en.wikipedia.org/wiki/Goodhart%27s_law)"
@@ -60,6 +70,11 @@ Introns become longer by a runaway expansion model, creating an exponential dist
 Data for the paper of [Francis 2017](https://doi.org/10.1093/gbe/evx103) showing the ratio of intronic bases to intergenic bases. Original version had 68 species, though many more have been added since.
 
 ![large_intron_intergenic_log_plot.png](https://raw.githubusercontent.com/wrf/misc-analyses/master/figures_for_repo/large_intron_intergenic_log_plot.png)
+
+## [visualizing randomness](https://github.com/wrf/misc-analyses/tree/master/visualizing_randomness) ##
+Some exploration of how randomness is viewed on plots
+
+![4 plots of randomness levels](https://github.com/wrf/misc-analyses/blob/master/visualizing_randomness/block_test_various_percent.png)
 
 ## [model of phylogenetic bootstrap as a random draw of marbles](https://github.com/wrf/misc-analyses/tree/master/random_bootstrap) ##
 A simple model about [bootstrapping in phylogenetics](https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29), showing that bootstrap replicates do not reflect the uncertainty in the data. This topic came up following the work of [Shen 2017](http://dx.doi.org/10.1038/s41559-017-0126).
