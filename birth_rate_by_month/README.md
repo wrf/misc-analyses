@@ -66,6 +66,7 @@ Next year, 2024, year of the wood dragon, would then be expected to show this ef
 
 ![plot of births in Singapore](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/Singapore.timeline.UNdata_20230630.png)
 
+![plot of births in Malaysia](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/Malaysia.timeline.UNdata_20230630.png)
 
 ### Notes ###
 
