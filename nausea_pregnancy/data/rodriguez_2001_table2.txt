@@ -1,0 +1,32 @@
+#data from Rodriguez, A. et al (2001) Symptoms across pregnancy in relation to psychosocial and biomedical factors
+#https://doi.org/10.1034/j.1600-0412.2001.080003213.x
+#https://obgyn.onlinelibrary.wiley.com/doi/10.1034/j.1600-0412.2001.080003213.x
+#Table II. Frequency of experienced symptoms in percentages by gestational week
+symptom	type	wk_10_12_occ	wk_10_12_frq	wk_20_occ	wk_20_frq	wk_28_occ	wk_28_frq	wk_32_36_occ	wk_32_36_frq
+Bloatedness	gastrointestinal	25	10	25	5	28	10	28	22
+Constipation	gastrointestinal	35	12	39	10	40	6	37	7
+Diarrhea	gastrointestinal	27	5	24	2	26	3	29	4
+Heartburn	gastrointestinal	24	9	27	15	34	26	34	34
+Nausea	gastrointestinal	30	51	34	9	30	6	30	8
+Stomach pain	gastrointestinal	47	15	39	8	39	8	35	10
+Vomiting	gastrointestinal	22	14	15	4	11	2	10	2
+Poor appetite	other	35	22	27	5	24	4	29	5
+Back pain	musculoskeletal	27	11	39	17	39	29	39	30
+Joint pain	musculoskeletal	7	3	9	3	13	7	17	9
+Leg pain	musculoskeletal	7	2	19	5	33	11	34	12
+Muscle pain	musculoskeletal	17	4	21	7	24	7	27	8
+Sciatica	musculoskeletal	12	5	23	8	24	11	23	11
+Tender breasts	other	35	57	47	15	34	7	31	6
+Swollen hands	other	8	3	13	4	21	14	23	33
+Swollen legs	other	8	2	14	5	24	14	30	33
+Difficulty breathing	other	10	2	12	2	21	7	26	10
+Difficulty sleeping	other	34	11	37	8	42	17	46	25
+Dizziness	other	41	10	35	5	32	4	30	5
+Fatigue	other	32	65	62	30	60	31	58	34
+Headache	other	66	11	69	10	59	4	51	4
+Numbness	other	10	3	16	2	26	10	28	15
+Palpitations	other	20	7	26	6	27	7	32	8
+Contractions	urogenital	11	2	25	8	31	25	35	44
+Vaginal bleeding	urogenital	8	2	2	0	1	0	2	0
+Vaginal itchiness	urogenital	20	5	23	4	20	4	19	5
+Urinary problems	urogenital	8	6	11	5	9	6	9	7

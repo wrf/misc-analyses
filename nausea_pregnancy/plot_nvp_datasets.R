@@ -62,6 +62,42 @@ ggsave("~/git/misc-analyses/nausea_pregnancy/images/food_cravings_flaxman_2000_f
        device="pdf", height=5, width=8)
 
 
+################################################################################
+
+# plot data from
+# Rodriguez et al (2001) Symptoms across pregnancy in relation to psychosocial and biomedical factors
+# https://doi.org/10.1034/j.1600-0412.2001.080003213.x
+
+symptom_datafile = "~/git/misc-analyses/nausea_pregnancy/data/rodriguez_2001_table2.txt"
+symptom_data = read.table(symptom_datafile, header = TRUE, sep="\t", stringsAsFactors = FALSE)
+
+week_labs = c("10-12", "20", "28", "32-36")
+
+occ_cols = rep(c("#eecc66", "#d082e2", "#aaaaaa", "#d88496"), c(8, 8, 7, 4) )
+frq_cols = rep(c("#cc9966", "#8b12a7", "#666666", "#ca123b"), c(8, 8, 7, 4) )
+               
+pdf(file="~/git/misc-analyses/nausea_pregnancy/images/rodriguez_2001_table2.all.pdf", width=8, height=11)
+par(mfrow=c(5,3), mar=c(4,4,2,1)) # 5 rows per page, 27 plots total
+for (i in 1:dim(symptom_data)[1]){
+  subdataset = symptom_data[i,]
+  bp_df = data.frame( subdataset[grep("frq",names(symptom_data))] ,
+                      subdataset[grep("occ",names(symptom_data))] )
+  #bp_df
+  bp_m = matrix(bp_df, nrow=2, byrow = TRUE)
+  #bp_m
+  barplot(bp_m,  ylim=c(0,100), col = c(frq_cols[i], occ_cols[i]),
+          cex.axis = 1.2, cex.names = 1.2, axes = FALSE,
+          main = subdataset[1], cex.main=1.5,
+          beside=FALSE, names.arg = week_labs )
+  axis(2,at=c(0,25,50,75,100), cex.axis=1.2)
+  mtext("Week:", 1, at=-0.4, line=1, cex=0.9 )
+  # plot legend for left plot on each row
+  if(i %in% c(1,4,7,10,13,16,19,22,25)){ 
+    legend(0,100, legend=c("Occasional", "Frequent"), bty = 'n', 
+           col=c(occ_cols[i], frq_cols[i]), pch=15, cex=1.5 )
+    }
+}
+dev.off()
 
 
 

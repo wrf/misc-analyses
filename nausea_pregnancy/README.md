@@ -18,4 +18,16 @@ The most confusing is the role of meat, which has both high aversions and cravin
 
 Fruit cravings appear to be quite common. [Weigel 2011](https://doi.org/10.1080/03670244.2011.568906) suggest this could be both due to low risk of pathogens or parasites, but also as a specific remedy for hypoglycemia, as many fruits are sweet. The authors note this could be a conditioned response to problems of repeated vomiting - i.e. low blood sugar, electrolytes, etc.
 
+# NVP among other symptoms #
+Another study by [Rodriguez 2001](https://obgyn.onlinelibrary.wiley.com/doi/10.1034/j.1600-0412.2001.080003213.x) collected data from 525 pregnant women in Sweden. 
+
+Data below were plotted from Table 2 in that study. Bars refer to percentage of the 525 women reporting some symptom. Lighter bars indicate "occasionally" experiencing (up to 2x per week), while darker bars indicate "frequently" (3x or more per week). For instance, fatigue was reported from over 90% of women at the 4 time points throughout the pregnancy, but varied in frequency.
+
+![rodriguez_2001_table2.all.p1.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/rodriguez_2001_table2.all.p1.png)
+![rodriguez_2001_table2.all.p2.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/rodriguez_2001_table2.all.p2.png)
+
+
+
+
+
 
