@@ -66,7 +66,7 @@ dev.off()
 # https://www.pnas.org/doi/full/10.1073/pnas.1002611107
 
 otu_counts_file = "~/git/misc-analyses/eco_diversity/data/ravel2011_st04.tsv.gz"
-otu_counts = read.table(otu_counts_file, header = TRUE, sep = "\t", )
+otu_counts = read.table(otu_counts_file, header = TRUE, sep = "\t" )
 otu_counts.n = data.frame(t(as.matrix(otu_counts[,8:ncol(otu_counts)] ) ) )
 
 category_color_index = match(otu_counts$Community.groupc, unique(otu_counts$Community.groupc) )
@@ -76,6 +76,7 @@ otu_n_species = colSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
 sample_counts_by_all_sp = colSums(otu_counts.n)
 sp_counts_by_all_samples = rowSums(otu_counts.n)
 otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
+otu_invsimpson_index = diversity(otu_counts.n, index="invsimpson", MARGIN=2)
 
 pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_otus_vs_diversity_index_v1.pdf", height=5, width=5, useDingbats = FALSE)
 par(mar=c(4.5,4.5,2,1.2))
@@ -94,6 +95,46 @@ text(71,1.2,"L. gasseri", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus
 text(71,1.0,"L. iners", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus iners
 text(71,0.8,"Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
 text(71,0.6,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
+dev.off()
+
+# plot inverse simpson index, instead of shannon index
+pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_otus_vs_invsimpson_diversity_v1.pdf", height=5, width=5, useDingbats = FALSE)
+par(mar=c(4.5,4.5,2,1.2))
+plot(otu_n_species, otu_invsimpson_index, 
+     xlim=c(0,100), main="Data from Ravel et al 2011 PNAS",
+     xlab="Total species per sample (OTUs)", ylab="Inverse Simpson Index", cex.axis=1.3, cex.lab=1.3,
+     frame.plot = TRUE,
+     pch=16, cex=2, col=category_color[category_color_index])
+text(58, 11,"CST-I-105", cex=1.1, col="#dd3589", pos=4) # Lactobacillus crispatus
+text(58,  9,"CST-II-25", cex=1.1, col="#e95a5a", pos=4) # Lactobacillus gasseri
+text(58,  7,"CST-III-135", cex=1.1, col="#ef88ab", pos=4) # Lactobacillus iners
+text(58,  5,"CST-IV-108", cex=1.1, col="#2e1cad", pos=4) # mixed
+text(58,  3,"CST-V-21", cex=1.1, col="#f8aacd", pos=4) # Lactobacillus jenseni
+text(71, 10.2,"L. crispatus", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus crispatus
+text(71, 8.2, "L. gasseri", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus gasseri
+text(71, 6.2, "L. iners", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus iners
+text(71, 4.2, "Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
+text(71, 2.2, "L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
+dev.off()
+
+# plot two inverse simpson index against shannon index
+pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_invsimpson_vs_shannon_diversity_v1.pdf", height=5, width=5, useDingbats = FALSE)
+par(mar=c(4.5,4.5,2,1.2))
+plot(otu_invsimpson_index, otu_shannon_index, 
+     xlim=c(0,12), main="Data from Ravel et al 2011 PNAS",
+     xlab="Inverse Simpson Index", ylab="Shannon Index", cex.axis=1.3, cex.lab=1.3,
+     frame.plot = TRUE,
+     pch=16, cex=2, col=category_color[category_color_index])
+text(4.0,1.4,"CST-I-105", cex=1.1, col="#dd3589", pos=4) # Lactobacillus crispatus
+text(4.0,1.2,"CST-II-25", cex=1.1, col="#e95a5a", pos=4) # Lactobacillus gasseri
+text(4.0,1.0,"CST-III-135", cex=1.1, col="#ef88ab", pos=4) # Lactobacillus iners
+text(4.0,0.8,"CST-IV-108", cex=1.1, col="#2e1cad", pos=4) # mixed
+text(4.0,0.6,"CST-V-21", cex=1.1, col="#f8aacd", pos=4) # Lactobacillus jenseni
+text(8.1,1.4,"L. crispatus", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus crispatus
+text(8.1,1.2,"L. gasseri", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus gasseri
+text(8.1,1.0,"L. iners", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus iners
+text(8.1,0.8,"Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
+text(8.1,0.6,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
 dev.off()
 
 
@@ -275,5 +316,82 @@ otu_counts.n = otu_counts[,grep("TARA_",x = names(otu_counts))]
 sample_type_counts = table(sapply( strsplit(names(otu_counts),"\\."), "[", 1 ) ) 
 
 
+
+
+################################################################################
+################################################################################
+
+# data from
+# Gajer 2012 Temporal Dynamics of the Human Vaginal Microbiota
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3722878/
+
+#b Low=1-3,intermediate=4-6 and High=7-10; 
+#c Community state types as defined in Figure S1; 
+#d Total number of high-quality 16S rRNA gene sequence reads; 
+#e RDP+speciateIT Taxonomic assignments 
+
+otu_counts_file = "~/git/misc-analyses/eco_diversity/data/gajer2012_NIHMS428591-supplement-Table_S2.tab.gz"
+otu_counts_timeseries = read.table(otu_counts_file, header = TRUE, sep = "\t", skip=4 )
+#otu_counts.n = data.frame(t(as.matrix(otu_counts[,8:ncol(otu_counts)] ) ) )
+subject_ids = unique(otu_counts_timeseries$Subject.ID)
+subject_ids
+names(otu_counts_timeseries.d)[1:50]
+
+#a Self-described ethnic group- White=1 , Black=0 , Hispanic=5 , others=4; 
+eth_colors = c("#401e11", "#f9eae4", "blue", "blue", "#f9b620ff", "#c03c18")
+
+# colorize diversity index
+div_colors = colorRampPalette(c("#212f11ff","#b7e61aff","#e2fe82ff"))(10)
+
+# alternating light and dark bars, then assign colors to known taxa
+bar_colors = rep(c("#aaaaaa","#555555"),dim(otu_counts_timeseries)[2]-10)
+bar_colors[c(2,4,8,1,18,20,22,78,90, 
+             3,9,5,7,21, 
+             12,13,28,6,10,17, 
+             45,61,33, 
+             14,24,37,
+             42)] = c(
+               "#dd3589", "#e95a5a", "#f8aacd", "#ef88ab", #Lcrispatus Lgasseri Ljenseni Liners
+               "#f0b2b2","#f0b2b2","#f0b2b2","#f0b2b2", "#f0b2b2", #L otus
+               "#2e1cad", "#3774db", "#7353e0", "#183360", "#28b8eb", # GardnerellaA, C, Prevotella Sneathia Bifidobacterium
+               "#127801", "#92d18c", "#4b6c48", "#269750", "#1ca62b", "#0f5716", # Streptococcus Corynebacterium Staphylococcus Parvimonas Peptoniphilus Finegoldia
+               "#927638", "#927638", "#6d582a", # Enterococcus Enterococcus Escherichia
+               "#be7c05", "#be7c25", "#be7c45", # Ruminococcaceae.3 Ruminococcaceae.5 Ruminococcaceae.2
+               "#eeeeee" ) # Ureaplasma
+
+pdf(file="~/git/misc-analyses/eco_diversity/images/gajer2012_timeseries_all.pdf", width=8, height=11, paper="a4", title = "Replot of Gajer 2012")
+par(mar=c(2.5,4,4,1), mfrow=c(4,2), xpd=TRUE)
+i = 5
+for (i in 1:length(subject_ids)){
+  # filter to match subject ID
+  otu_counts_timeseries.s = otu_counts_timeseries[which(otu_counts_timeseries$Subject.ID==i),]
+  # make table for only data columns, not metadata
+  otu_counts_timeseries.d = otu_counts_timeseries.s[11:dim(otu_counts_timeseries)[2]]
+  otu_shannon_index = diversity(otu_counts_timeseries.d, index="shannon", MARGIN=1)
+  # test that rows sum to 100, meaning datapoints are percentage
+  rowSums(otu_counts_timeseries.s[,11:dim(otu_counts_timeseries)[2]])
+  b = barplot(t(as.matrix(otu_counts_timeseries.d)), 
+          ylab="Percent 16S OTUs", cex.lab=1.2,
+          names=otu_counts_timeseries.s$Time.in.study, cex.names=0.8, las=2,
+          col=bar_colors)
+  mtext(paste("Subject",i), side=3, at=0, line=1.5, adj=0, cex=1.5)
+  mtext("Days", side=1, line=0.8, at=0, adj=1, cex=0.7)
+  # plot ethnicity on left edge
+  points(0.1,50, pch=21, cex=2, bg=eth_colors[(otu_counts_timeseries.s$Racea[1]+1)])
+  # plot diversity index colorized on top of bars as triangles
+  points(b, rep(c(103),length(b)), pch=24, bg=div_colors[round(otu_shannon_index*2)+1],  )
+}
+dev.off()
+
+
+
+
+# diversity index when in raw counts, not percentage
+#otu_counts.t = otu_counts_timeseries.d[1,] * otu_counts_timeseries.s$Total.Read.Countsd[1] / 100
+#diversity(otu_counts.t, index="shannon")
+#otu_shannon_index
+
+################################################################################
+################################################################################
 
 #
