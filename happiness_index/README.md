@@ -6,4 +6,4 @@
 
 [wiki minimum annual leave by country](https://en.wikipedia.org/wiki/List_of_minimum_annual_leave_by_country)
 
-
+[mental state of the world report](https://mentalstateoftheworld.report/2023_read/)
