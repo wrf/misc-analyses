@@ -1,0 +1,40 @@
+# data mostly from
+# Ortiz-Prado et al (2019) Partial pressure of oxygen in the human body: a general review. Am J Blood Res.
+#https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6420699/
+#Table 1 References values of PtO2 measurements using different techniques
+PtO2_mmHg_lower	PtO2_upper	PtO2_midpoint	PtO2_reported_as	Organ_and_Tissue	Reference	Methods
+0	159	159	159	Atmosphere		
+104	110	104	104-108	Alveoulus	Guyton [4]	Polarographic measurements of tissue oxygen tension using gold microelectrodes
+85	95	90	90 ± 5	Arterial PO2 	Mah and Cheng [20], Guyton [4]	Gasometry
+35	45	40	40 ± 5	Venous PO2 	Mah and Cheng [20], Guyton [4]	Gasometry
+30	48	33.8	30-48	Brain	Meixensberger [51], Hoffman [52], Ortiz-Prado [3]	Positron emission tomography (PET)
+4.8	11.2	8	8 ± 3.2	Skin epidermis	Wang [35], Carreau [53]	Microelectrodes
+17.6	30.4	24	24 ± 6.4	Dermal papillae	Carreau [53]	
+27.2	43.2	35.2	35.2 ± 8.0	Sub-papillary plexus	Carreau [53]	
+53	71	61.2	61.2	Small bowel	Müller [54,55], Carreau [53]	Electron paramagnetic resonance oximetry (EPR)
+37.4	77.8	57.6	57.6 ± 20.2	Large bowel	Müller [54,55], Carreau [53]	Electron paramagnetic resonance oximetry (EPR)
+34.2	76.8	55.5	55.5 ± 21.3	Liver	Leary [56]	Electron paramagnetic resonance oximetry (EPR) with Indian ink.
+52	92	72	72 ± 20	Kidney superficial cortex	Muller [57], Carreau [53]	Phosphorescence lifetime technique
+25.5	32.3	28.9	28.9 ± 3.4	Muscle fibers	Beerthuizen [58], Carreau [53]	Proton NMR spectra of myoglobin
+7.5	31	7.5	7.5 to 31	Skeletal muscle	Beerthuizen 1989	
+37.3	66.3	51.8	51.8 ± 14.5	Bone Marrow	Carreau [53]	The technique of aspiration in a syringe
+32.4	35.6	34	34 ± 1.6	Femur Bone	Maurer [59]	Technique of radioactive microspheres in interosseous blood samples and blood flow in the bone
+59	108	88	88	Ovary venous	Fraser [61]	Clark electrode for pO2 
+# https://rep.bioscientifica.com/view/journals/rep/33/1/jrf_33_1_002.xml
+0	18	9.3	9.3 mm Hg +/- 10.7	Vaginal wall	Wagner 1978	
+# https://doi.org/10.1016/s0015-0282(16)43395-9
+# https://pubmed.ncbi.nlm.nih.gov/11257666/
+10	18	18	18	Umbilical Arteries	Gluckman [62], Carreau [53]	Umbilical cord blood gas
+20	30	29.2	29.2	Umbilical Vein	Guyton [4], Gluckman [62], Carreau [53]	Umbilical cord blood gas
+45.1	51.3	48.2	48.2 ± 3.1	Synovial Fluid	Richman [63]	Routine macroscopic and microscopic examination
+27.5	33.7	30.6	30.6 ± 3.1	Cornea	Bonanno [64]	Oxygen sensitive dye, Pd-meso-tetra (4-carboxyphenyl) porphine, bound to bovine serum albumin, was incubated with contact lenses
+18	26	22.6	22.6 +/- 4 torr	The Eye	Bonanno [64]	The T1 mapping method was applied
+# ref for Carreau 53
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4373326/
+9.6	9.6	9.6	9.6	Renal carcinoma	Lawrentschuk 2005	
+6	10	6	6	Liver tumour	Vaupel 2007	
+13	13	13	13	Primary brain tumour	Vaupel 2007	
+2	60	10	10	Breast tumour	Vaupel 2007	
+2	75	9	9	Cervix squamous carcinoma	Vaupel 2007	
+9	19	14	9.9–19	Cell	Gleadle J, Ratcliffe PJ 2001	
+9.9	9.9	9.9	<9.9	Mitochondria	Gleadle J, Ratcliffe PJ 2001	
