@@ -1,0 +1,143 @@
+country	country_short	country_code	area	year	anger_yes	anger_unsure	sad_yes	sad_unsure	stressed_yes	stressed_unsure	worried_yes	worried_unsure	pain_yes	pain_unsure	enjoyment_yes	enjoyment_unsure	rested_yes	rested_unsure	learned_yes	learned_unsure	smiled_yes	smiled_unsure	respected_yes	respected_unsure
+Afghanistan	Afghanistan	AFG	Asia-Pacific	2023	25	2	45	0	53	1	67	0	42	0	33	1	46	0	17	2	28	1	67	2
+Albania	Albania	ALB	Europe	2023	24	0	29	1	49	1	40	0	46	0	68	1	65	1	35	1	74	1	92	1
+Argentina	Argentina	ARG	Americas	2023	15	0	28	0	42	1	47	0	41	0	79	1	70	0	54	0	82	0	94	0
+Armenia	Armenia	ARM	Europe	2023	42	0	36	0	27	1	48	0	38	0	60	1	50	0	42	1	68	1	96	1
+Australia	Australia	AUS	Asia-Pacific	2023	14	0	24	0	43	0	37	0	32	0	79	0	66	0	63	0	76	0	91	1
+Austria	Austria	AUT	Europe	2023	17	0	20	0	36	0	35	0	28	0	79	0	77	0	62	0	72	0	89	1
+Azerbaijan	Azerbaijan	AZE	Europe	2023	20	1	22	2	14	1	25	0	27	0	50	1	57	0	40	1	60	2	86	5
+Bahrain	Bahrain	BHR	Middle East and North Africa	2023	27	0	33	0	43	1	42	0	35	0	67	1	73	0	54	1	79	1	92	1
+Bangladesh	Bangladesh	BGD	Asia-Pacific	2023	28	0	45	0	38	0	57	0	47	0	58	0	65	0	17	0	55	0	86	0
+Belgium	Belgium	BEL	Europe	2023	14	0	21	0	37	0	39	0	35	0	77	0	64	0	61	1	79	0	93	1
+Benin	Benin	BEN	Sub-Saharan Africa	2023	32	0	38	0	39	1	57	0	56	0	48	0	57	0	56	0	68	0	80	0
+Bolivia	Bolivia	BOL	Americas	2023	28	0	38	0	54	1	55	0	38	0	77	1	70	2	64	1	80	2	94	1
+Bosnia and Herzegovina	Bosnia and Herzegovina	BIH	Europe	2023	21	1	17	1	27	1	37	1	29	1	66	2	58	2	46	1	58	4	91	2
+Botswana	Botswana	BWA	Sub-Saharan Africa	2023	15	0	26	0	27	0	33	0	38	0	64	0	70	0	56	0	76	0	90	0
+Brazil	Brazil	BRA	Americas	2023	19	0	24	0	43	0	51	0	38	0	72	1	64	0	58	1	76	1	95	0
+Bulgaria	Bulgaria	BGR	Europe	2023	11	2	20	2	29	2	28	1	28	0	62	3	63	1	37	2	58	2	87	4
+Burkina Faso	Burkina Faso	BFA	Sub-Saharan Africa	2023	19	0	33	1	39	1	52	1	41	0	68	1	64	0	52	1	71	0	74	0
+Cambodia	Cambodia	KHM	Asia-Pacific	2023	21	0	43	0	40	0	54	0	31	0	79	0	69	0	45	0	81	0	78	1
+Cameroon	Cameroon	CMR	Sub-Saharan Africa	2023	26	0	33	0	44	1	48	0	43	0	54	1	63	0	53	0	69	0	80	0
+Canada	Canada	CAN	Americas	2023	19	0	26	0	53	0	46	0	34	0	80	0	65	0	62	0	75	0	91	0
+Chad	Chad	TCD	Sub-Saharan Africa	2023	35	0	52	0	52	0	53	1	65	0	53	0	61	0	49	0	59	0	64	0
+Chile	Chile	CHL	Americas	2023	13	0	23	0	35	1	43	0	39	0	85	0	76	0	65	0	83	1	97	0
+China	China	CHN	Asia-Pacific	2023	20	0	15	0	43	0	29	0	13	0	84	0	78	0	59	0	70	0	82	0
+Colombia	Colombia	COL	Americas	2023	15	0	26	0	42	0	45	0	34	0	78	1	76	0	63	1	82	2	98	0
+Comoros	Comoros	COM	Sub-Saharan Africa	2023	31	0	36	1	48	1	52	2	59	1	64	1	54	1	30	6	63	2	73	1
+Costa Rica	Costa Rica	CRI	Americas	2023	17	0	24	0	45	1	43	0	38	0	86	0	75	0	69	0	86	0	97	0
+Cote d'Ivoire	Ivory Coast	CIV	Sub-Saharan Africa	2023	18	0	30	0	27	1	44	0	51	0	65	0	68	0	60	0	76	0	84	0
+Croatia	Croatia	HRV	Europe	2023	9	2	14	2	27	2	45	1	24	2	55	5	68	2	48	3	60	13	75	3
+Cyprus	Cyprus	CYP	Europe	2023	18	0	23	0	54	0	48	0	32	0	73	0	56	0	52	0	75	2	90	1
+Czech Republic	Czech Republic	CZE	Europe	2023	22	0	22	0	33	0	33	0	30	0	84	0	60	1	58	1	80	2	92	1
+Democratic Republic of the Congo	Democratic Republic of the Congo	COD	Sub-Saharan Africa	2023	40	0	49	0	39	5	60	0	56	0	52	0	60	0	49	0	62	0	73	0
+Denmark	Denmark	DNK	Europe	2023	14	0	20	0	18	0	36	0	29	0	86	0	70	0	65	0	76	0	93	0
+Dominican Republic	Dominican Republic	DOM	Americas	2023	12	1	26	1	44	1	39	0	36	0	70	0	73	0	64	1	83	1	95	0
+Ecuador	Ecuador	ECU	Americas	2023	21	0	33	1	52	0	52	1	39	0	79	1	73	1	66	1	82	0	93	0
+Egypt	Egypt	EGY	Middle East and North Africa	2023	25	0	29	0	58	0	52	0	54	0	44	0	50	0	26	0	60	0	95	0
+El Salvador	El Salvador	SLV	Americas	2023	15	0	35	0	50	0	46	0	38	0	81	1	76	0	73	1	88	0	96	0
+Estonia	Estonia	EST	Europe	2023	7	0	17	0	25	0	31	0	21	0	84	1	69	1	67	1	75	2	93	2
+Eswatini	Eswatini	SWZ	Sub-Saharan Africa	2023	23	0	34	0	36	0	40	0	33	0	74	0	65	1	53	1	81	1	86	0
+Ethiopia	Ethiopia	ETH	Sub-Saharan Africa	2023	26	0	25	0	32	1	38	0	32	0	63	0	52	0	33	2	66	0	62	0
+Finland	Finland	FIN	Europe	2023	7	0	14	0	33	0	31	0	24	0	72	0	67	0	69	0	74	0	92	1
+France	France	FRA	Europe	2023	17	0	20	0	33	0	32	0	34	0	75	0	70	0	61	0	67	0	91	1
+Gabon	Gabon	GAB	Sub-Saharan Africa	2023	33	0	40	0	36	0	54	0	48	0	55	0	71	0	59	0	72	0	83	0
+Gambia	Gambia	GMB	Sub-Saharan Africa	2023	19	0	26	0	31	0	42	0	55	0	72	1	71	0	59	2	82	1	79	1
+Georgia	Georgia	GEO	Europe	2023	23	0	19	0	21	0	27	0	29	0	64	1	56	0	33	0	64	1	97	1
+Germany	Germany	DEU	Europe	2023	15	0	24	0	32	0	31	0	27	0	77	0	75	0	62	0	73	0	89	0
+Ghana	Ghana	GHA	Sub-Saharan Africa	2023	17	0	24	1	51	0	36	0	34	0	47	0	71	0	56	1	88	0	89	0
+Greece	Greece	GRC	Europe	2023	21	0	26	0	58	0	46	0	34	0	66	0	53	0	48	0	68	0	88	1
+Guatemala	Guatemala	GTM	Americas	2023	16	0	32	0	43	1	43	0	35	0	88	0	80	0	75	1	89	1	95	0
+Guinea	Guinea	GIN	Sub-Saharan Africa	2023	36	0	52	1	52	1	65	0	59	0	63	0	64	0	63	0	69	0	84	0
+Honduras	Honduras	HND	Americas	2023	15	1	26	0	41	0	44	0	35	0	77	2	73	1	65	1	85	2	95	0
+Hong Kong, S.A.R. of China	Hong Kong	HKG	Asia-Pacific	2023	13	0	11	0	38	0	31	0	16	0	59	0	73	0	36	0	60	0	86	1
+Hungary	Hungary	HUN	Europe	2023	10	0	18	0	32	0	29	0	29	0	78	1	54	0	52	0	71	1	94	2
+Iceland	Iceland	ISL	Europe	2023	9	0	16	0	39	0	30	0	40	0	87	1	55	0	68	0	82	1	95	1
+India	India	IND	Asia-Pacific	2023	31	0	38	1	26	0	47	0	39	0	77	1	70	1	52	2	77	1	83	1
+Indonesia	Indonesia	IDN	Asia-Pacific	2023	20	0	27	0	15	0	39	0	21	0	85	0	83	0	69	0	90	0	93	0
+Iran	Iran	IRN	Middle East and North Africa	2023	35	0	37	0	48	0	56	0	33	0	59	0	68	0	36	0	63	1	92	0
+Iraq	Iraq	IRQ	Middle East and North Africa	2023	47	0	39	0	50	0	55	0	57	0	63	0	59	0	47	0	66	0	90	0
+Ireland	Ireland	IRL	Europe	2023	19	0	22	0	40	0	32	0	26	0	85	0	75	0	62	0	75	0	91	0
+Israel	Israel	ISR	Middle East and North Africa	2023	36	2	51	1	62	1	67	1	20	1	54	2	59	1	48	1	41	2	94	1
+Italy	Italy	ITA	Europe	2023	12	0	27	0	40	0	48	0	34	0	68	0	64	0	50	0	73	0	93	0
+Japan	Japan	JPN	Asia-Pacific	2023	13	0	12	0	38	0	28	0	20	0	64	1	79	0	54	0	71	0	62	4
+Jordan	Jordan	JOR	Middle East and North Africa	2023	42	0	39	0	53	0	52	0	54	0	56	0	53	0	37	0	62	0	88	0
+Kazakhstan	Kazakhstan	KAZ	Asia-Pacific	2023	9	2	12	1	14	1	12	1	21	1	75	5	72	1	43	4	60	8	89	5
+Kenya	Kenya	KEN	Sub-Saharan Africa	2023	18	0	23	0	33	0	32	0	31	0	73	0	69	0	73	0	80	0	82	0
+Kosovo	Kosovo	KOS	Europe	2023	13	1	7	1	28	1	22	1	28	1	83	2	65	1	35	4	81	3	94	1
+Kuwait	Kuwait	KWT	Middle East and North Africa	2023	16	0	14	0	35	1	32	0	26	0	76	0	85	0	62	0	80	0	95	0
+Kyrgyzstan	Kyrgyzstan	KGZ	Asia-Pacific	2023	16	1	11	0	8	0	23	1	17	0	81	2	78	1	38	1	81	2	91	2
+Lao People's Democratic Republic	Laos	LAO	Asia-Pacific	2023	31	0	30	1	27	2	40	1	47	0	79	1	69	0	36	2	87	0	62	4
+Latvia	Latvia	LVA	Europe	2023	15	0	24	0	34	0	37	1	27	0	75	1	63	2	59	1	62	5	90	4
+Lebanon	Lebanon	LBN	Middle East and North Africa	2023	35	0	32	0	58	0	48	0	43	0	40	1	51	1	28	0	44	1	91	0
+Liberia	Liberia	LBR	Sub-Saharan Africa	2023	26	0	46	0	52	0	56	0	54	0	41	0	60	0	67	0	75	0	80	0
+Libya	Libya	LBY	Middle East and North Africa	2023	40	0	31	0	42	0	41	0	42	0	60	0	65	0	50	0	64	1	83	1
+Lithuania	Lithuania	LTU	Europe	2023	13	2	18	3	22	2	28	4	26	1	51	6	64	4	38	4	49	6	67	14
+Luxembourg	Luxembourg	LUX	Europe	2023	13	0	14	0	42	0	30	0	28	0	82	0	69	0	65	0	77	0	94	0
+Madagascar	Madagascar	MDG	Sub-Saharan Africa	2023	30	0	41	0	50	0	45	1	47	1	66	1	68	0	67	0	82	0	83	1
+Malawi	Malawi	MWI	Sub-Saharan Africa	2023	17	0	40	0	30	0	44	0	43	0	44	0	68	0	50	0	62	0	70	0
+Malaysia	Malaysia	MSY	Asia-Pacific	2023	18	0	18	0	18	0	22	0	20	0	88	1	90	0	53	1	85	1	95	1
+Mali	Mali	MLI	Sub-Saharan Africa	2023	22	0	30	0	26	0	45	0	33	0	77	0	71	0	41	0	80	0	88	0
+Malta	Malta	MLT	Europe	2023	22	0	24	0	55	0	63	0	36	0	60	0	73	0	57	0	77	0	91	0
+Mauritania	Mauritania	MRT	Middle East and North Africa	2023	25	0	31	0	37	0	43	0	52	0	70	0	69	0	63	0	79	0	84	0
+Mauritius	Mauritius	MUS	Asia-Pacific	2023	8	0	17	0	25	0	23	1	33	0	65	2	63	1	52	1	77	2	93	1
+Mexico	Mexico	MEX	Americas	2023	8	0	23	0	39	0	38	0	30	0	86	0	82	0	69	0	88	0	96	0
+Moldova, Republic of	Moldova	MDA	Europe	2023	12	2	26	1	22	3	38	1	39	0	62	1	69	1	56	2	53	1	89	3
+Mongolia	Mongolia	MNG	Asia-Pacific	2023	13	0	14	0	14	0	32	0	21	0	70	1	85	0	27	0	64	1	83	2
+Montenegro	Montenegro	MNE	Europe	2023	24	1	22	0	24	1	49	0	36	0	54	0	54	1	38	2	51	1	90	1
+Morocco	Morocco	MAR	Middle East and North Africa	2023	38	0	36	0	49	1	50	0	45	0	48	3	62	0	44	1	69	1	89	2
+Mozambique	Mozambique	MOZ	Sub-Saharan Africa	2023	17	0	32	1	30	1	51	1	35	1	53	2	70	1	62	0	69	1	86	1
+Myanmar	Myanmar	MMR	Asia-Pacific	2023	29	0	31	0	45	0	47	0	45	0	71	1	66	0	42	1	76	1	68	2
+Namibia	Namibia	NAM	Sub-Saharan Africa	2023	18	0	18	0	26	0	27	0	28	0	48	0	78	0	60	0	83	0	85	1
+Nepal	Nepal	NPL	Asia-Pacific	2023	24	0	34	1	38	0	46	0	45	1	62	0	68	0	28	0	47	0	70	1
+Netherlands (Kingdom of the)	Netherlands	NLD	Europe	2023	9	1	17	1	28	0	35	1	29	0	83	0	72	0	47	0	78	0	94	1
+New Zealand	New Zealand	NZL	Asia-Pacific	2023	13	0	20	0	41	0	35	0	32	0	80	0	70	0	64	0	77	0	93	1
+Nicaragua	Nicaragua	NIC	Americas	2023	18	0	35	0	46	0	50	0	38	0	75	1	75	1	71	1	85	0	97	0
+Niger	Niger	NER	Sub-Saharan Africa	2023	31	0	38	0	48	0	56	0	51	0	72	0	65	0	66	0	86	0	85	1
+Nigeria	Nigeria	NGA	Sub-Saharan Africa	2023	22	0	20	1	59	0	38	1	27	0	60	0	64	0	72	0	84	0	84	0
+North Macedonia	North Macedonia	MKD	Europe	2023	26	1	18	0	29	0	37	0	32	0	65	1	56	1	32	1	55	2	89	1
+Northern Cyprus	Northern Cyprus	NoCY	Europe	2023	49	2	43	1	65	1	42	2	26	2	39	3	50	1	19	2	38	2	83	2
+Norway	Norway	NOR	Europe	2023	10	0	20	0	37	0	38	0	27	0	84	0	64	0	70	0	73	0	95	0
+Pakistan	Pakistan	PAK	Asia-Pacific	2023	36	0	40	0	33	1	49	0	49	0	56	0	57	0	30	0	65	0	90	0
+Panama	Panama	PAN	Americas	2023	12	0	24	0	38	0	40	0	27	0	87	0	84	0	72	1	88	0	96	0
+Paraguay	Paraguay	PRY	Americas	2023	12	0	20	0	35	1	40	0	28	0	88	1	85	0	71	0	88	1	97	0
+Peru	Peru	PER	Americas	2023	23	0	35	0	50	1	53	0	38	0	79	0	71	0	68	0	79	1	92	0
+Philippines	Philippines	PHL	Asia-Pacific	2023	29	1	34	1	53	0	34	1	24	0	80	1	74	0	75	0	85	0	95	0
+Poland	Poland	POL	Europe	2023	12	0	10	1	22	1	24	1	15	0	67	3	66	1	31	3	63	4	88	3
+Portugal	Portugal	PRT	Europe	2023	8	0	30	0	41	0	55	0	41	0	63	0	69	0	57	0	75	2	97	0
+Republic of the Congo	Republic of the Congo	COG	Sub-Saharan Africa	2023	28	1	44	0	36	1	51	0	47	0	59	1	70	0	50	2	65	1	76	0
+Romania	Romania	ROU	Europe	2023	18	0	26	0	36	1	37	1	41	0	71	1	58	1	46	0	69	1	90	2
+Russian Federation	Russia	RUS	Europe	2023	11	0	21	0	20	0	26	0	21	0	63	0	59	0	56	0	66	1	90	2
+Saudi Arabia	Saudi Arabia	SAU	Middle East and North Africa	2023	25	0	20	0	30	0	27	0	32	0	76	0	84	1	63	0	81	0	94	0
+Senegal	Senegal	SEN	Sub-Saharan Africa	2023	16	0	22	0	46	0	39	0	46	0	78	0	70	0	79	0	90	0	92	0
+Serbia	Serbia	SRB	Europe	2023	13	0	14	0	25	1	34	1	25	0	62	2	56	0	43	3	48	4	89	3
+Sierra Leone	Sierra Leone	SLE	Sub-Saharan Africa	2023	32	4	39	0	54	1	57	0	70	0	33	1	56	0	50	2	66	1	75	1
+Singapore	Singapore	SGP	Asia-Pacific	2023	13	0	14	0	34	0	30	0	19	0	72	2	75	0	51	1	74	1	92	1
+Slovakia	Slovakia	SVK	Europe	2023	20	0	15	1	32	1	36	1	26	0	76	2	69	1	48	2	65	3	88	4
+Slovenia	Slovenia	SVN	Europe	2023	14	0	18	0	36	0	46	0	27	0	60	0	71	1	58	0	67	0	94	1
+Somalia	Somalia	SOM	Sub-Saharan Africa	2023	13	0	27	0	14	1	30	0	30	1	83	2	73	1	41	1	83	3	90	0
+South Africa	South Africa	ZAF	Sub-Saharan Africa	2023	17	1	25	1	36	0	35	1	28	0	77	1	76	1	51	2	82	1	85	0
+South Korea	South Korea	KOR	Asia-Pacific	2023	18	0	17	0	39	0	39	0	27	0	68	0	80	0	42	0	70	1	75	2
+Spain	Spain	ESP	Europe	2023	23	0	23	0	38	0	51	0	34	0	60	0	74	0	63	0	73	0	94	0
+Sri Lanka	Sri Lanka	LKA	Asia-Pacific	2023	29	0	39	0	55	0	37	1	44	0	65	0	56	0	65	1	82	0	83	1
+State of Palestine	Palestine	PSE	Middle East and North Africa	2023	39	0	28	0	46	0	46	0	45	0	63	1	61	0	41	0	69	0	91	0
+Sweden	Sweden	SWE	Europe	2023	11	0	17	1	31	0	30	0	22	0	80	0	63	0	66	0	76	0	94	0
+Switzerland	Switzerland	CHE	Europe	2023	11	0	17	0	28	0	27	0	29	0	80	0	75	0	70	0	74	0	91	0
+Taiwan, Province of China	Taiwan	TWN	Asia-Pacific	2023	10	0	6	0	33	0	17	0	18	0	84	1	75	1	57	0	80	1	89	2
+Tajikistan	Tajikistan	TJK	Asia-Pacific	2023	21	1	19	0	29	0	30	0	31	0	65	2	85	1	49	2	72	3	95	1
+Tanzania	Tanzania	TZA	Sub-Saharan Africa	2023	15	0	25	0	58	0	23	0	42	0	72	0	73	0	58	0	80	0	81	0
+Thailand	Thailand	THA	Asia-Pacific	2023	15	0	15	0	27	1	34	0	36	0	81	1	78	0	75	1	83	0	92	1
+Togo	Togo	TGO	Sub-Saharan Africa	2023	26	0	27	0	34	1	55	0	53	0	52	0	57	0	51	1	59	0	71	0
+Tunisia	Tunisia	TUN	Middle East and North Africa	2023	39	0	17	0	47	0	53	0	47	0	43	1	54	0	26	0	69	0	91	0
+Türkiye	Turkey	TUR	Middle East and North Africa	2023	34	1	26	1	58	1	44	1	23	1	42	2	56	1	23	2	37	4	79	3
+Uganda	Uganda	UGA	Sub-Saharan Africa	2023	29	0	36	0	49	0	48	1	47	0	71	0	73	0	62	1	84	0	84	2
+Ukraine	Ukraine	UKR	Europe	2023	22	1	39	0	32	0	53	1	35	0	54	1	44	1	43	1	48	2	91	4
+United Arab Emirates	United Arab Emirates	ARE	Middle East and North Africa	2023	31	0	28	0	36	0	32	0	33	0	70	0	77	0	58	0	69	0	82	0
+United Kingdom of Great Britain and Northern Ireland	United Kingdom	GBR	Europe	2023	17	0	28	0	38	0	37	0	27	0	81	0	73	0	62	0	73	0	88	0
+United States of America	USA	USA	Americas	2023	18	0	26	0	51	0	41	0	34	1	78	0	67	0	60	1	73	0	89	1
+Uruguay	Uruguay	URY	Americas	2023	9	0	25	0	43	1	46	1	34	0	83	0	71	1	56	1	85	1	98	0
+Uzbekistan	Uzbekistan	UZB	Asia-Pacific	2023	23	0	17	0	13	0	21	0	24	0	86	1	84	0	56	1	80	2	96	1
+Venezuela	Venezuela	VEN	Americas	2023	14	1	29	0	45	0	47	0	37	0	74	0	76	0	69	0	84	0	97	0
+Vietnam	Vietnam	VNM	Asia-Pacific	2023	5	0	11	0	14	0	20	0	7	0	71	0	92	0	53	0	88	0	97	0
+Yemen	Yemen	YEM	Middle East and North Africa	2023	28	0	24	0	36	0	50	0	42	0	51	2	53	0	31	1	51	1	80	0
+Zambia	Zambia	ZMB	Sub-Saharan Africa	2023	22	0	33	0	42	1	52	0	47	0	68	1	67	0	47	2	79	0	88	0
+Zimbabwe	Zimbabwe	ZWE	Sub-Saharan Africa	2023	10	0	18	0	28	0	26	0	26	0	58	0	62	0	46	0	79	0	84	0

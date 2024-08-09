@@ -1,0 +1,1421 @@
+country	country_short	emotion	answer_yes	answer_no	answer_unsure	year
+Afghanistan	Afghanistan	anger	40	59	1	2022
+Albania	Albania	anger	21	79	0	2022
+Algeria	Algeria	anger	23	76	1	2022
+Argentina	Argentina	anger	13	86	0	2022
+Armenia	Armenia	anger	50	49	0	2022
+Australia	Australia	anger	15	85	0	2022
+Austria	Austria	anger	17	83	0	2022
+Azerbaijan	Azerbaijan	anger	38	60	1	2022
+Bangladesh	Bangladesh	anger	27	72	0	2022
+Belgium	Belgium	anger	9	90	0	2022
+Benin	Benin	anger	32	68	0	2022
+Bolivia	Bolivia	anger	29	71	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	anger	21	78	1	2022
+Botswana	Botswana	anger	19	81	0	2022
+Brazil	Brazil	anger	17	83	0	2022
+Bulgaria	Bulgaria	anger	8	91	1	2022
+Cambodia	Cambodia	anger	24	76	0	2022
+Cameroon	Cameroon	anger	24	75	1	2022
+Canada	Canada	anger	18	82	0	2022
+Chad	Chad	anger	35	65	0	2022
+Chile	Chile	anger	13	87	0	2022
+Colombia	Colombia	anger	18	82	0	2022
+Comoros	Comoros	anger	24	75	0	2022
+Costa Rica	Costa Rica	anger	17	83	0	2022
+Cote d'Ivoire	Ivory Coast	anger	27	73	0	2022
+Croatia	Croatia	anger	11	89	0	2022
+Cyprus	Cyprus	anger	18	81	1	2022
+Czech Republic	Czech Republic	anger	18	81	1	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	anger	32	67	1	2022
+Denmark	Denmark	anger	11	89	0	2022
+Dominican Republic	Dominican Republic	anger	14	85	1	2022
+Ecuador	Ecuador	anger	19	80	1	2022
+Egypt	Egypt	anger	23	77	0	2022
+El Salvador	El Salvador	anger	14	85	1	2022
+Estonia	Estonia	anger	8	92	0	2022
+Eswatini	Eswatini	anger	31	69	1	2022
+Ethiopia	Ethiopia	anger	31	69	0	2022
+Finland	Finland	anger	6	94	0	2022
+France	France	anger	18	82	0	2022
+Gabon	Gabon	anger	35	64	0	2022
+Gambia	Gambia	anger	32	68	0	2022
+Georgia	Georgia	anger	26	74	0	2022
+Germany	Germany	anger	13	87	0	2022
+Ghana	Ghana	anger	20	80	0	2022
+Greece	Greece	anger	10	89	1	2022
+Guatemala	Guatemala	anger	14	86	0	2022
+Guinea	Guinea	anger	33	67	0	2022
+Honduras	Honduras	anger	16	83	0	2022
+Hong Kong, S.A.R. of China	Hong Kong	anger	15	85	0	2022
+Hungary	Hungary	anger	18	82	0	2022
+Iceland	Iceland	anger	8	92	0	2022
+India	India	anger	35	65	0	2022
+Indonesia	Indonesia	anger	18	81	1	2022
+Iran	Iran	anger	39	61	0	2022
+Iraq	Iraq	anger	46	54	0	2022
+Ireland	Ireland	anger	16	84	0	2022
+Israel	Israel	anger	13	86	1	2022
+Italy	Italy	anger	9	91	0	2022
+Jamaica	Jamaica	anger	20	80	0	2022
+Japan	Japan	anger	13	87	0	2022
+Jordan	Jordan	anger	43	57	0	2022
+Kazakhstan	Kazakhstan	anger	10	88	2	2022
+Kenya	Kenya	anger	25	75	0	2022
+Kosovo	Kosovo	anger	15	84	1	2022
+Kuwait	Kuwait	anger	12	88	0	2022
+Kyrgyzstan	Kyrgyzstan	anger	23	77	1	2022
+Lao People's Democratic Republic	Laos	anger	32	68	0	2022
+Latvia	Latvia	anger	10	90	0	2022
+Lebanon	Lebanon	anger	35	65	0	2022
+Lesotho	Lesotho	anger	22	78	0	2022
+Liberia	Liberia	anger	25	74	0	2022
+Libya	Libya	anger	39	61	0	2022
+Lithuania	Lithuania	anger	9	87	4	2022
+Luxembourg	Luxembourg	anger	17	82	0	2022
+Madagascar	Madagascar	anger	26	74	0	2022
+Malawi	Malawi	anger	19	81	0	2022
+Malaysia	Malaysia	anger	15	85	1	2022
+Mali	Mali	anger	31	69	0	2022
+Malta	Malta	anger	24	75	0	2022
+Mauritania	Mauritania	anger	36	64	0	2022
+Mauritius	Mauritius	anger	10	90	0	2022
+Mexico	Mexico	anger	9	91	0	2022
+Moldova, Republic of	Moldova	anger	13	85	2	2022
+Mongolia	Mongolia	anger	13	87	0	2022
+Montenegro	Montenegro	anger	28	72	0	2022
+Morocco	Morocco	anger	41	59	0	2022
+Mozambique	Mozambique	anger	17	81	3	2022
+Myanmar	Myanmar	anger	32	68	0	2022
+Namibia	Namibia	anger	20	80	0	2022
+Nepal	Nepal	anger	25	75	0	2022
+Netherlands	Netherlands	anger	9	91	0	2022
+New Zealand	New Zealand	anger	10	90	0	2022
+Nicaragua	Nicaragua	anger	19	80	0	2022
+Niger	Niger	anger	26	73	2	2022
+Nigeria	Nigeria	anger	20	80	0	2022
+North Macedonia	North Macedonia	anger	22	77	1	2022
+Northern Cyprus	Northern Cyprus	anger	52	47	1	2022
+Norway	Norway	anger	8	91	1	2022
+Pakistan	Pakistan	anger	37	63	0	2022
+Palestinian Territories	Palestine	anger	34	66	0	2022
+Panama	Panama	anger	12	88	0	2022
+Paraguay	Paraguay	anger	12	88	0	2022
+Peru	Peru	anger	23	77	0	2022
+Philippines	Philippines	anger	28	72	0	2022
+Poland	Poland	anger	10	87	3	2022
+Portugal	Portugal	anger	11	89	0	2022
+Puerto Rico	Puerto Rico	anger	11	89	0	2022
+Republic of the Congo	Republic of the Congo	anger	36	64	1	2022
+Romania	Romania	anger	17	83	0	2022
+Russian Federation	Russia	anger	14	85	0	2022
+Saudi Arabia	Saudi Arabia	anger	20	79	0	2022
+Senegal	Senegal	anger	20	79	0	2022
+Serbia	Serbia	anger	18	80	1	2022
+Sierra Leone	Sierra Leone	anger	37	62	1	2022
+Singapore	Singapore	anger	15	85	0	2022
+Slovakia	Slovakia	anger	24	76	0	2022
+Slovenia	Slovenia	anger	14	85	1	2022
+South Africa	South Africa	anger	16	83	1	2022
+South Korea	South Korea	anger	18	82	0	2022
+Spain	Spain	anger	19	81	0	2022
+Sri Lanka	Sri Lanka	anger	30	70	0	2022
+Sweden	Sweden	anger	9	91	0	2022
+Switzerland	Switzerland	anger	13	87	0	2022
+Taiwan, Republic of China	Taiwan	anger	9	91	0	2022
+Tajikistan	Tajikistan	anger	21	78	0	2022
+Tanzania	Tanzania	anger	15	85	0	2022
+Thailand	Thailand	anger	13	86	0	2022
+Togo	Togo	anger	33	66	1	2022
+Tunisia	Tunisia	anger	31	69	0	2022
+Türkiye	Turkey	anger	39	60	1	2022
+Uganda	Uganda	anger	41	59	0	2022
+Ukraine	Ukraine	anger	24	75	1	2022
+United Arab Emirates	United Arab Emirates	anger	23	77	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	anger	21	79	0	2022
+United States of America	USA	anger	16	84	0	2022
+Uruguay	Uruguay	anger	11	89	0	2022
+Uzbekistan	Uzbekistan	anger	27	73	0	2022
+Venezuela	Venezuela	anger	14	85	0	2022
+Vietnam	Vietnam	anger	7	93	0	2022
+Yemen	Yemen	anger	22	77	1	2022
+Zambia	Zambia	anger	21	79	0	2022
+Zimbabwe	Zimbabwe	anger	10	90	0	2022
+Afghanistan	Afghanistan	sadness	57	42	0	2022
+Albania	Albania	sadness	21	78	1	2022
+Algeria	Algeria	sadness	19	80	1	2022
+Argentina	Argentina	sadness	25	74	0	2022
+Armenia	Armenia	sadness	52	48	0	2022
+Australia	Australia	sadness	23	77	0	2022
+Austria	Austria	sadness	22	78	0	2022
+Azerbaijan	Azerbaijan	sadness	33	66	1	2022
+Bangladesh	Bangladesh	sadness	47	53	0	2022
+Belgium	Belgium	sadness	21	78	1	2022
+Benin	Benin	sadness	41	58	0	2022
+Bolivia	Bolivia	sadness	40	60	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	sadness	21	79	1	2022
+Botswana	Botswana	sadness	29	71	0	2022
+Brazil	Brazil	sadness	28	72	0	2022
+Bulgaria	Bulgaria	sadness	18	80	2	2022
+Cambodia	Cambodia	sadness	40	60	0	2022
+Cameroon	Cameroon	sadness	33	66	0	2022
+Canada	Canada	sadness	25	75	0	2022
+Chad	Chad	sadness	54	46	1	2022
+Chile	Chile	sadness	22	78	0	2022
+Colombia	Colombia	sadness	27	73	0	2022
+Comoros	Comoros	sadness	35	65	0	2022
+Costa Rica	Costa Rica	sadness	23	76	1	2022
+Cote d'Ivoire	Cote d'Ivoire	sadness	38	61	0	2022
+Croatia	Croatia	sadness	15	83	2	2022
+Cyprus	Cyprus	sadness	24	75	1	2022
+Czech Republic	Czech Republic	sadness	20	79	1	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	sadness	47	53	0	2022
+Denmark	Denmark	sadness	17	83	0	2022
+Dominican Republic	Dominican Republic	sadness	30	70	1	2022
+Ecuador	Ecuador	sadness	35	64	1	2022
+Egypt	Egypt	sadness	29	71	0	2022
+El Salvador	El Salvador	sadness	31	69	0	2022
+Estonia	Estonia	sadness	19	81	1	2022
+Eswatini	Eswatini	sadness	35	63	2	2022
+Ethiopia	Ethiopia	sadness	30	70	0	2022
+Finland	Finland	sadness	14	86	0	2022
+France	France	sadness	23	77	0	2022
+Gabon	Gabon	sadness	36	63	0	2022
+Gambia	Gambia	sadness	44	55	0	2022
+Georgia	Georgia	sadness	16	84	0	2022
+Germany	Germany	sadness	19	80	0	2022
+Ghana	Ghana	sadness	29	71	0	2022
+Greece	Greece	sadness	14	86	1	2022
+Guatemala	Guatemala	sadness	26	74	0	2022
+Guinea	Guinea	sadness	50	49	1	2022
+Honduras	Honduras	sadness	29	71	0	2022
+Hong Kong, S.A.R. of China	Hong Kong	sadness	12	88	0	2022
+Hungary	Hungary	sadness	22	77	0	2022
+Iceland	Iceland	sadness	16	84	0	2022
+India	India	sadness	44	56	0	2022
+Indonesia	Indonesia	sadness	25	75	0	2022
+Iran	Iran	sadness	41	58	0	2022
+Iraq	Iraq	sadness	45	55	0	2022
+Ireland	Ireland	sadness	22	78	0	2022
+Israel	Israel	sadness	12	87	1	2022
+Italy	Italy	sadness	31	69	0	2022
+Jamaica	Jamaica	sadness	27	73	0	2022
+Japan	Japan	sadness	10	90	0	2022
+Jordan	Jordan	sadness	37	63	0	2022
+Kazakhstan	Kazakhstan	sadness	13	85	2	2022
+Kenya	Kenya	sadness	26	74	0	2022
+Kosovo	Kosovo	sadness	7	92	1	2022
+Kuwait	Kuwait	sadness	12	88	0	2022
+Kyrgyzstan	Kyrgyzstan	sadness	15	85	0	2022
+Lao People's Democratic Republic	Laos	sadness	31	67	1	2022
+Latvia	Latvia	sadness	14	85	0	2022
+Lebanon	Lebanon	sadness	39	61	0	2022
+Lesotho	Lesotho	sadness	24	76	0	2022
+Liberia	Liberia	sadness	49	51	0	2022
+Libya	Libya	sadness	33	67	0	2022
+Lithuania	Lithuania	sadness	14	82	4	2022
+Luxembourg	Luxembourg	sadness	15	85	0	2022
+Madagascar	Madagascar	sadness	35	65	0	2022
+Malawi	Malawi	sadness	40	60	0	2022
+Malaysia	Malaysia	sadness	17	82	1	2022
+Mali	Mali	sadness	30	70	0	2022
+Malta	Malta	sadness	25	74	1	2022
+Mauritania	Mauritania	sadness	33	66	1	2022
+Mauritius	Mauritius	sadness	18	81	0	2022
+Mexico	Mexico	sadness	19	80	0	2022
+Moldova, Republic of	Moldova	sadness	30	69	1	2022
+Mongolia	Mongolia	sadness	17	83	0	2022
+Montenegro	Montenegro	sadness	22	78	0	2022
+Morocco	Morocco	sadness	35	65	0	2022
+Mozambique	Mozambique	sadness	35	65	0	2022
+Myanmar	Myanmar	sadness	29	71	0	2022
+Namibia	Namibia	sadness	22	78	1	2022
+Nepal	Nepal	sadness	32	67	2	2022
+Netherlands	Netherlands	sadness	15	85	0	2022
+New Zealand	New Zealand	sadness	21	79	0	2022
+Nicaragua	Nicaragua	sadness	35	65	0	2022
+Niger	Niger	sadness	36	62	2	2022
+Nigeria	Nigeria	sadness	19	80	1	2022
+North Macedonia	North Macedonia	sadness	22	76	2	2022
+Northern Cyprus	Northern Cyprus	sadness	44	55	1	2022
+Norway	Norway	sadness	21	79	0	2022
+Pakistan	Pakistan	sadness	32	68	0	2022
+Palestinian Territories	Palestine	sadness	27	73	0	2022
+Panama	Panama	sadness	26	73	1	2022
+Paraguay	Paraguay	sadness	17	82	0	2022
+Peru	Peru	sadness	35	65	0	2022
+Philippines	Philippines	sadness	30	70	0	2022
+Poland	Poland	sadness	11	87	2	2022
+Portugal	Portugal	sadness	30	70	0	2022
+Puerto Rico	Puerto Rico	sadness	26	74	0	2022
+Republic of the Congo	Republic of the Congo	sadness	48	52	0	2022
+Romania	Romania	sadness	24	75	0	2022
+Russian Federation	Russia	sadness	22	77	1	2022
+Saudi Arabia	Saudi Arabia	sadness	19	81	0	2022
+Senegal	Senegal	sadness	24	75	1	2022
+Serbia	Serbia	sadness	19	79	2	2022
+Sierra Leone	Sierra Leone	sadness	44	55	1	2022
+Singapore	Singapore	sadness	16	84	0	2022
+Slovakia	Slovakia	sadness	17	82	1	2022
+Slovenia	Slovenia	sadness	12	88	0	2022
+South Africa	South Africa	sadness	24	76	0	2022
+South Korea	South Korea	sadness	17	83	0	2022
+Spain	Spain	sadness	27	73	0	2022
+Sri Lanka	Sri Lanka	sadness	34	66	0	2022
+Sweden	Sweden	sadness	14	84	2	2022
+Switzerland	Switzerland	sadness	18	82	0	2022
+Taiwan, Republic of China	Taiwan	sadness	4	95	0	2022
+Tajikistan	Tajikistan	sadness	20	80	0	2022
+Tanzania	Tanzania	sadness	22	78	0	2022
+Thailand	Thailand	sadness	15	85	0	2022
+Togo	Togo	sadness	35	65	1	2022
+Tunisia	Tunisia	sadness	16	84	0	2022
+Türkiye	Turkey	sadness	34	66	0	2022
+Uganda	Uganda	sadness	41	59	0	2022
+Ukraine	Ukraine	sadness	41	59	0	2022
+United Arab Emirates	United Arab Emirates	sadness	24	76	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	sadness	27	72	0	2022
+United States of America	USA	sadness	24	76	0	2022
+Uruguay	Uruguay	sadness	25	74	0	2022
+Uzbekistan	Uzbekistan	sadness	18	81	1	2022
+Venezuela	Venezuela	sadness	26	74	0	2022
+Vietnam	Vietnam	sadness	9	91	0	2022
+Yemen	Yemen	sadness	18	81	0	2022
+Zambia	Zambia	sadness	29	70	0	2022
+Zimbabwe	Zimbabwe	sadness	19	81	0	2022
+Afghanistan	Afghanistan	stress	68	31	1	2022
+Albania	Albania	stress	47	53	0	2022
+Algeria	Algeria	stress	25	73	1	2022
+Argentina	Argentina	stress	40	59	1	2022
+Armenia	Armenia	stress	33	66	1	2022
+Australia	Australia	stress	42	58	0	2022
+Austria	Austria	stress	32	68	0	2022
+Azerbaijan	Azerbaijan	stress	40	59	1	2022
+Bangladesh	Bangladesh	stress	39	59	2	2022
+Belgium	Belgium	stress	39	60	1	2022
+Benin	Benin	stress	36	60	3	2022
+Bolivia	Bolivia	stress	52	46	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	stress	34	65	1	2022
+Botswana	Botswana	stress	37	63	0	2022
+Brazil	Brazil	stress	41	59	0	2022
+Bulgaria	Bulgaria	stress	23	74	2	2022
+Cambodia	Cambodia	stress	42	58	0	2022
+Cameroon	Cameroon	stress	42	57	1	2022
+Canada	Canada	stress	51	49	0	2022
+Chad	Chad	stress	50	48	2	2022
+Chile	Chile	stress	37	62	0	2022
+Colombia	Colombia	stress	47	53	0	2022
+Comoros	Comoros	stress	43	57	0	2022
+Costa Rica	Costa Rica	stress	47	53	0	2022
+Cote d'Ivoire	Cote d'Ivoire	stress	34	64	2	2022
+Croatia	Croatia	stress	36	63	1	2022
+Cyprus	Cyprus	stress	55	45	0	2022
+Czech Republic	Czech Republic	stress	35	65	1	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	stress	42	52	6	2022
+Denmark	Denmark	stress	25	75	0	2022
+Dominican Republic	Dominican Republic	stress	49	50	1	2022
+Ecuador	Ecuador	stress	55	45	1	2022
+Egypt	Egypt	stress	45	55	0	2022
+El Salvador	El Salvador	stress	49	50	1	2022
+Estonia	Estonia	stress	23	77	1	2022
+Eswatini	Eswatini	stress	47	53	0	2022
+Ethiopia	Ethiopia	stress	33	67	0	2022
+Finland	Finland	stress	41	59	0	2022
+France	France	stress	34	65	0	2022
+Gabon	Gabon	stress	33	66	0	2022
+Gambia	Gambia	stress	46	54	0	2022
+Georgia	Georgia	stress	19	81	0	2022
+Germany	Germany	stress	35	65	0	2022
+Ghana	Ghana	stress	49	51	0	2022
+Greece	Greece	stress	54	45	0	2022
+Guatemala	Guatemala	stress	39	61	0	2022
+Guinea	Guinea	stress	42	56	2	2022
+Honduras	Honduras	stress	43	57	1	2022
+Hong Kong, S.A.R. of China	Hong Kong	stress	42	58	0	2022
+Hungary	Hungary	stress	33	67	0	2022
+Iceland	Iceland	stress	37	63	0	2022
+India	India	stress	29	71	0	2022
+Indonesia	Indonesia	stress	14	85	0	2022
+Iran	Iran	stress	51	49	0	2022
+Iraq	Iraq	stress	53	47	0	2022
+Ireland	Ireland	stress	35	65	0	2022
+Israel	Israel	stress	24	76	1	2022
+Italy	Italy	stress	45	54	0	2022
+Jamaica	Jamaica	stress	31	67	1	2022
+Japan	Japan	stress	38	62	0	2022
+Jordan	Jordan	stress	50	50	0	2022
+Kazakhstan	Kazakhstan	stress	13	84	3	2022
+Kenya	Kenya	stress	33	67	0	2022
+Kosovo	Kosovo	stress	32	67	1	2022
+Kuwait	Kuwait	stress	21	78	0	2022
+Kyrgyzstan	Kyrgyzstan	stress	11	89	0	2022
+Lao People's Democratic Republic	Laos	stress	29	69	2	2022
+Latvia	Latvia	stress	17	83	0	2022
+Lebanon	Lebanon	stress	65	35	0	2022
+Lesotho	Lesotho	stress	35	64	1	2022
+Liberia	Liberia	stress	58	42	0	2022
+Libya	Libya	stress	48	52	0	2022
+Lithuania	Lithuania	stress	19	76	5	2022
+Luxembourg	Luxembourg	stress	42	57	2	2022
+Madagascar	Madagascar	stress	49	51	0	2022
+Malawi	Malawi	stress	31	69	0	2022
+Malaysia	Malaysia	stress	19	81	1	2022
+Mali	Mali	stress	32	67	0	2022
+Malta	Malta	stress	52	48	0	2022
+Mauritania	Mauritania	stress	35	64	1	2022
+Mauritius	Mauritius	stress	26	73	0	2022
+Mexico	Mexico	stress	39	61	0	2022
+Moldova, Republic of	Moldova	stress	25	74	1	2022
+Mongolia	Mongolia	stress	14	86	0	2022
+Montenegro	Montenegro	stress	27	73	0	2022
+Morocco	Morocco	stress	44	55	0	2022
+Mozambique	Mozambique	stress	26	73	1	2022
+Myanmar	Myanmar	stress	45	55	0	2022
+Namibia	Namibia	stress	35	65	0	2022
+Nepal	Nepal	stress	33	66	1	2022
+Netherlands	Netherlands	stress	28	72	0	2022
+New Zealand	New Zealand	stress	37	63	0	2022
+Nicaragua	Nicaragua	stress	46	53	1	2022
+Niger	Niger	stress	41	56	3	2022
+Nigeria	Nigeria	stress	49	51	0	2022
+North Macedonia	North Macedonia	stress	33	66	1	2022
+Northern Cyprus	Northern Cyprus	stress	64	36	1	2022
+Norway	Norway	stress	36	64	0	2022
+Pakistan	Pakistan	stress	28	71	1	2022
+Palestinian Territories	Palestine	stress	47	53	0	2022
+Panama	Panama	stress	37	62	0	2022
+Paraguay	Paraguay	stress	34	64	2	2022
+Peru	Peru	stress	53	47	0	2022
+Philippines	Philippines	stress	48	51	1	2022
+Poland	Poland	stress	19	80	1	2022
+Portugal	Portugal	stress	42	58	0	2022
+Puerto Rico	Puerto Rico	stress	42	58	0	2022
+Republic of the Congo	Republic of the Congo	stress	41	57	2	2022
+Romania	Romania	stress	35	64	1	2022
+Russian Federation	Russia	stress	21	78	1	2022
+Saudi Arabia	Saudi Arabia	stress	25	75	0	2022
+Senegal	Senegal	stress	49	51	0	2022
+Serbia	Serbia	stress	32	66	2	2022
+Sierra Leone	Sierra Leone	stress	61	39	0	2022
+Singapore	Singapore	stress	40	60	0	2022
+Slovakia	Slovakia	stress	38	62	1	2022
+Slovenia	Slovenia	stress	34	66	0	2022
+South Africa	South Africa	stress	33	67	0	2022
+South Korea	South Korea	stress	38	62	0	2022
+Spain	Spain	stress	31	69	0	2022
+Sri Lanka	Sri Lanka	stress	56	44	0	2022
+Sweden	Sweden	stress	32	68	0	2022
+Switzerland	Switzerland	stress	26	74	0	2022
+Taiwan, Republic of China	Taiwan	stress	27	73	0	2022
+Tajikistan	Tajikistan	stress	24	76	0	2022
+Tanzania	Tanzania	stress	26	73	0	2022
+Thailand	Thailand	stress	26	73	0	2022
+Togo	Togo	stress	39	57	4	2022
+Tunisia	Tunisia	stress	41	59	0	2022
+Türkiye	Turkey	stress	60	39	1	2022
+Uganda	Uganda	stress	56	44	0	2022
+Ukraine	Ukraine	stress	31	68	0	2022
+United Arab Emirates	United Arab Emirates	stress	29	71	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	stress	32	67	0	2022
+United States of America	USA	stress	53	47	0	2022
+Uruguay	Uruguay	stress	41	59	0	2022
+Uzbekistan	Uzbekistan	stress	13	87	0	2022
+Venezuela	Venezuela	stress	42	58	0	2022
+Vietnam	Vietnam	stress	15	85	0	2022
+Yemen	Yemen	stress	28	71	1	2022
+Zambia	Zambia	stress	37	63	0	2022
+Zimbabwe	Zimbabwe	stress	28	72	0	2022
+Afghanistan	Afghanistan	worried	75	24	0	2022
+Albania	Albania	worried	35	65	0	2022
+Algeria	Algeria	worried	35	65	0	2022
+Argentina	Argentina	worried	46	54	0	2022
+Armenia	Armenia	worried	62	38	0	2022
+Australia	Australia	worried	36	64	0	2022
+Austria	Austria	worried	29	71	0	2022
+Azerbaijan	Azerbaijan	worried	47	51	2	2022
+Bangladesh	Bangladesh	worried	60	40	0	2022
+Belgium	Belgium	worried	41	58	1	2022
+Benin	Benin	worried	60	40	0	2022
+Bolivia	Bolivia	worried	59	41	0	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	worried	44	55	0	2022
+Botswana	Botswana	worried	38	62	0	2022
+Brazil	Brazil	worried	57	43	0	2022
+Bulgaria	Bulgaria	worried	24	74	2	2022
+Cambodia	Cambodia	worried	52	48	0	2022
+Cameroon	Cameroon	worried	51	47	2	2022
+Canada	Canada	worried	44	56	0	2022
+Chad	Chad	worried	59	40	2	2022
+Chile	Chile	worried	40	59	0	2022
+Colombia	Colombia	worried	47	53	0	2022
+Comoros	Comoros	worried	46	54	1	2022
+Costa Rica	Costa Rica	worried	41	59	0	2022
+Cote d'Ivoire	Cote d'Ivoire	worried	54	46	0	2022
+Croatia	Croatia	worried	54	45	1	2022
+Cyprus	Cyprus	worried	46	54	0	2022
+Czech Republic	Czech Republic	worried	35	65	0	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	worried	59	41	0	2022
+Denmark	Denmark	worried	34	66	0	2022
+Dominican Republic	Dominican Republic	worried	48	51	1	2022
+Ecuador	Ecuador	worried	53	46	0	2022
+Egypt	Egypt	worried	40	60	0	2022
+El Salvador	El Salvador	worried	43	56	1	2022
+Estonia	Estonia	worried	29	70	1	2022
+Eswatini	Eswatini	worried	51	49	0	2022
+Ethiopia	Ethiopia	worried	39	60	0	2022
+Finland	Finland	worried	37	63	0	2022
+France	France	worried	34	66	0	2022
+Gabon	Gabon	worried	52	47	0	2022
+Gambia	Gambia	worried	55	45	0	2022
+Georgia	Georgia	worried	28	71	1	2022
+Germany	Germany	worried	29	70	1	2022
+Ghana	Ghana	worried	39	61	0	2022
+Greece	Greece	worried	31	68	0	2022
+Guatemala	Guatemala	worried	39	61	0	2022
+Guinea	Guinea	worried	64	35	0	2022
+Honduras	Honduras	worried	41	59	0	2022
+Hong Kong, S.A.R. of China	Hong Kong	worried	34	65	0	2022
+Hungary	Hungary	worried	34	66	0	2022
+Iceland	Iceland	worried	29	71	0	2022
+India	India	worried	51	49	0	2022
+Indonesia	Indonesia	worried	37	63	0	2022
+Iran	Iran	worried	59	41	0	2022
+Iraq	Iraq	worried	59	41	0	2022
+Ireland	Ireland	worried	32	68	0	2022
+Israel	Israel	worried	30	70	0	2022
+Italy	Italy	worried	49	51	0	2022
+Jamaica	Jamaica	worried	33	66	1	2022
+Japan	Japan	worried	27	73	1	2022
+Jordan	Jordan	worried	50	50	0	2022
+Kazakhstan	Kazakhstan	worried	16	83	1	2022
+Kenya	Kenya	worried	34	66	0	2022
+Kosovo	Kosovo	worried	21	79	0	2022
+Kuwait	Kuwait	worried	23	77	0	2022
+Kyrgyzstan	Kyrgyzstan	worried	23	77	0	2022
+Lao People's Democratic Republic	Laos	worried	36	62	1	2022
+Latvia	Latvia	worried	24	76	0	2022
+Lebanon	Lebanon	worried	55	45	0	2022
+Lesotho	Lesotho	worried	40	59	1	2022
+Liberia	Liberia	worried	57	43	0	2022
+Libya	Libya	worried	48	52	0	2022
+Lithuania	Lithuania	worried	14	81	5	2022
+Luxembourg	Luxembourg	worried	33	67	0	2022
+Madagascar	Madagascar	worried	42	57	0	2022
+Malawi	Malawi	worried	40	60	0	2022
+Malaysia	Malaysia	worried	25	74	1	2022
+Mali	Mali	worried	61	39	0	2022
+Malta	Malta	worried	61	39	0	2022
+Mauritania	Mauritania	worried	46	53	1	2022
+Mauritius	Mauritius	worried	22	77	1	2022
+Mexico	Mexico	worried	33	67	0	2022
+Moldova, Republic of	Moldova	worried	40	59	1	2022
+Mongolia	Mongolia	worried	32	67	0	2022
+Montenegro	Montenegro	worried	46	54	0	2022
+Morocco	Morocco	worried	48	51	0	2022
+Mozambique	Mozambique	worried	54	46	0	2022
+Myanmar	Myanmar	worried	45	55	0	2022
+Namibia	Namibia	worried	37	63	0	2022
+Nepal	Nepal	worried	46	54	0	2022
+Netherlands	Netherlands	worried	35	65	0	2022
+New Zealand	New Zealand	worried	32	68	0	2022
+Nicaragua	Nicaragua	worried	47	52	0	2022
+Niger	Niger	worried	47	51	2	2022
+Nigeria	Nigeria	worried	37	63	0	2022
+North Macedonia	North Macedonia	worried	38	60	1	2022
+Northern Cyprus	Northern Cyprus	worried	46	53	1	2022
+Norway	Norway	worried	35	65	0	2022
+Pakistan	Pakistan	worried	41	59	0	2022
+Palestinian Territories	Palestine	worried	48	52	0	2022
+Panama	Panama	worried	39	61	0	2022
+Paraguay	Paraguay	worried	42	58	0	2022
+Peru	Peru	worried	56	44	0	2022
+Philippines	Philippines	worried	32	68	1	2022
+Poland	Poland	worried	23	76	1	2022
+Portugal	Portugal	worried	54	46	0	2022
+Puerto Rico	Puerto Rico	worried	42	58	0	2022
+Republic of the Congo	Republic of the Congo	worried	59	40	1	2022
+Romania	Romania	worried	36	63	1	2022
+Russian Federation	Russia	worried	27	72	1	2022
+Saudi Arabia	Saudi Arabia	worried	23	77	0	2022
+Senegal	Senegal	worried	41	58	1	2022
+Serbia	Serbia	worried	45	54	1	2022
+Sierra Leone	Sierra Leone	worried	69	31	0	2022
+Singapore	Singapore	worried	31	69	0	2022
+Slovakia	Slovakia	worried	38	61	1	2022
+Slovenia	Slovenia	worried	46	54	0	2022
+South Africa	South Africa	worried	31	69	0	2022
+South Korea	South Korea	worried	36	64	0	2022
+Spain	Spain	worried	50	50	0	2022
+Sri Lanka	Sri Lanka	worried	32	68	0	2022
+Sweden	Sweden	worried	26	74	0	2022
+Switzerland	Switzerland	worried	23	77	0	2022
+Taiwan, Republic of China	Taiwan	worried	16	84	0	2022
+Tajikistan	Tajikistan	worried	25	75	0	2022
+Tanzania	Tanzania	worried	22	78	0	2022
+Thailand	Thailand	worried	37	63	1	2022
+Togo	Togo	worried	57	43	0	2022
+Tunisia	Tunisia	worried	44	56	0	2022
+Türkiye	Turkey	worried	44	56	0	2022
+Uganda	Uganda	worried	50	50	0	2022
+Ukraine	Ukraine	worried	52	48	0	2022
+United Arab Emirates	United Arab Emirates	worried	26	74	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	worried	33	67	0	2022
+United States of America	USA	worried	40	60	0	2022
+Uruguay	Uruguay	worried	44	56	0	2022
+Uzbekistan	Uzbekistan	worried	22	77	0	2022
+Venezuela	Venezuela	worried	47	53	0	2022
+Vietnam	Vietnam	worried	17	83	0	2022
+Yemen	Yemen	worried	37	63	0	2022
+Zambia	Zambia	worried	42	57	0	2022
+Zimbabwe	Zimbabwe	worried	29	71	0	2022
+Afghanistan	Afghanistan	pain	49	51	0	2022
+Albania	Albania	pain	43	56	0	2022
+Algeria	Algeria	pain	34	65	1	2022
+Argentina	Argentina	pain	38	62	0	2022
+Armenia	Armenia	pain	39	61	0	2022
+Australia	Australia	pain	28	72	0	2022
+Austria	Austria	pain	23	77	0	2022
+Azerbaijan	Azerbaijan	pain	43	56	1	2022
+Bangladesh	Bangladesh	pain	47	53	0	2022
+Belgium	Belgium	pain	34	66	0	2022
+Benin	Benin	pain	58	42	0	2022
+Bolivia	Bolivia	pain	39	61	0	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	pain	30	70	0	2022
+Botswana	Botswana	pain	43	57	0	2022
+Brazil	Brazil	pain	42	58	0	2022
+Bulgaria	Bulgaria	pain	25	74	1	2022
+Cambodia	Cambodia	pain	30	69	0	2022
+Cameroon	Cameroon	pain	47	52	1	2022
+Canada	Canada	pain	31	69	0	2022
+Chad	Chad	pain	68	32	0	2022
+Chile	Chile	pain	33	67	0	2022
+Colombia	Colombia	pain	36	64	0	2022
+Comoros	Comoros	pain	45	55	0	2022
+Costa Rica	Costa Rica	pain	36	63	0	2022
+Cote d'Ivoire	Cote d'Ivoire	pain	56	44	0	2022
+Croatia	Croatia	pain	28	72	0	2022
+Cyprus	Cyprus	pain	31	69	0	2022
+Czech Republic	Czech Republic	pain	30	69	0	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	pain	53	47	0	2022
+Denmark	Denmark	pain	28	72	0	2022
+Dominican Republic	Dominican Republic	pain	38	61	0	2022
+Ecuador	Ecuador	pain	38	62	0	2022
+Egypt	Egypt	pain	45	55	0	2022
+El Salvador	El Salvador	pain	39	60	0	2022
+Estonia	Estonia	pain	20	80	0	2022
+Eswatini	Eswatini	pain	39	61	0	2022
+Ethiopia	Ethiopia	pain	31	69	0	2022
+Finland	Finland	pain	26	74	0	2022
+France	France	pain	32	68	0	2022
+Gabon	Gabon	pain	45	55	0	2022
+Gambia	Gambia	pain	53	47	0	2022
+Georgia	Georgia	pain	34	66	0	2022
+Germany	Germany	pain	30	70	0	2022
+Ghana	Ghana	pain	38	62	0	2022
+Greece	Greece	pain	23	77	0	2022
+Guatemala	Guatemala	pain	35	65	0	2022
+Guinea	Guinea	pain	55	45	0	2022
+Honduras	Honduras	pain	34	66	0	2022
+Hong Kong, S.A.R. of China	Hong Kong	pain	18	82	0	2022
+Hungary	Hungary	pain	31	69	0	2022
+Iceland	Iceland	pain	40	60	0	2022
+India	India	pain	43	57	0	2022
+Indonesia	Indonesia	pain	23	77	0	2022
+Iran	Iran	pain	34	66	0	2022
+Iraq	Iraq	pain	61	39	0	2022
+Ireland	Ireland	pain	22	78	0	2022
+Israel	Israel	pain	16	83	1	2022
+Italy	Italy	pain	25	75	0	2022
+Jamaica	Jamaica	pain	27	72	0	2022
+Japan	Japan	pain	19	81	0	2022
+Jordan	Jordan	pain	51	49	0	2022
+Kazakhstan	Kazakhstan	pain	24	75	1	2022
+Kenya	Kenya	pain	36	64	0	2022
+Kosovo	Kosovo	pain	27	73	0	2022
+Kuwait	Kuwait	pain	26	74	0	2022
+Kyrgyzstan	Kyrgyzstan	pain	19	81	0	2022
+Lao People's Democratic Republic	Laos	pain	40	60	0	2022
+Latvia	Latvia	pain	20	80	0	2022
+Lebanon	Lebanon	pain	44	56	0	2022
+Lesotho	Lesotho	pain	39	60	0	2022
+Liberia	Liberia	pain	55	45	0	2022
+Libya	Libya	pain	48	52	0	2022
+Lithuania	Lithuania	pain	17	81	2	2022
+Luxembourg	Luxembourg	pain	33	67	0	2022
+Madagascar	Madagascar	pain	45	55	0	2022
+Malawi	Malawi	pain	39	61	0	2022
+Malaysia	Malaysia	pain	24	76	0	2022
+Mali	Mali	pain	37	63	0	2022
+Malta	Malta	pain	31	69	0	2022
+Mauritania	Mauritania	pain	55	43	1	2022
+Mauritius	Mauritius	pain	33	66	1	2022
+Mexico	Mexico	pain	27	73	0	2022
+Moldova, Republic of	Moldova	pain	44	55	1	2022
+Mongolia	Mongolia	pain	23	77	0	2022
+Montenegro	Montenegro	pain	36	64	0	2022
+Morocco	Morocco	pain	47	53	0	2022
+Mozambique	Mozambique	pain	40	60	0	2022
+Myanmar	Myanmar	pain	42	58	0	2022
+Namibia	Namibia	pain	23	76	1	2022
+Nepal	Nepal	pain	38	61	1	2022
+Netherlands	Netherlands	pain	24	76	0	2022
+New Zealand	New Zealand	pain	23	77	0	2022
+Nicaragua	Nicaragua	pain	39	61	0	2022
+Niger	Niger	pain	51	48	1	2022
+Nigeria	Nigeria	pain	32	67	1	2022
+North Macedonia	North Macedonia	pain	35	64	1	2022
+Northern Cyprus	Northern Cyprus	pain	27	72	1	2022
+Norway	Norway	pain	25	75	0	2022
+Pakistan	Pakistan	pain	48	51	0	2022
+Palestinian Territories	Palestine	pain	47	53	0	2022
+Panama	Panama	pain	28	72	0	2022
+Paraguay	Paraguay	pain	33	66	0	2022
+Peru	Peru	pain	39	61	0	2022
+Philippines	Philippines	pain	20	80	0	2022
+Poland	Poland	pain	12	88	0	2022
+Portugal	Portugal	pain	41	58	0	2022
+Puerto Rico	Puerto Rico	pain	43	57	0	2022
+Republic of the Congo	Republic of the Congo	pain	47	53	0	2022
+Romania	Romania	pain	35	65	0	2022
+Russian Federation	Russia	pain	26	74	0	2022
+Saudi Arabia	Saudi Arabia	pain	25	75	0	2022
+Senegal	Senegal	pain	52	48	0	2022
+Serbia	Serbia	pain	31	68	1	2022
+Sierra Leone	Sierra Leone	pain	77	23	0	2022
+Singapore	Singapore	pain	21	78	0	2022
+Slovakia	Slovakia	pain	26	73	0	2022
+Slovenia	Slovenia	pain	23	77	0	2022
+South Africa	South Africa	pain	25	75	0	2022
+South Korea	South Korea	pain	27	73	0	2022
+Spain	Spain	pain	29	71	0	2022
+Sri Lanka	Sri Lanka	pain	42	57	0	2022
+Sweden	Sweden	pain	17	83	0	2022
+Switzerland	Switzerland	pain	27	73	0	2022
+Taiwan, Republic of China	Taiwan	pain	14	86	0	2022
+Tajikistan	Tajikistan	pain	30	70	0	2022
+Tanzania	Tanzania	pain	39	61	0	2022
+Thailand	Thailand	pain	39	60	0	2022
+Togo	Togo	pain	51	49	0	2022
+Tunisia	Tunisia	pain	43	57	0	2022
+Türkiye	Turkey	pain	22	78	0	2022
+Uganda	Uganda	pain	48	52	0	2022
+Ukraine	Ukraine	pain	34	65	1	2022
+United Arab Emirates	United Arab Emirates	pain	26	74	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	pain	28	72	0	2022
+United States of America	USA	pain	30	70	0	2022
+Uruguay	Uruguay	pain	37	63	0	2022
+Uzbekistan	Uzbekistan	pain	30	70	0	2022
+Venezuela	Venezuela	pain	33	66	0	2022
+Vietnam	Vietnam	pain	8	91	0	2022
+Yemen	Yemen	pain	37	63	0	2022
+Zambia	Zambia	pain	39	61	0	2022
+Zimbabwe	Zimbabwe	pain	31	69	0	2022
+Afghanistan	Afghanistan	enjoyment	24	74	2	2022
+Albania	Albania	enjoyment	64	35	1	2022
+Algeria	Algeria	enjoyment	60	38	2	2022
+Argentina	Argentina	enjoyment	80	19	0	2022
+Armenia	Armenia	enjoyment	56	43	1	2022
+Australia	Australia	enjoyment	77	23	0	2022
+Austria	Austria	enjoyment	79	21	0	2022
+Azerbaijan	Azerbaijan	enjoyment	50	46	4	2022
+Bangladesh	Bangladesh	enjoyment	55	44	1	2022
+Belgium	Belgium	enjoyment	77	22	2	2022
+Benin	Benin	enjoyment	48	51	1	2022
+Bolivia	Bolivia	enjoyment	78	21	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	enjoyment	62	37	2	2022
+Botswana	Botswana	enjoyment	62	38	0	2022
+Brazil	Brazil	enjoyment	71	28	1	2022
+Bulgaria	Bulgaria	enjoyment	62	34	4	2022
+Cambodia	Cambodia	enjoyment	84	15	0	2022
+Cameroon	Cameroon	enjoyment	50	48	2	2022
+Canada	Canada	enjoyment	81	19	0	2022
+Chad	Chad	enjoyment	57	42	0	2022
+Chile	Chile	enjoyment	85	14	1	2022
+Colombia	Colombia	enjoyment	77	22	1	2022
+Comoros	Comoros	enjoyment	65	34	0	2022
+Costa Rica	Costa Rica	enjoyment	83	16	1	2022
+Cote d'Ivoire	Cote d'Ivoire	enjoyment	57	42	0	2022
+Croatia	Croatia	enjoyment	59	40	1	2022
+Cyprus	Cyprus	enjoyment	75	25	0	2022
+Czech Republic	Czech Republic	enjoyment	82	17	1	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	enjoyment	54	45	1	2022
+Denmark	Denmark	enjoyment	90	10	0	2022
+Dominican Republic	Dominican Republic	enjoyment	69	30	1	2022
+Ecuador	Ecuador	enjoyment	80	20	1	2022
+Egypt	Egypt	enjoyment	43	57	0	2022
+El Salvador	El Salvador	enjoyment	81	18	1	2022
+Estonia	Estonia	enjoyment	84	15	2	2022
+Eswatini	Eswatini	enjoyment	70	30	1	2022
+Ethiopia	Ethiopia	enjoyment	65	35	1	2022
+Finland	Finland	enjoyment	74	25	0	2022
+France	France	enjoyment	74	25	0	2022
+Gabon	Gabon	enjoyment	56	43	1	2022
+Gambia	Gambia	enjoyment	71	28	1	2022
+Georgia	Georgia	enjoyment	60	39	1	2022
+Germany	Germany	enjoyment	70	29	1	2022
+Ghana	Ghana	enjoyment	48	52	1	2022
+Greece	Greece	enjoyment	68	32	1	2022
+Guatemala	Guatemala	enjoyment	87	13	0	2022
+Guinea	Guinea	enjoyment	65	34	1	2022
+Honduras	Honduras	enjoyment	83	16	1	2022
+Hong Kong, S.A.R. of China	Hong Kong	enjoyment	61	39	0	2022
+Hungary	Hungary	enjoyment	75	24	1	2022
+Iceland	Iceland	enjoyment	88	11	1	2022
+India	India	enjoyment	69	31	0	2022
+Indonesia	Indonesia	enjoyment	86	14	0	2022
+Iran	Iran	enjoyment	58	42	0	2022
+Iraq	Iraq	enjoyment	58	42	0	2022
+Ireland	Ireland	enjoyment	89	11	0	2022
+Israel	Israel	enjoyment	62	37	1	2022
+Italy	Italy	enjoyment	66	34	0	2022
+Jamaica	Jamaica	enjoyment	69	31	1	2022
+Japan	Japan	enjoyment	67	32	1	2022
+Jordan	Jordan	enjoyment	53	47	0	2022
+Kazakhstan	Kazakhstan	enjoyment	70	26	4	2022
+Kenya	Kenya	enjoyment	72	28	0	2022
+Kosovo	Kosovo	enjoyment	67	31	1	2022
+Kuwait	Kuwait	enjoyment	79	21	0	2022
+Kyrgyzstan	Kyrgyzstan	enjoyment	76	23	1	2022
+Lao People's Democratic Republic	Laos	enjoyment	78	22	0	2022
+Latvia	Latvia	enjoyment	72	26	2	2022
+Lebanon	Lebanon	enjoyment	33	66	1	2022
+Lesotho	Lesotho	enjoyment	69	30	0	2022
+Liberia	Liberia	enjoyment	46	54	0	2022
+Libya	Libya	enjoyment	67	33	0	2022
+Lithuania	Lithuania	enjoyment	50	43	8	2022
+Luxembourg	Luxembourg	enjoyment	80	20	0	2022
+Madagascar	Madagascar	enjoyment	62	37	1	2022
+Malawi	Malawi	enjoyment	51	49	0	2022
+Malaysia	Malaysia	enjoyment	86	12	2	2022
+Mali	Mali	enjoyment	77	23	0	2022
+Malta	Malta	enjoyment	65	35	0	2022
+Mauritania	Mauritania	enjoyment	59	41	1	2022
+Mauritius	Mauritius	enjoyment	71	28	1	2022
+Mexico	Mexico	enjoyment	87	12	1	2022
+Moldova, Republic of	Moldova	enjoyment	60	39	1	2022
+Mongolia	Mongolia	enjoyment	72	28	0	2022
+Montenegro	Montenegro	enjoyment	56	43	1	2022
+Morocco	Morocco	enjoyment	49	46	5	2022
+Mozambique	Mozambique	enjoyment	49	44	7	2022
+Myanmar	Myanmar	enjoyment	74	26	0	2022
+Namibia	Namibia	enjoyment	60	39	1	2022
+Nepal	Nepal	enjoyment	65	35	0	2022
+Netherlands	Netherlands	enjoyment	85	15	0	2022
+New Zealand	New Zealand	enjoyment	77	23	0	2022
+Nicaragua	Nicaragua	enjoyment	80	19	0	2022
+Niger	Niger	enjoyment	76	23	2	2022
+Nigeria	Nigeria	enjoyment	63	37	0	2022
+North Macedonia	North Macedonia	enjoyment	64	35	1	2022
+Northern Cyprus	Northern Cyprus	enjoyment	50	49	1	2022
+Norway	Norway	enjoyment	84	16	0	2022
+Pakistan	Pakistan	enjoyment	54	45	0	2022
+Palestinian Territories	Palestine	enjoyment	62	37	1	2022
+Panama	Panama	enjoyment	83	16	1	2022
+Paraguay	Paraguay	enjoyment	89	11	0	2022
+Peru	Peru	enjoyment	76	23	1	2022
+Philippines	Philippines	enjoyment	84	16	0	2022
+Poland	Poland	enjoyment	72	25	3	2022
+Portugal	Portugal	enjoyment	63	37	0	2022
+Puerto Rico	Puerto Rico	enjoyment	84	15	1	2022
+Republic of the Congo	Republic of the Congo	enjoyment	55	43	2	2022
+Romania	Romania	enjoyment	74	25	1	2022
+Russian Federation	Russia	enjoyment	69	28	3	2022
+Saudi Arabia	Saudi Arabia	enjoyment	69	30	1	2022
+Senegal	Senegal	enjoyment	77	23	1	2022
+Serbia	Serbia	enjoyment	59	38	3	2022
+Sierra Leone	Sierra Leone	enjoyment	32	67	1	2022
+Singapore	Singapore	enjoyment	75	24	1	2022
+Slovakia	Slovakia	enjoyment	78	20	2	2022
+Slovenia	Slovenia	enjoyment	62	36	2	2022
+South Africa	South Africa	enjoyment	79	20	0	2022
+South Korea	South Korea	enjoyment	64	35	1	2022
+Spain	Spain	enjoyment	57	41	2	2022
+Sri Lanka	Sri Lanka	enjoyment	67	33	0	2022
+Sweden	Sweden	enjoyment	79	21	0	2022
+Switzerland	Switzerland	enjoyment	79	21	0	2022
+Taiwan, Republic of China	Taiwan	enjoyment	83	16	1	2022
+Tajikistan	Tajikistan	enjoyment	74	24	2	2022
+Tanzania	Tanzania	enjoyment	68	31	0	2022
+Thailand	Thailand	enjoyment	80	19	1	2022
+Togo	Togo	enjoyment	52	46	2	2022
+Tunisia	Tunisia	enjoyment	45	55	1	2022
+Türkiye	Turkey	enjoyment	34	64	2	2022
+Uganda	Uganda	enjoyment	61	39	0	2022
+Ukraine	Ukraine	enjoyment	57	43	1	2022
+United Arab Emirates	United Arab Emirates	enjoyment	75	25	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	enjoyment	83	17	0	2022
+United States of America	USA	enjoyment	78	22	0	2022
+Uruguay	Uruguay	enjoyment	86	13	1	2022
+Uzbekistan	Uzbekistan	enjoyment	86	13	1	2022
+Venezuela	Venezuela	enjoyment	75	25	0	2022
+Vietnam	Vietnam	enjoyment	79	21	0	2022
+Yemen	Yemen	enjoyment	51	48	1	2022
+Zambia	Zambia	enjoyment	67	33	0	2022
+Zimbabwe	Zimbabwe	enjoyment	59	41	0	2022
+Afghanistan	Afghanistan	rested	35	65	1	2022
+Albania	Albania	rested	60	40	1	2022
+Algeria	Algeria	rested	68	31	1	2022
+Argentina	Argentina	rested	76	23	0	2022
+Armenia	Armenia	rested	45	54	1	2022
+Australia	Australia	rested	66	34	0	2022
+Austria	Austria	rested	82	18	0	2022
+Azerbaijan	Azerbaijan	rested	55	44	1	2022
+Bangladesh	Bangladesh	rested	59	41	1	2022
+Belgium	Belgium	rested	64	34	1	2022
+Benin	Benin	rested	55	45	0	2022
+Bolivia	Bolivia	rested	71	28	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	rested	57	43	0	2022
+Botswana	Botswana	rested	71	29	0	2022
+Brazil	Brazil	rested	64	35	0	2022
+Bulgaria	Bulgaria	rested	64	35	1	2022
+Cambodia	Cambodia	rested	68	32	0	2022
+Cameroon	Cameroon	rested	66	34	0	2022
+Canada	Canada	rested	68	32	0	2022
+Chad	Chad	rested	68	32	1	2022
+Chile	Chile	rested	73	26	1	2022
+Colombia	Colombia	rested	74	26	0	2022
+Comoros	Comoros	rested	65	35	1	2022
+Costa Rica	Costa Rica	rested	76	23	1	2022
+Cote d'Ivoire	Cote d'Ivoire	rested	66	34	0	2022
+Croatia	Croatia	rested	70	29	1	2022
+Cyprus	Cyprus	rested	55	45	0	2022
+Czech Republic	Czech Republic	rested	54	43	2	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	rested	61	39	0	2022
+Denmark	Denmark	rested	68	32	1	2022
+Dominican Republic	Dominican Republic	rested	72	28	0	2022
+Ecuador	Ecuador	rested	74	24	2	2022
+Egypt	Egypt	rested	58	42	0	2022
+El Salvador	El Salvador	rested	77	23	1	2022
+Estonia	Estonia	rested	67	32	1	2022
+Eswatini	Eswatini	rested	68	31	1	2022
+Ethiopia	Ethiopia	rested	53	47	0	2022
+Finland	Finland	rested	65	35	0	2022
+France	France	rested	68	32	1	2022
+Gabon	Gabon	rested	68	32	0	2022
+Gambia	Gambia	rested	64	36	0	2022
+Georgia	Georgia	rested	58	42	0	2022
+Germany	Germany	rested	67	32	0	2022
+Ghana	Ghana	rested	70	30	0	2022
+Greece	Greece	rested	60	40	0	2022
+Guatemala	Guatemala	rested	78	22	0	2022
+Guinea	Guinea	rested	75	25	0	2022
+Honduras	Honduras	rested	74	26	0	2022
+Hong Kong, S.A.R. of China	Hong Kong	rested	76	24	0	2022
+Hungary	Hungary	rested	51	49	0	2022
+Iceland	Iceland	rested	61	38	1	2022
+India	India	rested	66	34	0	2022
+Indonesia	Indonesia	rested	86	14	0	2022
+Iran	Iran	rested	67	33	0	2022
+Iraq	Iraq	rested	56	44	0	2022
+Ireland	Ireland	rested	77	23	0	2022
+Israel	Israel	rested	62	38	0	2022
+Italy	Italy	rested	65	35	0	2022
+Jamaica	Jamaica	rested	64	35	0	2022
+Japan	Japan	rested	80	20	0	2022
+Jordan	Jordan	rested	49	51	0	2022
+Kazakhstan	Kazakhstan	rested	73	25	2	2022
+Kenya	Kenya	rested	70	30	0	2022
+Kosovo	Kosovo	rested	65	35	1	2022
+Kuwait	Kuwait	rested	89	11	0	2022
+Kyrgyzstan	Kyrgyzstan	rested	77	22	1	2022
+Lao People's Democratic Republic	Laos	rested	73	27	0	2022
+Latvia	Latvia	rested	61	38	1	2022
+Lebanon	Lebanon	rested	51	48	0	2022
+Lesotho	Lesotho	rested	57	43	0	2022
+Liberia	Liberia	rested	60	40	0	2022
+Libya	Libya	rested	65	35	1	2022
+Lithuania	Lithuania	rested	67	28	5	2022
+Luxembourg	Luxembourg	rested	69	31	0	2022
+Madagascar	Madagascar	rested	65	35	1	2022
+Malawi	Malawi	rested	73	27	0	2022
+Malaysia	Malaysia	rested	93	7	0	2022
+Mali	Mali	rested	69	31	0	2022
+Malta	Malta	rested	73	26	1	2022
+Mauritania	Mauritania	rested	62	37	0	2022
+Mauritius	Mauritius	rested	72	27	1	2022
+Mexico	Mexico	rested	82	18	0	2022
+Moldova, Republic of	Moldova	rested	59	40	1	2022
+Mongolia	Mongolia	rested	86	14	0	2022
+Montenegro	Montenegro	rested	56	43	1	2022
+Morocco	Morocco	rested	63	37	0	2022
+Mozambique	Mozambique	rested	76	24	0	2022
+Myanmar	Myanmar	rested	65	35	0	2022
+Namibia	Namibia	rested	71	28	1	2022
+Nepal	Nepal	rested	73	27	0	2022
+Netherlands	Netherlands	rested	67	32	0	2022
+New Zealand	New Zealand	rested	67	32	0	2022
+Nicaragua	Nicaragua	rested	77	22	1	2022
+Niger	Niger	rested	63	36	2	2022
+Nigeria	Nigeria	rested	75	25	0	2022
+North Macedonia	North Macedonia	rested	60	40	1	2022
+Northern Cyprus	Northern Cyprus	rested	56	43	0	2022
+Norway	Norway	rested	63	36	0	2022
+Pakistan	Pakistan	rested	58	42	0	2022
+Palestinian Territories	Palestine	rested	60	40	0	2022
+Panama	Panama	rested	81	19	0	2022
+Paraguay	Paraguay	rested	86	14	0	2022
+Peru	Peru	rested	69	31	1	2022
+Philippines	Philippines	rested	77	23	0	2022
+Poland	Poland	rested	67	32	1	2022
+Portugal	Portugal	rested	75	25	0	2022
+Puerto Rico	Puerto Rico	rested	71	28	1	2022
+Republic of the Congo	Republic of the Congo	rested	70	30	0	2022
+Romania	Romania	rested	64	36	0	2022
+Russian Federation	Russia	rested	65	34	1	2022
+Saudi Arabia	Saudi Arabia	rested	85	15	0	2022
+Senegal	Senegal	rested	69	30	0	2022
+Serbia	Serbia	rested	55	43	2	2022
+Sierra Leone	Sierra Leone	rested	55	45	0	2022
+Singapore	Singapore	rested	77	22	1	2022
+Slovakia	Slovakia	rested	72	27	0	2022
+Slovenia	Slovenia	rested	74	25	1	2022
+South Africa	South Africa	rested	78	21	0	2022
+South Korea	South Korea	rested	76	24	0	2022
+Spain	Spain	rested	73	27	0	2022
+Sri Lanka	Sri Lanka	rested	60	40	0	2022
+Sweden	Sweden	rested	63	37	0	2022
+Switzerland	Switzerland	rested	74	26	0	2022
+Taiwan, Republic of China	Taiwan	rested	81	19	0	2022
+Tajikistan	Tajikistan	rested	86	13	1	2022
+Tanzania	Tanzania	rested	73	27	0	2022
+Thailand	Thailand	rested	79	21	0	2022
+Togo	Togo	rested	59	41	0	2022
+Tunisia	Tunisia	rested	59	41	0	2022
+Türkiye	Turkey	rested	56	43	1	2022
+Uganda	Uganda	rested	68	32	0	2022
+Ukraine	Ukraine	rested	47	52	1	2022
+United Arab Emirates	United Arab Emirates	rested	81	19	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	rested	71	29	0	2022
+United States of America	USA	rested	66	34	0	2022
+Uruguay	Uruguay	rested	74	26	0	2022
+Uzbekistan	Uzbekistan	rested	84	16	1	2022
+Venezuela	Venezuela	rested	76	24	0	2022
+Vietnam	Vietnam	rested	94	6	0	2022
+Yemen	Yemen	rested	58	42	0	2022
+Zambia	Zambia	rested	70	30	0	2022
+Zimbabwe	Zimbabwe	rested	67	33	0	2022
+Afghanistan	Afghanistan	learned	15	84	2	2022
+Albania	Albania	learned	29	71	0	2022
+Algeria	Algeria	learned	43	56	1	2022
+Argentina	Argentina	learned	52	48	0	2022
+Armenia	Armenia	learned	42	56	1	2022
+Australia	Australia	learned	61	39	0	2022
+Austria	Austria	learned	62	38	0	2022
+Azerbaijan	Azerbaijan	learned	37	60	3	2022
+Bangladesh	Bangladesh	learned	15	84	1	2022
+Belgium	Belgium	learned	61	38	1	2022
+Benin	Benin	learned	52	48	0	2022
+Bolivia	Bolivia	learned	64	36	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	learned	39	60	1	2022
+Botswana	Botswana	learned	48	51	0	2022
+Brazil	Brazil	learned	57	43	0	2022
+Bulgaria	Bulgaria	learned	42	57	1	2022
+Cambodia	Cambodia	learned	55	45	0	2022
+Cameroon	Cameroon	learned	57	43	0	2022
+Canada	Canada	learned	59	40	0	2022
+Chad	Chad	learned	54	45	1	2022
+Chile	Chile	learned	61	39	0	2022
+Colombia	Colombia	learned	68	31	0	2022
+Comoros	Comoros	learned	45	52	3	2022
+Costa Rica	Costa Rica	learned	66	33	1	2022
+Cote d'Ivoire	Cote d'Ivoire	learned	58	42	0	2022
+Croatia	Croatia	learned	43	57	0	2022
+Cyprus	Cyprus	learned	48	52	0	2022
+Czech Republic	Czech Republic	learned	54	44	2	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	learned	49	49	2	2022
+Denmark	Denmark	learned	70	29	0	2022
+Dominican Republic	Dominican Republic	learned	65	33	2	2022
+Ecuador	Ecuador	learned	65	34	1	2022
+Egypt	Egypt	learned	33	67	0	2022
+El Salvador	El Salvador	learned	72	26	1	2022
+Estonia	Estonia	learned	65	33	1	2022
+Eswatini	Eswatini	learned	51	47	2	2022
+Ethiopia	Ethiopia	learned	37	62	1	2022
+Finland	Finland	learned	71	29	1	2022
+France	France	learned	61	39	0	2022
+Gabon	Gabon	learned	62	38	1	2022
+Gambia	Gambia	learned	59	40	1	2022
+Georgia	Georgia	learned	27	73	0	2022
+Germany	Germany	learned	57	41	2	2022
+Ghana	Ghana	learned	55	44	1	2022
+Greece	Greece	learned	38	61	0	2022
+Guatemala	Guatemala	learned	72	27	1	2022
+Guinea	Guinea	learned	67	32	1	2022
+Honduras	Honduras	learned	63	36	1	2022
+Hong Kong, S.A.R. of China	Hong Kong	learned	39	61	0	2022
+Hungary	Hungary	learned	47	53	0	2022
+Iceland	Iceland	learned	57	42	1	2022
+India	India	learned	40	60	0	2022
+Indonesia	Indonesia	learned	68	32	0	2022
+Iran	Iran	learned	38	62	0	2022
+Iraq	Iraq	learned	47	53	0	2022
+Ireland	Ireland	learned	58	42	0	2022
+Israel	Israel	learned	53	47	0	2022
+Italy	Italy	learned	52	48	0	2022
+Jamaica	Jamaica	learned	67	32	0	2022
+Japan	Japan	learned	55	44	1	2022
+Jordan	Jordan	learned	39	61	0	2022
+Kazakhstan	Kazakhstan	learned	49	49	3	2022
+Kenya	Kenya	learned	68	32	0	2022
+Kosovo	Kosovo	learned	26	73	1	2022
+Kuwait	Kuwait	learned	59	40	0	2022
+Kyrgyzstan	Kyrgyzstan	learned	34	64	2	2022
+Lao People's Democratic Republic	Laos	learned	39	59	2	2022
+Latvia	Latvia	learned	50	49	1	2022
+Lebanon	Lebanon	learned	20	80	0	2022
+Lesotho	Lesotho	learned	67	33	0	2022
+Liberia	Liberia	learned	69	31	0	2022
+Libya	Libya	learned	51	49	0	2022
+Lithuania	Lithuania	learned	34	55	11	2022
+Luxembourg	Luxembourg	learned	62	38	0	2022
+Madagascar	Madagascar	learned	63	36	1	2022
+Malawi	Malawi	learned	47	53	0	2022
+Malaysia	Malaysia	learned	53	44	3	2022
+Mali	Mali	learned	45	55	0	2022
+Malta	Malta	learned	56	43	1	2022
+Mauritania	Mauritania	learned	59	40	1	2022
+Mauritius	Mauritius	learned	60	38	2	2022
+Mexico	Mexico	learned	70	30	0	2022
+Moldova, Republic of	Moldova	learned	52	47	0	2022
+Mongolia	Mongolia	learned	26	74	0	2022
+Montenegro	Montenegro	learned	40	57	2	2022
+Morocco	Morocco	learned	49	50	1	2022
+Mozambique	Mozambique	learned	59	39	2	2022
+Myanmar	Myanmar	learned	46	54	0	2022
+Namibia	Namibia	learned	57	43	0	2022
+Nepal	Nepal	learned	28	71	1	2022
+Netherlands	Netherlands	learned	49	51	0	2022
+New Zealand	New Zealand	learned	62	38	0	2022
+Nicaragua	Nicaragua	learned	69	30	1	2022
+Niger	Niger	learned	72	26	2	2022
+Nigeria	Nigeria	learned	76	23	1	2022
+North Macedonia	North Macedonia	learned	40	58	2	2022
+Northern Cyprus	Northern Cyprus	learned	24	75	1	2022
+Norway	Norway	learned	67	33	0	2022
+Pakistan	Pakistan	learned	25	75	0	2022
+Palestinian Territories	Palestine	learned	45	55	1	2022
+Panama	Panama	learned	73	26	0	2022
+Paraguay	Paraguay	learned	70	28	2	2022
+Peru	Peru	learned	69	30	0	2022
+Philippines	Philippines	learned	75	24	1	2022
+Poland	Poland	learned	33	65	2	2022
+Portugal	Portugal	learned	52	47	1	2022
+Puerto Rico	Puerto Rico	learned	63	37	0	2022
+Republic of the Congo	Republic of the Congo	learned	52	47	2	2022
+Romania	Romania	learned	40	58	2	2022
+Russian Federation	Russia	learned	47	52	2	2022
+Saudi Arabia	Saudi Arabia	learned	58	41	1	2022
+Senegal	Senegal	learned	77	22	2	2022
+Serbia	Serbia	learned	43	54	3	2022
+Sierra Leone	Sierra Leone	learned	50	49	1	2022
+Singapore	Singapore	learned	54	46	0	2022
+Slovakia	Slovakia	learned	48	50	2	2022
+Slovenia	Slovenia	learned	52	47	1	2022
+South Africa	South Africa	learned	59	40	1	2022
+South Korea	South Korea	learned	41	59	0	2022
+Spain	Spain	learned	59	41	0	2022
+Sri Lanka	Sri Lanka	learned	64	36	0	2022
+Sweden	Sweden	learned	67	33	0	2022
+Switzerland	Switzerland	learned	64	36	0	2022
+Taiwan, Republic of China	Taiwan	learned	49	50	0	2022
+Tajikistan	Tajikistan	learned	54	45	2	2022
+Tanzania	Tanzania	learned	65	35	1	2022
+Thailand	Thailand	learned	67	33	1	2022
+Togo	Togo	learned	53	44	3	2022
+Tunisia	Tunisia	learned	26	73	0	2022
+Türkiye	Turkey	learned	16	83	1	2022
+Uganda	Uganda	learned	70	30	0	2022
+Ukraine	Ukraine	learned	46	54	1	2022
+United Arab Emirates	United Arab Emirates	learned	62	38	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	learned	61	39	0	2022
+United States of America	USA	learned	59	41	0	2022
+Uruguay	Uruguay	learned	57	42	1	2022
+Uzbekistan	Uzbekistan	learned	58	41	1	2022
+Venezuela	Venezuela	learned	67	33	0	2022
+Vietnam	Vietnam	learned	58	42	0	2022
+Yemen	Yemen	learned	29	70	1	2022
+Zambia	Zambia	learned	50	50	1	2022
+Zimbabwe	Zimbabwe	learned	53	47	0	2022
+Afghanistan	Afghanistan	smiled	23	76	1	2022
+Albania	Albania	smiled	71	28	0	2022
+Algeria	Algeria	smiled	68	30	2	2022
+Argentina	Argentina	smiled	84	15	1	2022
+Armenia	Armenia	smiled	58	40	2	2022
+Australia	Australia	smiled	75	25	0	2022
+Austria	Austria	smiled	74	25	0	2022
+Azerbaijan	Azerbaijan	smiled	67	28	5	2022
+Bangladesh	Bangladesh	smiled	46	52	2	2022
+Belgium	Belgium	smiled	74	24	2	2022
+Benin	Benin	smiled	71	29	0	2022
+Bolivia	Bolivia	smiled	78	22	1	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	smiled	59	39	2	2022
+Botswana	Botswana	smiled	76	24	0	2022
+Brazil	Brazil	smiled	74	26	0	2022
+Bulgaria	Bulgaria	smiled	63	33	4	2022
+Cambodia	Cambodia	smiled	87	13	0	2022
+Cameroon	Cameroon	smiled	67	32	1	2022
+Canada	Canada	smiled	75	25	0	2022
+Chad	Chad	smiled	63	36	1	2022
+Chile	Chile	smiled	85	15	0	2022
+Colombia	Colombia	smiled	82	17	0	2022
+Comoros	Comoros	smiled	68	30	2	2022
+Costa Rica	Costa Rica	smiled	87	12	1	2022
+Cote d'Ivoire	Cote d'Ivoire	smiled	73	27	0	2022
+Croatia	Croatia	smiled	64	31	4	2022
+Cyprus	Cyprus	smiled	73	26	1	2022
+Czech Republic	Czech Republic	smiled	82	16	2	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	smiled	64	35	1	2022
+Denmark	Denmark	smiled	75	24	1	2022
+Dominican Republic	Dominican Republic	smiled	79	19	1	2022
+Ecuador	Ecuador	smiled	84	15	2	2022
+Egypt	Egypt	smiled	70	30	0	2022
+El Salvador	El Salvador	smiled	89	10	1	2022
+Estonia	Estonia	smiled	77	22	1	2022
+Eswatini	Eswatini	smiled	76	24	0	2022
+Ethiopia	Ethiopia	smiled	65	34	0	2022
+Finland	Finland	smiled	77	23	0	2022
+France	France	smiled	70	30	0	2022
+Gabon	Gabon	smiled	79	20	0	2022
+Gambia	Gambia	smiled	85	14	0	2022
+Georgia	Georgia	smiled	62	37	1	2022
+Germany	Germany	smiled	70	28	2	2022
+Ghana	Ghana	smiled	81	18	1	2022
+Greece	Greece	smiled	70	30	0	2022
+Guatemala	Guatemala	smiled	91	9	0	2022
+Guinea	Guinea	smiled	76	24	0	2022
+Honduras	Honduras	smiled	83	15	2	2022
+Hong Kong, S.A.R. of China	Hong Kong	smiled	64	35	0	2022
+Hungary	Hungary	smiled	66	33	1	2022
+Iceland	Iceland	smiled	84	16	0	2022
+India	India	smiled	70	30	0	2022
+Indonesia	Indonesia	smiled	91	9	0	2022
+Iran	Iran	smiled	60	39	0	2022
+Iraq	Iraq	smiled	64	36	0	2022
+Ireland	Ireland	smiled	74	25	0	2022
+Israel	Israel	smiled	59	40	0	2022
+Italy	Italy	smiled	69	30	1	2022
+Jamaica	Jamaica	smiled	78	20	1	2022
+Japan	Japan	smiled	77	22	1	2022
+Jordan	Jordan	smiled	64	36	0	2022
+Kazakhstan	Kazakhstan	smiled	64	28	8	2022
+Kenya	Kenya	smiled	77	22	0	2022
+Kosovo	Kosovo	smiled	69	29	2	2022
+Kuwait	Kuwait	smiled	81	18	1	2022
+Kyrgyzstan	Kyrgyzstan	smiled	82	17	1	2022
+Lao People's Democratic Republic	Laos	smiled	85	15	0	2022
+Latvia	Latvia	smiled	63	34	2	2022
+Lebanon	Lebanon	smiled	35	64	1	2022
+Lesotho	Lesotho	smiled	76	24	0	2022
+Liberia	Liberia	smiled	76	24	0	2022
+Libya	Libya	smiled	69	29	1	2022
+Lithuania	Lithuania	smiled	45	46	9	2022
+Luxembourg	Luxembourg	smiled	73	26	1	2022
+Madagascar	Madagascar	smiled	79	20	1	2022
+Malawi	Malawi	smiled	62	38	0	2022
+Malaysia	Malaysia	smiled	85	13	1	2022
+Mali	Mali	smiled	75	25	0	2022
+Malta	Malta	smiled	79	20	1	2022
+Mauritania	Mauritania	smiled	69	30	1	2022
+Mauritius	Mauritius	smiled	81	16	3	2022
+Mexico	Mexico	smiled	87	13	0	2022
+Moldova, Republic of	Moldova	smiled	51	46	2	2022
+Mongolia	Mongolia	smiled	66	33	1	2022
+Montenegro	Montenegro	smiled	47	51	3	2022
+Morocco	Morocco	smiled	70	29	1	2022
+Mozambique	Mozambique	smiled	75	24	1	2022
+Myanmar	Myanmar	smiled	80	20	0	2022
+Namibia	Namibia	smiled	85	15	0	2022
+Nepal	Nepal	smiled	49	50	1	2022
+Netherlands	Netherlands	smiled	79	20	1	2022
+New Zealand	New Zealand	smiled	73	27	0	2022
+Nicaragua	Nicaragua	smiled	85	14	1	2022
+Niger	Niger	smiled	85	14	1	2022
+Nigeria	Nigeria	smiled	87	12	1	2022
+North Macedonia	North Macedonia	smiled	60	38	2	2022
+Northern Cyprus	Northern Cyprus	smiled	44	53	3	2022
+Norway	Norway	smiled	77	23	0	2022
+Pakistan	Pakistan	smiled	61	38	1	2022
+Palestinian Territories	Palestine	smiled	66	33	1	2022
+Panama	Panama	smiled	88	11	1	2022
+Paraguay	Paraguay	smiled	85	14	1	2022
+Peru	Peru	smiled	79	20	1	2022
+Philippines	Philippines	smiled	90	10	0	2022
+Poland	Poland	smiled	65	29	6	2022
+Portugal	Portugal	smiled	75	24	1	2022
+Puerto Rico	Puerto Rico	smiled	85	13	1	2022
+Republic of the Congo	Republic of the Congo	smiled	65	33	2	2022
+Romania	Romania	smiled	68	31	1	2022
+Russian Federation	Russia	smiled	61	34	5	2022
+Saudi Arabia	Saudi Arabia	smiled	74	25	1	2022
+Senegal	Senegal	smiled	88	11	0	2022
+Serbia	Serbia	smiled	48	48	4	2022
+Sierra Leone	Sierra Leone	smiled	64	35	1	2022
+Singapore	Singapore	smiled	74	25	1	2022
+Slovakia	Slovakia	smiled	68	29	3	2022
+Slovenia	Slovenia	smiled	71	28	1	2022
+South Africa	South Africa	smiled	83	17	1	2022
+South Korea	South Korea	smiled	69	30	1	2022
+Spain	Spain	smiled	72	27	1	2022
+Sri Lanka	Sri Lanka	smiled	83	17	0	2022
+Sweden	Sweden	smiled	80	20	0	2022
+Switzerland	Switzerland	smiled	70	30	0	2022
+Taiwan, Republic of China	Taiwan	smiled	80	19	1	2022
+Tajikistan	Tajikistan	smiled	79	18	4	2022
+Tanzania	Tanzania	smiled	78	22	0	2022
+Thailand	Thailand	smiled	83	16	1	2022
+Togo	Togo	smiled	70	29	1	2022
+Tunisia	Tunisia	smiled	66	33	1	2022
+Türkiye	Turkey	smiled	41	57	2	2022
+Uganda	Uganda	smiled	81	19	1	2022
+Ukraine	Ukraine	smiled	54	44	1	2022
+United Arab Emirates	United Arab Emirates	smiled	77	23	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	smiled	72	27	0	2022
+United States of America	USA	smiled	76	24	0	2022
+Uruguay	Uruguay	smiled	86	12	1	2022
+Uzbekistan	Uzbekistan	smiled	75	23	2	2022
+Venezuela	Venezuela	smiled	83	16	1	2022
+Vietnam	Vietnam	smiled	95	5	0	2022
+Yemen	Yemen	smiled	55	43	2	2022
+Zambia	Zambia	smiled	81	19	0	2022
+Zimbabwe	Zimbabwe	smiled	80	20	0	2022
+Afghanistan	Afghanistan	respected	74	26	1	2022
+Albania	Albania	respected	93	6	1	2022
+Algeria	Algeria	respected	84	16	1	2022
+Argentina	Argentina	respected	96	4	0	2022
+Armenia	Armenia	respected	97	2	0	2022
+Australia	Australia	respected	92	8	0	2022
+Austria	Austria	respected	90	10	0	2022
+Azerbaijan	Azerbaijan	respected	83	15	3	2022
+Bangladesh	Bangladesh	respected	75	22	3	2022
+Belgium	Belgium	respected	92	6	2	2022
+Benin	Benin	respected	77	22	1	2022
+Bolivia	Bolivia	respected	93	6	0	2022
+Bosnia and Herzegovina	Bosnia and Herzegovina	respected	89	10	2	2022
+Botswana	Botswana	respected	87	13	0	2022
+Brazil	Brazil	respected	96	4	0	2022
+Bulgaria	Bulgaria	respected	87	9	4	2022
+Cambodia	Cambodia	respected	82	18	1	2022
+Cameroon	Cameroon	respected	80	20	0	2022
+Canada	Canada	respected	92	8	0	2022
+Chad	Chad	respected	75	25	1	2022
+Chile	Chile	respected	97	3	0	2022
+Colombia	Colombia	respected	96	4	0	2022
+Comoros	Comoros	respected	88	11	1	2022
+Costa Rica	Costa Rica	respected	97	3	0	2022
+Cote d'Ivoire	Cote d'Ivoire	respected	84	16	0	2022
+Croatia	Croatia	respected	84	15	1	2022
+Cyprus	Cyprus	respected	89	10	2	2022
+Czech Republic	Czech Republic	respected	92	5	3	2022
+Democratic Republic of the Congo	Democratic Republic of the Congo	respected	68	31	1	2022
+Denmark	Denmark	respected	94	5	1	2022
+Dominican Republic	Dominican Republic	respected	93	6	1	2022
+Ecuador	Ecuador	respected	95	4	1	2022
+Egypt	Egypt	respected	91	9	0	2022
+El Salvador	El Salvador	respected	97	3	0	2022
+Estonia	Estonia	respected	95	3	2	2022
+Eswatini	Eswatini	respected	83	17	1	2022
+Ethiopia	Ethiopia	respected	62	38	0	2022
+Finland	Finland	respected	94	5	1	2022
+France	France	respected	91	8	1	2022
+Gabon	Gabon	respected	84	16	0	2022
+Gambia	Gambia	respected	88	11	1	2022
+Georgia	Georgia	respected	95	3	1	2022
+Germany	Germany	respected	92	7	1	2022
+Ghana	Ghana	respected	88	12	0	2022
+Greece	Greece	respected	93	6	1	2022
+Guatemala	Guatemala	respected	95	5	0	2022
+Guinea	Guinea	respected	85	15	0	2022
+Honduras	Honduras	respected	95	4	0	2022
+Hong Kong, S.A.R. of China	Hong Kong	respected	84	15	1	2022
+Hungary	Hungary	respected	91	8	1	2022
+Iceland	Iceland	respected	95	4	1	2022
+India	India	respected	81	19	0	2022
+Indonesia	Indonesia	respected	94	6	0	2022
+Iran	Iran	respected	89	11	0	2022
+Iraq	Iraq	respected	87	12	0	2022
+Ireland	Ireland	respected	88	12	0	2022
+Israel	Israel	respected	89	10	1	2022
+Italy	Italy	respected	91	9	0	2022
+Jamaica	Jamaica	respected	91	9	1	2022
+Japan	Japan	respected	67	29	4	2022
+Jordan	Jordan	respected	90	10	0	2022
+Kazakhstan	Kazakhstan	respected	89	7	4	2022
+Kenya	Kenya	respected	78	22	0	2022
+Kosovo	Kosovo	respected	94	4	1	2022
+Kuwait	Kuwait	respected	95	4	0	2022
+Kyrgyzstan	Kyrgyzstan	respected	89	9	2	2022
+Lao People's Democratic Republic	Laos	respected	66	28	5	2022
+Latvia	Latvia	respected	92	6	2	2022
+Lebanon	Lebanon	respected	91	8	0	2022
+Lesotho	Lesotho	respected	78	21	1	2022
+Liberia	Liberia	respected	82	18	0	2022
+Libya	Libya	respected	92	8	0	2022
+Lithuania	Lithuania	respected	77	11	13	2022
+Luxembourg	Luxembourg	respected	93	7	0	2022
+Madagascar	Madagascar	respected	83	16	1	2022
+Malawi	Malawi	respected	75	25	0	2022
+Malaysia	Malaysia	respected	95	4	1	2022
+Mali	Mali	respected	85	15	0	2022
+Malta	Malta	respected	93	6	1	2022
+Mauritania	Mauritania	respected	83	16	1	2022
+Mauritius	Mauritius	respected	93	6	1	2022
+Mexico	Mexico	respected	96	4	0	2022
+Moldova, Republic of	Moldova	respected	87	11	2	2022
+Mongolia	Mongolia	respected	86	13	1	2022
+Montenegro	Montenegro	respected	89	10	1	2022
+Morocco	Morocco	respected	86	10	4	2022
+Mozambique	Mozambique	respected	87	13	0	2022
+Myanmar	Myanmar	respected	78	20	2	2022
+Namibia	Namibia	respected	82	16	2	2022
+Nepal	Nepal	respected	72	27	1	2022
+Netherlands	Netherlands	respected	95	4	0	2022
+New Zealand	New Zealand	respected	95	5	0	2022
+Nicaragua	Nicaragua	respected	96	3	0	2022
+Niger	Niger	respected	79	18	4	2022
+Nigeria	Nigeria	respected	88	12	0	2022
+North Macedonia	North Macedonia	respected	89	9	2	2022
+Northern Cyprus	Northern Cyprus	respected	83	16	1	2022
+Norway	Norway	respected	95	5	0	2022
+Pakistan	Pakistan	respected	91	9	0	2022
+Palestinian Territories	Palestine	respected	93	7	0	2022
+Panama	Panama	respected	96	3	0	2022
+Paraguay	Paraguay	respected	98	2	0	2022
+Peru	Peru	respected	95	5	0	2022
+Philippines	Philippines	respected	97	3	0	2022
+Poland	Poland	respected	92	6	2	2022
+Portugal	Portugal	respected	97	3	0	2022
+Puerto Rico	Puerto Rico	respected	97	3	1	2022
+Republic of the Congo	Republic of the Congo	respected	77	22	1	2022
+Romania	Romania	respected	90	8	2	2022
+Russian Federation	Russia	respected	88	7	5	2022
+Saudi Arabia	Saudi Arabia	respected	92	7	0	2022
+Senegal	Senegal	respected	91	9	1	2022
+Serbia	Serbia	respected	83	12	6	2022
+Sierra Leone	Sierra Leone	respected	70	29	1	2022
+Singapore	Singapore	respected	89	9	2	2022
+Slovakia	Slovakia	respected	92	6	2	2022
+Slovenia	Slovenia	respected	95	4	1	2022
+South Africa	South Africa	respected	87	12	1	2022
+South Korea	South Korea	respected	70	27	3	2022
+Spain	Spain	respected	93	7	0	2022
+Sri Lanka	Sri Lanka	respected	88	11	1	2022
+Sweden	Sweden	respected	95	5	0	2022
+Switzerland	Switzerland	respected	86	14	0	2022
+Taiwan, Republic of China	Taiwan	respected	90	8	2	2022
+Tajikistan	Tajikistan	respected	92	7	1	2022
+Tanzania	Tanzania	respected	83	17	1	2022
+Thailand	Thailand	respected	87	11	2	2022
+Togo	Togo	respected	72	26	2	2022
+Tunisia	Tunisia	respected	88	12	0	2022
+Türkiye	Turkey	respected	80	19	1	2022
+Uganda	Uganda	respected	76	24	0	2022
+Ukraine	Ukraine	respected	91	6	3	2022
+United Arab Emirates	United Arab Emirates	respected	87	13	0	2022
+United Kingdom of Great Britain and Northern Ireland	UK	respected	88	11	0	2022
+United States of America	USA	respected	90	10	0	2022
+Uruguay	Uruguay	respected	96	4	0	2022
+Uzbekistan	Uzbekistan	respected	97	3	1	2022
+Venezuela	Venezuela	respected	96	4	0	2022
+Vietnam	Vietnam	respected	98	2	0	2022
+Yemen	Yemen	respected	86	14	0	2022
+Zambia	Zambia	respected	89	10	0	2022
+Zimbabwe	Zimbabwe	respected	82	18	0	2022

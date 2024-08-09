@@ -1,0 +1,80 @@
+# Okulicz-Kozaryn (2011) Does religious diversity make us unhappy
+# http://dx.doi.org/10.1080/13674676.2010.550277
+# Table 5 Means of main variables by country
+code	name	region	happiness	fractionalization	polarization	gdp__n000	kkz	year	sample_size
+ALB	Albania	Europe	5.2	0.47	NA	4	-0.59	2002	1000
+ARG	Argentina	Americas	7.3	0.22	0.18	12	0.22	1999	1280
+ARM	Armenia	Europe	4.3	0.46	NA	2	-0.52	1997	2000
+AUS	Australia	Asia-Pacific	7.6	0.82	0.04	23	1.63	1995	2048
+AUT	Austria	Europe	8	0.41	0.05	28	1.53	1999	1522
+AZE	Azerbaijan	Europe	5.4	0.49	NA	2	-0.99	1997	2002
+BEL	Belgium	Europe	7.4	0.21	0.07	26	1.14	1999	1912
+BGD	Bangladesh	Asia-Pacific	5.8	0.21	0.5	2	-0.81	2002	1500
+BGR	Bulgaria	Europe	5.5	0.6	NA	6	-0.04	1999	1000
+BLR	Belarus	Europe	4.8	0.61	NA	5	-1.08	2000	1000
+BRA	Brazil	Americas	7.2	0.61	0.62	7	-0.06	1997	1149
+CAN	Canada	Americas	7.8	0.7	0.16	27	1.61	2000	1931
+CHE	Switzerland	Europe	8	0.61	0.03	29	1.88	1996	1212
+CHL	Chile	Americas	7.1	0.38	0.27	9	1.06	2000	1200
+CHN	China	Asia-Pacific	6.5	0.66	0.82	4	-0.39	2001	1000
+COL	Colombia	Americas	8.4	0.15	0.31	6	-0.48	1998	2996
+CZE	Czech Republic	Europe	7.1	0.66	NA	15	0.67	1999	1908
+DEU	Germany	Europe	7.4	0.66	0.12	25	1.53	1999	2036
+DNK	Denmark	Europe	8.2	0.23	0.01	28	1.7	1999	1023
+DOM	Dominican Republic	Americas	7.1	0.31	1	5	-0.27	1996	417
+DZA	Algeria	Middle East and North Africa	5.7	0.01	0.03	6	-0.89	2002	1282
+EGY	Egypt	Middle East and North Africa	5.4	0.2	0.36	4	-0.19	2000	3000
+ESP	Spain	Europe	7	0.45	0	21	1.32	2000	1209
+EST	Estonia	Europe	5.9	0.5	NA	9	0.75	1999	1005
+FIN	Finland	Europe	7.9	0.25	0.01	26	1.85	2000	1038
+FRA	France	Europe	7	0.4	0.19	25	1.18	1999	1615
+GBR	Great Britain	Europe	7.4	0.69	0.14	26	1.64	1999	1000
+GEO	Georgia	Europe	4.7	0.65	NA	2	-0.82	1996	2008
+GRC	Greece	Europe	6.7	0.15	0.06	17	0.74	1999	1142
+HRV	Croatia	Europe	6.7	0.44	NA	9	0.07	1999	1003
+HUN	Hungary	Europe	5.8	0.52	0.04	12	0.85	1999	1000
+IDN	Indonesia	Asia-Pacific	7	0.23	0.82	3	-0.91	2001	1004
+IND	India	Asia-Pacific	5.1	0.33	0.56	3	-0.2	2001	2002
+IRL	Ireland	Europe	8.2	0.16	0.01	28	1.58	1999	1012
+IRN	Iran (Islamic Republic of)	Middle East and North Africa	6.4	0.12	0.35	6	-0.66	2000	2532
+ISL	Iceland	Europe	8.1	0.19	0.03	27	1.65	1999	968
+ISR	Israel	Middle East and North Africa	7	0.35	0.54	23	0.6	2001	1199
+ITA	Italy	Europe	7.2	0.3	0.01	24	0.88	1999	2000
+JOR	Jordan	Middle East and North Africa	5.6	0.07	0.35	4	0.08	2001	1223
+JPN	Japan	Asia-Pacific	6.5	0.54	0.81	26	1.12	2000	1362
+KGZ	Kyrgyzstan	Asia-Pacific	6.5	0.45	NA	2	-0.87	2003	1043
+KOR	Republic of Korea	Asia-Pacific	6.2	0.66	0.67	17	0.57	2001	1200
+LTU	Lithuania	Europe	5.2	0.41	NA	8	0.34	1999	1018
+LUX	Luxembourg	Europe	7.8	0.09	0.03	50	1.69	1999	1211
+LVA	Latvia	Europe	5.3	0.56	NA	7	0.31	1999	1013
+MAR	Morocco	Middle East and North Africa	6.1	0	0.08	4	-0.06	2001	2264
+MDA	Republic of Moldova	Europe	4.6	0.56	NA	1	-0.47	2002	1008
+MEX	Mexico	Americas	8.1	0.18	0.16	9	-0.05	2000	1535
+MKD	Macedonia, Re-public of	Europe	5.1	0.55	NA	6	-0.47	2001	1055
+MLT	Malta	Europe	8.2	0.12	0	16	0.75	1999	1002
+NGA	Nigeria	Sub-Saharan Africa	6.9	0.74	0.84	1	-0.99	2000	2022
+NLD	Netherlands	Europe	7.8	0.72	0.09	28	1.83	1999	1003
+NZL	New Zealand	Asia-Pacific	7.7	0.81	0.04	18	1.75	1998	1201
+PAK	Pakistan	Middle East and North Africa	4.9	0.38	0.71	2	-0.93	2001	2000
+PER	Peru	Americas	6.4	0.2	0.89	5	-0.26	2001	1501
+PHL	Philippines	Asia-Pacific	6.7	0.31	0.21	4	-0.23	2001	1200
+POL	Poland	Europe	6.2	0.17	0	10	0.67	1999	1095
+PRT	Portugal	Europe	7	0.14	0	18	1.25	1999	1000
+ROM	Romania	Europe	5.2	0.24	NA	6	-0.2	1999	1146
+RUS	Russian Federation	Europe	4.7	0.44	NA	7	-0.77	1999	2500
+SAU	Saudi Arabia	Middle East and North Africa	7.3	0.13	0.11	12	-0.25	2003	1502
+SGP	Singapore	Asia-Pacific	7.2	0.66	0.74	24	1.64	2002	1512
+SVK	Slovakia	Europe	6	0.57	NA	11	0.31	1999	1331
+SVN	Slovenia	Europe	7.2	0.29	NA	16	0.81	1999	1006
+SWE	Sweden	Europe	7.6	0.23	0.02	25	1.68	1999	1015
+TUR	Turkey	Europe	5.6	0	0.02	6	-0.33	2001	4607
+TWN	Taiwan	Asia-Pacific	6.6	0.68	NA	0.92	0.9	NA	NA
+TZA	Tanzania, United Republic of	Sub-Saharan Africa	3.9	0.63	0.88	1	-0.49	2001	1171
+UGA	Uganda	Sub-Saharan Africa	5.7	0.63	0.85	1	-0.73	2001	1002
+UKR	Ukraine	Europe	4.6	0.62	NA	4	-0.77	1999	1195
+URY	Uruguay	Americas	7.1	0.35	0.17	9	0.66	1996	1000
+USA	United States	Americas	7.7	0.82	0.47	33	1.48	1999	1200
+VEN	Venezuela	Americas	7.5	0.14	0.23	6	-0.67	2000	1200
+VNM	Vietnam	Asia-Pacific	6.5	0.51	NA	2	-0.61	2001	1000
+ZAF	South Africa	Sub-Saharan Africa	6.3	0.86	0.79	10	0.29	2001	3000
+ZWE	Zimbabwe	Sub-Saharan Africa	3.9	0.74	0.96	2	-1.31	2001	1002

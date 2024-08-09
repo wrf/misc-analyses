@@ -1,0 +1,12 @@
+#digitized from Hibbeln JR 1998 Fish consumption and major depression. Lancet
+# https://doi.org/10.1016/S0140-6736(05)79168-6
+country	fish_lbs_person	pct_depression	area
+New Zealand	40	5.8	Asia
+Germany	30	5.0	Europe
+Canada	50	5.2	Americas
+France	65	4.5	Europe
+USA	48	3.0	Americas
+Puerto Rico	70	3.0	Americas
+Korea	105	2.3	Asia
+Taiwan	82	0.8	Asia
+Japan	148	0.12	Asia
