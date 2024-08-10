@@ -1,0 +1,139 @@
+# Happiness Report 2023 Figure 2.2 Happiness gaps between the top and bottom halves of each countrys population
+country_short	high_low_rank	high_low_year	high_low_var
+Afghanistan	1	2022	1.672
+Netherlands	2	2022	1.787
+Finland	3	2022	1.917
+Iceland	4	2022	2.107
+Belgium	5	2022	2.202
+Sweden	6	2022	2.276
+Israel	7	2022	2.339
+Denmark	8	2022	2.349
+Luxembourg	9	2022	2.374
+France	10	2022	2.5
+Norway	11	2022	2.521
+New Zealand	12	2022	2.536
+Tajikistan	13	2021	2.594
+Switzerland	14	2022	2.604
+Italy	15	2022	2.609
+Ireland	16	2022	2.616
+Spain	17	2022	2.653
+Austria	18	2022	2.653
+Germany	19	2022	2.682
+Vietnam	20	2022	2.706
+United Kingdom	21	2022	2.717
+Australia	22	2022	2.719
+Estonia	23	2022	2.726
+Hong Kong S.A.R.	24	2022	2.776
+Lithuania	25	2022	2.795
+Latvia	26	2022	2.799
+Singapore	27	2022	2.802
+Algeria	28	2021	2.816
+Taiwan	29	2022	2.823
+Poland	30	2022	2.857
+Canada	31	2022	2.867
+Kyrgyzstan	32	2022	2.889
+Slovenia	33	2022	2.924
+United States	34	2022	2.935
+Czechia	35	2022	2.949
+Greece	36	2022	3.046
+Slovakia	37	2021	3.105
+Mongolia	38	2022	3.118
+Malta	39	2022	3.145
+Japan	40	2022	3.164
+Armenia	41	2022	3.173
+Kazakhstan	42	2022	3.229
+Chile	43	2022	3.238
+Cyprus	44	2022	3.272
+South Korea	45	2022	3.274
+Uruguay	46	2022	3.288
+Congo, R	47	2022	3.3
+Cambodia	48	2022	3.303
+Hungary	49	2022	3.313
+Georgia	50	2022	3.335
+Laos	51	2021	3.336
+Bolivia	52	2022	3.354
+Portugal	53	2022	3.394
+Romania	54	2022	3.403
+Russia	55	2022	3.41
+Croatia	56	2022	3.424
+Philippines	57	2021	3.432
+Bulgaria	58	2022	3.451
+Moldova	59	2022	3.455
+Tunisia	60	2022	3.464
+Mauritius	61	2022	3.515
+Ukraine	62	2022	3.52
+Sri Lanka	63	2021	3.553
+Indonesia	64	2022	3.58
+Argentina	65	2022	3.584
+Iran	66	2022	3.597
+Saudi Arabia	67	2022	3.634
+Egypt	68	2022	3.64
+Thailand	69	2022	3.65
+Costa Rica	70	2022	3.659
+Malaysia	71	2021	3.676
+Myanmar	72	2021	3.679
+South Africa	73	2021	3.684
+China	74	2021	3.685
+Mexico	75	2022	3.686
+Lebanon	76	2022	3.718
+Madagascar	77	2022	3.764
+North Macedonia	78	2022	3.783
+Togo	79	2022	3.787
+Uzbekistan	80	2022	3.801
+Nigeria	81	2021	3.803
+Gabon	82	2022	3.808
+Peru	83	2022	3.843
+Bosnia and Herzegovina	84	2021	3.843
+United Arab Emirates	85	2022	3.845
+Paraguay	86	2022	3.856
+Serbia	87	2021	3.889
+Brazil	88	2022	3.917
+Palestine	89	2022	3.92
+Montenegro	90	2021	3.935
+Bahrain	91	2021	3.945
+Ethiopia	92	2022	3.945
+Ecuador	93	2022	3.963
+Ghana	94	2022	3.971
+Iraq	95	2021	3.971
+Morocco	96	2022	4.009
+Benin	97	2022	4.073
+Turkiye	98	2021	4.104
+Kosovo	99	2022	4.119
+Venezuela	100	2022	4.143
+Albania	101	2022	4.204
+Bangladesh	102	2022	4.22
+Colombia	103	2022	4.224
+Gambia	104	2022	4.229
+Niger	105	2022	4.23
+El Salvador	106	2022	4.266
+Jamaica	107	2022	4.267
+Burkina Faso	108	2021	4.268
+Zimbabwe	109	2022	4.281
+Guinea	110	2022	4.316
+Cameroon	111	2022	4.337
+Namibia	112	2022	4.355
+Panama	113	2022	4.398
+Ivory Coast	114	2022	4.401
+Pakistan	115	2021	4.427
+Senegal	116	2022	4.432
+Guatemala	117	2022	4.432
+Kenya	118	2022	4.44
+Nepal	119	2022	4.466
+Mali	120	2022	4.487
+Uganda	121	2022	4.495
+Jordan	122	2022	4.567
+Chad	123	2022	4.579
+Comoros	124	2022	4.631
+India	125	2022	4.64
+Botswana	126	2022	4.764
+Nicaragua	127	2022	4.787
+Tanzania	128	2022	4.873
+Zambia	129	2021	4.89
+Sierra Leone	130	2022	5.067
+Honduras	131	2022	5.102
+Dominican Republic	132	2022	5.102
+Malawi	133	2022	5.612
+Mauritania	134	2022	5.7
+Mozambique	135	2022	5.984
+Congo, DR	136	2022	6.063
+Liberia	137	2022	6.859
