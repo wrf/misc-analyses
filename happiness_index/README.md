@@ -5,6 +5,11 @@ From [Hibbeln 1998](https://doi.org/10.1016/S0140-6736(05)79168-6) Fish consumpt
 
 ![Fish consumption and depression](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/hibbeln_1998_fish_vs_depression.png)
 
+### world happiness report ###
+From the [world happiness report 2023](https://worldhappiness.report/ed/2023/)
+
+![WHR2023 score vs variance](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/happiness_report_2023_figure2_main_table.png)
+
 ### global emotions ###
 From [global emotions interactive map](https://news.gallup.com/interactives/248240/global-emotions.aspx)
 
@@ -20,10 +25,10 @@ From [Okulicz-Kozaryn 2011](http://dx.doi.org/10.1080/13674676.2010.550277) Does
 ![Religious fractionalisation and well−being](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/okulicz-kozaryn_2011_figure1_redo.png)
 ![Religious polarisation and well−being](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/okulicz-kozaryn_2011_figure2_redo.png)
 
-## sources ##
-
-[world happiness report 2023](https://worldhappiness.report/ed/2023/)
+## other sources ##
 
 [wiki minimum annual leave by country](https://en.wikipedia.org/wiki/List_of_minimum_annual_leave_by_country)
 
 [mental state of the world report](https://mentalstateoftheworld.report/2023_read/)
+
+

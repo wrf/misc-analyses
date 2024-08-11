@@ -23,7 +23,9 @@ hot_emotion_colors.p = colorRampPalette(c("#f0e78fff", "#fd8a13ff", "#d52121ff",
 cool_emotion_colors.p = colorRampPalette(c("#bede18ff", "#68ba12ff", "#004d53ff"))
 
 column_index = seq(6,24,2)
-region_colors = c("#045aad88", "#81048d88", "#ad040488", "#8d890488", "#04ad1d88")
+region_colors = c("#ad040488", "#045aad88", "#81048d88", "#8d890488", "#04ad1d88")
+region_areas = c("Americas", "Asia-Pacific", "Europe", "Middle East and North Africa", "Sub-Saharan Africa")
+region_colors.matched = region_colors[match(unique(emo_data$area),region_areas)]
 region_matches = match( emo_data$area, unique(emo_data$area) )
 unique(emo_data$area)
 country_codes.2022 = emo_data$country_code
@@ -231,6 +233,44 @@ ggplot(worldpolygons_w_emo, aes(x = long, y = lat, group = group)) +
 
 ################################################################################
 ################################################################################
+
+# data from 
+# World Happiness report 2023
+# https://worldhappiness.report/ed/2023/
+
+
+happy_data_file = "~/git/misc-analyses/happiness_index/data/happiness_report_2023_figure2_main_table.txt"
+happy_data = read.table(happy_data_file, header=TRUE, sep="\t")
+
+region_colors = c("#ad040488", "#045aad88", "#81048d88", "#8d890488", "#04ad1d88")
+region_areas = c("Americas", "Asia-Pacific", "Europe", "Middle East and North Africa", "Sub-Saharan Africa")
+region_colors.matched = region_colors[match(unique(happy_data$area),region_areas)]
+region_matches = match( happy_data$area, unique(happy_data$area) )
+
+
+pdf(file="~/git/misc-analyses/happiness_index/images/happiness_report_2023_figure2_main_table.pdf", width=7, height=6, title="remake of World Happiness Report 2023")
+#png(file="~/git/misc-analyses/happiness_index/images/happiness_report_2023_figure2_main_table.png", width=630, height=540, res=90)
+par(mar=c(4.5,4.5,3,2))
+plot( happy_data$high_low_var, happy_data$Ladder.score,
+      cex.axis=1.3, cex.lab=1.3,
+      xlab="Happiness gap (between top and bottom halves of each country)",
+      ylab="World Happiness Score (average of 2020-2022)",
+      pch=16, cex=2, col=region_colors.matched[region_matches])
+text(happy_data$high_low_var, happy_data$Ladder.score,
+     happy_data$country_code, cex=0.5)
+mtext("World Happiness Report 2023", side=3, line=1, cex=1.5, font=2,
+      at=min(happy_data$high_low_var), adj = 0)
+dev.off()
+
+
+
+plot( happy_data$Logged.GDP.per.capita, happy_data$Ladder.score,
+      cex.axis=1.3, cex.lab=1.3,
+      xlab="GDP per capita (log)",
+      ylab="World Happiness Score (average of 2020-2022)",
+      pch=16, cex=2, col=region_colors.matched[region_matches])
+text(happy_data$Logged.GDP.per.capita, happy_data$Ladder.score,
+     happy_data$country_code, cex=0.5)
 
 
 #
