@@ -18,6 +18,13 @@ The most confusing is the role of meat, which has both high aversions and cravin
 
 Fruit cravings appear to be quite common. [Weigel 2011](https://doi.org/10.1080/03670244.2011.568906) suggest this could be both due to low risk of pathogens or parasites, but also as a specific remedy for hypoglycemia, as many fruits are sweet. The authors note this could be a conditioned response to problems of repeated vomiting - i.e. low blood sugar, electrolytes, etc.
 
+# Risk factors of NVP #
+A report by [Zhang 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7682611/) noted several risk factors for NVP, including drinking cold liquids:
+
+> The results indicated that women who were housewives with lower gestational age, longer pre-pregnant sedentary time, lower pre-pregnant exercise frequency, high frequent (always) pre-pregnant cold drinking and a history of GI disease or an abnormal gastroscopy result were more likely to have prolonged moderate and severe NVP.
+
+![zhang_2020_table2.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/zhang_2020_table2.png)
+
 # NVP among other symptoms #
 Another study by [Rodriguez 2001](https://obgyn.onlinelibrary.wiley.com/doi/10.1034/j.1600-0412.2001.080003213.x) collected data from 525 pregnant women in Sweden. 
 
@@ -25,9 +32,6 @@ Data below were plotted from Table 2 in that study. Bars refer to percentage of 
 
 ![rodriguez_2001_table2.all.p1.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/rodriguez_2001_table2.all.p1.png)
 ![rodriguez_2001_table2.all.p2.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/rodriguez_2001_table2.all.p2.png)
-
-
-
 
 
 

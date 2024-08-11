@@ -100,5 +100,48 @@ for (i in 1:dim(symptom_data)[1]){
 dev.off()
 
 
+################################################################################
+# data from:
+# Zhang et al 2020 Risk Factors of Prolonged Nausea and Vomiting During Pregnancy.
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7682611/
+
+risk_data_file = "~/git/misc-analyses/nausea_pregnancy/data/zhang_2020_table2.txt"
+risk_data = read.table(risk_data_file, header=TRUE, sep="\t")
+
+head(risk_data)
+
+risk_variables = unique(risk_data$variable[3:46])[5:14]
+risk_variables
+
+mild_cols = rep(c("#eeeeee", "#f1c0ca", "#c0c7f1" ), c(0, 10, 0) )
+modt_cols = rep(c("#aaaaaa", "#d88496", "#8492d8" ), c(0, 10, 0) )
+sevr_cols = rep(c("#666666", "#ca123b", "#6666cc" ), c(0, 10, 0) )
+sig_stars = c("**", "**", "*", "", "", "", "**", "", "*", "")
+
+pdf(file="~/git/misc-analyses/nausea_pregnancy/images/zhang_2020_table2.pdf", height=11, width=8, paper="a4", title="NVP risk factors")
+par(mfrow=c(10,2))
+for (i in 1:length(risk_variables)){
+  par(mar=c(3,1,1,2))
+  factor_rows = which(risk_data$variable==risk_variables[i])
+  factor_rows
+  risk_factor = risk_data[rev(factor_rows),c(4,6,8)]
+  risk_factor
+  risk_factor.pct = risk_data[rev(factor_rows),c(5,7,9)]
+  #chisq.test(risk_factor)
+  barplot( t(as.matrix(risk_factor)), horiz=TRUE, axisnames=FALSE,
+           main=risk_variables[i],
+           col=c(mild_cols[i], modt_cols[i], sevr_cols[i]) )
+  mtext(sig_stars[i], side=4, line=1, las=1, cex=2 )
+  par(mar=c(3,6,1,1))
+  barplot( t(as.matrix(risk_factor.pct)), horiz=TRUE, 
+           main=paste(risk_variables[i],"(percent)"),
+           names = rev(risk_data[factor_rows,3]), las=1,
+           col=c(mild_cols[i], modt_cols[i], sevr_cols[i]) )
+}
+dev.off()
+
+
+
+
 
 #
