@@ -63,7 +63,6 @@ ggsave("~/git/misc-analyses/nausea_pregnancy/images/food_cravings_flaxman_2000_f
 
 
 ################################################################################
-
 # plot data from
 # Rodriguez et al (2001) Symptoms across pregnancy in relation to psychosocial and biomedical factors
 # https://doi.org/10.1034/j.1600-0412.2001.080003213.x
@@ -96,6 +95,28 @@ for (i in 1:dim(symptom_data)[1]){
     legend(0,100, legend=c("Occasional", "Frequent"), bty = 'n', 
            col=c(occ_cols[i], frq_cols[i]), pch=15, cex=1.5 )
     }
+}
+dev.off()
+
+
+################################################################################
+# plot data from
+# Meyer 1994 Symptoms and health problems in pregnancy: their association with social factors, smoking, alcohol, caffeine and attitude to pregnancy
+# https://doi.org/10.1111/j.1365-3016.1994.tb00445.x
+
+symptom_datafile = "~/git/misc-analyses/nausea_pregnancy/data/meyer_1994_table1.txt"
+symptom_data = read.table(symptom_datafile, header = TRUE, sep="\t", stringsAsFactors = FALSE)
+symptom_data
+
+symptom_cols = rep(c("#eecc66", "#556696", "#8b12a7", "#ca123b"), c(7, 4, 7, 3) )
+
+pdf(file="~/git/misc-analyses/nausea_pregnancy/images/meyer_1994_table1.pdf", width=8, height=11, title="Symptoms and health problems in pregnancy")
+par(mar=c(4,4.5,2,1), mfrow=c(5,3))
+for (i in 1:21){
+  barplot( as.matrix(symptom_data[i,2:4]), ylim=c(0,100), 
+           ylab=ifelse(i%%3==1, "", "Percentage of women"), cex.axis = 1.1, cex.lab = 1.2, cex.names = 1.2,
+           main=symptom_data$symptom[i], col=symptom_cols[i], cex.main=1.5,
+           names.arg=c("14 wks", "28 wks", "36 wks") )
 }
 dev.off()
 
@@ -147,6 +168,59 @@ dev.off()
 
 hpyl_data_file = "~/git/misc-analyses/nausea_pregnancy/data/grooten_2017_table1.txt"
 hpyl_data = read.table(hpyl_data_file, header=TRUE, sep="\t")
+
+
+
+
+
+
+
+
+
+################################################################################
+# relation of NVP to age
+# data from:
+# Petitti 1986 Nausea and Pregnancy Outcome. Birth.
+# https://doi.org/10.1111/j.1523-536x.1986.tb01052.x
+# and
+# Jinadu 1990 EMOTIONAL CHANGES IN PREGNANCY AND EARLY PUERPERIUM AMONG THE YORUBA WOMEN OF NIGERIA
+# https://doi.org/10.1177/002076409003600202
+#
+
+petitti_data = data.frame(age=c("<25", "25-29", "30-34", "35-39", "40+"), 
+                          nwomen=c(639, 643, 459, 145, 35),
+                          nvp_pct=c(72.6, 66.6, 67.5, 63.4, 45.7) )
+
+jinadu_data = data.frame(age=c("11-15", "16-20", "21-25", "26-30", "31-35", "36-40", "41-45" ), 
+                         nwomen=c(21, 83, 151, 70, 41, 25, 9),
+                         nvp_pct=c(100, 100, 66.2, 50, 48.8, 23.4, 11.1) )
+
+pdf(file="~/git/misc-analyses/nausea_pregnancy/images/nvp_by_age_v1.pdf", width=8, height=4, title="NVP by age")
+par(mar=c(4,5,3,2), mfrow=c(1,2))
+b = barplot( petitti_data$nvp_pct, names.arg =  petitti_data$age, col="#538b45aa",
+            cex.names=0.8, cex.axis=1.2, cex.lab=1.2, las=2,
+        ylim=c(0,100), main="Reported NVP by age\n in California, USA",
+        ylab="Percentage of women reporting NVP")
+text(b, 0, petitti_data$nwomen, pos=3)
+b = barplot(jinadu_data$nvp_pct, names.arg = jinadu_data$age, col="#23bb45aa",
+            cex.names=0.8, cex.axis=1.2, cex.lab=1.2, las=2,
+        ylim=c(0,100), main="Reported NVP by age\n in Ife, Nigeria",
+        ylab="Percentage of women reporting NVP")
+text(b, 0, jinadu_data$nwomen, pos=3)
+dev.off()
+
+
+################################################################################
+
+
+freq_data_file = "~/git/misc-analyses/nausea_pregnancy/data/nvp_study_compilation_v1.txt"
+freq_data = read.table(freq_data_file, header=TRUE, sep="\t")
+
+plot(freq_data$year, freq_data$nausea_pct, xlab="",
+     ylab="Overall reported nausea (percent)", ylim=c(0,100),
+     pch=16, col="#fe9929aa", cex=log(freq_data$n_patients),
+     cex.lab=1.4, cex.axis=1.3 )
+text(freq_data$year, freq_data$nausea_pct, sub(" ", "\n", freq_data$country), cex=0.6)
 
 
 

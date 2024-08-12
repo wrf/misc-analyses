@@ -1,0 +1,29 @@
+# some data from Pepper2006 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1635459/
+country	area	n_patients	n_nausea	nausea_pct	n_vomiting	vomiting_pct	year	ref	link	notes
+Australia	Asia-Pacific	116	73	63.0	NA	NA	1975	Biggs1975		reported by Pepper2006
+South Africa	Africa	1771	1070	60.4	NA	NA	1985	Walker1985	https://doi.org/10.1111/j.1471-0528.1985.tb01353.x	only percentages reported by ethnicity
+USA	Americas	1933	1317	68	NA	NA	1986	Petitti1986	https://doi.org/10.1111/j.1523-536x.1986.tb01052.x	only pct reported
+Australia	Asia-Pacific	429	305	71.0	NA	NA	1986	Kricker1986		reported by Pepper2006
+Hong Kong	Asia-Pacific	1453	1092	75.15	927	63.8	1989	Chin1989	https://www.ejog.org/article/0028-2243(89)90132-9/pdf	nausea is sum of N and V
+USA	Americas	860	608	70.7	408	47.44	1989	Weigel1989	https://doi.org/10.1111/j.1471-0528.1989.tb03228.x	nausea is sum of N and V
+Nigeria	Africa	400	266	66.4	NA	NA	1990	Jinadu1990	https://doi.org/10.1177/002076409003600202	
+UK	Europe	1000	850	85	520	52	1990	Whitehead1990	https://doi.org/10.3109/01443619209025932	only pct reported numbers do not match tables in paper
+Canada	Americas	732	490	67.0	NA	NA	1991	McBride1991		reported by Pepper2006
+#Norway	Europe	22241	NA	NA	NA	NA	1992	https://pubmed.ncbi.nlm.nih.gov/1448270/	paywalled
+India	Asia-Pacific	2500	875	35	NA	NA	1993	Ananth1993	https://doi.org/10.1093/tropej/39.5.313	only pct reported
+Australia	Asia-Pacific	100	62	62	NA	NA	1994	Abraham1994		reported by Pepper2006
+UK	Europe	1513	1195	79	696	46	1994	Meyer1994	https://doi.org/10.1111/j.1365-3016.1994.tb00445.x	only pct reported
+Netherlands	Europe	396	181	45.7	NA	NA	1996	Paarlberg1996	https://doi.org/10.3109/01674829609025669	only nausea reported
+Nepal	Asia-Pacific	120	58	48	NA	NA	1998	Christian1998		reported by Pepper2006
+Ecuador	Americas	1000	670	67	NA	NA	2000	Weigel2000		reported by Pepper2006
+Sweden	Europe	476	385	81	171	36	2001	Rodriguez2001	https://doi.org/10.1034/j.1600-0412.2001.080003213.x	only pct reported
+Israel	Middle East	185	133	72.0	NA	NA	2004	Shirin2004		reported by Pepper2006
+France	Europe	399	238	59.6	NA	NA	2016	Dochez2016	https://doi.org/10.1016/j.ijgo.2016.01.023	
+#Norway	Europe	712	NA	NA	NA	NA	2017	Heitmann2017	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5329925/	
+Indonesia	Asia-Pacific	35	21	60	NA	NA	2017	Mulyani2017	https://pubmed.ncbi.nlm.nih.gov/28625033/	
+Japan	Asia-Pacific	188	101	53.7	NA	NA	2017	Ogawa2017	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5394225/	
+Korea	Asia-Pacific	472	381	80.7	204	43.6	2018	Choi2018	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5780318/	
+Saudi Arabia	Middle East	591	556	94.1	96	16.2	2023	Alkhudair2023	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10622686/	
+China	Asia-Pacific	535	NA	95.7	NA	73.1	2024	Zou2024	https://doi.org/10.1186/s12884-024-06686-7	only pct reported
+
+

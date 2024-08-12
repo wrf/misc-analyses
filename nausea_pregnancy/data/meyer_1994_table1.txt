@@ -1,0 +1,26 @@
+# Meyer LC (1994) Symptoms and health problems in pregnancy: their association with social factors, smoking, alcohol, caffeine and attitude to pregnancy
+# Table 1. Prevalence of symptoms and health problems reported at three points of pregnancy in the past 3 months
+symptom	booking_14_weeks_n_1513	28_weeks_n_1463	36_weeks_n_1433
+Nausea	79	34	27
+Vomiting	46	21	17
+Heartburn	35	69	72
+Constipation	39	30	20
+Diarrhoea	13	14	16
+Haemorroids	11	14	17
+Gastroenteritis	11	15	4
+Headaches	57	38	24
+Feeling faint	40	32	21
+Actually fainted	7	4	1
+Nerves/ depression	13	10	8
+Breast tenderness	80	38	26
+Backache	45	69	68
+Varicose veins	9	14	13
+Chest infection	3	5	3
+Flu, colds etc.	45	47	33
+Asthma	5	5	4
+Hayfever	11	12	8
+Pain passing urine	4	5	3
+Vaginal bleeding	16	5	3
+Vaginal discharge	6	7	6
+Operations/accidents	2	3	2
+Other	3	7	5

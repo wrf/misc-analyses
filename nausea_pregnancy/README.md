@@ -37,6 +37,12 @@ Another study notes that cold water significantly [reduced distal contractile in
 
 The above, and other studies have examined the presence of [*Helicobacter pylori*](https://en.wikipedia.org/wiki/Helicobacter_pylori) in relation to NVP. It was reported by [Grooten 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5426529/) that NVP was associated with detection of *H. pylori*, a result also repeated by the meta-analysis by [Ng 2018](https://pubmed.ncbi.nlm.nih.gov/29178407/).
 
+# age effect #
+A decreasing frequency of NVP with age was reported, but seemed to be unknown among the broader populace. Datasets are from [Petitti 1986](https://doi.org/10.1111/j.1523-536x.1986.tb01052.x) and [Jinadu 1990](https://doi.org/10.1177/002076409003600202).
+
+![nvp_by_age_v1.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/nvp_by_age_v1.png)
+
+
 # NVP among other symptoms #
 Another study by [Rodriguez 2001](https://obgyn.onlinelibrary.wiley.com/doi/10.1034/j.1600-0412.2001.080003213.x) collected data from 525 pregnant women in Sweden. 
 
@@ -45,8 +51,9 @@ Data below were plotted from Table 2 in that study. Bars refer to percentage of 
 ![rodriguez_2001_table2.all.p1.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/rodriguez_2001_table2.all.p1.png)
 ![rodriguez_2001_table2.all.p2.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/rodriguez_2001_table2.all.p2.png)
 
+Many of these symptoms were reported by [Meyer 1994](https://doi.org/10.1111/j.1365-3016.1994.tb00445.x) on 1400 women in London as well. Other health problems, such as flu, were reported in this study, but not the other.
 
-
-
+![meyer_1994_table1.p1.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/meyer_1994_table1.p1.png)
+![meyer_1994_table1.p2.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/meyer_1994_table1.p2.png)
 
 
