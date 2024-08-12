@@ -1,0 +1,36 @@
+# Grooten (2017) Helicobacter pylori infection: a predictor of vomiting severity in pregnancy and adverse birth outcome
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5426529/
+# Table 1 Demographics and clinical characteristics of women and neonates according to daily vomiting
+# Data represent mean±SD, median (IQR) or %. Abbreviations: BMI: body mass index; IgG: immune globuline G; CagA: Cytotoxin-associated gene A protein; PE: preeclampsia; HELLP-syndrome: hemolysis, elevated liver enzymes, low platelets; SGA: small for gestational age.
+# *CagA-negative or positive
+# **Total weight gain based on pre-pregnancy weight and measured weight in late gestation
+Characteristics n	var_type	Total population 5549	Total_population_var	No vomiting 3016	No_vomiting_var	Occasional vomiting 1932	Occasional_vomiting_var	Daily vomiting 601	Daily_vomiting_var	p_value
+Age (y)	Demographics	29.7±	5.2	30.6±	5	 28.9±	5.1	27.6±	5	<0.001
+Pre-pregnancy BMI (kg/m2)	Demographics	22.6	20.8-25.5	22.4	20.7-25.1	 22.7	20.7-25.5	23.7	21.1-27.6	<0.001
+Western	Ethnicity	62.7	NA	71.6	NA	58.5	NA	31.8	NA	<0.001
+Non-Western	Ethnicity	37.3	NA	28.4	NA	41.5	NA	68.2	NA	<0.001
+Dutch	Ethnic groups	50.8	NA	58.9	NA	46.7	NA	23.5	NA	<0.001
+Other Western	Ethnic groups	11.9	NA	12.8	NA	11.7	NA	8.3	NA	<0.001
+Moroccan	Ethnic groups	6	NA	3.9	NA	6.8	NA	13.7	NA	<0.001
+Turkish	Ethnic groups	8.6	NA	6.5	NA	9	NA	18.1	NA	<0.001
+Surinamese	Ethnic groups	9.2	NA	7.4	NA	10.5	NA	14.6	NA	<0.001
+Cape Verdean/Dutch Antilles	Ethnic groups	7.6	NA	5.7	NA	9	NA	12.4	NA	<0.001
+Other non-Western	Ethnic groups	5.9	NA	5	NA	6.3	NA	9.5	NA	<0.001
+Primary	Education level	10.6	NA	8.2	NA	11.2	NA	20	NA	<0.001
+Secondary	Education level	47.3	NA	42.5	NA	50.7	NA	59.9	NA	<0.001
+Higher	Education level	42.1	NA	49.2	NA	38.1	NA	20.1	NA	<0.001
+Smoking	Health	18.1	NA	17.7	NA	18.3	NA	19.3	NA	0.62
+IgG anti-H. pylori positive*	Health	42.6	NA	36.5	NA	45.2	NA	64.4	NA	<0.001
+CagA +	Health	14.6	NA	11.9	NA	15.4	NA	41.1	NA	<0.001
+Nulliparous	Pregnancy	61.8	NA	63.1	NA	62	NA	54.9	NA	<0.05
+Twin pregnancy	Pregnancy	1.1	NA	0.9	NA	1.4	NA	1	NA	0.23
+Gestational age at enrollment (wk)	Pregnancy	13.8	12.4-16.2	13.6	12.2-16.1	 13.8	12.5-16.4	14.2	12.5-16.6	<0.05
+Vomiting duration Early gestation	Health	7.2	NA	NA	NA	NA	NA	66.6		NA
+Vomiting duration Mid gestation	Health	2.4	NA	NA	NA	NA	NA	22.1		NA
+Vomiting duration Late gestation	Health	1.2	NA	NA	NA	NA	NA	11.3		NA
+Total weight gain (kg)**	Health	10.5	±5.1	10.9	±4.9	10.6	±5.2	8.5±	5.9	<0.001
+PE or HELLP-syndrome	Health	2.7	NA	2.4	NA	3	NA	3.5	NA	0.31
+Gestational age at birth (d)	Neonatal	281	273-287	281	274-287	 281	274-287	280	273-286	0.18
+Prematurity (<37 wk)	Neonatal	5.6	NA	5.3	NA	5.7	NA	6.5	NA	0.51
+Birth weight (g)	Neonatal	3402±	569	3422±	563	 3387±	572	3360±	577	<0.05
+SGA (<p10)	Neonatal	10.1	NA	9.5	NA	10.2	NA	11.9	NA	0.19

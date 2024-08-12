@@ -140,6 +140,13 @@ for (i in 1:length(risk_variables)){
 }
 dev.off()
 
+################################################################################
+# data from:
+# Grooten et al 2017 Helicobacter pylori infection: a predictor of vomiting severity in pregnancy and adverse birth outcome.
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5426529/
+
+hpyl_data_file = "~/git/misc-analyses/nausea_pregnancy/data/grooten_2017_table1.txt"
+hpyl_data = read.table(hpyl_data_file, header=TRUE, sep="\t")
 
 
 
