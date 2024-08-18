@@ -16,6 +16,11 @@ Many countries with long coastlines still import a lot of their fish. This is vi
 
 ![global_fish_imports_only_2017.png](https://github.com/wrf/misc-analyses/blob/master/fisheries/images/global_fish_imports_only_2017.png)
 
+## [ecological diversity](https://github.com/wrf/misc-analyses/tree/master/eco_diversity) ##
+Measures of ecological diversity, and usage across real datasets
+
+![shannon_diversity_model_v2.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/shannon_diversity_model_v2.png)
+
 ## [seasonality of human births](https://github.com/wrf/misc-analyses/tree/master/birth_rate_by_month) ##
 Month of birth has real effects, like astrology, something known by all of humanity for thousands of years. Data from the [UN data portal](https://data.un.org/Data.aspx?d=POP&f=tableCode:55).
 
@@ -39,7 +44,7 @@ Some countries with a peak tourism season need to run at double capacity for 2-3
 ## [quality of life index](https://github.com/wrf/misc-analyses/tree/master/quality_of_life) ##
 Quality of life index vs tax revenue of each country. A lot of the world is not represented there.
 
-![plot of quality of life against tax revenue](https://github.com/wrf/misc-analyses/blob/master/quality_of_life/images/qol_vs_tax_revenue_v1.png)
+![plot of quality of life against tax revenue](https://github.com/wrf/misc-analyses/blob/master/quality_of_life/images/qol_vs_tax_revenue_v2.png)
 
 ## [success in ERC grants - moved to own repo](https://github.com/wrf/erc-success) ##
 Countries like France and Spain have the same number of applications, but France is twice as successful. Data from [ERC statistics tables](https://erc.europa.eu/projects-figures/statistics), and from [MSCA-IF 2018 table](http://ec.europa.eu/research/participants/portal/doc/call/h2020/msca-if-2018/1847614-if2018_percentiles_en.pdf)
@@ -84,7 +89,7 @@ A simple model about [bootstrapping in phylogenetics](https://en.wikipedia.org/w
 ## [oxygen usage in animals](https://github.com/wrf/misc-analyses/tree/master/animal_oxygen) ##
 Data digitized from *Ecology and Evolution in Anoxic Worlds* by Fenchel and Finlay (1995).
 
-![fenchel_finlay_1995_km_by_size.png](https://github.com/wrf/misc-analyses/blob/master/animal_oxygen/fenchel_finlay_1995_km_by_size.png)
+![fenchel_finlay_1995_km_by_size.png](https://github.com/wrf/misc-analyses/blob/master/animal_oxygen/images/fenchel_finlay_1995_km_by_size.png)
 
 ## [bioluminescence spectra - on bitbucket](https://bitbucket.org/wrf/biolum-spectra) ##
 Collection of bioluminescence spectra, some original, and some digitized from old papers
