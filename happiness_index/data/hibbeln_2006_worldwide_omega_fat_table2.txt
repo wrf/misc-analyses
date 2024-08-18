@@ -1,0 +1,48 @@
+# Hibbeln 2006 Healthy intakes of n−3 and n–6 fatty acids: estimations considering worldwide diversity
+# https://doi.org/10.1093/ajcn/83.6.1483S
+#TABLE 2 Dietary percentages of energy from n-3 long-chain fatty acids (LCFAs) and disease prevalence by country1
+Country	area	Dietary_n3_LCFAs_pct	CHD_mortality_M	CHD_mortality_F	Stroke_mortality_M	Stroke_mortality_F	CVD_mortality_M	CVD_mortality_F	Total_mortality_M	Total_mortality_F	Homicide_mortality_per_100k	Postpartum_depression3	Major_depression4	Bipolar_disorder5
+Bulgaria	Europe	0.023	352	132	314	184	938	466	1757	827	10.3	NA	NA	NA
+Romania	Europe	0.041	388	176	311	208	975	534	1966	967	NA	NA	NA	NA
+Hungary	Europe	0.043	459	169	225	125	899	408	2276	980	7.1	NA	NA	7.1
+Colombia	Americas	0.046	190	NA	90	NA	397	NA	NA	NA	NA	NA	NA	NA
+Brazil	Americas	0.052	NA	NA	NA	NA	NA	NA	NA	NA	NA	24.1	NA	NA
+Argentina	Americas	0.053	153	43	133	74	595	260	1383	667	NA	NA	NA	NA
+Poland	Europe	0.066	267	79	111	72	735	325	1722	742	6.1	NA	NA	NA
+South Africa	Sub-Saharan Africa	0.069	NA	NA	NA	NA	NA	NA	NA	NA	NA	24.5	NA	NA
+Czech Republic	Europe	0.07	391	149	137	82	705	323	1529	717	NA	NA	NA	NA
+Austria	Europe	0.071	223	74	67	41	409	174	995	485	2.4	NA	NA	NA
+Germany	Europe	0.084	207	72	59	37	375	164	1028	517	2.4	20	5	8.3
+Ireland	Europe	0.09	367	125	66	46	518	219	1154	649	NA	11	NA	NA
+Netherlands	Europe	0.091	191	63	51	37	354	148	964	518	2.5	NA	NA	NA
+Italy	Europe	0.096	150	72	64	26	304	131	953	504	4.5	15.5	NA	5.1
+Switzerland	Europe	0.096	147	41	33	21	273	105	852	423	2.6	10.2	NA	6.8
+UK	Europe	0.103	267	96	57	44	390	180	946	585	2	14.4	NA	NA
+USA	Americas	0.103	214	88	43	34	389	192	1054	632	NA	11.5	3	4.4
+Greece	Europe	0.11	176	50	85	56	359	164	877	432	2.3	NA	NA	NA
+Australia	Asia-Pacific	0.113	202	73	44	31	298	129	840	466	3.7	18.6	NA	NA
+Israel	Middle East and North Africa	0.118	150	65	68	47	287	154	821	532	4.6	12.4	NA	5.3
+Russia	Europe	0.119	737	255	374	231	1310	581	2957	1123	NA	NA	NA	NA
+France	Europe	0.136	92	22	45	23	225	81	991	410	2.2	11	4.5	NA
+Denmark	Europe	0.139	204	76	66	41	360	159	1159	728	NA	NA	NA	NA
+Sweden	Europe	0.139	216	68	51	34	335	132	799	461	2.6	9	NA	NA
+Chile	Americas	0.144	NA	NA	NA	NA	NA	NA	NA	NA	6.2	5.5	NA	NA
+UAE	Middle East and North Africa	0.144	NA	110	NA	84	NA	286	1166	748	NA	18	NA	NA
+Canada	Americas	0.146	200	42	38	40	299	131	894	457	3.7	12.7	5.2	2.2
+New Zealand	Asia-Pacific	0.157	287	113	60	44	419	196	994	607	3	17.4	5.8	4.9
+Puerto Rico	Americas	0.16	185	87	59	31	373	187	1376	632	NA	NA	3	1.7
+China	Asia-Pacific	0.168	100	69	251	170	409	296	1079	716	NA	NA	0.8	0.8
+Spain	Europe	0.17	125	34	59	32	267	109	957	398	1.8	13.6	NA	NA
+Portugal	Europe	0.203	125	44	144	89	354	177	1186	540	3.1	NA	NA	NA
+Korea	Asia-Pacific	0.218	NA	NA	NA	NA	NA	NA	NA	NA	2.5	NA	2.3	1.1
+Finland	Europe	0.228	340	93	82	50	500	171	1158	494	6.5	NA	NA	NA
+Norway	Europe	0.244	259	77	55	38	387	146	942	503	2	NA	NA	1.6
+Malaysia	Asia-Pacific	0.341	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	NA	NA
+Japan	Asia-Pacific	0.374	57	20	79	41	186	85	743	341	1.3	2	0.12	NA
+Iceland	Europe	0.435	102	31	26	11	159	57	389	246	0.5	5	NA	0.6
+#1 CHD, coronary heart disease; CVD, cardiovascular disease; UAE, United Arab Emirates.
+#2 Total mortality/100 000 population.
+#3 Point prevalence.
+#4 Annual prevalence.
+#5 Lifetime prevalence.
+#6 n3 LCFA intakes from Jamaica were used as a surrogate for intakes for Puerto Rico

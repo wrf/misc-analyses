@@ -1,0 +1,64 @@
+# Hibbeln 2006 Healthy intakes of n−3 and n–6 fatty acids: estimations considering worldwide diversity
+# https://doi.org/10.1093/ajcn/83.6.1483S
+# TABLE 1. Estimated fatty acid composition of food commodities by category1
+# n–6 Fatty acids and n−3 Fatty acids as mg/100 g
+Commodities2	LA_18:2n–6_	AA_20:4n–6_	LNA_18:3n−3_	EPA_20:5n−3_	DPA_22:5n−3_	DHA_22:6n−3_
+Poultry meats3	1443	98	73	5	18	25
+Chicken, with skin (05006)4,5	2880	80	140	10	10	30
+Chicken, without skin (05011)4	550	80	20	10	20	30
+Turkey with skin (05165)4	1700	110	110	0	20	20
+Turkey, without skin (05167)4	640	120	20	0	20	20
+Pig meats3	831	68	53	3	7	2
+Pork loin, without fat4	262	53	12	3	7	2
+Pork loin, without fat (10040)4	440	60	20	NA	NA	NA
+Pork, with fat (10187)4	1310	80	90	NA	NA	NA
+Eggs3	1272	156	31	0	6	44
+Bovine meats3	277	24	105	5	8	4
+Beef rib eye4	178	46	10	5	12	2
+Beef rib eye (13098)4	240	20	10	NA	NA	NA
+Beef sirloin4	94	9	20	5	15	10
+Beef Swiss steak4	182	18	61	9	0	8
+Nelore longissimus dorsi4	115	11	15	3	9	2
+Canchim longissimus dorsi4	101	9	13	4	5	2
+Beefalo longissimus dorsi4	98	9	16	3	6	2
+Beef, with fat (13795)4	410	30	190	NA	NA	NA
+Goat and mutton3	460	64	178	5	19	21
+Lamb loin chop4	369	84	54	5	7	10
+Lamb steak leg4	202	12	126	14	68	84
+Lamb raw feet4	198	66	27	0	6	9
+Lamb, Australian (17280)4	422	69	202	NA	NA	NA
+Lamb, New Zealand (17062)4	550	10	420	NA	NA	NA
+Lamb, domestic (17226)4	1090	70	330	NA	NA	NA
+Goat shoulder4	337	109	44	9	10	5
+Goat leg4	262	65	49	0	11	9
+Goat (17168)4	100	60	20	NA	NA	NA
+Freshwater fish3	295	104	93	245	56	461
+Trout, rainbow (15240)4	710	25	58	260	0	668
+Bass, freshwater (15003)4	87	144	111	238	84	357
+Demersal fish3	19	89	37	82	70	199
+Flatfish, flounder and sole (15028)4	8	38	8	93	46	106
+Halibut (15036)4	30	139	65	71	94	292
+Pelagic fish3	60	90	74	185	111	619
+Tuna, bluefin (15117)4	53	43	0	283	125	890
+Salmon, Atlantic (15076)4	172	267	295	321	287	1115
+Cod, Atlantic (15015)4	5	22	1	64	10	120
+Pollock, Atlantic (15065)4	9	26	0	71	22	350
+Crustaceans, shrimp (15149)3	28	87	14	258	46	222
+Mollusks, mussel (15164)3	18	70	20	188	22	253
+Marine fish, other3	31	84	36	178	62	323
+Coconut vegetable oil (04047)3	1800	0	0	0	0	0
+Cottonseed vegetable oil (04502)3	51500	100	200	0	0	0
+Groundnut oil3	32000	0	0	0	0	0
+Maize germ oil3	58000	0	700	0	0	0
+Olive oil3	7900	0	600	0	0	0
+Palm kernel vegetable oil (04513)3	1600	0	0	0	0	0
+Palm vegetable oil (04055)3	9100	0	200	0	0	0
+Canola oil (04582)3	20300	0	9300	0	0	0
+Rice bran vegetable oil (04037)3	33400	0	1600	0	0	0
+Sesame oil (04058)3	41300	0	300	0	0	0
+Soybean oil (04044)3	51000	0	6800	0	0	0
+Sunflower vegetable oil (04506)3	65700	0	0	0	0	0
+#2 Estimations of the n−3 and n–6 fatty acid content of commodities were derived by averaging representative food sources from published food-composition tables.
+#3 Summary estimated n−3 LCFA compositions.
+#4 Domestic supply food categories and representative food sources.
+#5 Entries retrieved from the US Department of Agriculture National Nutrient Database for Standard Reference, Release 17, are followed by a 5-digit NDB number in parentheses. All entries were obtained from this database unless otherwise noted in Materials and Methods. Data were not adjusted for country-specific differences in nutrient compositions of foods.
