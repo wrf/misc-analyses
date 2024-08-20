@@ -126,7 +126,7 @@ positive_emo_sums = emo_data$enjoyment_yes + emo_data$rested_yes + emo_data$lear
   emo_data$smiled_yes + emo_data$respected_yes
 net_emo_sums.2022 = positive_emo_sums - negative_emo_sums
 net_emo_sums.2022
-net_emo.2022.
+
 
 #################
 # using 2023 data
@@ -139,20 +139,23 @@ negative_emo_sums = emo_data$anger_yes + emo_data$sad_yes + emo_data$stressed_ye
 positive_emo_sums = emo_data$enjoyment_yes + emo_data$rested_yes + emo_data$learned_yes +
   emo_data$smiled_yes + emo_data$respected_yes
 net_emo_sums.2023 = positive_emo_sums - negative_emo_sums
-hist(net_emo_sums, breaks=25)
+hist(net_emo_sums.2023, breaks=25, col=c(rev(hot_emotion_colors.p(7)),cool_emotion_colors.p(18)))
 
-
+# compare the two years
 plot(net_emo_sums.2023[match(country_codes.2022, emo_data$country_code)], net_emo_sums.2022,
-     pch=16, cex=2, col=region_colors[region_matches[match(country_codes.2022, emo_data$country_code)]]
-     )
-net_emo_sums.2022
-abline(a=0,b=1)
+     xlim=c(-150,400), ylim=c(-150,400),
+     xlab="Overall emotional score in 2023", ylab="Overall emotional score in 2022",
+     pch=16, cex=2, col=region_colors[region_matches[match(country_codes.2022, emo_data$country_code)]],
+     cex.lab=1.3, cex.axis=1.3 )
+text(net_emo_sums.2023[match(country_codes.2022, emo_data$country_code)], net_emo_sums.2022, 
+     emo_data$country_code[match(country_codes.2022, emo_data$country_code)] )
+abline(a=0,b=1, lwd=3, col="#00000066")
 
 # make all maps and sum plots
 # pdf(file="~/git/misc-analyses/happiness_index/images/gallup_2023_global_emotion_survey.sums.pdf", width=8, height=11, paper="a4", title="2023 Global Emotion Survey")
 # par(mar=c(4, 4.5, 4, 1), mfrow=c(2,1))
 # for (i in 1:10){
-#   color_fun = ifelse(i<6, hot_emotion_colors.p, cool_emotion_colors.p)
+#   color_fun = ifelse(i<6, hot_emotion_colors.p, cool_ehttp://127.0.0.1:40983/graphics/plot_zoom_png?width=768&height=492motion_colors.p)
 #   plot( emo_data[,column_index[i]], net_emo_sums , cex.lab=1.3, cex.axis=1.3,
 #         ylab="Overall emotional score",
 #         xlab=paste('Percent responses "yes" to "Did you', emotions_list[i], 'yesterday?"'),
@@ -271,6 +274,40 @@ plot( happy_data$Logged.GDP.per.capita, happy_data$Ladder.score,
       pch=16, cex=2, col=region_colors.matched[region_matches])
 text(happy_data$Logged.GDP.per.capita, happy_data$Ladder.score,
      happy_data$country_code, cex=0.5)
+
+
+
+################################################################################
+################################################################################
+# data from
+# https://www.oecd-ilibrary.org/social-issues-migration-health/health-at-a-glance-2017/antidepressant-drugs-consumption-2000-and-2015-or-nearest-year_health_glance-2017-graph181-en
+# DDD means Defined daily dose
+# https://www.who.int/tools/atc-ddd-toolkit/about-ddd
+
+antidprs_data_file = "~/git/misc-analyses/happiness_index/data/OECD_2017_10_9_antidepressant_usage.txt"
+antidprs_data = read.table(antidprs_data_file, header=TRUE, sep="\t")
+
+antidprs_data.c = antidprs_data[which(!is.na(antidprs_data$area)),]
+
+pdf(file = "~/git/misc-analyses/happiness_index/images/OECD_2017_10_9_antidepressant_usage.pdf", width=6, height=8, title="Antidepressant usage in OECD countries 2017")
+#png(file = "~/git/misc-analyses/happiness_index/images/OECD_2017_10_9_antidepressant_usage.png", width=540, height=720, res=90)
+par(mar=c(4.5,2,5,2))
+y_spacing = seq(1,nrow(antidprs_data.c),1)*1.2+1
+plot(antidprs_data.c$end_val, y_spacing, axes=FALSE, ylab="", cex.lab=1.3,
+     xlim=c(0,150), xlab="Defined daily dose per 1000 people per day (in 2015)",
+     main="Antidepressant usage increased across\nmost countries in the OECD", cex.main=1.3,
+     pch=16, col="#14415cff", cex=2 )
+axis(1, cex.axis=1.3)
+segments(antidprs_data.c$start_val, y_spacing, antidprs_data.c$end_val, y_spacing, col="#14415cff")
+points(antidprs_data.c$start_val, y_spacing, pch=16, col="#2eabd5ff", cex=2)
+text(antidprs_data.c$end_val+2, y_spacing, antidprs_data.c$country, pos=4)
+legend(100,10,legend=c("2000","2015"), col=c("#2eabd5ff", "#14415cff"), 
+       pch=16, cex=2, pt.cex=3, bty = 'n')
+dev.off()
+
+
+
+
 
 
 #

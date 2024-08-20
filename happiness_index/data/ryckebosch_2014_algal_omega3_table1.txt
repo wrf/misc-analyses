@@ -1,0 +1,23 @@
+# Ryckebosch 2014 Nutritional evaluation of microalgae oils rich in omega-3 long chain polyunsaturated fatty acids as an alternative for fish oil
+# https://pubmed.ncbi.nlm.nih.gov/24799253/
+# Table 1: Omega-3 fatty acid content (in mg/g oil; mean ± SD; n = 3), sterol content (in mg/g oil; mean ± SD; n = 3) and carotenoid content (in mg/g oil; mean ± SD; n = 3) of the total lipid extract from the microalgae species and of ﬁsh oil.
+content	type	Isochrysis_T-iso	Isochrysis_T-iso_var	Nannochloropsis_gaditana	Nannochloropsis_gaditana_var	Nannochloropsis_oculata	Nannochloropsis_oculata_var	Pavlova_lutheri	Pavlova_lutheri_var	Phaeodactylum_tricornutum	Phaeodactylum_tricornutum_var	Porphyridium_cruentum	Porphyridium_cruentum_var	Rhodomonas_salina	Rhodomonas_salina_var	Tetraselmis_suecica	Tetraselmis_suecica_var	Thalassiosira_pseudonana	Thalassiosira_pseudonana_var	Fish_oil	Fish_oil_var
+ALA (C18:3n-3)	n-3 Fatty acids	29	4	0.3	0.03	0.7	0.1	10	0.3	0.8	0.1	1.42	0.01	92	5	68	4	1.9	0.1	7.7	0.2
+SDA (C18:4n-3)	n-3 Fatty acids	43	10	0.3	0.1	0	0	17	0.5	1.9	0.1	0	0	43	2	17	0.5	20.4	0.8	29	1
+EPA (C20:5n-3)	n-3 Fatty acids	2.8	0.7	175	12	193	24	92	2	111	5	35.6	0.3	18	1	16.3	0.5	81	2	184	5
+DPA (C22:5n-3)	n-3 Fatty acids	0	0	0	0	0	0	0	0	1.08	0.01	0	0	0	0	0	0	1.82	0.01	16.8	0.3
+DHA (C22:6n-3)	n-3 Fatty acids	46	14	0	0	0	0	40.9	0.9	8.3	0.5	0	0	11.1	0.8	0.8	0.1	20.9	0.8	105.2	0.7
+Saturated fatty acids	Saturated fatty acids	0.1	0.01	0.12	0.01	0.09	0.01	0.101	0.004	0.08	0.01	0.205	0.001	0.059	0.004	0.11	0.01	0.127	0.003	0.26	0.01
+n-6/n-3 Ratio	ratio	0.273	0.001	0.231	0.001	0.208	0.001	0.085	0.003	0.063	0.004	2	0.1	0.0531	0.0003	0.33	0.01	0	0	0.071	0.001
+Cholesterol	Sterols	0	0	13.8	0,6	20	1	0	0	0	0	0	0	0	0	0	0	0	0	4.4	0.1
+Phytosterols	Sterols	14.9	0.1	17	1	6.1	0.3	97	3	16.5	0.6	26.5	0.2	26	3	10.9	0.2	34	3	0	0
+Alloxanthin	Carotenoids	0	0	0	0	0	0	0	0	0	0	0	0	6.8	0.9	0	0	0	0	0	0
+Carotene	Carotenoids	2.4	0.3	3.5	0.03	3.6	0.3	2.9	0.1	2.0	0.4	0.4	0.1	5.7	0.8	8.6	1.9	4.3	0.4	0	0
+Diadinochromea	Carotenoids	2.1	0.5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diadinoxanthin	Carotenoids	0	0	2.9	0.1	1.6	0.04	3.4	0.2	3.7	0.5	0	0	0	0	0	0	0	0	0	0
+Diatoxanthin	Carotenoids	1.5	0.2	0	0	0	0	8.6	0.6	1.1	0.2	0	0	0	0	0	0	0	0	0	0
+Fucoxanthin	Carotenoids	19.2	2.8	0	0	0	0	14.8	0.7	38.3	4.8	0	0	0	0	0	0	31.9	3.4	0	0
+Lutein	Carotenoids	0	0	0	0	0	0	0	0	0	0	0.5	0.2	8.7	1.1	5.6	0.6	0	0	0	0
+Neoxanthin	Carotenoids	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5.6	0.5	0	0	0	0
+Violaxanthin	Carotenoids	0	0	14.3	0.3	11.5	0.7	0	0	0	0	0	0	2.2	0.3	7.8	1.3	0	0	0	0
+Zeaxanthin	Carotenoids	0	0	3.4	0.07	1.24	0.1	0	0	0	0	3.2	0.8	0	0	2.0	0.2	0	0	0	0
