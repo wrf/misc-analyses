@@ -1,0 +1,239 @@
+country	country_code	Country_number	area	2020 qscore	Population__thousands	Total footprint__gha/person	Total Biocapacity__gha/person	Biocapacity Reserve__gha/person	Total Biocapacity Deficit__gha	GDP__billions current USD	GDP__current USD per capita	GDP above mean__current USD percapita
+Afghanistan	AFG	2	Eastern Europe and Central Asia	3A	35530.1	0.66	0.37	-0.29	-10310552	21.00	592.62	-9788.28
+Albania	ALB	3	Western Europe	3A	2930.19	2.05	0.99	-1.06	-3093201	13.00	4436.91	-5943.99
+Algeria	DZA	4	Middle East and North Africa	2A	41318.1	2.3	0.5	-1.8	-74414280	175.00	4247.36	-6133.54
+American Samoa	ASM	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Andorra	AND	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Angola	AGO	7	Sub-Saharan Africa	3A	29784.2	0.92	1.87	0.95	28148640	124.00	4164.42	-6216.48
+Anguilla	AIA	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Antigua and Barbuda	ATG	8	Latin America and Caribbean	2B	102.01	4.27	0.83	-3.43	-350367	2.00	15047.25	4666.35
+Argentina	ARG	9	Latin America and Caribbean	3A	44271	3.3	6.58	3.28	145030068	620.00	14001.76	3620.86
+Armenia	ARM	1	Eastern Europe and Central Asia	3A	2930.45	1.8	0.63	-1.16	-3409935	11.00	3766.32	-6614.59
+Aruba	ABW	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Australia	AUS	10	Oceania	3A	24450.6	7.27	12.64	5.37	131185577	1390.00	56855.46	46474.55
+Austria	AUT	11	Western Europe	3A	8735.45	6.02	2.73	-3.3	-28807696	409.00	46856.89	36475.98
+Azerbaijan	AZE	52	Eastern Europe and Central Asia	3A	9827.59	1.97	0.74	-1.24	-12169398	39.00	3989.48	-6391.42
+Bahamas	BHS	12	Latin America and Caribbean	3A	395.36	3.63	9.06	5.43	2147619	9.00	23085.23	12704.33
+Bahrain	BHR	13	Middle East and North Africa	3A	1492.58	8.66	0.48	-8.17	-12196169	34.00	22694.26	12313.36
+Bangladesh	BGD	16	South Asia	3A	164670	0.83	0.4	-0.43	-70649585	250.00	1518.33	-8862.58
+Barbados	BRB	14	Latin America and Caribbean	3A	285.72	3.73	0.17	-3.56	-1017432	5.00	16873.22	6492.32
+Belarus	BLR	57	Eastern Europe and Central Asia	3A	9468.34	4.2	3.09	-1.11	-10505299	53.00	5574.68	-4806.22
+Belgium	BEL	255	Western Europe	3A	11429.3	6.6	0.82	-5.79	-66140798	492.00	43018.56	32637.65
+Belize	BLZ	23	Latin America and Caribbean	1A	374.68	5.99	3.76	-2.23	-833930	2.00	4854.80	-5526.11
+Benin	BEN	53	Sub-Saharan Africa	3A	11175.7	1.41	0.89	-0.52	-5820704	9.00	842.01	-9538.90
+Bermuda	BMU	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bhutan	BTN	18	South Asia	3A	807.61	4.37	4.9	0.52	422077	2.00	2873.91	-7506.99
+Bolivia	BOL	19	Latin America and Caribbean	3A	11051.6	3.08	15.49	12.4	137064180	38.00	3418.15	-6962.76
+Bosnia and Herzegovina	BIH	80	Eastern Europe and Central Asia	3A	3507.02	3.49	1.77	-1.73	-6053812	17.00	4977.73	-5403.17
+Botswana	BWA	20	Sub-Saharan Africa	3A	2291.66	2.74	3.02	0.28	637809	17.00	7298.20	-3082.70
+Brazil	BRA	21	Latin America and Caribbean	3A	209288	2.81	8.61	5.8	1213562682	2081.00	9942.85	-438.05
+British Indian Ocean Territories	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+British Virgin Islands	VGB	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Brunei Darussalam	BRN	26	South-East Asia	3A	428.7	6	2.75	-3.25	-1391949	12.00	27905.49	17524.59
+Bulgaria	BGR	27	Eastern Europe and Central Asia	2A	7084.57	3.64	3.3	-0.33	-2345646	56.00	7898.01	-2482.89
+Burkina Faso	BFA	233	Sub-Saharan Africa	3A	19193.4	1.12	0.89	-0.23	-4401835	13.00	687.06	-9693.84
+Burundi	BDI	29	Sub-Saharan Africa	3A	10864.2	0.63	0.36	-0.27	-2937979	3.00	312.31	-10068.59
+Côte d'Ivoire	CIV	107	Sub-Saharan Africa	3A	24294.8	1.42	2	0.58	14123537	40.00	1642.57	-8738.33
+Cabo Verde	CPV	35	Sub-Saharan Africa	2B	546.39	1.72	0.58	-1.14	-622999	2.00	3162.59	-7218.32
+Cambodia	KHM	115	South-East Asia	2B	16005.4	1.33	1.07	-0.25	-4075612	22.00	1390.28	-8990.62
+Cameroon	CMR	32	Sub-Saharan Africa	3A	24053.7	1.26	1.6	0.33	8005022	31.00	1274.32	-9106.59
+Canada	CAN	33	North America	3A	36624.2	8.08	14.98	6.9	252838989	1640.00	44789.78	34408.88
+Cayman Islands	CYM	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Central African Republic	CAF	37	Sub-Saharan Africa	3A	4659.08	1.17	7.52	6.35	29572173	2.00	427.55	-9953.35
+Chad	TCD	39	Sub-Saharan Africa	3A	14900	1.67	1.78	0.1	1556987	10.00	653.69	-9727.21
+Channel Islands	NA	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Chile	CHL	40	Latin America and Caribbean	3A	18054.7	4.28	3.41	-0.87	-15689571	263.00	14578.25	4197.35
+China	CHN	351	East Asia	3A	1441130	3.71	0.92	-2.79	-4021441296	11938.00	8283.50	-2097.40
+China Hong Kong SAR	HKG	NA	East Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+China Macao SAR	NA	NA	East Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+China mainland	NA	NA	East Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Christmas Island	CXR	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cocos__Keeling Islands	CCK	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Colombia	COL	44	Latin America and Caribbean	3A	49065.6	1.91	3.6	1.69	82877360	307.00	6266.61	-4114.29
+Comoros	COM	45	Sub-Saharan Africa	2B	813.91	1.14	0.33	-0.81	-661276	1.00	809.67	-9571.23
+Congo	COG	46	Sub-Saharan Africa	3A	5260.75	1.07	8.94	7.87	41408620	8.00	1482.49	-8898.42
+Congo Democratic Republic of	COD	250	Sub-Saharan Africa	3A	81340	0.75	2.52	1.77	143768097	40.00	496.87	-9884.04
+Cook Islands	COK	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Costa Rica	CRI	48	Latin America and Caribbean	3A	4905.77	2.57	1.51	-1.06	-5200857	59.00	12008.10	1627.20
+Croatia	HRV	98	Western Europe	3A	4189.35	3.72	2.99	-0.73	-3061872	53.00	12765.94	2385.04
+Cuba	CUB	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Curaçao	CUW	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cyprus	CYP	50	Middle East and North Africa	2B	1179.55	3.88	0.24	-3.64	-4295318	21.00	17895.81	7514.90
+Czech Republic	CZE	167	Eastern Europe and Central Asia	3A	10618.3	5.47	2.36	-3.11	-33036991	210.00	19744.40	9363.50
+Denmark	DNK	54	Western Europe	3A	5733.55	6.93	4.22	-2.71	-15514391	324.00	56534.96	46154.05
+Djibouti	DJI	72	Sub-Saharan Africa	2A	956.99	2.25	0.72	-1.54	-1468982	2.00	2175.58	-8205.32
+Dominica	DMA	55	Latin America and Caribbean	2B	73.93	2.29	1.02	-1.27	-93847	1.00	8224.55	-2156.35
+Dominican Republic	DOM	56	Latin America and Caribbean	3A	10767	1.75	0.6	-1.16	-12457335	75.00	6953.93	-3426.97
+Ecuador	ECU	58	Latin America and Caribbean	2B	16624.9	1.71	1.95	0.23	3883749	99.00	5929.42	-4451.48
+Egypt	EGY	59	Middle East and North Africa	2B	97553.1	1.78	0.4	-1.38	-134296678	332.00	3406.85	-6974.05
+El Salvador	SLV	60	Latin America and Caribbean	3A	6377.85	1.99	0.57	-1.42	-9052168	27.00	4297.22	-6083.69
+Equatorial Guinea	GNQ	61	Sub-Saharan Africa	2A	1267.69	1.8	2.52	0.71	903946	10.00	7942.79	-2438.11
+Eritrea	ERI	178	Sub-Saharan Africa	3A	5068.83	0.51	1.58	1.07	5438753	6.00	1193.57	-9187.33
+Estonia	EST	63	Eastern Europe and Central Asia	3A	1309.63	7.16	9.74	2.58	3376440	26.00	19610.88	9229.98
+Ethiopia	ETH	238	Sub-Saharan Africa	3A	104957	1.01	0.57	-0.44	-46063333	80.00	759.69	-9621.21
+Faroe Islands	FRO	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Fiji	FJI	66	Oceania	3A	905.5	2.81	2.16	-0.65	-584854	5.00	5581.43	-4799.47
+Finland	FIN	67	Western Europe	2A	5523.23	5.84	12.45	6.61	36535602	251.00	45531.51	35150.61
+France	FRA	68	Western Europe	3A	65018.2	4.6	2.53	-2.07	-134887052	2575.00	39601.37	29220.47
+French Guiana	GUF	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+French Polynesia	PYF	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Gabon	GAB	74	Sub-Saharan Africa	2A	2025.14	2.17	21.45	19.28	39038104	14.00	7143.70	-3237.20
+Gambia	GMB	75	Sub-Saharan Africa	3A	2100.57	0.93	0.69	-0.25	-518643	1.00	494.15	-9886.75
+Georgia	GEO	73	Eastern Europe and Central Asia	2A	3912.06	2.18	1.27	-0.91	-3567239	15.00	3893.09	-6487.81
+Germany	DEU	79	Western Europe	3A	82114.2	4.7	1.54	-3.16	-259353726	3652.00	44473.06	34092.16
+Ghana	GHA	81	Sub-Saharan Africa	3A	28833.6	2.04	1.35	-0.7	-20048817	45.00	1576.77	-8804.13
+Gibraltar	GIB	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Greece	GRC	84	Western Europe	3A	11159.8	4.12	1.39	-2.73	-30451558	204.00	18306.69	7925.79
+Greenland	GRL	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Grenada	GRD	86	Latin America and Caribbean	2B	107.83	2.76	1.98	-0.77	-83490	1.00	10303.73	-77.17
+Guadeloupe	GLP	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Guam	GUM	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Guatemala	GTM	89	Latin America and Caribbean	2A	16913.5	1.78	0.96	-0.82	-13864959	71.00	4186.36	-6194.54
+Guinea	GIN	90	Sub-Saharan Africa	3A	12717.2	1.68	1.99	0.31	3893294	9.00	722.09	-9658.81
+Guinea-Bissau	GNB	175	Sub-Saharan Africa	3A	1861.28	1.45	2.77	1.31	2441302	1.00	695.76	-9685.15
+Guyana	GUY	91	Latin America and Caribbean	3A	777.86	3.07	67.05	63.98	49770261	4.00	4616.52	-5764.39
+Haiti	HTI	93	Latin America and Caribbean	3A	10981.2	0.64	0.29	-0.35	-3867514	8.00	761.30	-9619.60
+Honduras	HND	95	Latin America and Caribbean	2B	9265.07	1.54	1.53	-0.01	-61957	23.00	2447.36	-7933.54
+Hungary	HUN	97	Eastern Europe and Central Asia	2A	9721.56	3.67	2.51	-1.16	-11312330	132.00	13581.57	3200.66
+Iceland	ISL	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	IND	100	South Asia	3A	1339180	1.19	0.43	-0.76	-1022600179	2439.00	1821.27	-8559.63
+Indonesia	IDN	101	South-East Asia	3A	263991	1.66	1.22	-0.44	-116841541	1011.00	3829.45	-6551.45
+Iran Islamic Republic of	IRN	102	Middle East and North Africa	2A	81162.8	3.22	0.74	-2.48	-201265745	428.00	5269.24	-5111.67
+Iraq	IRQ	103	Middle East and North Africa	2A	38274.6	1.8	0.19	-1.62	-61936327	193.00	5033.63	-5347.28
+Ireland	IRL	104	Western Europe	2A	4761.66	5.01	3.34	-1.68	-7983602	326.00	68389.81	58008.90
+Isle of Man	IMN	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	ISR	105	Middle East and North Africa	3A	8321.57	5.55	0.22	-5.33	-44345292	348.00	41819.75	31438.85
+Italy	ITA	106	Western Europe	3A	59394.1	4.41	0.88	-3.54	-209991401	1921.00	32345.64	21964.73
+Jamaica	JAM	109	Latin America and Caribbean	3A	2890.3	1.81	0.39	-1.42	-4093359	14.00	4944.12	-5436.78
+Japan	JPN	110	East Asia	3A	127484	4.65	0.59	-4.06	-517417363	4884.00	38314.53	27933.63
+Jordan	JOR	112	Middle East and North Africa	3A	9702.35	1.93	0.16	-1.77	-17126834	40.00	4172.91	-6208.00
+Kazakhstan	KAZ	108	Eastern Europe and Central Asia	3A	18204.5	5.99	3.55	-2.43	-44300700	156.00	8579.69	-1801.21
+Kenya	KEN	114	Sub-Saharan Africa	3A	49699.9	0.99	0.47	-0.53	-26191983	78.00	1577.41	-8803.50
+Kiribati	KIR	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Korea Democratic People's Republic of	PRK	NA	East Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Korea Republic of	KOR	117	East Asia	3A	50982.2	6.18	0.65	-5.53	-281774669	1530.00	30005.37	19624.47
+Kuwait	KWT	118	Middle East and North Africa	3A	4136.53	8.03	0.48	-7.55	-31232273	118.00	28591.84	18210.94
+Kyrgyzstan	KGZ	113	Eastern Europe and Central Asia	2A	6045.12	1.55	1.18	-0.37	-2245670	7.00	1168.05	-9212.85
+Lao People's Democratic Republic	LAO	120	South-East Asia	3A	6858.16	2	1.76	-0.23	-1604090	17.00	2500.96	-7879.94
+Latvia	LVA	119	Eastern Europe and Central Asia	3A	1949.67	6.13	8.51	2.38	4643768	30.00	15477.49	5096.59
+Lebanon	LBN	121	Middle East and North Africa	3A	6082.36	3.33	0.26	-3.07	-18694040	53.00	8664.07	-1716.83
+Lesotho	LSO	122	Sub-Saharan Africa	3A	2233.34	1.47	0.77	-0.69	-1550334	3.00	1218.35	-9162.55
+Liberia	LBR	123	Sub-Saharan Africa	2A	4731.91	1.11	2.24	1.14	5374613	2.00	452.25	-9928.65
+Libyan Arab Jamahiriya	LBY	124	Middle East and North Africa	3A	6374.62	3.46	0.65	-2.81	-17941232	33.00	5226.04	-5154.87
+Liechtenstein	LIE	NA	Western Europe	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Lithuania	LTU	126	Eastern Europe and Central Asia	3A	2890.3	5.86	5.14	-0.72	-2081492	47.00	16145.73	5764.83
+Luxembourg	LUX	256	Western Europe	3A	583.46	12.79	1.21	-11.58	-6755068	64.00	108863.58	98482.68
+Macedonia TFYR	MKD	154	Eastern Europe and Central Asia	3A	2083.16	3.06	1.45	-1.61	-3353429	11.00	5480.14	-4900.77
+Madagascar	MDG	129	Sub-Saharan Africa	3A	25570.9	0.92	2.28	1.36	34743856	11.00	412.85	-9968.05
+Malawi	MWI	130	Sub-Saharan Africa	3A	18622.1	0.9	0.69	-0.21	-3860632	6.00	336.21	-10044.69
+Malaysia	MYS	131	South-East Asia	3A	31624.3	3.91	2.29	-1.62	-51135076	310.00	9798.10	-582.81
+Maldives	MDV	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mali	MLI	133	Sub-Saharan Africa	3A	18542	1.44	1.45	0.02	305512	15.00	808.87	-9572.04
+Malta	MLT	134	Western Europe	2B	430.84	5.68	0.58	-5.11	-2200443	12.00	27878.42	17497.52
+Marshall Islands	MHL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Martinique	MTQ	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mauritania	MRT	136	Middle East and North Africa	2A	4420.18	2.31	3.91	1.6	7062766	5.00	1127.78	-9253.12
+Mauritius	MUS	137	Sub-Saharan Africa	2B	1265.14	3.06	0.7	-2.37	-2996127	12.00	9700.90	-680.00
+Mayotte	MYT	NA	Sub-Saharan Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mexico	MEX	138	Latin America and Caribbean	3A	129163	2.62	1.14	-1.49	-192123597	1142.00	8845.03	-1535.88
+Micronesia Federated States of	FSM	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Moldova	MDA	146	Eastern Europe and Central Asia	3A	4051.21	1.87	1.25	-0.62	-2493246	8.00	1961.14	-8419.76
+Mongolia	MNG	141	East Asia	3A	3075.65	8.05	13.76	5.71	17558543	11.00	3533.89	-6847.02
+Montenegro	MNE	273	Eastern Europe and Central Asia	3A	628.96	4.09	3.01	-1.07	-674048	4.00	7003.63	-3377.28
+Montserrat	MSR	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Morocco	MAR	143	Middle East and North Africa	2A	35739.6	1.77	0.73	-1.03	-36934068	111.00	3097.63	-7283.28
+Mozambique	MOZ	144	Sub-Saharan Africa	3A	29668.8	0.8	1.73	0.92	27433613	12.00	416.09	-9964.81
+Myanmar	MMR	28	South Asia	3A	53370.6	1.71	1.83	0.12	6628310	67.00	1254.74	-9126.17
+Namibia	NAM	147	Sub-Saharan Africa	2A	2533.79	2.1	6.19	4.09	10368634	13.00	4956.21	-5424.69
+Nauru	NRU	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Nepal	NPL	149	South Asia	3A	29305	1.09	0.56	-0.53	-15504083	24.00	821.19	-9559.71
+Netherlands	NLD	150	Western Europe	3A	17035.9	5.02	0.81	-4.21	-71717934	824.00	48396.62	38015.72
+Netherlands Antilles	NA	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+New Caledonia	NCL	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+New Zealand	NZL	156	Oceania	2B	4705.82	4.32	9.16	4.83	22739516	201.00	42678.43	32297.52
+Nicaragua	NIC	157	Latin America and Caribbean	3A	6217.58	1.74	2.2	0.46	2874516	14.00	2202.14	-8178.76
+Niger	NER	158	Sub-Saharan Africa	3A	21477.3	1.56	1.28	-0.28	-6035964	8.00	367.46	-10013.45
+Nigeria	NGA	159	Sub-Saharan Africa	3A	190886	1.02	0.63	-0.4	-75751072	395.00	2068.34	-8312.56
+Niue	NIU	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Norfolk Island	NFK	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Northern Mariana Islands	MNP	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Norway	NOR	162	Western Europe	3A	5305.38	5.78	7.15	1.38	7309261	392.00	73897.06	63516.16
+Oman	OMN	221	Middle East and North Africa	3A	4636.26	7.29	1.46	-5.83	-27026548	72.00	15514.88	5133.97
+Pacific Islands Trust	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Pakistan	PAK	165	South Asia	3A	197016	0.86	0.35	-0.52	-101876868	279.00	1415.69	-8965.22
+Palau	PLW	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Panama	PAN	166	Latin America and Caribbean	3A	4098.59	2.27	2.71	0.44	1814394	59.00	14407.64	4026.73
+Papua New Guinea	PNG	168	Oceania	2A	8251.16	1.82	3.48	1.65	13644483	22.00	2643.39	-7737.52
+Paraguay	PRY	169	Latin America and Caribbean	3A	6811.3	3.09	9.83	6.74	45904736	29.00	4225.33	-6155.57
+Peru	PER	170	Latin America and Caribbean	3A	32165.5	2.15	3.62	1.48	47522544	210.00	6529.14	-3851.77
+Philippines	PHL	171	South-East Asia	3A	104918	1.34	0.54	-0.8	-83660895	321.00	3061.33	-7319.57
+Pitcairn	PCN	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	POL	173	Eastern Europe and Central Asia	3A	38170.7	4.71	1.97	-2.74	-104553515	510.00	13359.85	2978.95
+Portugal	PRT	174	Western Europe	3A	10329.5	4.4	1.28	-3.12	-32210700	212.00	20494.31	10113.41
+Qatar	QAT	179	Middle East and North Africa	3A	2639.21	14.72	0.97	-13.75	-36298378	166.00	63028.71	52647.81
+Réunion	REU	NA	Sub-Saharan Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Romania	ROU	183	Eastern Europe and Central Asia	3A	19679.3	3.4	3.09	-0.31	-6189840	205.00	10414.14	33.24
+Russian Federation	RUS	185	Eastern Europe and Central Asia	3A	143990	5.48	6.96	1.48	213784058	1469.00	10204.46	-176.44
+Rwanda	RWA	184	Sub-Saharan Africa	3A	12208.4	0.67	0.36	-0.31	-3783466	9.00	730.48	-9650.42
+Saint Helena	SHN	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Saint Kitts and Nevis	KNA	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Saint Lucia	LCA	189	Latin America and Caribbean	3A	178.84	2.5	0.33	-2.17	-388617	2.00	9600.55	-780.36
+Samoa	WSM	244	Oceania	2B	196.44	2.52	1.82	-0.7	-137698	1.00	4296.48	-6084.43
+Sao Tome and Principe	STP	193	Sub-Saharan Africa	2B	204.33	1.62	0.83	-0.79	-162222	0.00	1820.61	-8560.29
+Saudi Arabia	SAU	194	Middle East and North Africa	3A	32938.2	5.77	0.42	-5.35	-176318925	679.00	20600.43	10219.52
+Senegal	SEN	195	Sub-Saharan Africa	2A	15850.6	1.16	0.94	-0.22	-3484527	16.00	1013.02	-9367.88
+Serbia	SRB	272	Eastern Europe and Central Asia	3A	8790.57	2.75	1.34	-1.41	-12431389	39.00	4478.21	-5902.70
+Serbia and Montenegro	NA	NA	Eastern Europe and Central Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Seychelles	SYC	NA	Sub-Saharan Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sierra Leone	SLE	197	Sub-Saharan Africa	3A	7557.21	1	0.87	-0.13	-960624	4.00	515.67	-9865.24
+Singapore	SGP	200	South-East Asia	3A	5708.84	5.87	0.06	-5.81	-33179986	306.00	53558.52	43177.61
+Sint Maarten__Dutch Part	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovakia	SVK	199	Eastern Europe and Central Asia	3A	5447.66	4.41	2.69	-1.72	-9384735	95.00	17438.13	7057.23
+Slovenia	SVN	198	Eastern Europe and Central Asia	3A	2079.98	4.9	2.18	-2.72	-5657054	48.00	23114.65	12733.74
+Solomon Islands	SLB	25	Oceania	1B	611.34	1.88	4	2.12	1297566	1.00	2082.30	-8298.60
+Somalia	SOM	201	Sub-Saharan Africa	3A	14742.5	0.95	0.83	-0.11	-1678116	7.00	442.39	-9938.51
+South Africa	ZAF	202	Sub-Saharan Africa	3A	56717.2	3.16	1.03	-2.13	-120601045	344.00	6066.31	-4314.60
+South Sudan	SSD	277	Sub-Saharan Africa	1D	12575.7	1.37	1.5	0.13	NA	3.00	231.80	  -10148.2
+Spain	ESP	203	Western Europe	3A	46354.3	4.03	1.2	-2.82	-130888069	1307.00	28199.54	17818.64
+Sri Lanka	LKA	38	South Asia	3A	20876.9	1.49	0.42	-1.07	-22404173	84.00	4002.85	-6378.06
+State of Palestine	PSE	NA	Middle East and North Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sudan	SDN	276	Sub-Saharan Africa	3A	40533.3	1.33	1.21	-0.12	-4998847	119.00	2935.34	-7445.56
+Sudan__former	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Suriname	SUR	207	Latin America and Caribbean	3A	563.4	2.76	83.63	80.88	45565198	4.00	6505.12	-3875.78
+Swaziland	SWZ	209	Sub-Saharan Africa	2A	1367.25	1.88	0.82	-1.06	-1448889	4.00	2947.52	-7433.38
+Sweden	SWE	210	Western Europe	3A	9910.7	6.08	9.43	3.36	33272620	542.00	54677.17	44296.26
+Switzerland	CHE	211	Western Europe	3A	8476	4.47	1.02	-3.46	-29303291	681.00	80302.62	69921.72
+Syrian Arab Republic	SYR	NA	Middle East and North Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Taiwan	TWN	NA	East Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Tajikistan	TJK	208	Eastern Europe and Central Asia	2A	8921.34	0.97	0.51	-0.45	-4024905	7.00	810.86	-9570.04
+Tanzania United Republic of	TZA	215	Sub-Saharan Africa	3A	57310	1.17	0.98	-0.18	-10571953	52.00	900.61	-9480.29
+Thailand	THA	216	South-East Asia	3A	69037.5	2.58	1.22	-1.36	-93680545	438.00	6341.58	-4039.32
+Timor-Leste	TLS	176	Oceania	2A	1296.31	0.74	1.49	0.75	976885	3.00	2095.18	-8285.73
+Togo	TGO	217	Sub-Saharan Africa	3A	7797.69	1.09	0.51	-0.57	-4476513	5.00	615.18	-9765.72
+Tokelau	TKL	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Tonga	TON	219	Oceania	2B	108.02	3.24	1.6	-1.64	-177029	0.00	4045.55	-6335.36
+Trinidad and Tobago	TTO	220	Latin America and Caribbean	2A	1369.12	8.23	1.54	-6.68	-9150034	20.00	14827.04	4446.14
+Tunisia	TUN	222	Middle East and North Africa	3A	11532.1	2.15	0.68	-1.48	-17033111	40.00	3458.43	-6922.47
+Turkey	TUR	223	Middle East and North Africa	3A	80745	3.51	1.4	-2.11	-170191362	841.00	10418.06	37.15
+Turkmenistan	TKM	213	Eastern Europe and Central Asia	3A	5758.08	5.22	2.36	-2.87	-16497432	42.00	7236.79	-3144.12
+Turks and Caicos Islands	TCA	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Tuvalu	TUV	NA	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA
+Uganda	UGA	226	Sub-Saharan Africa	3A	42863	1.04	0.46	-0.58	-25018821	26.00	615.71	-9765.20
+Ukraine	UKR	230	Eastern Europe and Central Asia	2A	44222.9	2.66	2.58	-0.08	-3528028	104.00	2353.12	-8027.78
+United Arab Emirates	UAE	225	Middle East and North Africa	3A	9400.14	8.95	0.53	-8.41	-79069041	379.00	40281.95	29901.05
+United Kingdom	GBR	229	Western Europe	3A	66181.6	4.2	1.08	-3.12	-206226305	2565.00	38757.75	28376.85
+United States of America	USA	231	North America	3A	324459	8.04	3.45	-4.59	-1488771638	19362.00	59675.03	49294.12
+Uruguay	URY	234	Latin America and Caribbean	1C	3456.75	1.15	9.39	NA	NA	60.00	17434.30	  
+US Virgin Islands	VIR	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
+USSR	NA	NA	Eastern Europe and Central Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Uzbekistan	UZB	235	Eastern Europe and Central Asia	3A	31910.6	2	0.94	-1.05	-33583797	68.00	2115.44	-8265.46
+Vanuatu	VUT	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Venezuela Bolivarian Republic of	VEN	236	Latin America and Caribbean	3A	31977.1	2.28	2.5	0.22	7104837	215.00	6733.16	-3647.74
+Viet Nam	VNM	237	South-East Asia	3A	95540.8	2.24	1	-1.24	-118663359	216.00	2260.43	-8120.48
+Wake Island	NA	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Wallis and Futuna Islands	NA	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Western Sahara	ESH	NA	Middle East and North Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Yemen	YEM	249	Middle East and North Africa	3A	28250.4	0.61	0.37	-0.24	-6676735	26.00	908.77	-9472.14
+Yugoslav SFR	NA	NA	Eastern Europe and Central Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Zambia	ZMB	251	Sub-Saharan Africa	3A	17094.1	0.97	1.85	0.88	15080657	26.00	1496.19	-8884.71
+Zimbabwe	ZWE	181	Sub-Saharan Africa	3A	16529.9	1.03	0.48	-0.55	-9041610	17.00	1034.79	-9346.11
