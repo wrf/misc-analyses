@@ -15,4 +15,12 @@ Knowledge of the inefficient land usage was one of the arguments for vegetariani
 
 Land usage has also changed by [removal of forest](https://www.globalforestwatch.org/map/). As much of the mass on the planet is in the [form of plants](http://www.pnas.org/lookup/doi/10.1073/pnas.1711842115), and the residence time of carbon in land plants is much longer than in the ocean, reforestation appears to be a necessary strategy for mitigating climate change.
 
+# fertilizer usage #
+Data compiled by [Smil 1991](http://www.jstor.org/stable/1973598) Population Growth and Nitrogen: An Exploration of a Critical Existential Link
 
+![plot of global fertilizer production](https://github.com/wrf/misc-analyses/blob/master/land_usage/image/global_fertilizer_production_smil_1991.png)
+
+# resource deficits #
+Data from [Wackernagel 2021](https://doi.org/10.1038/s41893-021-00708-4) The importance of resource security for poverty eradication.
+
+![plot of resource richness vs GDP](https://github.com/wrf/misc-analyses/blob/master/land_usage/image/wackernagel2021_resource_poverty_main_fig2log.png)

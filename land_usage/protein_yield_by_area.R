@@ -1,14 +1,41 @@
+
+library(ggplot2)
+
+# plotting global fertilizer production
+#
+# data from
+# Smil V (1991) Population Growth and Nitrogen: An Exploration of a Critical Existential Link
+# http://www.jstor.org/stable/1973598
+# Table 2: Production of nitrogen fertilizers (million tons of nitrogen content): Selected series, 1920-88
+
+
+
+fertilizer_data_file = "~/git/misc-analyses/land_usage/data/smil_1991_table2_nitrogen_fertilizer.txt"
+fertilizer_data = read.table(fertilizer_data_file, header=TRUE, sep="\t")
+fertilizer_data$world_total_Mtons_N
+
+gp = ggplot(data=fertilizer_data, aes(x = year, y = world_total_Mtons_N) ) +
+  theme(axis.text=element_text(size=16),
+        axis.title = element_text(size=18),
+        plot.title = element_text(size=25)) +
+  scale_x_continuous() +
+  labs(x=NULL, y="Million tons Nitrogen",
+       title="Global fertilizer production",
+       subtitle="Data from Smil (1991) Population and Development Review") +
+  geom_line(linewidth = 3, color="black" ) + 
+  geom_line(aes(x = year, y = USA_Mtons_N), linewidth = 3, color="#123489" ) + 
+  geom_line(aes(x = year, y = China_Mtons_N), linewidth = 3, color="#cc1212" ) + 
+  annotate( geom="text", x=1975, y=80, label="Global total", color="black", size=6) +
+  annotate( geom="text", x=1985, y=4, label="USA", color="#123489", size=6) +
+  annotate( geom="text", x=1985, y=23, label="China", color="#cc1212", size=6)
+ggsave("~/git/misc-analyses/land_usage/image/global_fertilizer_production_smil_1991.pdf", gp, device="pdf", height=5, width=7, title="Global fertilizer production")
+
+
 # per hectare yields of different protein sources
 # plotting data on protein yield from
 # Shurtleff 1975 The Book of Tofu
 # apparently from
 # USDA and WHO 1971
-#
-# also using data from 
-# Poore 2018 Reducing food’s environmental impacts through producers and consumers. Science
-# doi.org/10.1126/science.aaq0216
-
-library(ggplot2)
 
 
 prot_sources = c("Soybean", "Rice", "Corn", "Other legumes",
@@ -34,8 +61,11 @@ gp = ggplot(data=ps_data, aes(x=reorder(prot_sources, yields_kg_per_hectare), y=
     annotate(geom="text", y=yields_kg_per_hectare+15, x=rev(seq(1,9,1)), label=round(yields_kg_per_hectare) )
 ggsave("~/git/misc-analyses/land_usage/image/per_hectare_protein_USDA_1971.pdf", gp, device="pdf", height=5, width=8)
 
-
-# data from Poore 2018 Science
+#
+# also using data from 
+# Poore 2018 Reducing food’s environmental impacts through producers and consumers. Science
+# doi.org/10.1126/science.aaq0216
+#
 food_items = c("Wheat & Rye (Bread)", "Maize (Meal)", "Barley (Beer)", "Oatmeal", 
                "Rice", "Potatoes", "Cassava", "Cane Sugar", "Beet Sugar", 
                "Other Pulses", "Peas", "Nuts", "Groundnuts", "Soymilk", "Tofu", 

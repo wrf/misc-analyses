@@ -1,0 +1,15 @@
+# TABLE 2 Production of nitrogen fertilizers (million tons of nitrogen content): Selected series, 1920-88
+year	world_total_Mtons_N	USA_Mtons_N	China_Mtons_N
+1920	1.5	0.23	0
+1930	2.2	0.38	0
+1940	2.6	0.42	0
+1945	1.8	0.58	0
+1950	3.6	1.00	0
+1955	6.3	1.75	0.08
+1960	10.0	2.74	0.40
+1965	18.8	4.64	1.73
+1970	31.7	7.46	2.44
+1975	42.4	8.60	5.25
+1980	59.7	11.41	12.32
+1985	74.3	9.46	13.22
+1988	85.2	12.69	17.40
