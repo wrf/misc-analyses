@@ -10,7 +10,23 @@ library(dplyr)
 resource_data_file = "~/git/misc-analyses/land_usage/data/wackernagel2021_resource_poverty_main_table.txt"
 resource_data = read.table(resource_data_file, header=TRUE, sep='\t', quote="", stringsAsFactors = FALSE )
 
-resource_data.f = filter(resource_data, !is.na(Country_number) )
+resource_data.f = filter(resource_data, !is.na(Country_number) ) %>%
+                  mutate(country = recode(country, 
+                         "United States of America"="USA",
+                         "United Kingdom"="UK",
+                         "Viet Nam"="Vietnam",
+                         "Venezuela Bolivarian Republic of"="Venezuela",
+                         "Tanzania United Republic of"="Tanzania",
+                         "Russian Federation"="Russia",
+                         "Macedonia TFYR"="North Macedonia",
+                         "Libyan Arab Jamahiriya"="Libya",
+                         "Lao People's Democratic Republic"="Laos",
+                         "Korea Republic of"="South Korea",
+                         "Iran Islamic Republic of"="Iran",
+                         "Côte d'Ivoire"="Ivory Coast",
+                         "Congo"="Republic of Congo",
+                         "Congo Democratic Republic of"="Democratic Republic of the Congo" )
+                         )
 
 unique(resource_data$area)
 
@@ -27,6 +43,7 @@ region_matches = match( resource_data.f$area, unique(resource_data.f$area) )
 region_matches
 
 resource_data.f$Total.Biocapacity__gha.person
+table(resource_data.f$X2020.qscore)
 
 global_mean_gdp = 10380
 
@@ -53,6 +70,38 @@ text(c(250,250,10500,10500), c(9,-12,9,-12),
      c("Reserves, low GDP", "Deficit, low GDP", "Reserves, high GDP", "Deficit, high GDP"), pos=4 )
 dev.off()
 
+
+
+#####
+
+worldpolygons = map_data("world")
+unique(worldpolygons$region)
+
+quadrant_encoded = ifelse(resource_data.f$Biocapacity.Reserve__gha.person >0, 1, -1 ) * 
+  ifelse(resource_data.f$GDP__current.USD.per.capita > global_mean_gdp, 2, 1 )
+
+worldpolygons_w_res = left_join(worldpolygons, rename(resource_data.f, region=country) %>%
+                                  mutate(quadrant_encoded=recode(quadrant_encoded,
+                                                                 "2"="HR", "1"="LR", "-1"="LD", "-2"="HD")
+                                         ), by="region")
+
+gg = ggplot(worldpolygons_w_res, aes(x = long, y = lat, group = group)) +
+  coord_map(xlim=c(-180,180), ylim=c(-54, 68) ) +
+  theme(plot.title = element_text(size=20),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position=c(0,0.5),
+        legend.justification = "left") +
+  scale_fill_manual(name="Type",
+                    values=c("#b86990ff","#3dbe3dff","#be3d3dff","#a0c8a0ff") , na.value="gray50" ) +
+  labs(x=NULL, y=NULL,
+       title="Importance of Resource Security for Poverty Eradication",
+       subtitle="Coded as high/low income (H/L) level with resource reserves/deficits (R/D)",
+       caption="Data from Wackernagel 2021 Nat Sust" ) +
+  geom_polygon( aes(fill=factor(quadrant_encoded)), colour = "#000000" )
+gg
+ggsave(gg, device="pdf", file="~/git/misc-analyses/land_usage/image/wackernagel2021_resource_poverty_world_map.pdf", 
+       width=8, height=5, title="Importance of Resource Security for Poverty Eradication")
 
 
 #####

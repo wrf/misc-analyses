@@ -11,7 +11,7 @@ Much of this was known decades ago. Below is a plot of protein yield per hectare
 
 Knowledge of the inefficient land usage was one of the arguments for vegetarianism by 19th century author Percy Shelley in his [Vindication_of_Natural_Diet](https://en.wikipedia.org/wiki/A_Vindication_of_Natural_Diet), on [page 20](https://www.gutenberg.org/files/38727/38727-h/38727-h.htm) arguing, 
 
-   "*The quantity of nutritious vegetable matter consumed in fattening the carcase of an ox, would afford ten times the sustenance, undepraving indeed, and incapable of generating disease, if gathered immediately from the bosom of the earth.*"
+> "*The quantity of nutritious vegetable matter consumed in fattening the carcase of an ox, would afford ten times the sustenance, undepraving indeed, and incapable of generating disease, if gathered immediately from the bosom of the earth.*"
 
 Land usage has also changed by [removal of forest](https://www.globalforestwatch.org/map/). As much of the mass on the planet is in the [form of plants](http://www.pnas.org/lookup/doi/10.1073/pnas.1711842115), and the residence time of carbon in land plants is much longer than in the ocean, reforestation appears to be a necessary strategy for mitigating climate change.
 
@@ -24,3 +24,9 @@ Data compiled by [Smil 1991](http://www.jstor.org/stable/1973598) Population Gro
 Data from [Wackernagel 2021](https://doi.org/10.1038/s41893-021-00708-4) The importance of resource security for poverty eradication.
 
 ![plot of resource richness vs GDP](https://github.com/wrf/misc-analyses/blob/master/land_usage/image/wackernagel2021_resource_poverty_main_fig2log.png)
+
+![plot of population by resource category](https://github.com/wrf/misc-analyses/blob/master/land_usage/image/wackernagel2021_resource_poverty_main_fig3.png)
+
+![map of resource richness and GDP](https://github.com/wrf/misc-analyses/blob/master/land_usage/image/wackernagel2021_resource_poverty_world_map.png)
+
+

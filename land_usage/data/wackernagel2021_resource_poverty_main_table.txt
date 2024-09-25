@@ -136,7 +136,7 @@ Mauritania	MRT	136	Middle East and North Africa	2A	4420.18	2.31	3.91	1.6	7062766
 Mauritius	MUS	137	Sub-Saharan Africa	2B	1265.14	3.06	0.7	-2.37	-2996127	12.00	9700.90	-680.00
 Mayotte	MYT	NA	Sub-Saharan Africa	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Mexico	MEX	138	Latin America and Caribbean	3A	129163	2.62	1.14	-1.49	-192123597	1142.00	8845.03	-1535.88
-Micronesia Federated States of	FSM	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Micronesia Federated States of	FSM	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Moldova	MDA	146	Eastern Europe and Central Asia	3A	4051.21	1.87	1.25	-0.62	-2493246	8.00	1961.14	-8419.76
 Mongolia	MNG	141	East Asia	3A	3075.65	8.05	13.76	5.71	17558543	11.00	3533.89	-6847.02
 Montenegro	MNE	273	Eastern Europe and Central Asia	3A	628.96	4.09	3.01	-1.07	-674048	4.00	7003.63	-3377.28
@@ -145,7 +145,7 @@ Morocco	MAR	143	Middle East and North Africa	2A	35739.6	1.77	0.73	-1.03	-3693406
 Mozambique	MOZ	144	Sub-Saharan Africa	3A	29668.8	0.8	1.73	0.92	27433613	12.00	416.09	-9964.81
 Myanmar	MMR	28	South Asia	3A	53370.6	1.71	1.83	0.12	6628310	67.00	1254.74	-9126.17
 Namibia	NAM	147	Sub-Saharan Africa	2A	2533.79	2.1	6.19	4.09	10368634	13.00	4956.21	-5424.69
-Nauru	NRU	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Nauru	NRU	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Nepal	NPL	149	South Asia	3A	29305	1.09	0.56	-0.53	-15504083	24.00	821.19	-9559.71
 Netherlands	NLD	150	Western Europe	3A	17035.9	5.02	0.81	-4.21	-71717934	824.00	48396.62	38015.72
 Netherlands Antilles	NA	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
@@ -217,13 +217,13 @@ Tunisia	TUN	222	Middle East and North Africa	3A	11532.1	2.15	0.68	-1.48	-1703311
 Turkey	TUR	223	Middle East and North Africa	3A	80745	3.51	1.4	-2.11	-170191362	841.00	10418.06	37.15
 Turkmenistan	TKM	213	Eastern Europe and Central Asia	3A	5758.08	5.22	2.36	-2.87	-16497432	42.00	7236.79	-3144.12
 Turks and Caicos Islands	TCA	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
-Tuvalu	TUV	NA	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA
+Tuvalu	TUV	NA	Oceania	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Uganda	UGA	226	Sub-Saharan Africa	3A	42863	1.04	0.46	-0.58	-25018821	26.00	615.71	-9765.20
 Ukraine	UKR	230	Eastern Europe and Central Asia	2A	44222.9	2.66	2.58	-0.08	-3528028	104.00	2353.12	-8027.78
 United Arab Emirates	UAE	225	Middle East and North Africa	3A	9400.14	8.95	0.53	-8.41	-79069041	379.00	40281.95	29901.05
 United Kingdom	GBR	229	Western Europe	3A	66181.6	4.2	1.08	-3.12	-206226305	2565.00	38757.75	28376.85
 United States of America	USA	231	North America	3A	324459	8.04	3.45	-4.59	-1488771638	19362.00	59675.03	49294.12
-Uruguay	URY	234	Latin America and Caribbean	1C	3456.75	1.15	9.39	NA	NA	60.00	17434.30	  
+Uruguay	URY	234	Latin America and Caribbean	1C	3456.75	1.15	9.39	8.24	28483620	60.00	17434.30	  
 US Virgin Islands	VIR	NA	Latin America and Caribbean	NA	NA	NA	NA	NA	NA	NA	NA	NA
 USSR	NA	NA	Eastern Europe and Central Asia	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Uzbekistan	UZB	235	Eastern Europe and Central Asia	3A	31910.6	2	0.94	-1.05	-33583797	68.00	2115.44	-8265.46
