@@ -1,12 +1,13 @@
 # generic shinyapp created by WRF 2023-01-22
-# last modified 2023-04-17
+# last modified 2024-08-22
 
 library(shiny)
 library(ggplot2)
 library(dplyr)
 
-APP_VERSION = "v1.1"
-# v1.1 add point alpha slider
+APP_VERSION = "v1.11"
+# v1.1  2023-04-17 add point alpha slider
+# v1.11 2024-08-22 add title to exported plot
 
 # begin app interface
 ui <- fluidPage(
@@ -93,7 +94,7 @@ server <- function(input, output) {
     filename = function() {"plot.pdf"},
     content = function(filename){
       gg = makeUserGGplot()
-      ggsave(filename, gg, device="pdf", width=8, height=6)
+      ggsave(filename, gg, device="pdf", width=8, height=6, title=paste(input$x_select, "vs",input$y_select))
     }
   )
 
