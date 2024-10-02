@@ -36,6 +36,11 @@ Generic interactive plotter using [Rshiny](https://shiny.rstudio.com/). The app 
 
 ![shinyplot_demo_screenshot.png](https://github.com/wrf/misc-analyses/blob/master/shinyplot/shinyplot_demo_screenshot.png)
 
+## [views on ranking happiness across the world](https://github.com/wrf/misc-analyses/tree/master/happiness_index) ##
+Comparison of different rankings of who are the happiest people. The rankings vary substantially.
+
+![Did you feel anger map](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/gallup_2022_global_emotion_survey.anger_map.png)
+
 ## [ratio of annual tourists to population](https://github.com/wrf/misc-analyses/tree/master/tourism) ##
 Some countries with a peak tourism season need to run at double capacity for 2-3 months, or are at half capacity for the rest of the year. Tourism arrivals data from [UN World Tourism Organization 2019 Tourism Highlights](https://www.e-unwto.org/doi/book/10.18111/9789284421152) containing counts for 2018, population data are from [World Population Clock](https://www.worldometers.info/world-population/population-by-country/).
 
