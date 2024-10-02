@@ -1,16 +1,18 @@
-fenchel_ref	Organism	size_cm	Km_pct_air_sat
-1	crustacean	13.9	26.7
-2	crustacean	5.9	25.2
-3	crustacean	4.6	18.6
-4	crustacean	5.8	15.2
-5	fish	20	12.7
-6	crustacean	4.1	10.5
-7	fish	2.1	10.3
-8	crustacean	2.5	8.2
-9	crustacean	1.86	5.5
-10	Tubifex	0.18	1.82
-11	ciliate	0.0061	1.4
-12	ciliate	0.007	0.98
-13	unknown	0.0013	0.21
-14	yeast__Acanthamoeba	0.00042	0.076
-15	Tubifex_mitochondria	0.00017	0.052
+# data from Fenchel and Finlay 1995 Ecology and Evolution in Anoxic Worlds
+# Figure 5.9 The half saturation Po for respiration of different organisms/organelles
+Organism	type_of	size_cm	Km_pct_air_sat	fenchel_ref	ref	notes
+Cancer pagurus	crustacean	13.9	26.7	1	Bradford1982	crab
+Carcinus maenas	crustacean	5.9	25.2	2	McMahon1988	or Homarus vulgaris
+Palaemon elegans	crustacean	4.6	18.6	3	Taylor1990	
+NA	crustacean	5.8	15.2	4	Bridges1980	Corystes cassivela Galathea strigosa Nephrops norvegicus Pagurus bernhardus
+Cyprinus carpio	fish	20	12.7	5	Ultsch1980	or Salmo gairdneri
+Crangon crangon	crustacean	4.1	10.5	6	Hagerman1989	or Palaemon adspersus
+Opsanus tau	fish	2.1	10.3	7	Ultsch1981	toadfish
+Saduria entomon	crustacean	2.5	8.2	8	Hagerman1988	
+NA	crustacean	1.86	5.5	9	Bridges1980	Corystes cassivela Galathea strigosa Nephrops norvegicus Pagurus bernhardus
+Tubifex	annelida	0.18	1.82	10	Degn1981	
+Tetrahymena	ciliate	0.0061	1.4	11	Lloyd1980	
+Euplotes	ciliate	0.007	0.98	12	Fenchel1989	
+Acanthamoeba	amoeba	0.0013	0.21	13	NA	
+yeast	yeast	0.00042	0.076	14	Degn1981	
+Tubifex mitochondria	mitochondria	0.00017	0.052	15	Degn1981	
