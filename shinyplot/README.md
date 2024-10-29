@@ -25,6 +25,11 @@ Map of all metagenomic samples on NCBI SRA globally. Users can select by metagen
 
 ![metagenomes leaflet screenshot](https://github.com/wrf/taxonomy_database/blob/027a5434ea2162068f929d6ba10d92f25b881fa7/images/metagenomes_leaflet_screenshot.jpg)
 
+# [Sea Level Riser](https://github.com/wrf/oceanography_scripts/tree/master/sealevel_rise) #
+Version 1.0 of an interactive [ShinyApp](https://rstudio.github.io/leaflet/index.html) map using [leaflet](https://leafletjs.com/) showing sea level rise around the world.
+
+![screenshot of Sea Level Riser v1](https://github.com/wrf/oceanography_scripts/blob/master/sealevel_rise/sea_level_riser_v1_screenshot_over_london.jpg)
+
 # [gene supermatrix orthogroup viewer](https://github.com/wrf/supermatrix) #
 Gene orthogroup viewer for supermatrix construction, in understanding occupancy thresholds of the matrix, or finding clusters with high or low occupancy.
 
