@@ -138,6 +138,30 @@ text(8.1,0.6,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillu
 dev.off()
 
 
+# add multidimensional scaling
+ordmds = metaMDS( t(otu_counts.n) , trace=FALSE )
+pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_mds_v1.pdf", height=5, width=5, title="Data from Ravel et al 2011 PNAS", useDingbats = FALSE)
+par(mar=c(4,4,3,1))
+plot(ordmds, type='n', main="Data from Ravel et al 2011 PNAS") # expects taxa as columns and sites/patients as rows
+points(ordmds, display = "sites", cex = 2, pch=16, col=category_color[category_color_index] )
+text(-2.1,-1.4,"CST-I-105", cex=1.1, col="#dd3589", pos=4) # Lactobacillus crispatus
+text(1,-1.8,"CST-II-25", cex=1.1, col="#e95a5a", pos=4) # Lactobacillus gasseri
+text(-2,1.5,"CST-III-135", cex=1.1, col="#ef88ab", pos=4) # Lactobacillus iners
+text(0.8,1.5,"CST-IV-108", cex=1.1, col="#2e1cad", pos=4) # mixed
+text(-1.7,-1.9,"CST-V-21", cex=1.1, col="#f8aacd", pos=4) # Lactobacillus jenseni
+text(-2.1,-1.6,"L. crispatus", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus crispatus
+text(1,-2.0,"L. gasseri", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus gasseri
+text(-2.0,1.3,"L. iners", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus iners
+text(0.8,1.3,"Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
+text(-1.7,-2.1,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
+dev.off()
+
+# species points and text labels, mostly useless
+#points(ordmds, display = "species", cex = 1, pch=3, col="#00000033", lwd=2 )
+#text(ordmds, display = "species")
+
+
+
 ################################################################################
 ################################################################################
 
@@ -231,6 +255,31 @@ text(2900,5.7,"sediment-1", cex=1.1, col="#dba337")
 text(2900,2.7,"snail stomach-5", cex=1.1, col="#749b11")
 dev.off()
 
+
+
+# species accumulation curve
+s = specaccum(t(otu_counts.n))
+plot(s, lwd=12, col="#12780188", ci.lty = 0, ci.type="polygon", ci.col="#12780144")
+
+
+
+
+m = metaMDS(t(otu_counts.n), trace = FALSE)
+# make pca graph
+pdf(file="~/git/misc-analyses/eco_diversity/images/aronson2016_mds_analysis_v1.pdf", height=5, width=5, title="Data from Aronson et al 2016", useDingbats = FALSE)
+par(mar=c(4,4,3,1))
+plot(m, type='n', main="Data from Aronson et al 2016 FEMS ME")
+points(m, display = "sites", cex = 3, pch=16, col=category_color[category_color_index] )
+text(2.8,1.6,"snail intestine-6", cex=1.1, col="#82c27c", pos=2)
+text(2.8,1.3,"snail stomach-5", cex=1.1, col="#749b11", pos=2)
+text(2.8,1.0,"digestive gland-4", cex=1.1, col="#cdde1d", pos=2)
+text(2.8,0.7,"fecal pellet-1", cex=1.1, col="#9b5411", pos=2)
+text(2.8,-1.5,"whale bone-1", cex=1.1, col="#b79687", pos=2)
+text(2.8,-1.8,"sediment-1", cex=1.1, col="#dba337", pos=2)
+dev.off()
+
+
+
 ################################################################################
 ################################################################################
 
@@ -276,7 +325,7 @@ dev.off()
 otu_counts_file = "~/git/misc-analyses/eco_diversity/data/41598_2017_16353_MOESM4_ESM.table3.tab"
 otu_counts = read.table(otu_counts_file, header = TRUE , sep = "\t" , comment.char = "" )
 otu_counts.n = otu_counts[1:430,3:118]
-names()
+
 
 sample_type = sapply( strsplit(names(otu_counts.n),"\\."), "[", 1 )
 sample_type_counts = table(sample_type)
@@ -299,6 +348,13 @@ plot(otu_n_species, otu_shannon_index,
 text(60,0.8,"blowflies-63", cex=1.1, col="#3ca22f", pos=4)
 text(60,0.4,"houseflies-53", cex=1.1, col="#9b6514", pos=4)
 dev.off()
+
+# MDS analysis
+m = metaMDS(t(otu_counts.n), trace = FALSE)
+plot(m, type='n')
+points(m, display = "sites", cex = 2, pch=16, col=category_color[category_color_index] )
+text(-3,-1,"blowflies-63", cex=1.1, col="#3ca22f", pos=4)
+text(1,2,"houseflies-53", cex=1.1, col="#9b6514", pos=4)
 
 
 
@@ -335,7 +391,12 @@ otu_counts_timeseries = read.table(otu_counts_file, header = TRUE, sep = "\t", s
 #otu_counts.n = data.frame(t(as.matrix(otu_counts[,8:ncol(otu_counts)] ) ) )
 subject_ids = unique(otu_counts_timeseries$Subject.ID)
 subject_ids
-names(otu_counts_timeseries.d)[1:50]
+#names(otu_counts_timeseries.d)[1:50]
+
+category_color_index = match(otu_counts_timeseries$Community.State.Typec , unique(otu_counts_timeseries$Community.State.Typec) )
+#                   prevotella   L iners      L gasseri    Gardnerella  L crispatus
+category_color = c( "#7353e0aa", "#ef88abaa", "#e95a5acc", "#2e1cadaa", "#dd3589aa" )
+
 
 #a Self-described ethnic group- White=1 , Black=0 , Hispanic=5 , others=4; 
 eth_colors = c("#401e11", "#f9eae4", "blue", "blue", "#f9b620ff", "#c03c18")
@@ -359,9 +420,13 @@ bar_colors[c(2,4,8,1,18,20,22,78,90,
                "#be7c05", "#be7c25", "#be7c45", # Ruminococcaceae.3 Ruminococcaceae.5 Ruminococcaceae.2
                "#eeeeee" ) # Ureaplasma
 
-pdf(file="~/git/misc-analyses/eco_diversity/images/gajer2012_timeseries_all.pdf", width=8, height=11, paper="a4", title = "Replot of Gajer 2012")
+# collect values in for loop
+beta_div_all = c()
+total_species_all = c()
+# make fig
+pdf(file="~/git/misc-analyses/eco_diversity/images/gajer2012_timeseries_all_w_mds.pdf", width=8, height=11, paper="a4", title = "Replot of Gajer 2012 timeseries", useDingbats = FALSE )
 par(mar=c(2.5,4,4,1), mfrow=c(4,2), xpd=TRUE)
-i = 5
+i = 10
 for (i in 1:length(subject_ids)){
   # filter to match subject ID
   otu_counts_timeseries.s = otu_counts_timeseries[which(otu_counts_timeseries$Subject.ID==i),]
@@ -374,22 +439,62 @@ for (i in 1:length(subject_ids)){
           ylab="Percent 16S OTUs", cex.lab=1.2,
           names=otu_counts_timeseries.s$Time.in.study, cex.names=0.8, las=2,
           col=bar_colors)
-  mtext(paste("Subject",i), side=3, at=0, line=1.5, adj=0, cex=1.5)
+  title(paste("Subject",i), line=1.5, adj=0, cex.main=2, font.main=1)
   mtext("Days", side=1, line=0.8, at=0, adj=1, cex=0.7)
   # plot ethnicity on left edge
   points(0.1,50, pch=21, cex=2, bg=eth_colors[(otu_counts_timeseries.s$Racea[1]+1)])
   # plot diversity index colorized on top of bars as triangles
   points(b, rep(c(103),length(b)), pch=24, bg=div_colors[round(otu_shannon_index*2)+1],  )
+  
+  #beta_div = ncol(otu_counts_timeseries.d)/mean(specnumber(otu_counts_timeseries.d)) - 1
+  beta_div = mean(vegdist(otu_counts_timeseries.d, binary=TRUE))
+  total_sp_count = sum(na.omit(colSums(otu_counts_timeseries.d)/colSums(otu_counts_timeseries.d)))
+  beta_div_all = c(beta_div_all,beta_div)
+  total_species_all = c(total_species_all,total_sp_count)
+
+  # run MDS for PCA type plot
+  m = metaMDS(otu_counts_timeseries.d, trace = FALSE)
+  # plot MDS object
+  plot(m, type='n' )
+  title(paste("Subject",i), line=1.5, adj=0, cex.main=2, font.main=1)
+  title(paste("beta =", round(beta_div,3)), line=1.5, adj=0.8, cex.main=1.5, font.main=1)
+  # draw line of timeseries in order
+  lines(m$points[,1],m$points[,2] )
+  # normal points, colored by community state
+  points(m, display = "sites", cex = 2, pch=16, col=category_color[category_color_index[which(otu_counts_timeseries$Subject.ID==i)]] )
+  # highlight first point in gray
+  points(m$points[1,1],m$points[1,2], cex=2, pch=21, lwd=4, col="#00000088")
 }
 dev.off()
 
 
-
+# run above FOR loop first to fill up vectors
+# generate fig showing little connection between total species per patient and beta diversity
+pdf(file="~/git/misc-analyses/eco_diversity/images/gajer2012_beta_diversity.pdf", height=5, width=5, title="Beta diversity from Gajer 2012", useDingbats = FALSE )
+par(mar=c(4.5,4.5,3,1))
+plot( total_species_all, beta_div_all , xlim=c(0,180), 
+      main="Data from Gajer 2012 Sci Transl Med",
+      xlab="Total species (per subject)", ylab="Beta diversity (per subject)",
+      bg=eth_colors[(otu_counts_timeseries$Racea[which(otu_counts_timeseries$Time.in.study==1)]+1)][match(1:32,subject_ids)],
+      pch=21, cex=2, cex.lab=1.3, cex.axis=1.3 )
+text( total_species_all, beta_div_all, c(1:32), pos=c(4,rep(2,3),4,rep(2,4),4,rep(2,5),4,rep(2,14),4,4) )
+dev.off()
 
 # diversity index when in raw counts, not percentage
 #otu_counts.t = otu_counts_timeseries.d[1,] * otu_counts_timeseries.s$Total.Read.Countsd[1] / 100
 #diversity(otu_counts.t, index="shannon")
 #otu_shannon_index
+
+
+otu_counts_timeseries.d.f = otu_counts_timeseries.d[,which(colSums(otu_counts_timeseries.d)>0)]
+dim(otu_counts_timeseries.d.f)
+m = metaMDS(otu_counts_timeseries.d.f, trace = FALSE)
+plot(m, type='n' )
+points(m, display = "sites", cex = 2, pch=16, col=category_color[category_color_index[which(otu_counts_timeseries$Subject.ID==i)]] )
+lines(m$points[,1],m$points[,2] )
+text(m, display = "species")
+
+
 
 ################################################################################
 ################################################################################

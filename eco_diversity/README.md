@@ -36,5 +36,12 @@ Point size was proporitional to the number of reads per sample. This is replotte
 
 ![ireland_sponge_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_sponge_reads_vs_diversity_index_v1.png) ![busch2022_sample_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/busch2022_sample_diversity_index_v1.png) ![albert2015_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/albert2015_reads_vs_diversity_index_v1.png)
 
+### PCA may not add much to the analysis ###
+Most points or categories are already separable by number of species or alpha diversity in the above graphs. PCA (with `metaMDS()`) achieves much of the same separation, but the output is less intuitive to students.
+
+![ravel2011_mds_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_mds_v1.png) ![aronson2016_mds_analysis_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_mds_analysis_v1.png)
+
+
+
 
 
