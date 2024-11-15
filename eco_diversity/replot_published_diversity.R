@@ -287,7 +287,7 @@ dev.off()
 # https://animalmicrobiome.biomedcentral.com/articles/10.1186/s42523-019-0008-0
 # https://datadryad.org/stash/dataset/doi:10.5061/dryad.45ct519
 
-otu_counts_file = "~/git/misc-analyses/eco_diversity/data/Koala_OTU_table_rarefied_10000.csv"
+otu_counts_file = "~/git/misc-analyses/eco_diversity/data/Koala_OTU_table_rarefied_10000.csv.gz"
 otu_counts = read.csv(otu_counts_file, header = TRUE )
 otu_counts.n = data.frame( t( otu_counts[,4:2480] ) )
 
@@ -322,7 +322,7 @@ dev.off()
 # https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-017-16353-x/MediaObjects/41598_2017_16353_MOESM4_ESM.xlsx
 
 
-otu_counts_file = "~/git/misc-analyses/eco_diversity/data/41598_2017_16353_MOESM4_ESM.table3.tab"
+otu_counts_file = "~/git/misc-analyses/eco_diversity/data/junqueira2018_41598_2017_16353_MOESM4_ESM.table3.tab.gz"
 otu_counts = read.table(otu_counts_file, header = TRUE , sep = "\t" , comment.char = "" )
 otu_counts.n = otu_counts[1:430,3:118]
 
@@ -447,7 +447,7 @@ for (i in 1:length(subject_ids)){
   points(b, rep(c(103),length(b)), pch=24, bg=div_colors[round(otu_shannon_index*2)+1],  )
   
   #beta_div = ncol(otu_counts_timeseries.d)/mean(specnumber(otu_counts_timeseries.d)) - 1
-  beta_div = mean(vegdist(otu_counts_timeseries.d, binary=TRUE))
+  beta_div = mean( vegdist(otu_counts_timeseries.d) )
   total_sp_count = sum(na.omit(colSums(otu_counts_timeseries.d)/colSums(otu_counts_timeseries.d)))
   beta_div_all = c(beta_div_all,beta_div)
   total_species_all = c(total_species_all,total_sp_count)
@@ -467,6 +467,7 @@ for (i in 1:length(subject_ids)){
 }
 dev.off()
 
+#if(i%%8==0){}
 
 # run above FOR loop first to fill up vectors
 # generate fig showing little connection between total species per patient and beta diversity
@@ -477,8 +478,10 @@ plot( total_species_all, beta_div_all , xlim=c(0,180),
       xlab="Total species (per subject)", ylab="Beta diversity (per subject)",
       bg=eth_colors[(otu_counts_timeseries$Racea[which(otu_counts_timeseries$Time.in.study==1)]+1)][match(1:32,subject_ids)],
       pch=21, cex=2, cex.lab=1.3, cex.axis=1.3 )
-text( total_species_all, beta_div_all, c(1:32), pos=c(4,rep(2,3),4,rep(2,4),4,rep(2,5),4,rep(2,14),4,4) )
+text( total_species_all, beta_div_all, c(1:32), pos=ifelse(1:32 %in% c(5,7,11,12,13,14,15,17,19,21,22,26,31,30),4,2) )
 dev.off()
+
+
 
 # diversity index when in raw counts, not percentage
 #otu_counts.t = otu_counts_timeseries.d[1,] * otu_counts_timeseries.s$Total.Read.Countsd[1] / 100
