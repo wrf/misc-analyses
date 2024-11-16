@@ -7,6 +7,38 @@ library(vegan)
 
 ################################################################################
 ################################################################################
+# from
+# Hugerth et al 2019 No distinct microbiome signature of irritable bowel syndrome
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC7282555/
+
+otu_counts_file = "~/git/misc-analyses/eco_diversity/data/hugerth_2019_supptable.txt.gz"
+otu_counts = read.table(otu_counts_file, header = TRUE, sep = "\t", row.names = 1 )
+otu_counts.n = otu_counts[,1:561]
+
+sample_type = sapply( strsplit(names(otu_counts.n),"_"), "[", 4 )
+sample_type_counts = table(sample_type)
+category_color_index = match(sample_type, names(sample_type_counts) )
+category_color = c( "#9b5411aa", "#ebc84eaa" )
+
+otu_n_species = colSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
+sample_counts_by_all_sp = colSums(otu_counts.n)
+sp_counts_by_all_samples = rowSums(otu_counts.n)
+otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
+
+pdf(file="~/git/misc-analyses/eco_diversity/images/hugerth_2019_alpha_diversity_v1.pdf", height=5, width=5, title="Data from Hugerth et al 2019 Gut", useDingbats = FALSE)
+par(mar=c(4.5,4.5,2,1.2))
+plot(sample_counts_by_all_sp, otu_shannon_index, 
+     xlim=c(0,82000), main="Data from Hugerth et al 2019 Gut",
+     xlab="Clustered OTU counts (reads)", ylab="Shannon Index", cex.axis=1.3, cex.lab=1.3,
+     frame.plot = TRUE,
+     pch=16, cex=2, col=category_color[category_color_index])
+text(80000,2.1,"feces-185", cex=1.1, col="#9b5411", pos=2)
+text(80000,1.8,"sigmoideum-376", cex=1.1, col="#e0b319", pos=2)
+dev.off()
+
+
+################################################################################
+################################################################################
 
 # from
 # Schuster 2021 Effects of Seasonal Anoxia on the Microbial Community Structure
@@ -67,16 +99,22 @@ dev.off()
 
 otu_counts_file = "~/git/misc-analyses/eco_diversity/data/ravel2011_st04.tsv.gz"
 otu_counts = read.table(otu_counts_file, header = TRUE, sep = "\t" )
-otu_counts.n = data.frame(t(as.matrix(otu_counts[,8:ncol(otu_counts)] ) ) )
+otu_counts.n = otu_counts[,8:ncol(otu_counts)]
+
+otu_counts.meta = otu_counts[,1:8]
 
 category_color_index = match(otu_counts$Community.groupc, unique(otu_counts$Community.groupc) )
 category_color = c( "#dd3589aa", "#e95a5acc", "#ef88abaa", "#2e1cadaa","#f8aacdcc", "#888888cc" )
 
-otu_n_species = colSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
-sample_counts_by_all_sp = colSums(otu_counts.n)
-sp_counts_by_all_samples = rowSums(otu_counts.n)
-otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
-otu_invsimpson_index = diversity(otu_counts.n, index="invsimpson", MARGIN=2)
+ethnic_group = match(otu_counts$Ethnic.Groupa, unique(otu_counts$Ethnic.Groupa))
+#          [1] "Asian"    "White"    "Black"    "Hispanic"
+eth_colors = c("#f9b620", "#f9eae4", "#401e11", "#c03c18")
+
+otu_n_species = rowSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
+sample_counts_by_all_sp = rowSums(otu_counts.n)
+sp_counts_by_all_samples = colSums(otu_counts.n)
+otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=1)
+otu_invsimpson_index = diversity(otu_counts.n, index="invsimpson", MARGIN=1)
 
 pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_otus_vs_diversity_index_v1.pdf", height=5, width=5, useDingbats = FALSE)
 par(mar=c(4.5,4.5,2,1.2))
@@ -139,7 +177,7 @@ dev.off()
 
 
 # add multidimensional scaling
-ordmds = metaMDS( t(otu_counts.n) , trace=FALSE )
+ordmds = metaMDS( otu_counts.n , trace=FALSE )
 pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_mds_v1.pdf", height=5, width=5, title="Data from Ravel et al 2011 PNAS", useDingbats = FALSE)
 par(mar=c(4,4,3,1))
 plot(ordmds, type='n', main="Data from Ravel et al 2011 PNAS") # expects taxa as columns and sites/patients as rows
@@ -155,6 +193,23 @@ text(-2.0,1.3,"L. iners", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus
 text(0.8,1.3,"Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
 text(-1.7,-2.1,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
 dev.off()
+
+ordmds = metaMDS( otu_counts.n , trace=FALSE )
+
+plot(ordmds, type='n', main="Data from Ravel et al 2011 PNAS") # expects taxa as columns and sites/patients as rows
+ordiellipse(ordmds, category_color_index, col=category_color, kind = "sd", draw="polygon", lty=0, alpha=0.2)
+ordiellipse(ordmds, category_color_index, col=category_color, kind = "sd", lwd=6, alpha=0.1)
+
+ordiellipse(ordmds, ethnic_group, col=eth_colors, kind = "ehull", draw="polygon", alpha=0.2)
+
+points(ordmds, display = "sites", cex = 2, pch=16 , col=category_color[category_color_index] )
+ordiellipse(ordmds, category_color_index, col=category_color, kind = "ehull", lwd=3)
+
+rda(t(otu_counts.n), otu_counts.meta)
+
+eth_cca = cca(formula = otu_counts.n ~ Ethnic.Groupa , data = otu_counts.meta )
+
+
 
 # species points and text labels, mostly useless
 #points(ordmds, display = "species", cex = 1, pch=3, col="#00000033", lwd=2 )
@@ -289,17 +344,17 @@ dev.off()
 
 otu_counts_file = "~/git/misc-analyses/eco_diversity/data/Koala_OTU_table_rarefied_10000.csv.gz"
 otu_counts = read.csv(otu_counts_file, header = TRUE )
-otu_counts.n = data.frame( t( otu_counts[,4:2480] ) )
+otu_counts.n = data.frame( otu_counts[,4:2480] )
 
 sample_type_counts = table(otu_counts[,3])
 category_color_index = match(otu_counts[,3], names(sample_type_counts) )
 category_color = c( "#158221cc", "#4b4b4bcc", "#825615cc" )
 
 # counts are normalized to 10000 reads
-otu_n_species = colSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
-sample_counts_by_all_sp = colSums(otu_counts.n)
-sp_counts_by_all_samples = rowSums(otu_counts.n)
-otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
+otu_n_species = rowSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
+sample_counts_by_all_sp = rowSums(otu_counts.n)
+sp_counts_by_all_samples = colSums(otu_counts.n)
+otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=1)
 
 pdf(file="~/git/misc-analyses/eco_diversity/images/blyton2019_otus_vs_diversity_index_v1.pdf", height=5, width=5, useDingbats = FALSE)
 par(mar=c(4.5,4.5,2,1.2))
