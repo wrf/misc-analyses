@@ -25,7 +25,18 @@ sample_counts_by_all_sp = colSums(otu_counts.n)
 sp_counts_by_all_samples = rowSums(otu_counts.n)
 otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
 
-pdf(file="~/git/misc-analyses/eco_diversity/images/hugerth_2019_alpha_diversity_v1.pdf", height=5, width=5, title="Data from Hugerth et al 2019 Gut", useDingbats = FALSE)
+pdf(file="~/git/misc-analyses/eco_diversity/images/hugerth_2019_otus_vs_alpha_diversity_v1.pdf", height=5, width=5, title="Data from Hugerth et al 2019 Gut", useDingbats = FALSE)
+par(mar=c(4.5,4.5,2,1.2))
+plot(otu_n_species, otu_shannon_index, 
+     xlim=c(0,800), main="Data from Hugerth et al 2019 Gut",
+     xlab="Total species per sample (OTUs)", ylab="Shannon Index", cex.axis=1.3, cex.lab=1.3,
+     frame.plot = TRUE,
+     pch=16, cex=2, col=category_color[category_color_index])
+text(800,2.1,"feces-185", cex=1.1, col="#9b5411", pos=2)
+text(800,1.8,"sigmoideum-376", cex=1.1, col="#e0b319", pos=2)
+dev.off()
+
+pdf(file="~/git/misc-analyses/eco_diversity/images/hugerth_2019_reads_vs_alpha_diversity_v1.pdf", height=5, width=5, title="Data from Hugerth et al 2019 Gut", useDingbats = FALSE)
 par(mar=c(4.5,4.5,2,1.2))
 plot(sample_counts_by_all_sp, otu_shannon_index, 
      xlim=c(0,82000), main="Data from Hugerth et al 2019 Gut",
