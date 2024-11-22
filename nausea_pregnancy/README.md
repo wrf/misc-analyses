@@ -56,4 +56,12 @@ Many of these symptoms were reported by [Meyer 1994](https://doi.org/10.1111/j.1
 ![meyer_1994_table1.p1.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/meyer_1994_table1.p1.png)
 ![meyer_1994_table1.p2.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/meyer_1994_table1.p2.png)
 
+# timing of birth by week #
+From two different studies, not specifically about timing of birth, but included that data anyway, one from [Morken et al 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC4037279/) in Norway, other from [Yang et al 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435092/).
+
+![morken_2014_norway_births_by_week.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/morken_2014_norway_births_by_week.png)
+
+![yang_2010_total_births.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/yang_2010_total_births.png)
+
+
 
