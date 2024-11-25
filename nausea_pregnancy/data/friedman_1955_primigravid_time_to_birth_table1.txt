@@ -1,0 +1,17 @@
+# E.A.FRIEDMAN 1955 Primigravid labor; a graphicostatistical analysis
+# https://pubmed.ncbi.nlm.nih.gov/13272981/
+# Table 1. Mean labor of 500 primigravid American women
+phase	mean_hr	mode_hr	median_hr	SD	SE	range_lower	range_upper	statistical_max
+Latent_phase	8.6	6.0	7.5	6.0	0.27	1.0	44	20.6
+Active_phase	4.9	3.0	4.0	3.4	0.15	0.8	34	11.7
+Deceleration	0.9	0.5	0.8	1.2	0.05	0.0	14	3.3
+Maximum_slope_cm_hr	3.0	1.5	2.7	1.9	0.08	0.4	12	6.8
+First_stage	13.3	14.0	12.0	7.6	0.34	2.0	58	28.5
+Second_stage	0.95	0.6	0.8	0.8	0.04	0.0	5.5	2.5
+# Table 2. Ideal labor defined as 200 uncomplicated of the 500 total births
+Latent_phase_ideal	7.1	6.0	7.0	4.0	0.28	1.0	24	15.0
+Active_phase_ideal	3.4	3.0	3.3	1.5	0.11	0.8	11	6.4
+Deceleration_ideal	0.7	0.5	0.6	0.7	0.05	0.0	4.0	2.1
+Maximum_slope_ideal	3.5	2.0	3.0	1.9	0.13	1.0	8.0	7.3
+First_stage_ideal	10.6	9.0	10.3	4.6	0.33	2.0	28.5	19.8
+Second_stage_ideal	0.76	0.4	0.5	0.6	0.04	0.0	3.7	2.0

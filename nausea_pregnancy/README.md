@@ -63,5 +63,9 @@ From two different studies, not specifically about timing of birth, but included
 
 ![yang_2010_total_births.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/yang_2010_total_births.png)
 
+# timing of delivery #
+One of the original studies - [Friedman 1955](https://pubmed.ncbi.nlm.nih.gov/13272981/) - actually provided histograms, which were digitized below. The study included 500 American women, though the sum of the bars in the histogram did not add up to exactly 500 in any of the graphs.
+
+![friedman_1955_primigravid_time_to_birth_fig2b.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/friedman_1955_primigravid_time_to_birth_fig2b.png)
 
 
