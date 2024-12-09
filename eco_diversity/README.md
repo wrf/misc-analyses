@@ -36,10 +36,16 @@ Point size was proporitional to the number of reads per sample. This is replotte
 
 ![ireland_sponge_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_sponge_reads_vs_diversity_index_v1.png) ![busch2022_sample_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/busch2022_sample_diversity_index_v1.png) ![albert2015_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/albert2015_reads_vs_diversity_index_v1.png) ![hugerth_2019_reads_vs_alpha_diversity_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/hugerth_2019_reads_vs_alpha_diversity_v1.png)
 
-### PCA may not add much to the analysis ###
-Most points or categories are already separable by number of species or alpha diversity in the above graphs. PCA (with `metaMDS()`) achieves much of the same separation, but the output is less intuitive to students.
+### ordination has varied results ###
+Most points or categories are already separable by number of species or alpha diversity in the above graphs prior to defining any clusters. NMDS (with `metaMDS()`) achieves much of the same separation, but the output is less intuitive to students. The separation is much better with the constrained ordination.
 
-![ravel2011_mds_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_mds_v1.png) ![aronson2016_mds_analysis_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_mds_analysis_v1.png)
+![ravel2011_mds_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_mds_v1.png) ![ravel2011_unconst_rda_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_unconst_rda_v1.png) 
+
+With constrained (combining the only 3x metadata factors using the `rda()`), the effect of pH is clear (right plot) in shaping the species (left plot). Ethnicity has little effect (middle plot).
+![ravel2011_constrained_rda_tricolor_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_constrained_rda_tricolor_v1.png) 
+
+Another example of unconstrained NMDS, though the samples were from very different types, and were already separable by diversity index. This dataset did not have other parameters in the metadata.
+![aronson2016_mds_analysis_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_mds_analysis_v1.png) ![aronson2016_unconst_rda_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_unconst_rda_v1.png)
 
 
 

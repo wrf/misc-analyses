@@ -48,6 +48,7 @@ text(80000,1.8,"sigmoideum-376", cex=1.1, col="#e0b319", pos=2)
 dev.off()
 
 
+
 ################################################################################
 ################################################################################
 
@@ -112,14 +113,14 @@ otu_counts_file = "~/git/misc-analyses/eco_diversity/data/ravel2011_st04.tsv.gz"
 otu_counts = read.table(otu_counts_file, header = TRUE, sep = "\t" )
 otu_counts.n = otu_counts[,8:ncol(otu_counts)]
 
-otu_counts.meta = otu_counts[,1:8]
+otu_counts.meta = otu_counts[,1:7]
 
 category_color_index = match(otu_counts$Community.groupc, unique(otu_counts$Community.groupc) )
 category_color = c( "#dd3589aa", "#e95a5acc", "#ef88abaa", "#2e1cadaa","#f8aacdcc", "#888888cc" )
 
 ethnic_group = match(otu_counts$Ethnic.Groupa, unique(otu_counts$Ethnic.Groupa))
 #          [1] "Asian"    "White"    "Black"    "Hispanic"
-eth_colors = c("#f9b620", "#f9eae4", "#401e11", "#c03c18")
+eth_colors = c("#f9b620", "#cdbab4", "#401e11", "#c03c18")
 
 otu_n_species = rowSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
 sample_counts_by_all_sp = rowSums(otu_counts.n)
@@ -205,28 +206,57 @@ text(0.8,1.3,"Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
 text(-1.7,-2.1,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
 dev.off()
 
-ordmds = metaMDS( otu_counts.n , trace=FALSE )
 
-plot(ordmds, type='n', main="Data from Ravel et al 2011 PNAS") # expects taxa as columns and sites/patients as rows
-ordiellipse(ordmds, category_color_index, col=category_color, kind = "sd", draw="polygon", lty=0, alpha=0.2)
-ordiellipse(ordmds, category_color_index, col=category_color, kind = "sd", lwd=6, alpha=0.1)
+# unconstrained redundancy
+eth_rda.u = rda( otu_counts.n , scale=FALSE )
+# plot() makes $CA$u scaled with some factor
+pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_unconst_rda_v1.pdf", height=5, width=5, title="Data from Ravel et al 2011 PNAS", useDingbats = FALSE)
+par(mar=c(4,4,3,1))
+plot( eth_rda.u$CA$u[,1], eth_rda.u$CA$u[,2], 
+      xlab="RDA1 (unconstrained, unscaled)", ylab="RDA2 (unconstrained, unscaled)",
+      main = "Data from Ravel et al 2011 PNAS",
+      type='p' ,pch=16, col=category_color[category_color_index], cex=2 )
+tcs = c(-0.085,0.03)
+text(tcs[1],-0.03,"CST-I-105", cex=1.1, col="#dd3589", pos=4) # Lactobacillus crispatus
+text(tcs[1],-0.055,"CST-II-25", cex=1.1, col="#e95a5a", pos=4) # Lactobacillus gasseri
+text(tcs[2],-0.055,"CST-III-135", cex=1.1, col="#ef88ab", pos=4) # Lactobacillus iners
+text(tcs[1],-0.08,"CST-IV-108", cex=1.1, col="#2e1cad", pos=4) # mixed
+text(tcs[2],-0.08,"CST-V-21", cex=1.1, col="#f8aacd", pos=4) # Lactobacillus jenseni
+text(tcs[1]+0.005,-0.038,"L. crispatus", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus crispatus
+text(tcs[1]+0.005,-0.063,"L. gasseri", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus gasseri
+text(tcs[2]+0.005,-0.063,"L. iners", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus iners
+text(tcs[1]+0.005,-0.088,"Prevotella", cex=1.1, col="#000000", pos=4, font=3) # mixed
+text(tcs[2]+0.005,-0.088,"L. jenseni", cex=1.1, col="#000000", pos=4, font=3) # Lactobacillus jenseni
+dev.off()
 
-ordiellipse(ordmds, ethnic_group, col=eth_colors, kind = "ehull", draw="polygon", alpha=0.2)
-
-points(ordmds, display = "sites", cex = 2, pch=16 , col=category_color[category_color_index] )
-ordiellipse(ordmds, category_color_index, col=category_color, kind = "ehull", lwd=3)
-
-rda(t(otu_counts.n), otu_counts.meta)
-
-eth_cca = cca(formula = otu_counts.n ~ Ethnic.Groupa , data = otu_counts.meta )
-
-
-
-# species points and text labels, mostly useless
-#points(ordmds, display = "species", cex = 1, pch=3, col="#00000033", lwd=2 )
-#text(ordmds, display = "species")
-
-
+table(otu_counts.meta$pH)
+ph_category = match(otu_counts.meta$pH, names(table(otu_counts.meta$pH)))
+ph_cols = c(colorRampPalette(c("#35dd89","#2e1cad"))(9),"#000000aa")
+# constrained by all factors
+eth_rda = rda(formula = otu_counts.n ~ pH + Ethnic.Groupa + Nugent.score , data = otu_counts.meta[,2:4] )
+pdf(file="~/git/misc-analyses/eco_diversity/images/ravel2011_constrained_rda_tricolor_v1.pdf", height=3, width=8, title="Data from Ravel et al 2011 PNAS", useDingbats = FALSE)
+par(mfrow=c(1,3), mar=c(4,4,3,1))
+plot( eth_rda$CCA$wa[,1], eth_rda$CCA$wa[,2], 
+      xlab="RDA1 (pH + ethnicity + Nugent)", ylab="RDA2 (pH + ethnicity + Nugent)",
+      main = "Community state type (CST)",
+      type='p' ,pch=16, col=category_color[category_color_index], cex=2 )
+legend("topright", legend=c("CST-I-105","CST-II-25","CST-III-135","CST-IV-108","CST-V-21"), bty='n',
+       col=c("#dd3589","#e95a5a","#ef88ab","#2e1cad","#f8aacd"), pch=15, pt.cex=2, 
+       text.col = c("#dd3589","#e95a5a","#ef88ab","#2e1cad","#f8aacd") )
+plot( eth_rda$CCA$wa[,1], eth_rda$CCA$wa[,2], 
+      xlab="RDA1 (pH + ethnicity + Nugent)", ylab="RDA2 (pH + ethnicity + Nugent)",
+      main = "Self-declared ethnicity",
+      type='p' ,pch=16, col=paste0(eth_colors,"bb")[ethnic_group], cex=2 )
+legend("topright", legend=c("Asian-96","White-97","Black-104","Hispanic-97"), bty='n',
+       col=eth_colors, pch=15, pt.cex=2, 
+       text.col = eth_colors )
+plot( eth_rda$CCA$wa[,1], eth_rda$CCA$wa[,2], 
+      xlab="RDA1 (pH + ethnicity + Nugent)", ylab="RDA2 (pH + ethnicity + Nugent)",
+      main = "Measured pH",
+      type='p' ,pch=16, col=ph_cols[ph_category], cex=2 )
+legend("topright", legend=c("pH 4.0","pH 4.5","pH 5.0","pH 5.5","pH 5.8"), bty='n',
+       col=ph_cols[c(1,3,5,7,9)], pch=15, pt.cex=2 )
+dev.off()
 
 ################################################################################
 ################################################################################
@@ -344,6 +374,21 @@ text(2.8,-1.5,"whale bone-1", cex=1.1, col="#b79687", pos=2)
 text(2.8,-1.8,"sediment-1", cex=1.1, col="#dba337", pos=2)
 dev.off()
 
+
+rda.u = rda( t(otu_counts.n) , scale=FALSE )
+pdf(file="~/git/misc-analyses/eco_diversity/images/aronson2016_unconst_rda_v1.pdf", height=5, width=5, title="Data from Aronson et al 2016", useDingbats = FALSE)
+par(mar=c(4,4,3,1))
+plot( rda.u$CA$u[,1], rda.u$CA$u[,2], 
+      xlab="RDA1 (unconstrained, unscaled)", ylab="RDA2 (unconstrained, unscaled)",
+      main = "Data from Aronson et al 2016 FEMS ME",
+      type='p' , pch=16, col=category_color[category_color_index], cex=3 )
+text(-0.5,-0.4,"snail intestine-6", cex=1.1, col="#82c27c", pos=4)
+text(-0.5,-0.3,"snail stomach-5", cex=1.1, col="#749b11", pos=4)
+text(-0.5,0.4,"digestive gland-4", cex=1.1, col="#cdde1d", pos=4)
+text(-0.5,-0.5,"fecal pellet-1", cex=1.1, col="#9b5411", pos=4)
+text(-0.5,0.3,"whale bone-1", cex=1.1, col="#b79687", pos=4)
+text(-0.1,0.3,"sediment-1", cex=1.1, col="#dba337", pos=4)
+dev.off()
 
 
 ################################################################################
@@ -472,16 +517,18 @@ div_colors = colorRampPalette(c("#212f11ff","#b7e61aff","#e2fe82ff"))(10)
 
 # alternating light and dark bars, then assign colors to known taxa
 bar_colors = rep(c("#aaaaaa","#555555"),dim(otu_counts_timeseries)[2]-10)
-bar_colors[c(2,4,8,1,18,20,22,78,90, 
-             3,9,5,7,21, 
-             12,13,28,6,10,17, 
+bar_colors[c(2,4,8,1,  18,20,22,78,90, 
+             3,9,5,   7,21, 
+             12,13,28,   6,10,17, 
              45,61,33, 
              14,24,37,
              42)] = c(
                "#dd3589", "#e95a5a", "#f8aacd", "#ef88ab", #Lcrispatus Lgasseri Ljenseni Liners
                "#f0b2b2","#f0b2b2","#f0b2b2","#f0b2b2", "#f0b2b2", #L otus
-               "#2e1cad", "#3774db", "#7353e0", "#183360", "#28b8eb", # GardnerellaA, C, Prevotella Sneathia Bifidobacterium
-               "#127801", "#92d18c", "#4b6c48", "#269750", "#1ca62b", "#0f5716", # Streptococcus Corynebacterium Staphylococcus Parvimonas Peptoniphilus Finegoldia
+               "#2e1cad", "#3774db", "#7353e0", # GardnerellaA, C, Prevotella
+               "#183360", "#28b8eb", # Sneathia Bifidobacterium
+               "#127801", "#92d18c", "#4b6c48", # Streptococcus Corynebacterium Staphylococcus
+               "#269750", "#1ca62b", "#0f5716", # Parvimonas Peptoniphilus Finegoldia
                "#927638", "#927638", "#6d582a", # Enterococcus Enterococcus Escherichia
                "#be7c05", "#be7c25", "#be7c45", # Ruminococcaceae.3 Ruminococcaceae.5 Ruminococcaceae.2
                "#eeeeee" ) # Ureaplasma
@@ -567,5 +614,47 @@ text(m, display = "species")
 
 ################################################################################
 ################################################################################
+
+
+
+
+
+################################################################################
+################################################################################
+# data from
+# https://gitlab.com/alsulit08/uoc_response_rectalca
+# possibly from this article
+# Sulit et al 2023 Human gene and microbial analyses in rectal cancer complete responses to radiotherapy
+# https://academic.oup.com/bjsopen/article/7/3/zrad035/7158800
+
+# UNSURE IF THIS IS REALLY AMPLICON SEQUENCING
+otu_counts_file = "~/git/misc-analyses/eco_diversity/data/sulit_2023_alltaxon_gensp.tsv.gz"
+otu_counts = read.table(otu_counts_file, header = TRUE, sep = "\t", quote="", comment.char = "", row.names = 1)
+otu_counts.n = otu_counts[,11:90]
+
+
+sample_metadata_file = "~/git/misc-analyses/eco_diversity/data/rectal_CA_final.txt"
+sample_metadata = read.table(sample_metadata_file, header = TRUE, sep = "\t")
+sample_metadata
+
+sample_type_counts = table(sample_metadata$tissue_type)
+category_color_index = match(sample_metadata$tissue_type, names(sample_type_counts) )
+category_color = c( "#e54aecaa", "#9d360faa" )
+
+otu_n_species = colSums(otu_counts.n/otu_counts.n,na.rm = TRUE)
+sample_counts_by_all_sp = colSums(otu_counts.n)
+sp_counts_by_all_samples = rowSums(otu_counts.n)
+otu_shannon_index = diversity(otu_counts.n, index="shannon", MARGIN=2)
+
+pdf(file="~/git/misc-analyses/eco_diversity/images/sulit_2023_alpha_diversity_v1.pdf", height=5, width=5, title="Data from Sulit et al 2023", useDingbats = FALSE)
+par(mar=c(4.5,4.5,2,1.2))
+plot(otu_n_species, otu_shannon_index,
+     xlim=c(0,12000), ylim=c(1.2,4.5), main="Data from Sulit et al 2023 BSJ Open",
+     xlab="Total species per sample (OTUs)", ylab="Shannon Index", cex.axis=1.2, cex.lab=1.3,
+     pch=16, cex=log10(sample_counts_by_all_sp)-3, col=category_color[category_color_index])
+text(0,4.0,"normal-40", cex=1.1, col="#e54aec", pos=4)
+text(0,3.5,"cancer-40", cex=1.1, col="#9d360f", pos=4)
+dev.off()
+
 
 #
