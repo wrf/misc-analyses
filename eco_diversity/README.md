@@ -37,14 +37,16 @@ Point size was proporitional to the number of reads per sample. This is replotte
 ![ireland_sponge_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ireland_sponge_reads_vs_diversity_index_v1.png) ![busch2022_sample_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/busch2022_sample_diversity_index_v1.png) ![albert2015_reads_vs_diversity_index_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/albert2015_reads_vs_diversity_index_v1.png) ![hugerth_2019_reads_vs_alpha_diversity_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/hugerth_2019_reads_vs_alpha_diversity_v1.png)
 
 ### ordination has varied results ###
-Most points or categories are already separable by number of species or alpha diversity in the above graphs prior to defining any clusters. NMDS (with `metaMDS()`) achieves much of the same separation, but the output is less intuitive to students. The separation is much better with the constrained ordination.
+Most points or categories are already separable by number of species or alpha diversity in the above graphs prior to defining any clusters. NMDS (with `metaMDS()`) achieves much of the same separation, but the output is less intuitive to students, and the same goes for the redundancy analysis (using the `rda()`).
 
 ![ravel2011_mds_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_mds_v1.png) ![ravel2011_unconst_rda_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_unconst_rda_v1.png) 
 
-With constrained (combining the only 3x metadata factors using the `rda()`), the effect of pH is clear (right plot) in shaping the species (left plot). Ethnicity has little effect (middle plot).
+The separation is much better with the constrained ordination below. With constrained (combining the only 3x metadata factors), the effect of pH is clear (right plot) in shaping the species (left plot). Ethnicity has little effect (middle plot), though it is argued in other studies that there is a small effect of ethnicity (such as in [Zhou 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC2868947/) or [Albert 2015](https://doi.org/10.1371/journal.pone.0135620)) with higher proportions of CST-III (*L. iners* dominated) in Asian women. This was the main CST found in Amazonian women in Venezuela [Vargas‑Robles 2020](https://doi.org/10.1038/s41598-020-69111-x), potentially representing either the ancestral state, or a genetic effect as above.
+
 ![ravel2011_constrained_rda_tricolor_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/ravel2011_constrained_rda_tricolor_v1.png) 
 
-Another example of unconstrained NMDS, though the samples were from very different types, and were already separable by diversity index. This dataset did not have other parameters in the metadata.
+Another example of unconstrained NMDS, though the samples were from very different types, and were already separable by diversity index alone. This dataset did not have other parameters in the metadata.
+
 ![aronson2016_mds_analysis_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_mds_analysis_v1.png) ![aronson2016_unconst_rda_v1.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/aronson2016_unconst_rda_v1.png)
 
 
