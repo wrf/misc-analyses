@@ -21,10 +21,10 @@ Measures of ecological diversity, and usage across real datasets
 
 ![shannon_diversity_model_v2.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/shannon_diversity_model_v2.png)
 
-## [seasonality of human births](https://github.com/wrf/misc-analyses/tree/master/birth_rate_by_month) ##
+## [seasonality of human births - moved to own repo](https://github.com/wrf/birth_rate_by_month) ##
 Month of birth has real effects, like astrology, something known by all of humanity for thousands of years. Data from the [UN data portal](https://data.un.org/Data.aspx?d=POP&f=tableCode:55).
 
-![UNdata_Export_20210419_scand_by_year.png](https://github.com/wrf/misc-analyses/blob/master/birth_rate_by_month/images/UNdata_Export_20210419_scand_by_year.png)
+![UNdata_Export_20210419_scand_by_year.png](https://github.com/wrf/birth_rate_by_month/blob/main/images/UNdata_Export_20210419_scand_by_year.png)
 
 ## [food cravings during pregnancy](https://github.com/wrf/misc-analyses/tree/master/nausea_pregnancy) ##
 Replots of food aversions and cravings during pregnancy, [NVP](https://en.wikipedia.org/wiki/Morning_sickness), and related things
