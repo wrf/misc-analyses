@@ -18,6 +18,8 @@ Viewer for contig coverage vs GC content of genome/metagenome assemblies, for se
 # [FAO Food balance explorer](https://github.com/wrf/foodbalance/tree/main) #
 Explorer of FAO global food imports, production, and exports. Users can select and sort by country, food item, or trade direction.
 
+The app is [live on shinyapps.io](https://wrfbiolum.shinyapps.io/foodbalance/).
+
 ![food balance app v2 screenshot](https://github.com/wrf/foodbalance/blob/e6ebe1d9ef0e285782e100b89ce56100ba4f592f/images/food_balance_app_v2_screenshot.png)
 
 # [SRA global metagenome map](https://github.com/wrf/taxonomy_database/tree/master) #
@@ -29,6 +31,11 @@ Map of all metagenomic samples on NCBI SRA globally. Users can select by metagen
 Version 1.0 of an interactive [ShinyApp](https://rstudio.github.io/leaflet/index.html) map using [leaflet](https://leafletjs.com/) showing sea level rise around the world.
 
 ![screenshot of Sea Level Riser v1](https://github.com/wrf/oceanography_scripts/blob/master/sealevel_rise/sea_level_riser_v1_screenshot_over_london.jpg)
+
+# [PyRate viewer](https://github.com/wrf/oceanography_scripts/tree/master/pyrate_viewer) #
+Interactive [ShinyApp](https://shiny.posit.co/) viewer of output from [PyRate](https://github.com/dsilvestro/PyRate) for studying paleo-biodiversity, which allows selection of region on upper chart to zoom lower chart, and selection of region on lower chart to display table of all taxa that span the selected region.
+
+![screenshot of PyRate viewer](https://github.com/wrf/oceanography_scripts/blob/master/pyrate_viewer/pyrate_viewer_screenshot_w_data.png)
 
 # [gene supermatrix orthogroup viewer](https://github.com/wrf/supermatrix) #
 Gene orthogroup viewer for supermatrix construction, in understanding occupancy thresholds of the matrix, or finding clusters with high or low occupancy.
@@ -45,6 +52,12 @@ Modified version of the supermatrix orthogroup viewer, to display pre-determined
 
 ![ortholog cluster browser app screenshot](https://github.com/PalMuc/Aphrocallistes_vastus_genome/blob/2ba7512f88a347881c6f6684e7af57d8efd6dd6d/ortholog_clusters/ortholog_cluster_browser_app_screenshot_01.png)
 
+# [Society collapse interactive model](https://github.com/wrf/society-collapse) #
+This is based on the model of [Motesharrei et al](https://www.sciencedirect.com/science/article/pii/S0921800914000615), who created a 4-equation model for accumulation of wealth and depletion of natural resources with different consumption rates of commoners and elites.
+
+The app is [live on ShinyApps.io](https://wrfbiolum.shinyapps.io/collapse-v1/).
+
+![screenshot of app](https://github.com/wrf/society-collapse/blob/main/images/collapse_app_screenshot_v1.png)
 
 ---
 
