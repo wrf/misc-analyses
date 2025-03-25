@@ -122,13 +122,13 @@ qin2019_data_text = "Time_point	Breast_milk_pg_mL	Breast_milk_pg_mL_var
 09:00	3.27	1.23
 15:00	2.40	1.04
 21:00	6.81	2.35"
-qin2019_data = read.table(text=qin2019_data_text, header=TRUE, sep="\t")
+qin2019_data = read.table(text=qin2019_data_text, header=TRUE, sep="\t")[c(3,4,1,2),]
+qin2019_data
 
-
-#pdf(file="~/git/misc-analyses/milk_composition/images/qin2019_melatonin_in_milk.pdf", width=4, height=4, title="Melatonin in breast milk")
-png(file="~/git/misc-analyses/milk_composition/images/qin2019_melatonin_in_milk.png", width=360, height=360, res=90 )
+pdf(file="~/git/misc-analyses/milk_composition/images/qin2019_melatonin_in_milk.pdf", width=4, height=4, title="Melatonin in breast milk")
+#png(file="~/git/misc-analyses/milk_composition/images/qin2019_melatonin_in_milk.png", width=360, height=360, res=90 )
 par(mar=c(3,4.5,3,1))
-b = barplot(qin2019_data$Breast_milk_pg_mL* 1000 / 232.281, ylim=c(0,120), axes=FALSE,
+b = barplot(qin2019_data$Breast_milk_pg_mL * 1000 / 232.281, ylim=c(0,120), axes=FALSE,
         names.arg=qin2019_data$Time_point , ylab="Melatonin in breast milk (pmol/L)", 
         main="Daily variation of melatonin in milk\nfrom 98 women in Shanghai, China", 
         col=c("#b376b6ff", "#f6ac24ff", "#e57c0cff", "#d05c7aff" ), cex.lab=1.2)
@@ -181,7 +181,7 @@ illnerova_data_text = "time_hrs	mother_A_milk_pM	mother_B_milk_pM	mother_C_milk_
 34	3.1	2.2	5.0	5.0	NA	NA
 35	NA	NA	NA	NA	7.1	7.6"
 illnerova_data = read.table(text=illnerova_data_text, header=TRUE, sep="\t")
-mother_color_set = c("#540005ff", "#b5272fff", "#cf8f93ff", "#cc32baff", "#580e62ff", "#cf8fc6ff")
+mother_color_set = c("#540005ff", "#b5272fff", "#cf8f93ff", "#cc32baff", "#580e62ff", "#cf8fc6ff", "#641bbcff", "#bca5d7ff" )
 
 
 #pdf(file="~/git/misc-analyses/milk_composition/images/illnerova1993_melatonin_in_milk.pdf", width=4, height=4, title="Data from Illnerova et al 1993")
@@ -317,6 +317,45 @@ points( savino2010_data$day_of_study, savino2010_data$Placebo_crying_min_day,
         pch=16, cex=3, col="#333333aa")
 legend("topright", legend=c("Probiotic (25)","Placebo (21)"), col=c("#FF5F50ff","#999999ff"), pch=16, pt.cex = 2, cex=1.2)
 dev.off()
+
+
+################################################################################
+
+
+# Table 3. Blood and Milk Alcohol Levels for Subjects 3-8
+# Time after initial ingestion of alcohol in hours
+# Levels are expressed as mL alcohol per 100 mL of sample fluid
+lawton_data_text = "minutes	blood_EtOH_s1b	milk_EtOH_s1b	blood_EtOH_s1a	milk_EtOH_s1a	blood_EtOH_s2	milk_EtOH_s2	blood_EtOH_s3	milk_EtOH_s3	blood_EtOH_s4	milk_EtOH_s4	blood_EtOH_s5	milk_EtOH_s5	blood_EtOH_s6	milk_EtOH_s6	blood_EtOH_s7	milk_EtOH_s7	blood_EtOH_s8	milk_EtOH_s8
+30	NA	NA	NA	NA	NA	NA	41	46	6	6	0	0	16	13	27	21	NA	NA
+60	102.43	113.74	77.90	84.37	NA	NA	55	76	37	34	28	22	40	35	44	46	46	46
+90	118.05	135.57	NA	NA	94	118	67	71	89	81	39	39	49	49	39	44	57	74
+120	117.51	131.80	68.74	77.63	NA	NA	65	68	119	129	35	39	44	46	35	36	NA	NA
+150	102.69	114.55	NA	NA	86	121	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	53	62
+180	88.95	99.19	50.15	57.16	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+210	79.52	86.53	NA	NA	85	101	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+240	64.43	70.36	36.95	42.07	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+270	56.08	59.58	NA	NA	65	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+300	42.07	45.03	13	13.77	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+330	NA	NA	NA	NA	43	52	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA"
+lawton_data = read.table( text=lawton_data_text, header=TRUE, sep="\t")
+
+mother_color_set_2 = rep(rep( mother_color_set, c(rep(c(2,1),c(1,7))) ),each=2)
+
+plot( lawton_data$minutes, lawton_data$milk_EtOH_s1b , ylim=c(0,150), xlim=c(0,330) , type='n' )
+for (i in seq(2,19,2)) {
+  etoh_time = lawton_data$minutes[which(!is.na(lawton_data[,i]))]
+  etoh_blood = lawton_data[,i][which(!is.na(lawton_data[,i]))]
+  etoh_milk = lawton_data[,i+1][which(!is.na(lawton_data[,i+1]))]
+  lines(etoh_time, etoh_blood, col=gsub("ff","66",mother_color_set_2[i-1]), lwd=6 )
+  points(etoh_time, etoh_blood, col=gsub("ff","aa",mother_color_set_2[i-1]), pch=18, cex=1.5 )
+  lines(etoh_time, etoh_milk, col=gsub("ff","66",mother_color_set_2[i]), lwd=6 )
+  points(etoh_time, etoh_milk, col=gsub("ff","aa",mother_color_set_2[i]), pch=16, cex=1.5 )
+}
+
+
+
+
+
 
 
 #
