@@ -324,7 +324,7 @@ dev.off()
 
 # Table 3. Blood and Milk Alcohol Levels for Subjects 3-8
 # Time after initial ingestion of alcohol in hours
-# Levels are expressed as mL alcohol per 100 mL of sample fluid
+# Levels are expressed as mg alcohol per 100 mL of sample fluid
 lawton_data_text = "minutes	blood_EtOH_s1b	milk_EtOH_s1b	blood_EtOH_s1a	milk_EtOH_s1a	blood_EtOH_s2	milk_EtOH_s2	blood_EtOH_s3	milk_EtOH_s3	blood_EtOH_s4	milk_EtOH_s4	blood_EtOH_s5	milk_EtOH_s5	blood_EtOH_s6	milk_EtOH_s6	blood_EtOH_s7	milk_EtOH_s7	blood_EtOH_s8	milk_EtOH_s8
 30	NA	NA	NA	NA	NA	NA	41	46	6	6	0	0	16	13	27	21	NA	NA
 60	102.43	113.74	77.90	84.37	NA	NA	55	76	37	34	28	22	40	35	44	46	46	46
@@ -341,7 +341,12 @@ lawton_data = read.table( text=lawton_data_text, header=TRUE, sep="\t")
 
 mother_color_set_2 = rep(rep( mother_color_set, c(rep(c(2,1),c(1,7))) ),each=2)
 
-plot( lawton_data$minutes, lawton_data$milk_EtOH_s1b , ylim=c(0,150), xlim=c(0,330) , type='n' )
+pdf(file="~/git/misc-analyses/milk_composition/images/lawton1985_EtOH_levels_in_milk.pdf", width=5, height=5, title="EtOH levels in blood and milk - data from Lawton 1985")
+#png(file="~/git/misc-analyses/milk_composition/images/lawton1985_EtOH_levels_in_milk.png", width=450, height=450, res=90)
+par(mar=c(4.5,4.5,3,1))
+plot( lawton_data$minutes, lawton_data$milk_EtOH_s1b , ylim=c(0,150), xlim=c(0,330) , type='n',
+      ylab="mg EtOH per 100 mL of sample fluid", xlab="Time (minutes)", cex.lab=1.3, cex.axis=1.2, 
+      main="EtOH levels in blood and milk\nfrom 8 women in New Zealand" )
 for (i in seq(2,19,2)) {
   etoh_time = lawton_data$minutes[which(!is.na(lawton_data[,i]))]
   etoh_blood = lawton_data[,i][which(!is.na(lawton_data[,i]))]
@@ -351,7 +356,7 @@ for (i in seq(2,19,2)) {
   lines(etoh_time, etoh_milk, col=gsub("ff","66",mother_color_set_2[i]), lwd=6 )
   points(etoh_time, etoh_milk, col=gsub("ff","aa",mother_color_set_2[i]), pch=16, cex=1.5 )
 }
-
+dev.off()
 
 
 
