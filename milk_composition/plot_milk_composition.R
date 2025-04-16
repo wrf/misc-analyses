@@ -113,7 +113,9 @@ barplot( t(as.matrix(milk_data[c(1,3),c(3,7)] )) , col=prot_type_colors  )
 ################################################################################
 ################################################################################
 
-
+# 10mg tablets melatonin
+# 10 mg / 232.281 g/mol = 0.0430513 mmol = 43.05umol
+# 1mg = 0.004305 mmol = 4.3 umol
 
 # Qin et al 2019 Variations in melatonin levels in preterm and term human breast milk during the first month after delivery
 # https://pmc.ncbi.nlm.nih.gov/articles/PMC6884443/
@@ -131,7 +133,7 @@ par(mar=c(3,4.5,3,1))
 b = barplot(qin2019_data$Breast_milk_pg_mL * 1000 / 232.281, ylim=c(0,120), axes=FALSE,
         names.arg=qin2019_data$Time_point , ylab="Melatonin in breast milk (pmol/L)", 
         main="Daily variation of melatonin in milk\nfrom 98 women in Shanghai, China", 
-        col=c("#b376b6ff", "#f6ac24ff", "#e57c0cff", "#d05c7aff" ), cex.lab=1.2)
+        col=c("#b376b6ff", "#f6ac24ff", "#e57c0cff", "#d05c7aff" )[c(3,4,1,2)], cex.lab=1.2)
 axis(2,at=seq(0,100,20), cex.axis=1.2)
 #points(b, qin2019_data$Breast_milk_pg_mL* 1000 / 232.281, lwd=2, pch=1)
 arrows(x0 = b, y0 = qin2019_data$Breast_milk_pg_mL* 1000 / 232.281, lwd=1, length = 0.1,
@@ -149,13 +151,88 @@ qin2019_data$Breast_milk_pg_mL * 1000 / 232.281 # =pM
 # ...50 ul of melatonifinal concentration at 10-7M"
 
 
+
+# data digitized from Silva et al (2013) Bioactive Factors of Colostrum and Human Milk Exhibits a Day-Night Variation
+# https://thescipub.com/abstract/10.3844/ajisp.2013.68.74
+
+silva2013_text = "milk	time	melatonin_pg_mL	melatonin_pg_mL_var	cortisol_ug_dL	cortisol_ug_dL_var
+colostrum	diurnal	16.2	2.1	34.0	5.7
+colostrum	nocturnal	56.1	3.9	43.4	1.1
+transition	diurnal	24.2	5.0	28.8	6.3
+transition	nocturnal	67.5	5.0	39.5	7.4
+mature	diurnal	6.8	0.6	50.9	0.5
+mature	nocturnal	56.9	4.8	14.8	2.6"
+silva2013_data = read.table(text=silva2013_text, header=TRUE, sep="\t")
+
+time_mel_aov = aov(melatonin_pg_mL ~ time, data = silva2013_data)
+
+
+
+# MELATONIN
+pdf(file="~/git/misc-analyses/milk_composition/images/silva2013_melatonin_in_milk.pdf", width=4, height=4, title="Data from Silva et al 2013")
+#png(file="~/git/misc-analyses/milk_composition/images/silva2013_melatonin_in_milk.png", width=360, height=360, res=90)
+par(mar=c(3,4.5,3,1))
+b = barplot( rbind(silva2013_data$melatonin_pg_mL[silva2013_data$time=="diurnal"]* 1000 / 232.281, 
+               silva2013_data$melatonin_pg_mL[silva2013_data$time=="nocturnal"]* 1000 / 232.281 ),
+         beside=TRUE, ylim=c(0,320), axes=FALSE, cex.names = 0.9,
+         ylab="Melatonin (pM)", main="Daily variation in milk melatonin\nfrom 42 mothers in Brazil",
+         cex.axis=1.2, cex.lab=1.3,
+         col=c("#e57c0cff", "#b376b6ff"), names.arg = c("Colostrum\n(3d)", "Transition\n(10d)", "Mature\n(30d)") )
+arrows(x0 = rep(b,2), y0 = rep(silva2013_data$melatonin_pg_mL,2)* 1000 / 232.281, lwd=1, length = 0.1,
+       x1 = rep(b,2), 
+       y1=c(silva2013_data$melatonin_pg_mL+silva2013_data$melatonin_pg_mL_var, silva2013_data$melatonin_pg_mL-silva2013_data$melatonin_pg_mL_var)* 1000 / 232.281, angle = 90)
+axis(2, at=seq(0,300,100), cex.axis=1.2, tick = FALSE)
+axis(2, at=seq(0,300,50), cex.axis=1.2, labels = FALSE)
+dev.off()        
+
+# CORTISOL
+pdf(file="~/git/misc-analyses/milk_composition/images/silva2013_cortisol_in_milk.pdf", width=4, height=4, title="Data from Silva et al 2013")
+#png(file="~/git/misc-analyses/milk_composition/images/silva2013_cortisol_in_milk.png", width=360, height=360, res=90)
+par(mar=c(3,4.5,3,1))
+b = barplot( rbind(silva2013_data$cortisol_ug_dL[silva2013_data$time=="diurnal"]* 100 / 362.46, 
+                   silva2013_data$cortisol_ug_dL[silva2013_data$time=="nocturnal"]* 100 / 362.46 ),
+             beside=TRUE, ylim=c(0,16), axes=FALSE, cex.names = 0.9,
+             ylab="Cortisol (µM)", main="Daily variation in milk cortisol\nfrom 42 mothers in Brazil",
+             cex.axis=1.2, cex.lab=1.3,
+             col=c("#e57c0cff", "#b376b6ff"), names.arg = c("Colostrum\n(3d)", "Transition\n(10d)", "Mature\n(30d)") )
+arrows(x0 = rep(b,2), y0 = rep(silva2013_data$cortisol_ug_dL,2)* 100 / 362.46, lwd=1, length = 0.1,
+       x1 = rep(b,2), 
+       y1=c(silva2013_data$cortisol_ug_dL+silva2013_data$cortisol_ug_dL_var, silva2013_data$cortisol_ug_dL-silva2013_data$cortisol_ug_dL_var)* 100 / 362.46, angle = 90)
+axis(2, at=seq(0,16,4), cex.axis=1.2, tick = FALSE)
+axis(2, at=seq(0,16,2), cex.axis=1.2, labels = FALSE)
+dev.off()        
+
+
+
 # Illnerova (1993) Melatonin rhythm in human milk. J Clin Endocrinol Metab
 # https://pubmed.ncbi.nlm.nih.gov/8370707/
 # https://doi.org/10.1210/jcem.77.3.8370707
 illnerova_summary_text = "Melatonin_Source	Day_less_than_43_pM	Night_pM	Night_var_pM
 Serum	0	280	34
 Milk	0	99	26"
-illnerova_summary = read.table(text=illnerova_summary_text, header=TRUE, sep="\t")
+illnerova_summary_data = read.table(text=illnerova_summary_text, header=TRUE, sep="\t")
+
+pdf(file="~/git/misc-analyses/milk_composition/images/illnerova1993_melatonin_in_serum.pdf", width=4, height=4, title="Data from Illnerova et al 1993")
+#png(file="~/git/misc-analyses/milk_composition/images/illnerova1993_melatonin_in_serum.png", width=360, height=360, res=90)
+par(mar=c(3,4.5,3,1))
+b = barplot( rbind( c(10,10), illnerova_summary_data$Night_pM ) , beside = TRUE, ylim=c(0,320), axes=FALSE,
+         col=c("#e57c0cff", "#b376b6ff"), ylab="Melatonin (pM)", names.arg = c("Serum","Milk"), 
+         main="Melatonin in serum and milk\nfrom 10 Czech mothers",
+         cex.lab=1.3, cex.axis=1.2, cex.names = 1.5 )
+axis(2, at=seq(0,300,100), cex.axis=1.2, tick = FALSE)
+axis(2, at=seq(0,300,50), cex.axis=1.2, labels = FALSE)
+arrows(x0 = b[2,], y0 = illnerova_summary_data$Night_pM, lwd=1, length = 0.1,
+       x1 = b[2,], y1=illnerova_summary_data$Night_pM+illnerova_summary_data$Night_var_pM, angle = 90)
+arrows(x0 = b[2,], y0 = illnerova_summary_data$Night_pM, lwd=1, length = 0.1,
+       x1 = b[2,], y1=illnerova_summary_data$Night_pM-illnerova_summary_data$Night_var_pM, angle = 90)
+segments(1,43,6,43,col="#4567c044", lwd=5)
+text(3,100,"Detection\nlimit\n43pM", col="#284897ff", pos=4 )
+legend("topright", legend=c("Day","Night"), col=c("#e57c0cff", "#b376b6ff"), pch=15, pt.cex=3, cex=1.2 )
+dev.off()
+
+# illnerova_summary_data[2,3] * 0.100
+# 99pM * 100mL = 9.9pmol in 100mL of breast milk at 3am
+# this is about 1 million fold lower than 2mg of melatonin in a tablet
 
 illnerova_data_text = "time_hrs	mother_A_milk_pM	mother_B_milk_pM	mother_C_milk_pM	mother_D_milk_pM	mother_E_milk_pM	mother_F_milk_pM
 11	NA	3.9	4.2	NA	6.3	NA
@@ -275,9 +352,9 @@ dev.off()
 cubero2006_data$Urinary_6.sulfatoxymelatonin_mothers_ng_mL * 1000 / 328.34
 
 
-colorRampPalette("darkblue")(1)
 
 
+################################################################################
 ################################################################################
 
 
@@ -319,6 +396,7 @@ legend("topright", legend=c("Probiotic (25)","Placebo (21)"), col=c("#FF5F50ff",
 dev.off()
 
 
+################################################################################
 ################################################################################
 
 
