@@ -4,20 +4,6 @@
 # Jensen et al (1990) Lipids of Bovine and Human Milks: A Comparison. J Dairy Sci 73:223-240. REVIEW
 # https://pubmed.ncbi.nlm.nih.gov/2184172/
 
-# Pereira et al (2013) Composition of breast milk of lactating adolescents in function of time of lactation
-# https://pubmed.ncbi.nlm.nih.gov/24506376/
-
-# Andreas et al (2015) Human breast milk: A review on its composition and bioactivity. REVIEW
-# https://pubmed.ncbi.nlm.nih.gov/26375355/
-
-# Rio-Aige et al (2023) Breast milk immune composition varies during the transition stage of lactation: characterization of immunotypes in the MAMI cohort
-# https://pmc.ncbi.nlm.nih.gov/articles/PMC10702228/
-
-# Karcz et Krolak-Olejnik (2021) Vegan or vegetarian diet and breast milk composition - a systematic review
-# https://pubmed.ncbi.nlm.nih.gov/32319307/
-
-# Martin et al (2016) Review of Infant Feeding: Key Features of Breast Milk and Infant Formula
-# https://pmc.ncbi.nlm.nih.gov/articles/PMC4882692/
 
 milk_data_text = "Milk	Protein_pct	Casein_pct_of_protein	a-casein	b-casein	k-casein	Whey_pct_of_protein	a-Lactalbumin	b-Lactoglobulin	Lactotransferrin	Lysozyme	IgA	IgG	IgM	Serum_albumin	Fat	Lactose	Total_solids	Ash	Kilocalories
 Human milk 36d	1.0	40	0.06	27	12	60	27	0	18	4	5	0.1	0.2	3	3.9	6.8	12.1	0.2	72
@@ -167,7 +153,6 @@ silva2013_data = read.table(text=silva2013_text, header=TRUE, sep="\t")
 time_mel_aov = aov(melatonin_pg_mL ~ time, data = silva2013_data)
 
 
-
 # MELATONIN
 pdf(file="~/git/misc-analyses/milk_composition/images/silva2013_melatonin_in_milk.pdf", width=4, height=4, title="Data from Silva et al 2013")
 #png(file="~/git/misc-analyses/milk_composition/images/silva2013_melatonin_in_milk.png", width=360, height=360, res=90)
@@ -175,7 +160,7 @@ par(mar=c(3,4.5,3,1))
 b = barplot( rbind(silva2013_data$melatonin_pg_mL[silva2013_data$time=="diurnal"]* 1000 / 232.281, 
                silva2013_data$melatonin_pg_mL[silva2013_data$time=="nocturnal"]* 1000 / 232.281 ),
          beside=TRUE, ylim=c(0,320), axes=FALSE, cex.names = 0.9,
-         ylab="Melatonin (pM)", main="Daily variation in milk melatonin\nfrom 42 mothers in Brazil",
+         ylab="Melatonin, by ELISA (pM)", main="Daily variation in milk melatonin\nfrom 42 mothers in Brazil",
          cex.axis=1.2, cex.lab=1.3,
          col=c("#e57c0cff", "#b376b6ff"), names.arg = c("Colostrum\n(3d)", "Transition\n(10d)", "Mature\n(30d)") )
 arrows(x0 = rep(b,2), y0 = rep(silva2013_data$melatonin_pg_mL,2)* 1000 / 232.281, lwd=1, length = 0.1,
@@ -183,23 +168,6 @@ arrows(x0 = rep(b,2), y0 = rep(silva2013_data$melatonin_pg_mL,2)* 1000 / 232.281
        y1=c(silva2013_data$melatonin_pg_mL+silva2013_data$melatonin_pg_mL_var, silva2013_data$melatonin_pg_mL-silva2013_data$melatonin_pg_mL_var)* 1000 / 232.281, angle = 90)
 axis(2, at=seq(0,300,100), cex.axis=1.2, tick = FALSE)
 axis(2, at=seq(0,300,50), cex.axis=1.2, labels = FALSE)
-dev.off()        
-
-# CORTISOL
-pdf(file="~/git/misc-analyses/milk_composition/images/silva2013_cortisol_in_milk.pdf", width=4, height=4, title="Data from Silva et al 2013")
-#png(file="~/git/misc-analyses/milk_composition/images/silva2013_cortisol_in_milk.png", width=360, height=360, res=90)
-par(mar=c(3,4.5,3,1))
-b = barplot( rbind(silva2013_data$cortisol_ug_dL[silva2013_data$time=="diurnal"]* 100 / 362.46, 
-                   silva2013_data$cortisol_ug_dL[silva2013_data$time=="nocturnal"]* 100 / 362.46 ),
-             beside=TRUE, ylim=c(0,16), axes=FALSE, cex.names = 0.9,
-             ylab="Cortisol (µM)", main="Daily variation in milk cortisol\nfrom 42 mothers in Brazil",
-             cex.axis=1.2, cex.lab=1.3,
-             col=c("#e57c0cff", "#b376b6ff"), names.arg = c("Colostrum\n(3d)", "Transition\n(10d)", "Mature\n(30d)") )
-arrows(x0 = rep(b,2), y0 = rep(silva2013_data$cortisol_ug_dL,2)* 100 / 362.46, lwd=1, length = 0.1,
-       x1 = rep(b,2), 
-       y1=c(silva2013_data$cortisol_ug_dL+silva2013_data$cortisol_ug_dL_var, silva2013_data$cortisol_ug_dL-silva2013_data$cortisol_ug_dL_var)* 100 / 362.46, angle = 90)
-axis(2, at=seq(0,16,4), cex.axis=1.2, tick = FALSE)
-axis(2, at=seq(0,16,2), cex.axis=1.2, labels = FALSE)
 dev.off()        
 
 
@@ -353,6 +321,140 @@ cubero2006_data$Urinary_6.sulfatoxymelatonin_mothers_ng_mL * 1000 / 328.34
 
 
 
+################################################################################
+################################################################################
+# CORTISOL
+
+
+pdf(file="~/git/misc-analyses/milk_composition/images/silva2013_cortisol_in_milk.pdf", width=4, height=4, title="Data from Silva et al 2013")
+#png(file="~/git/misc-analyses/milk_composition/images/silva2013_cortisol_in_milk.png", width=360, height=360, res=90)
+par(mar=c(3,4.5,3,1))
+b = barplot( rbind(silva2013_data$cortisol_ug_dL[silva2013_data$time=="diurnal"]* 10 / 362.46, 
+                   silva2013_data$cortisol_ug_dL[silva2013_data$time=="nocturnal"]* 10 / 362.46 ),
+             beside=TRUE, ylim=c(0,1.5), axes=FALSE, cex.names = 0.9,
+             ylab="Cortisol, by ELISA (µM)", main="Daily variation in milk cortisol\nfrom 42 mothers in Brazil",
+             cex.axis=1.2, cex.lab=1.3,
+             col=c("#e57c0cff", "#b376b6ff"), names.arg = c("Colostrum\n(3d)", "Transition\n(10d)", "Mature\n(30d)") )
+arrows(x0 = rep(b,2), y0 = rep(silva2013_data$cortisol_ug_dL,2)* 10 / 362.46, lwd=1, length = 0.1,
+       x1 = rep(b,2), 
+       y1=c(silva2013_data$cortisol_ug_dL+silva2013_data$cortisol_ug_dL_var, silva2013_data$cortisol_ug_dL-silva2013_data$cortisol_ug_dL_var)* 10 / 362.46, angle = 90)
+axis(2, at=seq(0,1.5,0.25), cex.axis=1.2, tick = FALSE)
+axis(2, at=seq(0,1.5,0.25), cex.axis=1.2, labels = FALSE)
+dev.off()        
+
+
+# Hollanders et al 2019 The Association between Breastmilk Glucocorticoid Concentrations and Macronutrient Contents Throughout the Day
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC6412799/
+hollanders2019_text = "time_hr	woman	cortisol_nmol_L	cortisone_nmol_L	carbohydrate_g_100mL	fat_g_100mL	prot_g_100mL
+1.5	A	3.24	15.50	8.05	2.80	1.24
+4.5	A	12.02	56.42	7.27	5.85	0.90
+7.5	A	13.17	50.08	8.02	1.68	1.24
+10.5	A	2.36	18.77	7.81	3.07	1.34
+13.5	A	2.49	16.83	8.05	2.02	1.27
+16.5	A	1.78	11.10	8.08	1.47	1.17
+19.5	A	0.90	4.76	7.78	3.07	0.86
+22.5	A	1.00	5.98	7.75	3.92	1.03
+9.0	B	10.59	34.24	7.62	3.85	0.92
+10.5	B	2.23	14.85	7.54	2.87	0.95
+11.5	B	0.87	8.65	7.46	4.87	0.79
+15.5	B	2.21	16.94	7.31	6.41	0.67
+16.5	B	1.23	10.81	7.62	5.46	0.82
+18.5	B	1.51	10.47	7.46	6.79	0.67
+22.5	B	1.59	12.02	7.74	3.13	0.87
+23.5	B	1.59	9.80	7.87	2.36	0.90
+6.5	C	NA	NA	3.05	3.10	1.42
+10.0	C	11.62	31.85	3.22	1.45	1.19
+13.0	C	5.81	22.08	3.22	1.73	1.42
+18.0	C	1.24	6.37	3.27	1.17	1.19
+27.0	C	2.06	11.07	3.45	1.50	1.17
+7.5	D	12.12	42.21	7.78	2.75	1.06
+10.5	D	2.58	23.28	8.06	2.40	1.24
+16.5	D	0.93	15.88	8.11	2.07	1.11
+19.5	D	0.51	4.89	7.75	3.64	1.09
+23.5	D	1.77	11.45	7.88	2.78	1.09
+30.5	D	13.81	38.93	8.03	2.30	1.04"
+hollanders2019_data = read.table( text=hollanders2019_text, header=TRUE, sep="\t" )
+
+#pdf(file="~/git/misc-analyses/milk_composition/images/hollanders2019_cortisol_in_milk.pdf", width=8, height=4, title="Data from Hollanders et al 2019")
+png(file="~/git/misc-analyses/milk_composition/images/hollanders2019_cortisol_in_milk.png", width=720, height=360, res=90 )
+par(mfrow=c(1,2), mar=c(4.2,4.5,3,1))
+plot(hollanders2019_data$time_hr, hollanders2019_data$cortisol_nmol_L , type='n',
+     axes=FALSE, xlim=c(0,30), ylim=c(0,20), main="Nightly variation of cortisol\n of 4 Dutch mothers (1 month pp)",
+     xlab="Time of day (hours)", ylab="Cortisol in milk (nmol/L)", cex.lab=1.3 )
+axis(1, at=seq(0,30,2), labels=NA)
+axis(1, at=seq(0,28,4), tick = FALSE)
+axis(2, cex.axis=1.2 )
+for (i in 1:length(unique(hollanders2019_data$woman)) ){
+  print(i)
+  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
+  lines(hollanders2019_subset$time_hr, hollanders2019_subset$cortisol_nmol_L, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
+  points(hollanders2019_subset$time_hr, hollanders2019_subset$cortisol_nmol_L, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
+}
+plot(hollanders2019_data$time_hr, hollanders2019_data$cortisone_nmol_L , type='n',
+     axes=FALSE, xlim=c(0,30), ylim=c(0,60), main="Nightly variation of cortisone\n from 4 Dutch mothers (1 month pp)",
+     xlab="Time of day (hours)", ylab="Cortisone in milk (nmol/L)", cex.lab=1.3 )
+axis(1, at=seq(0,30,2), labels=NA)
+axis(1, at=seq(0,28,4), tick = FALSE)
+axis(2, at=seq(0,60,20), cex.axis=1.2 )
+for (i in 1:length(unique(hollanders2019_data$woman)) ){
+  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
+  lines(hollanders2019_subset$time_hr, hollanders2019_subset$cortisone_nmol_L, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
+  points(hollanders2019_subset$time_hr, hollanders2019_subset$cortisone_nmol_L, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
+}
+dev.off()
+
+pdf(file="~/git/misc-analyses/milk_composition/images/hollanders2019_macronutrient_in_milk.pdf", width=8, height=3, title="Data from Hollanders et al 2019")
+#png(file="~/git/misc-analyses/milk_composition/images/hollanders2019_macronutrient_in_milk.png", width=720, height=270, res=90 )
+par(mfrow=c(1,3), mar=c(4.2,4.5,3,1))
+plot(hollanders2019_data$time_hr, hollanders2019_data$fat_g_100mL , type='n',
+     axes=FALSE, xlim=c(0,30), ylim=c(0,8), main="Nightly variation of fat\nin milk from 4 Dutch mothers",
+     xlab="Time of day (hours)", ylab="Fat in milk (g/100mL)", cex.lab=1.3 )
+axis(1, at=seq(0,30,2), labels=NA)
+axis(1, at=seq(0,28,4), tick = FALSE)
+axis(2, at=seq(0,8,2), cex.axis=1.2 )
+for (i in 1:length(unique(hollanders2019_data$woman)) ){
+  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
+  lines(hollanders2019_subset$time_hr, hollanders2019_subset$fat_g_100mL, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
+  points(hollanders2019_subset$time_hr, hollanders2019_subset$fat_g_100mL, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
+}
+plot(hollanders2019_data$time_hr, hollanders2019_data$carbohydrate_g_100mL , type='n',
+     axes=FALSE, xlim=c(0,30), ylim=c(0,8), main="Nightly variation of lactose\nin milk from 4 Dutch mothers",
+     xlab="Time of day (hours)", ylab="Lactose in milk (g/100mL)", cex.lab=1.3 )
+axis(1, at=seq(0,30,2), labels=NA)
+axis(1, at=seq(0,28,4), tick = FALSE)
+axis(2, at=seq(0,8,2), cex.axis=1.2 )
+for (i in 1:length(unique(hollanders2019_data$woman)) ){
+  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
+  lines(hollanders2019_subset$time_hr, hollanders2019_subset$carbohydrate_g_100mL, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
+  points(hollanders2019_subset$time_hr, hollanders2019_subset$carbohydrate_g_100mL, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
+}
+plot(hollanders2019_data$time_hr, hollanders2019_data$prot_g_100mL , type='n',
+     axes=FALSE, xlim=c(0,30), ylim=c(0,2), main="Nightly variation of protein\nin milk from 4 Dutch mothers",
+     xlab="Time of day (hours)", ylab="Protein in milk (g/100mL)", cex.lab=1.3 )
+axis(1, at=seq(0,30,2), labels=NA)
+axis(1, at=seq(0,28,4), tick = FALSE)
+axis(2, at=seq(0,2,0.5), cex.axis=1.2 )
+for (i in 1:length(unique(hollanders2019_data$woman)) ){
+  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
+  lines(hollanders2019_subset$time_hr, hollanders2019_subset$prot_g_100mL, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
+  points(hollanders2019_subset$time_hr, hollanders2019_subset$prot_g_100mL, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
+}
+dev.off()
+
+
+
+# Jensen et al 1995 Human milk total lipid and cholesterol are dependent on interval of sampling during 24 hours
+# https://pubmed.ncbi.nlm.nih.gov/7884623/
+
+jensen1995_text = "time_start_hrs	time_end_hrs	lipid_pct	lipid_pct_var	volume_milk_mL_breast	volume_milk_mL_breast_var	lipid_g_volume	cholesterol_mM	cholesterol_mM_var	cholesterol_mg_dL	cholesterol_mg_dL_var	cholesterol_mmol_100g_fat	cholesterol_mmol_100g_fat_var
+6	10	2.93	0.32	86.8	8	2.54	0.36	0.01	14	2.2	1.24	0.19
+10	14	3.89	0.28	45	7.4	1.75	0.42	0.04	16.2	1.7	1.1	0.11
+14	18	3.87	0.31	44	7.7	1.94	0.56	0.05	21.7	2.1	1.45	0.14
+18	22	4.37	0.4	45.1	9.8	1.97	0.57	0.07	22	2.8	1.3	0.17
+22	6	2.86	0.36	49.9	9	1.43	0.33	0.06	12.9	2.2	1.17	0.2"
+jensen1995_data = read.table(text=jensen1995_text, header=TRUE, sep="\t")
+
+"84 days postpartum"
 
 ################################################################################
 ################################################################################
@@ -437,8 +539,29 @@ for (i in seq(2,19,2)) {
 dev.off()
 
 
+################################################################################
+################################################################################
 
+# Italianer et al 2020 Circadian Variation in Human Milk Composition, a Systematic Review
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC7468880/
 
+# Jackson et al 1988 Circadian variation in fat concentration of breast-milk in a rural northern Thai population
+# https://pubmed.ncbi.nlm.nih.gov/3395599/
+# https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/circadian-variation-in-fat-concentration-of-breastmilk-in-a-rural-northern-thai-population/38DD1E075936C08D5AC621AFCA916A45
 
+# Pereira et al (2013) Composition of breast milk of lactating adolescents in function of time of lactation
+# https://pubmed.ncbi.nlm.nih.gov/24506376/
+
+# Andreas et al (2015) Human breast milk: A review on its composition and bioactivity. REVIEW
+# https://pubmed.ncbi.nlm.nih.gov/26375355/
+
+# Rio-Aige et al (2023) Breast milk immune composition varies during the transition stage of lactation: characterization of immunotypes in the MAMI cohort
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC10702228/
+
+# Karcz et Krolak-Olejnik (2021) Vegan or vegetarian diet and breast milk composition - a systematic review
+# https://pubmed.ncbi.nlm.nih.gov/32319307/
+
+# Martin et al (2016) Review of Infant Feeding: Key Features of Breast Milk and Infant Formula
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC4882692/
 
 #
