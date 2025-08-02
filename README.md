@@ -31,6 +31,11 @@ Replots of food aversions and cravings during pregnancy, [NVP](https://en.wikipe
 
 ![food_cravings_flaxman_2000_fig7.png](https://github.com/wrf/misc-analyses/blob/master/nausea_pregnancy/images/food_cravings_flaxman_2000_fig7.png)
 
+## [baby development regression periods](https://github.com/wrf/misc-analyses/tree/master/baby_development) ##
+Replots of original data about the so-called "[tiger springs](https://da.wikipedia.org/wiki/Tigerspring)", from 15 women where only 3 provided data for the entire period in question, by [Plooij et al 1992](https://www.tandfonline.com/doi/abs/10.1080/02646839208403946)
+
+![plooij1992_figure1_remake.png](https://github.com/wrf/misc-analyses/blob/master/baby_development/images/plooij1992_figure1_remake.png)
+
 ## [generic interactive plotter](https://github.com/wrf/misc-analyses/tree/master/shinyplot) ##
 Generic interactive plotter using [Rshiny](https://shiny.rstudio.com/). The app can read in a file, and plot any X against any Y (as a scatterplot). The graph can be printed as a PDF for easy sharing.
 
