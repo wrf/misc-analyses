@@ -10,7 +10,7 @@ library(gridExtra)
 # https://news.gallup.com/interactives/248240/global-emotions.aspx
 
 emo_data_file = "~/git/misc-analyses/happiness_index/data/gallup_2022_global_emotion_survey.tab"
-emo_data = read.table(emo_data_file, header=TRUE, sep="\t", quote="")
+emo_data.2022 = read.table(emo_data_file, header=TRUE, sep="\t", quote="")
 #head(emo_data)
 #unique(emo_data$country_short)
 #unique(emo_data$emotion)
@@ -128,28 +128,36 @@ net_emo_sums.2022 = positive_emo_sums - negative_emo_sums
 net_emo_sums.2022
 
 
+
 #################
 # using 2023 data
 emo_data_file = "~/git/misc-analyses/happiness_index/data/gallup_2023_global_emotion_survey.tab"
-emo_data = read.table(emo_data_file, header=TRUE, sep="\t", quote="")
+emo_data.2023 = read.table(emo_data_file, header=TRUE, sep="\t", quote="")
 
 # combine all emotions
-negative_emo_sums = emo_data$anger_yes + emo_data$sad_yes + emo_data$stressed_yes +
-  emo_data$worried_yes + emo_data$pain_yes
-positive_emo_sums = emo_data$enjoyment_yes + emo_data$rested_yes + emo_data$learned_yes +
-  emo_data$smiled_yes + emo_data$respected_yes
+negative_emo_sums = emo_data.2023$anger_yes + emo_data.2023$sad_yes + emo_data.2023$stressed_yes +
+  emo_data.2023$worried_yes + emo_data.2023$pain_yes
+positive_emo_sums = emo_data.2023$enjoyment_yes + emo_data.2023$rested_yes + emo_data.2023$learned_yes +
+  emo_data.2023$smiled_yes + emo_data.2023$respected_yes
 net_emo_sums.2023 = positive_emo_sums - negative_emo_sums
 hist(net_emo_sums.2023, breaks=25, col=c(rev(hot_emotion_colors.p(7)),cool_emotion_colors.p(18)))
 
 # compare the two years
-plot(net_emo_sums.2023[match(country_codes.2022, emo_data$country_code)], net_emo_sums.2022,
+
+d = data.frame( y2022 = net_emo_sums.2022,
+                y2023 = net_emo_sums.2023[match(country_codes.2022, emo_data$country_code)],
+                y2022_col = region_matches[match(country_codes.2022, emo_data$country_code)]
+                )
+
+plot(d$y2022, d$y2023,
      xlim=c(-150,400), ylim=c(-150,400),
-     xlab="Overall emotional score in 2023", ylab="Overall emotional score in 2022",
-     pch=16, cex=2, col=region_colors[region_matches[match(country_codes.2022, emo_data$country_code)]],
+     xlab="Overall emotional score in 2022", ylab="Overall emotional score in 2023",
+     pch=16, cex=2, col=region_colors.matched[d$y2022_col],
      cex.lab=1.3, cex.axis=1.3 )
-text(net_emo_sums.2023[match(country_codes.2022, emo_data$country_code)], net_emo_sums.2022, 
+text(net_emo_sums.2022, net_emo_sums.2023[match(country_codes.2022, emo_data$country_code)], 
      emo_data$country_code[match(country_codes.2022, emo_data$country_code)] )
 abline(a=0,b=1, lwd=3, col="#00000066")
+
 
 # make all maps and sum plots
 # pdf(file="~/git/misc-analyses/happiness_index/images/gallup_2023_global_emotion_survey.sums.pdf", width=8, height=11, paper="a4", title="2023 Global Emotion Survey")
@@ -307,7 +315,21 @@ dev.off()
 
 
 
+################################################################################
+################################################################################
+# data from
+# The Mental State of the World in 2023
+# https://mentalstateoftheworld.report/2023_read/
 
+msow_data_file = "~/git/misc-analyses/happiness_index/data/mental_state_world_report_2023_main.txt"
+msow_data = read.table(msow_data_file, header=TRUE, sep="\t", quote="")
+msow_data.sort = arrange(msow_data, desc(total_Average_MHQ_Score) )
+head(msow_data.sort)
+msow_data.sort$total_Average_MHQ_Score
+
+
+match( msow_data.sort$country_code, happy_data$country_code )
+msow_data.sort$country_code[ which(is.na(match( msow_data.sort$country_code, happy_data$country_code ))) ]
 
 
 #

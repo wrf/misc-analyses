@@ -7,18 +7,22 @@ From [Hibbeln 2006 Healthy intakes of n−3 and n–6 fatty acids: estimations c
 
 ![Fish consumption and depression](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/hibbeln_1998_fish_vs_depression.png)
 
+There are implications of this with respect to many different populations. Shut-ins, or [hikikomori](https://en.wikipedia.org/wiki/Hikikomori), potentially end up in a vicious cycle related to diet, where withdrawal leads to a bad diet, to mood disorders, to more withdrawal. A study of 104 patients in Hong Kong found that most consume fast food and sugary drinks, and have little knowledge of cooking ([Yuen 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5858384/)). A fast food diet likely has close to 0mg of omega-3 fatty acids. If this were representative of the thousands in that situation, then this is a key direction for intervention.
+
 ### antidepressants ###
-Data from [Antidepressant drugs consumption, 2000 and 2015](https://www.oecd-ilibrary.org/social-issues-migration-health/health-at-a-glance-2017/antidepressant-drugs-consumption-2000-and-2015-or-nearest-year_health_glance-2017-graph181-en)
+Contrary to being happiest, antidepressant usage in northern Europe is high, data from [Antidepressant drugs consumption, 2000 and 2015](https://www.oecd-ilibrary.org/social-issues-migration-health/health-at-a-glance-2017/antidepressant-drugs-consumption-2000-and-2015-or-nearest-year_health_glance-2017-graph181-en). Here, [defined daily dose](https://en.wikipedia.org/wiki/Defined_daily_dose) roughly equates to the average number of people taking medication per day (with some more, or some less).
 
 ![OECD antidepressant usage 2015](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/OECD_2017_10_9_antidepressant_usage.png)
 
 ### world happiness report ###
-From the [world happiness report 2023](https://worldhappiness.report/ed/2023/)
+From the [world happiness report 2023](https://worldhappiness.report/ed/2023/). This was the report that ranked Denmark as the happiest people for a few years, then was replaced by Finland for several more years. Overall, their primarily economic ranking system still ranks the West as the "happiest", despite their rampant antidepressant usage. 
+
+The factors include [GDP per capita](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita), "Social support", [Life expectancy at birth](https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy) (itself a combination of healthcare and overall health), "Freedom to make life choices", "Generosity", and "Perceptions of corruption".
 
 ![WHR2023 score vs variance](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/happiness_report_2023_figure2_main_table.png)
 
 ### global emotions ###
-From [global emotions interactive map](https://news.gallup.com/interactives/248240/global-emotions.aspx)
+From [global emotions interactive map](https://news.gallup.com/interactives/248240/global-emotions.aspx). Unlike the WHR, these surveys ask about actual emotions.
 
 ![Did you feel anger map](https://github.com/wrf/misc-analyses/blob/master/happiness_index/images/gallup_2022_global_emotion_survey.anger_map.png)
 
