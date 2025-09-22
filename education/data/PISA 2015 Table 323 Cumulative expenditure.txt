@@ -1,0 +1,108 @@
+#Table 10
+#Mean score and variation in student performance in reading
+#Table 31
+#Mean score and variation in student performance in mathematics
+#Table 52
+#Mean score and variation in student performance in science
+#Source: PISA 2015 Database and PISA for Development Database
+#Table 323
+#Cumulative expenditure by educational institutions per student aged 6 to 15 (2013)
+#In equivalent USD converted using PPPs for GDP, by level of education, based on full-time equivalents
+#Source: PISA 2015 and PISA for Development system-level data collection
+Country	Group	region	Source	Notes	Reading_Mean_score	Reading_Mean_SE	Math_Mean_score	Math_Mean_SE	Math_SD	Math_SD_SE	Pct_5_Score	Pct_5_SE	Pct_10_Score	Pct_10_SE	Pct_25_Score	Pct_25_SE	Pct_50_Score	Pct_50_SE	Pct_75_Score	Pct_75_SE	Pct_90_Score	Pct_90_SE	Pct_95_Score	Pct_95_SE	Science_Mean_score	Science_Mean_SE	Average_duration_Pre-primary education	Average_duration_Primary education	Average_duration_Lower secondary	Average_duration_Upper secondary education	Annual_expenditure Pre-primary education (for children 3 years and older)	Annual_expenditure Primary education	Annual_expenditure Lower secondary education	Annual_expenditure Upper secondary education	Annual_expenditure All secondary education	Cumulative_expenditure_Pre-Primary education	Cumulative_expenditure_Primary education	Cumulative_expenditure_Lower secondary	Cumulative_expenditure_Upper secondary education	Cumulative_expenditure_All secondary education	 Cumulative_expenditure_Total 6 to 15 year-olds
+Cambodia	PISA-D	South-East Asia	c		321	2.1	325	2.7	75	1.5	198	4.9	229	4.1	276	3.5	326	3	376	3.2	420	3.6	446	4	330	1.9	0	6	3	1	170	208	468	434	456	0	1249	1403	434	1838	3087
+Ecuador	PISA-D	Latin America and Caribbean	c	5	409	3.4	377	3.1	76	1.5	251	5	278	4.3	326	3.3	377	3.3	430	3.8	477	4	504	3.8	399	2.9	0	6	3	1	4190	1774	967	468	737	0	10642	2901	468	3369	14011
+Guatemala	PISA-D	Latin America and Caribbean	c		369	3.5	334	3.2	69	2.1	223	5.5	247	4.8	288	3.7	334	3.2	380	4	423	5.4	449	6.9	365	2.9	1	6	3	0	667	678	457	280	396	667	4067	1370	0	1370	6104
+Honduras	PISA-D	Latin America and Caribbean	c	1,4	371	3.5	343	3.5	77	2.3	221	5.3	247	3.9	291	3.4	341	3.5	393	4.5	442	6.1	474	7.5	370	2.9	0	6	3	1	673	912	1393	m	m	0	5472	4178	m	4178	9650
+Paraguay	PISA-D	Latin America and Caribbean	c	5	370	3.7	326	2.9	68	1.4	214	4.5	239	3.8	279	2.9	326	3.6	374	4	414	3.8	436	4	358	3.3	0	6	3	1	1429	1336	1233	2042	1585	0	8014	3700	2042	5742	13756
+Senegal	PISA-D	Sub-Saharan Africa	c	5,10	306	1.8	304	2.6	81	1.7	177	5.1	203	4.1	249	3.2	301	3.2	356	3	408	3.7	441	5.2	309	1.8	0	6	4	0	989	549	881	1245	966	0	3294	3524	0	3524	6818
+Zambia	PISA-D	Sub-Saharan Africa	c		275	3.9	258	3.9	72	2.4	153	4.4	173	3.6	207	3.3	251	3.8	304	5.8	357	7.4	390	8.3	309	3.1	1	7	2	0	m	m	m	m	m	m	m	m	m	m	m
+Australia	OECD	Oceania	a		503	1.7	494	1.6	93	1.2	339	2.8	371	2.5	430	2	495	2.1	559	2.1	613	2.8	645	3.3	510	1.5	0	7	3	0	13171	8289	11431	10203	10932	0	58024	34292	0	32797	92316
+Austria	OECD	Western Europe	a		485	2.8	497	2.9	95	1.8	337	5.7	370	4.5	431	3.9	501	3.6	564	3.4	618	3.7	648	4.2	495	2.4	0	4	4	2	8737	10780	14831	15255	15024	0	43120	59325	30510	90141	132955
+Belgium	OECD	Western Europe	a	1	499	2.4	507	2.4	97	1.5	341	4.4	374	3.9	438	3.5	513	3	579	2.5	630	2.5	657	2.7	502	2.3	0	6	2	2	7576	9957	12267	13020	12763	0	59741	24535	26040	51052	110316
+Canada	OECD	North America	a	1,2,3	527	2.3	516	2.3	88	1.1	368	3.7	400	3.2	456	2.9	518	2.5	577	2.6	627	3.2	657	3.6	528	2.1	0	6	3	1	m	9130	x(6)	12086	m	m	82168	x(11)	12086	m	94254
+Chile	OECD	Latin America and Caribbean	a		459	2.6	423	2.5	85	1.4	284	4	313	3.5	363	2.9	422	3	483	3.5	534	3.6	563	3.7	447	2.4	0	6	2	2	6408	4021	4099	4141	4127	0	24128	8197	8282	16507	40607
+Czech Republic	OECD	Western Europe	a		487	2.6	492	2.4	91	1.7	340	4.8	373	4.2	431	3.4	494	2.8	555	2.9	608	3.6	639	4.4	493	2.3	0	5	4	1	4655	4730	8061	7682	7861	0	23652	32242	7682	39303	63576
+Denmark	OECD	Western Europe	a	4	500	2.5	511	2.2	81	1.2	376	3.3	405	3.2	457	2.9	513	2.7	567	2.5	614	2.9	639	3.5	502	2.4	1	6	3	0	m	11355	11906	10165	10933	m	68132	35719	0	32798	103852
+Estonia	OECD	Western Europe	a	4	519	2.2	520	2	80	1.1	386	3.7	415	3.1	464	2.6	521	2.3	576	2.6	623	2.7	650	3.4	534	2.1	1	6	3	0	m	7138	7009	5909	6417	m	42829	21028	0	19252	63858
+Finland	OECD	Western Europe	a	1	526	2.5	511	2.3	82	1.3	372	5.1	404	3.8	456	3.1	514	2.7	568	2.4	614	2.9	642	3.5	531	2.4	1	6	3	0	10477	8519	13312	8786	10237	10477	51114	39937	0	30712	101527
+France	OECD	Western Europe	a		499	2.5	493	2.1	95	1.5	331	4.5	364	3.9	425	3.3	499	2.9	564	2.6	613	2.7	639	3.3	495	2.1	0	5	4	1	7507	7201	9947	13643	11482	0	36003	39789	13643	57410	89435
+Germany	OECD	Western Europe	a		509	3.0	506	2.9	89	1.4	356	4.9	389	4.1	445	3.5	508	3.2	568	3.4	620	3.4	650	3.9	509	2.7	0	4	6	0	9167	8103	9967	13093	11106	0	32414	59800	0	66639	92214
+Greece	OECD	Western Europe	a		467	4.3	454	3.8	89	1.8	306	5.7	336	5.3	391	5	455	4	517	4	570	3.7	598	4.2	455	3.9	0	6	3	1	m	m	m	m	m	m	m	m	m	m	m
+Hungary	OECD	Western Europe	a		470	2.7	477	2.5	94	1.7	321	4	351	4.1	411	3.7	480	3.3	543	3.2	598	3.5	627	4	477	2.4	1	4	4	1	5074	5435	3994	4439	4236	5074	21739	15977	4439	21182	47229
+Iceland	OECD	Western Europe	a		482	2.0	488	2	93	1.3	333	3.9	367	3.6	424	3	489	2.7	553	2.7	608	4	640	4.3	473	1.7	0	7	3	0	10956	10569	11276	7743	9041	0	73983	33828	0	27124	107811
+Ireland	OECD	Western Europe	a	5	521	2.5	504	2.1	80	1.4	371	4.4	400	3.8	450	2.7	505	2.3	559	2.2	606	2.6	633	2.7	503	2.4	0	6	3	1	6532	8002	10773	10840	10804	0	48011	32320	10840	43215	91171
+Israel	OECD	Middle East and North Africa	a	1	479	3.8	470	3.6	103	2.2	296	5.3	332	4.7	396	4.3	473	4.5	545	4.3	601	4.9	634	6.1	467	3.4	0	6	3	1	4302	6941	x(9)	5831	5831	0	41647	x(14)	5831	23325	64973
+Italy	OECD	Western Europe	a		485	2.7	490	2.8	94	1.7	334	4.7	368	3.8	426	3.3	491	3.2	555	3.6	610	3.8	640	4.4	481	2.5	0	5	3	2	6233	8392	8797	9174	9023	0	41961	26392	18348	45116	86701
+Japan	OECD	East Asia	a	1	516	3.2	532	3	88	1.7	381	5.6	416	4.4	474	3.5	536	3.5	594	3.5	643	4.2	672	5.4	538	3	0	6	3	1	6247	8748	10084	10459	10273	0	52489	30252	10459	41091	93200
+Korea	OECD	East Asia	a 		517	3.5	524	3.7	100	1.8	353	5.9	391	5.5	458	4.5	529	4.3	594	4.2	649	4.3	681	4.8	516	3.1	0	6	3	1	6227	7957	7324	9801	8592	0	47745	21971	9801	34366	79517
+Latvia	OECD	Western Europe	a 		488	1.8	482	1.9	78	1.2	353	4.4	382	3	430	2.7	483	2.3	536	2.1	582	2.9	608	3.1	490	1.6	0	6	3	1	4854	5974	6016	6005	6010	0	35847	18047	6005	24039	59899
+Luxembourg	OECD	Western Europe	a	3	481	1.4	486	1.3	94	1.2	334	2.8	363	2.2	417	2.1	487	1.9	553	2	607	2.5	638	3.7	483	1.1	0	6	3	1	19233	17959	20076	19473	19762	0	107757	60229	19473	79049	187459
+Mexico	OECD	Americas	a		423	2.6	408	2.2	75	1.3	284	4.1	312	2.6	357	2.5	407	2.6	459	2.9	505	3.5	533	3.6	416	2.1	0	6	3	1	m	2717	2473	4126	3065	m	16303	7420	4126	12258	27848
+Netherlands	OECD	Western Europe	a		503	2.4	512	2.2	92	1.5	356	3.9	390	3.9	449	3.3	516	2.8	579	2.4	627	3.1	655	3.6	509	2.3	0	6	3	1	8305	8371	12334	12200	12269	0	50228	37002	12200	49076	99430
+New Zealand	OECD	Oceania	a		509	2.4	495	2.3	92	1.3	342	3.8	375	3.8	431	3.2	497	2.9	560	2.8	613	3.1	646	4.4	513	2.4	0	6	4	0	10252	7354	9191	11328	10198	0	44125	36764	0	40791	80890
+Norway	OECD	Western Europe	a	1	513	2.5	502	2.2	85	1.1	359	4	391	3.4	444	2.5	504	2.7	561	2.7	610	3	638	3	498	2.3	0	7	3	0	14704	13274	14103	16153	15283	0	92917	42310	0	45849	135227
+Poland	OECD	Western Europe	a	1	506	2.5	504	2.4	88	1.7	363	4.5	391	4.1	443	3	505	2.5	565	3	617	3.6	649	4.8	501	2.5	1	6	3	0	5552	6919	6900	6178	6505	5552	41514	20701	0	19516	67767
+Portugal	OECD	Western Europe	a	1	498	2.7	492	2.5	96	1.3	332	4.4	365	3.8	424	3.1	495	3.1	561	2.8	614	3.6	644	4.1	501	2.4	0	6	3	1	6604	7258	9667	10503	10074	0	43545	29002	10503	40295	83050
+Slovak Republic	OECD	Western Europe	a	3	453	2.8	475	2.7	95	1.6	312	5.4	349	4.2	412	3.9	479	3.2	543	2.8	596	3.3	625	3.9	461	2.6	0	4	5	1	4996	5942	5755	5839	5795	0	23767	28775	5839	34769	58382
+Slovenia	OECD	Western Europe	a		505	1.5	510	1.3	88	1.3	363	3.5	394	2.5	449	2.1	512	2	572	1.9	622	3	651	4.1	513	1.3	0	6	3	1	8101	9121	10085	7872	8739	0	54723	30254	7872	34955	92850
+Spain	OECD	Western Europe	a	1	496	2.4	486	2.2	85	1.3	342	3.8	374	3.4	428	2.8	489	2.6	546	2.5	593	3.3	621	3.7	493	2.1	0	6	4	0	6021	6956	8303	8729	8520	0	41734	33213	0	34079	74947
+Sweden	OECD	Western Europe	a		500	3.5	494	3.2	90	1.7	342	5	376	4.4	433	3.8	496	3.5	557	4	609	3.9	638	4.7	493	3.6	1	6	3	0	12833	10664	11306	11389	11354	12833	63983	33917	0	34062	110733
+Switzerland	OECD	Western Europe	a	15	492	3.0	521	2.9	96	1.6	358	5.1	394	4.4	455	3.9	526	3.3	590	3.4	641	3.4	671	3.9	506	2.9	0	6	3	1	5479	15930	19698	18479	18994	0	95580	59093	18479	75977	173151
+Turkey	OECD	Middle East and North Africa	a		428	4.0	420	4.1	82	2.3	291	4.8	317	3.9	363	3.8	417	4.7	477	6	529	6.3	559	7.5	425	3.9	0	4	4	2	3172	2894	3337	3914	3590	0	11575	13350	7827	21538	32752
+United Kingdom	OECD	Western Europe	a		498	2.8	492	2.5	93	1.4	337	4.3	371	3.7	430	3.2	496	2.9	556	3.1	610	3.1	641	4	509	2.6	0	6	3	1	8727	10669	13092	11627	12200	0	64016	39277	11627	48801	114920
+United States	OECD	North America	a		497	3.4	470	3.2	88	1.5	323	4.7	355	3.9	408	3.9	470	3.5	532	3.5	585	4.2	613	5	496	3.2	0	6	3	1	9986	10959	11947	13587	12740	0	65752	35840	13587	50959	115180
+Albania	Partners	Western Europe	b		405	4.1	413	3.4	86	1.6	272	5.7	303	4.3	354	4	413	4.2	472	4.2	525	4.4	556	5	427	3.3	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Algeria	Partners	Middle East and North Africa	b	5,6	350	3.0	360	3	71	1.5	247	4.2	271	3.8	312	3	357	2.8	405	3.6	452	4.4	481	5.2	376	2.6	m	m	m	m	a	x(9)	x(9)	x(9)	2744	m	m	m	m	m	m
+Argentina	Partners	Latin America and Caribbean	b																								0	6	3	1	3411	3701	6802	6335	6604	0	22207	20406	6335	26416	48947
+Brazil	Partners	Latin America and Caribbean	a	5	407	2.8	377	2.9	89	1.7	240	3	267	3.3	315	3.1	371	3.1	434	3.7	496	4.7	533	5.5	401	2.3	0	5	4	1	m	3826	3802	3852	3822	0	19129	15210	3852	19112	38190
+China	Partners	East Asia	b		494	5.1	531	4.9	106	2.5	351	6.7	388	5.9	458	5.9	538	5.4	609	5.8	664	5.6	695	6.2	518	4.6	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Bulgaria	Partners	Western Europe	b	2	432	5.0	441	4	97	2.4	284	5.6	315	5.2	371	4.7	441	4.8	509	4.9	568	5.6	601	5.8	446	4.4	1	4	4	1	4082	2529	3144	3205	3179	4082	10117	12576	3205	15893	29980
+Colombia	Partners	Latin America and Caribbean	a		425	2.9	390	2.3	77	1.3	269	3.7	293	3.1	335	2.9	386	2.6	441	2.7	492	3.3	522	3.8	416	2.4	0	5	4	1	m	2074	2728	3117	2835	m	10368	10910	3117	14177	24395
+Costa Rica	Partners	Latin America and Caribbean	b	7	427	2.6	400	2.5	68	1.4	292	2.7	315	2.9	353	2.5	398	2.6	445	3	489	4.2	517	5	420	2.1	0	6	3	1	3553	4143	5249	5924	5456	0	24860	15747	5924	21822	46531
+Croatia	Partners	Eastern Europe and Central Asia	b	5,8	487	2.7	464	2.8	88	1.6	322	4.6	351	4.2	402	3.7	462	3.4	525	3.3	580	3.6	612	4.5	475	2.5	1	4	4	1	5194	5005	x(6)	5491	m	5194	x(12)	40037	5491	m	50722
+Cyprus	Partners	Middle East and North Africa	b	2,5,9																							0	6	3	1	6643	9231	14048	14603	14337	0	55386	42144	14603	57347	112133
+Dominican Republic	Partners	Latin America and Caribbean	b	5	358	3.1	328	2.7	69	2	220	4.3	243	3.9	281	3.2	324	3.1	373	3.6	418	4.7	446	7	332	2.6	0	6	3	1	2790	2495	2388	2128	2226	0	14970	7165	2128	8904	24264
+North Macedonia	Partners	Eastern Europe and Central Asia	b		352	1.4	371	1.3	96	1.6	217	4.5	251	3	306	2	369	1.6	434	2.4	496	3.4	533	4.4	384	1.2	0	5	4	1	m	m	m	m	m	m	m	m	m	m	m
+Georgia	Partners	Eastern Europe and Central Asia	b	6	401	3.0	404	2.8	94	2.2	250	4.9	285	4.3	341	3.6	403	3.1	467	3.4	525	4.7	559	6.3	411	2.4	0	6	3	1	m	x(9)	x(9)	x(9)	1170	m	x(15)	x(15)	x(15)	x(15)	11704
+Hong Kong	Partners	East Asia	b		527	2.7	548	3	90	1.5	389	5.8	426	5	490	4.3	554	3.3	611	2.8	659	3.5	687	4.6	523	2.5	0	6	3	1	m	m	m	m	m	m	m	m	m	m	m
+Indonesia	Partners	South-East Asia	b		397	2.9	386	3.1	80	2	264	4.1	289	4.1	331	3.5	381	3.3	436	3.9	492	5.4	528	6.2	403	2.6	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Jordan	Partners	Middle East and North Africa	b		408	2.9	380	2.7	86	2.1	238	6.1	271	4	324	3.2	382	2.9	439	3.2	489	3.2	519	3.9	409	2.7	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Kazakhstan	Partners	Eastern Europe and Central Asia	b	10,11																							0	4	5	1	1890	792	x(9)	x(9)	3253	0	3170	x(14)	x(14)	19519	22689
+Kosovo	Partners	Eastern Europe and Central Asia	b		347	1.6	362	1.6	75	1.4	238	3.5	265	2.9	310	2.3	360	2	413	2.6	460	4.2	487	4.3	378	1.7	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Lebanon	Partners	Middle East and North Africa	b		347	4.4	396	3.7	101	2	236	5.5	268	5.2	324	4.7	392	4.5	464	4.6	531	5.5	568	6.2	386	3.4	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Lithuania	Partners	Eastern Europe and Central Asia	a	12	472	2.7	478	2.3	86	1.4	337	3.8	365	3.8	419	3	479	2.7	539	2.9	590	3.5	620	4	475	2.7	1	4	5	0	5093	5079	4596	5345	4826	5093	20316	22980	0	22980	48389
+Macao	Partners	East Asia	b	10	509	1.3	544	1.1	80	1.1	408	4.4	439	2.4	491	1.7	547	1.5	599	1.9	643	2.5	669	4	529	1.1	0	6	3	1	m	m	m	m	m	m	m	m	m	m	m
+Malaysia	Partners	South-East Asia	b																								m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Malta	Partners	Western Europe	b		447	1.8	479	1.7	110	1.4	289	5.9	331	3.5	405	2.5	485	2.7	558	2.5	616	3	648	4.3	465	1.6	0	5	3	2	7258	9680	13662	11697	12535	0	48402	40985	23394	62673	112780
+Moldova	Partners	Eastern Europe and Central Asia	b		416	2.5	420	2.5	90	1.5	271	4.8	303	3.7	358	3.4	419	3.1	482	3.3	536	4.1	568	4.2	428	2	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Montenegro	Partners	Eastern Europe and Central Asia	b	5	427	1.6	418	1.5	87	1.4	279	3.5	308	2.8	358	2.2	416	2.1	477	2.4	531	2.3	563	3.3	411	1	0	5	4	1	2632	x(7)	2570	2657	m	0	x(12)	23129	2657	m	25786
+Peru	Partners	Latin America and Caribbean	b	10	398	2.9	387	2.7	83	1.4	254	3.5	283	2.6	329	2.7	384	2.8	442	4	495	4.3	526	4.5	397	2.4	0	6	3	1	1634	1756	x(9)	x(9)	2395	0	10533	x(14)	x(14)	9580	20114
+Qatar	Partners	Middle East and North Africa	b		402	1.0	402	1.3	99	1	248	2.6	278	2	331	1.8	397	1.8	470	1.6	536	2	573	2.8	418	1	0	6	3	1	m	m	m	m	m	m	m	m	m	m	m
+Romania	Partners	Eastern Europe and Central Asia	b		434	4.1	444	3.8	86	2.1	305	5.1	334	4.6	384	4.3	442	4.3	502	4.6	557	5.4	590	5.9	435	3.2	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Russia	Partners	Eastern Europe and Central Asia	a	14	495	3.1	494	3.1	83	1.3	357	5.5	387	4.6	437	3.4	494	3.5	552	3.4	601	3.8	629	4.2	487	2.9	1	4	5	0	5588	x(8)	x(8)	5100	5100	5588	x(14)	x(14)	0	45903	51492
+Singapore	Partners	South-East Asia	b	5	535	1.6	564	1.5	95	0.8	399	2.8	436	2.6	500	2.4	571	2	632	1.6	682	2.4	711	3.4	556	1.2	0	6	2	2	a	11644	x(9)	x(9)	15187	a	69865	x(14)	x(14)	60747	130611
+Taiwan	Partners	East Asia	b		497	2.5	542	3	103	1.9	364	4.4	404	4.2	474	3.6	548	3.2	616	3.6	670	4.6	701	6.2	532	2.7	0	6	3	1	3835	4652	x(6)	4140	m	0	x(12)	41869	4140	m	46009
+Thailand	Partners	South-East Asia	b	13	409	3.3	415	3	82	1.9	286	4.1	313	3.7	360	3.1	412	3.2	468	4	521	5.2	555	6.3	421	2.8	0	6	3	1	x(9)	x(9)	x(9)	x(9)	2722	x(15)	x(15)	x(15)	x(15)	x(15)	27220
+Trinidad and Tobago	Partners	Latin America and Caribbean	b		427	1.5	417	1.4	96	1.2	265	3.6	294	3	348	2.4	415	2.3	484	2.1	545	3.3	578	3.5	425	1.4	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+Tunisia	Partners	Middle East and North Africa	b		361	3.1	367	3	84	2.3	235	4.7	263	4.6	310	3.3	363	3.1	421	3.6	476	5	510	7.2	386	2.1	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+United Arab Emirates	Partners	Middle East and North Africa	b		434	2.9	427	2.4	97	1.3	275	3.8	306	3.3	360	2.9	423	3	493	3.2	557	3.5	593	3.6	437	2.4	0	5	4	1	m	m	m	m	m	m	m	m	m	m	m
+Uruguay	Partners	Latin America and Caribbean	b	5,10,13	437	2.5	418	2.5	87	1.7	281	3.5	309	2.7	357	3.3	415	2.9	477	3.4	532	3.6	565	5.2	435	2.2	0	6	3	1	x(6)	3068	x(9)	x(9)	3351	x(11)	18408	x(14)	x(14)	13403	31811
+Viet Nam	Partners	South-East Asia	b		487	3.7	495	4.5	84	2.7	361	5.9	388	5.4	436	4.7	492	4.7	551	4.9	604	6.9	636	8.3	525	3.9	m	m	m	m	m	m	m	m	m	m	m	m	m	m	m
+# 1. Includes data from another category: Belgium (columns 8, 9), Canada (column 6), Finland (columns 8, 9), Israel (column 8), Japan (columns 8, 9), Norway (columns 8, 9), Poland (column 8), Portugal (columns 8, 9), Russia (columns 8, 9), Spain (columns 8, 9), Switzerland (columns 8, 9).
+# 2. Reference year 2012.
+# 3. Public institutions only for tertiary level.
+# 4. Total expenditure data excludes pre-primary education.
+# 5. Public institutions only.
+# 6. Data reported for "all secondary education" includes primary education in public and private independent institutions (there are no government-dependent private institutions in Georgia). Enrolment data for public vocational programmes (ISCED 3) are estimated based on weighted data for academic years 2013/14 and 2014/15 (private institutions do not receive public funding for similar programmes).
+# 7. Combined public and government dependent private institutions.
+# 8. Reference year 2015.
+# 9. Footnote by Turkey: The information in this document with reference to « Cyprus » relates to the southern part of the Island. There is no single authority representing both Turkish and Greek Cypriot people on the Island. Turkey recognises the Turkish Republic of Northern Cyprus   (TRNC). Until a lasting and equitable solution is found within the context of the United Nations, Turkey shall preserve its position concerning the “Cyprus issue”.  Footnote by all the European Union Member States of the OECD and the European Union: The Republic of Cyprus is recognised by all members of the United Nations with the exception of Turkey. The information in this document relates to the area under the effective control of the Government of the Republic of Cyprus.
+# 10. Reference year 2014.
+# 11. Combined public and independent private institutions.
+# 12. Includes ISCED 0.1.
+# 13. Total expenditure data includes pre-primary education.
+# Sources: a) Education at a Glance: OECD Indicators, 2016 Edition (OECD, 2016). 
+# b) PISA system-level data collection in 2016.
+# c) PISA-D system-level data collection in 2017
+#
