@@ -1,0 +1,17 @@
+# Seymour et al (2003) Foundation literacy acquisition in European orthographies
+# Figure 6. Error rates (per cent) for familiar word and simple nonword reading by simple syllable language groups and complex syllable language groups.
+language	word_error_pct	nonword_error_pct	N
+Finnish	1.36	4.76	70
+Greek	2.50	7.94	44
+Italian	4.65	10.55	38
+Spanish	5.22	11.00	40
+Portuguese	26.43	23.03	38
+French	20.88	14.98	45
+Austrian	2.05	7.60	57
+German	1.81	5.31	28
+Norwegian	7.84	8.93	40
+Icelandic	5.43	13.16	37
+Swedish	4.71	11.95	25
+Dutch	4.22	17.50	28
+Danish	28.72	46.22	65
+English	65.78	70.84	30

@@ -143,3 +143,93 @@ Likewise, for *shin*, some common words include [両親 *ryoushin* / parents](ht
 | 4 | 597 | 臣 | 7 | retainer | shin |  | chen2  |
 | 6 | 995 | 針 | 10 | needle | shin | hari | zhen1  |
 
+
+
+## learning numbers ##
+
+Children learning regular number systems learn faster than irregular systems. ([Le 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7721146))
+
+
+## difficulties in learning to read ##
+Variations in spelling ability appear to related to [orthographic depth](https://en.wikipedia.org/wiki/Orthographic_depth). This was systematically compared across 14 European countries by [Seymour et al 2003](https://pubmed.ncbi.nlm.nih.gov/12803812/). Other studies of Asian languages were added where there appeared to be a comparable test (though not exactly the same): [Pham 2020 - Vietnamese](https://pmc.ncbi.nlm.nih.gov/articles/PMC7963025/), [Winskel 2010 - Thai](https://link.springer.com/article/10.1007/s11145-009-9194-6)
+
+![seymour2003_fig6_data-correct.png](https://github.com/wrf/misc-analyses/blob/master/language_difficulty/images/seymour2003_fig6_data-correct.png)
+
+Clearly, English stands out in a bad way, due to a [known-to-be-awful orthography](https://en.wikipedia.org/wiki/English-language_spelling_reform). It might be the worst one in the world.
+
+### candidate scheme for redefining English letters ###
+English has a lot more vowels than letters (14 vs 5). [Danish/Swedish/Norwegian](https://en.wikipedia.org/wiki/Danish_and_Norwegian_alphabet) have an extra 3 vowel letters - Æ, Ø, and Å - which still would not be enough. The vowel reassignments were chosen to be those that would make sense to an adult English speaker. All 5 of the vowel-consonant-E sets moved the E to after the first vowel, so *date* would be *daet*. To me, this makes much more sense. A few others were very difficult:
+
+Most European languages have *A* as /ɑ/, like in *father* or *park*, not /æ/ like *cat* and *hat*. A is kept as the short A, and *AA* becomes the spelling open A.
+
+The double letter *OO* in English is another split: *good* vs. *food*. Here it is kept as /ʊ/ like *good*.
+
+As T and D represent a pair of unvoiced and voiced sounds, TH and DH are kept for the same pair of [unvoiced](https://en.wikipedia.org/wiki/Voiceless_dental_fricative) and [voiced dental fricative](https://en.wikipedia.org/wiki/Voiced_dental_fricative) sounds. This would then change *breath* and *breathe* as *breth* and *breedh*.
+
+Other letters, C, Q, X, are especially useless. These can be replaced by K/S, K, KS. 
+
+In this case, *CH* is now always *C*, more similar to [Malay](https://en.wikipedia.org/wiki/Malay_orthography) or [Turkish](https://en.wikipedia.org/wiki/Turkish_alphabet). 
+
+The letter *X* is now taking the *SH* sound in **all cases**, similar to [Chinese transliteration](https://en.wikipedia.org/wiki/Pinyin). This means that *fix* is now *fiks*, and *fish* is now *fix*. Most *-tion* endings would become *-xun*.
+
+Most double-consonant combinations are removed. Awful clumps like [*OUGH*](https://en.wikipedia.org/wiki/Ough_(orthography)) are replaced by the actual vowels in American English, so would be *aalthoe* *ruflee* *thot* *thrue* *plau*.
+
+| Letter      | Value      | Example (respelling)                             | Notes                            |
+| ----------- | ---------- | ------------------------------------------------ | -------------------------------- |
+| **A**       | /æ/        | *cat, hat → cat, hat*                            | Short *a*                        |
+| **AA**      | /ɑ/        | *lot, hot, father → laat, haat, faather*         | Open back                        |
+| **AE**      | /eɪ/       | *make, rain → maek, raen*                        | Long *a*                         |
+| **AU**      | /aʊ/       | *house, down → haus, daun*                       | Diphthong                        |
+| **B**       | /b/        | *bat → bat*                                      | Standard                         |
+| **C**       | /tʃ/       | *church, each → curc, eec*                       | Repurposed for ch                |
+| **D**       | /d/        | *dog → dog*                                      | Standard                         |
+| **DH**      | /ð/        | *this → dhis*                                    | Voiced th                        |
+| **E**       | /ɛ/        | *men → men*                                      | Short *e*                        |
+| **EE**      | /iː/       | *meet, these → meet, dheez*                      | Long *ee*                        |
+| **ER**      | /ɝ/        | *bird → berd*                                    | Stressed rhotic                  |
+| **F**       | /f/        | *fish → fix* (since **x = sh**)                  | Standard                         |
+| **G**       | /g/        | *go → goe*                                       | Always /g/                       |
+| **H**       | /h/        | *hat → hat, hot → haat*                          | Standard                         |
+| **I**       | /ɪ/        | *sit → sit*                                      | Short *i*                        |
+| **IE**      | /aɪ/       | *time, my, I → tiem, mie, Ie*                    | Long *i*                         |
+| **IR**      | /ɪr/       | *near → nir*                                     | Rhotic                           |
+| **J**       | /dʒ/       | *jam → jam*                                      | Standard                         |
+| **K**       | /k/        | *king → king*                                    | Always hard /k/                  |
+| **L**       | /l/        | *lamp → lamp*                                    | Standard                         |
+| **M**       | /m/        | *man → man*                                      | Standard                         |
+| **N**       | /n/        | *net → net*                                      | Standard                         |
+| **NG**      | /ŋ/        | *sing → sing*                                    | Digraph kept                     |
+| **O**       | /ɔ/        | *law, thought, dog → lo, thot, dog*              | Distinct from aa                 |
+| **OE**      | /oʊ/       | *note, go → noet, goe*                           | Long *o*                         |
+| **OI**      | /ɔɪ/       | *boy → boi*                                      | Diphthong                        |
+| **OO**      | /ʊ/        | *put, foot, book → poot, foot, book*             | Short oo                         |
+| **P**       | /p/        | *pen → pen*                                      | Standard                         |
+| **Q**       | (reserved) | *Qatar, Iraq → Qatar, Iraq*                      | For legacy/loanwords only        |
+| **R**       | /r/        | *red → red*                                      | Standard                         |
+| **S**       | /s/        | *see → see*                                      | Always /s/                       |
+| **T**       | /t/        | *top → top*                                      | Standard                         |
+| **TH**      | /θ/        | *thin → thin*                                    | Unvoiced th                      |
+| **U**       | /ʌ/        | *cut, some, love → cut, sum, luv*                | Strut vowel                      |
+| **UE**      | /uː/       | *flute, you, zoo, goose → fluet, yue, zue, gues* | Long *u*                         |
+| **V**       | /v/        | *van → van*                                      | Standard                         |
+| **W**       | /w/        | *we → wee*                                       | Standard                         |
+| **X**       | /ʃ/        | *ship, shoe → xip, xue*                          | Repurposed for sh (pinyin style) |
+| **Y**       | /j/        | *yes → yes, you → yue*                           | Always consonant y               |
+| **Z**       | /z/        | *zoo → zue*                                      | Standard                         |
+| **ZH**      | /ʒ/        | *measure, vision → mezhor, vizhon*               | Rare sound                       |
+
+### Example text ###
+This uses the above rules, with one exception, where the pronoun *I* is kept the same, just as the letter would be written, instead of the proposed phonetic *Ie*. The pronoun *you* potentially could be the same, converted to *u* instead of *yue*, which many people do in texting.
+
+> "Kaal mee Ixmael. Sum yeerz agoe—nevor miend hau long presieslee—having litel or noe muni in mie pers, and nothing partikyueler tue interest mee on xor, I thot I wud sael abaut a litel and see dhe woteri part ov dhe werld. It iz a wae I hav ov drieving of dhe spleen and regyuelaeting dhe serkyuelaexun. Wenever I fiend mieself groeing grim abaut dhe mauth; wenever it iz a damp, drizlee November in mie soel; wenever I fiend mieself involontaerilee pauzing bifor kofin waerhauzez, and bringing up dhe reer ov evree fueneraal I meet; and espexalee wenever mie hiepoez get suc an uper hand ov mee, dhat it rekwierz a strong morol prinsipel tue prevent mee frum deliboretlee steping into dhe street, and methodiklee noking peepel’s hats of - dhen, I akaunt it hie tiem tue get tue see az suen az I kan."
+
+
+
+
+
+
+
+
+
+
+
