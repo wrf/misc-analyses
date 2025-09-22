@@ -3,24 +3,30 @@
 # data from
 # Jensen et al (1990) Lipids of Bovine and Human Milks: A Comparison. J Dairy Sci 73:223-240. REVIEW
 # https://pubmed.ncbi.nlm.nih.gov/2184172/
+# Glick et al (2021) Macronutrient composition of olive baboon (Papio anubis) milk: A comparison to rhesus macaque (Macaca mulatta) milk
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC9881339/
 
-
-milk_data_text = "Milk	Protein_pct	Casein_pct_of_protein	a-casein	b-casein	k-casein	Whey_pct_of_protein	a-Lactalbumin	b-Lactoglobulin	Lactotransferrin	Lysozyme	IgA	IgG	IgM	Serum_albumin	Fat	Lactose	Total_solids	Ash	Kilocalories
-Human milk 36d	1.0	40	0.06	27	12	60	27	0	18	4	5	0.1	0.2	3	3.9	6.8	12.1	0.2	72
-Human colostrum 3d	2.3	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	5.5	NA	NA	58
-Baby formula	1.4	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	6.9	NA	NA	66
-Bovine	3.4	80	39	28	13	20	4	11	0.01	0.01	0.1	1.8	0.3	0.9	3.7	4.8	12.7	0.7	75
-Goat	3.4	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	4.1	NA	NA	NA
-Sheep	6.2	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.9	4.9	NA	NA	NA
-Water buffalo	3.8	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.4	4.8	NA	NA	NA
-Yak	5.8	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	4.6	NA	NA	NA
-Zebu	3.2	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	4.7	NA	NA	NA"
-
-
+milk_data_text = "Milk	Protein_pct	Fat	Lactose	Total_solids	Ash	Kilocalories
+Human milk 36d	1.0	3.9	6.8	12.1	0.2	72
+Human colostrum 3d	2.3	3	5.5	NA	NA	58
+Baby formula	1.4	3.6	6.9	NA	NA	66
+Baboon	1.6	4.7	7.3	NA	0.16	81
+Rhesus macaque	1.7	4.1	7.7	NA	NA	78
+Bovine	3.4	3.7	4.8	12.7	0.7	75
+Goat	3.4	3.8	4.1	NA	NA	NA
+Sheep	6.2	7.9	4.9	NA	NA	NA
+Water buffalo	3.8	7.4	4.8	NA	NA	NA
+Yak	5.8	3.6	4.6	NA	NA	NA
+Zebu	3.2	3.6	4.7	NA	NA	NA"
 milk_data = read.table( text=milk_data_text, header=TRUE, sep="\t")
 #milk_data.m = matrix(unlist(strsplit(milk_data_text, "\t|\n")),ncol = 17, byrow=TRUE)
 #milk_data = as.data.frame( milk_data.m[-1,], col.names = milk_data.m[1,] )
-human_v_cow_only = milk_data[c(1,4),]
+
+
+milk_prots_text = "Milk	Protein_pct	Casein_pct_of_protein	a-casein	b-casein	k-casein	Whey_pct_of_protein	a-Lactalbumin	b-Lactoglobulin	Lactotransferrin	Lysozyme	IgA	IgG	IgM	Serum_albumin	Fat	Lactose	Total_solids	Ash	Kilocalories
+Human milk 36d	1.0	40	0.06	27	12	60	27	0	18	4	5	0.1	0.2	3	3.9	6.8	12.1	0.2	72
+Bovine	3.4	80	39	28	13	20	4	11	0.01	0.01	0.1	1.8	0.3	0.9	3.7	4.8	12.7	0.7	75"
+human_v_cow_only = read.table( text=milk_prots_text, header=TRUE, sep="\t")
 
 names(milk_data)
 
@@ -70,13 +76,15 @@ text( c(1,4) , c(30,110), c("Human", "Bovine"), col="#222222", cex=1.5)
 dev.off()
 
 
+# The Breast Milk Immunoglobulinome
+# https://www.mdpi.com/2072-6643/13/6/1810
 
 
 
 
-milk_type_colors = c( "#e686c4ff", "#b32581ff", "#222576ff",
+milk_type_colors = c( "#e686c4ff", "#b32581ff", "#222576ff", "#f49786ff", "#68190aff", 
                       "#2b7622ff","#e1b016ff","#d08214ff", "#24581eff","#77a631ff","#147714ff")
-pdf(file="~/git/misc-analyses/milk_composition/images/milk_composition_comparison_v1.pdf", width=10, height=3, title="Bulk composition of human and other milks")
+pdf(file="~/git/misc-analyses/milk_composition/images/milk_composition_comparison_v1.pdf", width=10, height=4, title="Bulk composition of human and other milks")
 par(mfrow=c(1,3), mar=c(0.5,8,6,2))
 barplot( rev(milk_data$Protein_pct) , main="Protein (% of milk)", horiz=TRUE, 
          names.arg = rev(milk_data$Milk), las=2, col= rev(milk_type_colors), axes=FALSE )
@@ -319,7 +327,9 @@ dev.off()
 # https://pubchem.ncbi.nlm.nih.gov/compound/6-sulfatoxymelatonin
 cubero2006_data$Urinary_6.sulfatoxymelatonin_mothers_ng_mL * 1000 / 328.34
 
-
+# other refs to plot
+# https://pubmed.ncbi.nlm.nih.gov/17693960/
+# https://pubmed.ncbi.nlm.nih.gov/18019395/
 
 ################################################################################
 ################################################################################
@@ -403,9 +413,20 @@ for (i in 1:length(unique(hollanders2019_data$woman)) ){
 }
 dev.off()
 
-pdf(file="~/git/misc-analyses/milk_composition/images/hollanders2019_macronutrient_in_milk.pdf", width=8, height=3, title="Data from Hollanders et al 2019")
-#png(file="~/git/misc-analyses/milk_composition/images/hollanders2019_macronutrient_in_milk.png", width=720, height=270, res=90 )
+pdf(file="~/git/misc-analyses/milk_composition/images/hollanders2019_macronutrient_in_milk.pdf", width=9, height=3, title="Data from Hollanders et al 2019")
+#png(file="~/git/misc-analyses/milk_composition/images/hollanders2019_macronutrient_in_milk.png", width=810, height=270, res=90 )
 par(mfrow=c(1,3), mar=c(4.2,4.5,3,1))
+plot(hollanders2019_data$time_hr, hollanders2019_data$prot_g_100mL , type='n',
+     axes=FALSE, xlim=c(0,30), ylim=c(0,2), main="Nightly variation of protein\nin milk from 4 Dutch mothers",
+     xlab="Time of day (hours)", ylab="Protein in milk (g/100mL)", cex.lab=1.3 )
+axis(1, at=seq(0,30,2), labels=NA)
+axis(1, at=seq(0,28,4), tick = FALSE)
+axis(2, at=seq(0,2,0.5), cex.axis=1.2 )
+for (i in 1:length(unique(hollanders2019_data$woman)) ){
+  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
+  lines(hollanders2019_subset$time_hr, hollanders2019_subset$prot_g_100mL, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
+  points(hollanders2019_subset$time_hr, hollanders2019_subset$prot_g_100mL, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
+}
 plot(hollanders2019_data$time_hr, hollanders2019_data$fat_g_100mL , type='n',
      axes=FALSE, xlim=c(0,30), ylim=c(0,8), main="Nightly variation of fat\nin milk from 4 Dutch mothers",
      xlab="Time of day (hours)", ylab="Fat in milk (g/100mL)", cex.lab=1.3 )
@@ -428,17 +449,6 @@ for (i in 1:length(unique(hollanders2019_data$woman)) ){
   lines(hollanders2019_subset$time_hr, hollanders2019_subset$carbohydrate_g_100mL, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
   points(hollanders2019_subset$time_hr, hollanders2019_subset$carbohydrate_g_100mL, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
 }
-plot(hollanders2019_data$time_hr, hollanders2019_data$prot_g_100mL , type='n',
-     axes=FALSE, xlim=c(0,30), ylim=c(0,2), main="Nightly variation of protein\nin milk from 4 Dutch mothers",
-     xlab="Time of day (hours)", ylab="Protein in milk (g/100mL)", cex.lab=1.3 )
-axis(1, at=seq(0,30,2), labels=NA)
-axis(1, at=seq(0,28,4), tick = FALSE)
-axis(2, at=seq(0,2,0.5), cex.axis=1.2 )
-for (i in 1:length(unique(hollanders2019_data$woman)) ){
-  hollanders2019_subset = hollanders2019_data[which(hollanders2019_data$woman==unique(hollanders2019_data$woman)[i]),]
-  lines(hollanders2019_subset$time_hr, hollanders2019_subset$prot_g_100mL, col=gsub("ff","66",mother_color_set[i]), lwd=6 )
-  points(hollanders2019_subset$time_hr, hollanders2019_subset$prot_g_100mL, col=gsub("ff","aa",mother_color_set[i]), pch=16, cex=1.5 )
-}
 dev.off()
 
 
@@ -454,7 +464,25 @@ jensen1995_text = "time_start_hrs	time_end_hrs	lipid_pct	lipid_pct_var	volume_mi
 22	6	2.86	0.36	49.9	9	1.43	0.33	0.06	12.9	2.2	1.17	0.2"
 jensen1995_data = read.table(text=jensen1995_text, header=TRUE, sep="\t")
 
-"84 days postpartum"
+plot( jensen1995_data$time_start_hrs, jensen1995_data$lipid_pct , xlim=c(0,24), ylim=c(0,5.2), axes=FALSE,
+      main="Daily variation in lipids in milk\nfrom 10 American women (84 days pp)" , 
+      xlab="Time of day (hrs)", ylab="Lipids (percent)", pch=21, bg="#f6ac24ff", cex=3 )
+axis(1, at=seq(0,24,2), labels=NA )
+axis(1, at=seq(0,24,4), tick = FALSE )
+axis(2)
+arrows(x0 = jensen1995_data$time_start_hrs, y0 = jensen1995_data$lipid_pct, lwd=1, length = 0.1,
+       x1 = jensen1995_data$time_start_hrs, y1=jensen1995_data$lipid_pct + 2*jensen1995_data$lipid_pct_var, angle = 90)
+arrows(x0 = jensen1995_data$time_start_hrs, y0 = jensen1995_data$lipid_pct, lwd=1, length = 0.1,
+       x1 = jensen1995_data$time_start_hrs, y1=jensen1995_data$lipid_pct - 2*jensen1995_data$lipid_pct_var, angle = 90)
+
+
+
+
+# Moran-Lev et al 2015 Circadian Macronutrients Variations over the First 7 Weeks of Human Milk Feeding of Preterm Infants
+# https://pubmed.ncbi.nlm.nih.gov/26222826/
+
+
+
 
 ################################################################################
 ################################################################################
@@ -496,6 +524,28 @@ points( savino2010_data$day_of_study, savino2010_data$Placebo_crying_min_day,
         pch=16, cex=3, col="#333333aa")
 legend("topright", legend=c("Probiotic (25)","Placebo (21)"), col=c("#FF5F50ff","#999999ff"), pch=16, pt.cex = 2, cex=1.2)
 dev.off()
+
+
+################################################################################
+################################################################################
+
+# Torres et al (2001) Bile salt-stimulated lipase in the milk of Fulani and Kanuri women in Nigeria and native Nepalese women.
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC2594021/
+# Figure 1
+
+torres_bssl_file = "~/git/misc-analyses/milk_composition/data/torres_2001_BSSL_vs_BMI.txt"
+torres_bssl_data = read.table(torres_bssl_file, header=TRUE, sep="\t")
+
+hist(torres_bssl_data$BSSL_U_mL, xlab="Bile salt-stimulated lipase activity (U/mL)", 
+     main="Milk lipase activity from\nNigerian and Nepalese women",
+     col="#f6ac24ff", xlim=c(0,90), breaks=20 )
+
+bmi_bssl_lm = lm(  torres_bssl_data$BSSL_U_mL ~ torres_bssl_data$BMI )
+plot(torres_bssl_data$BMI , torres_bssl_data$BSSL_U_mL, xlim=c(10,40), ylim=c(0,90),
+     xlab="BMI", ylab="Bile salt-stimulated lipase activity (U/mL)", 
+     main="Milk lipase activity from\nNigerian and Nepalese women",
+     pch=21, bg="#f6ac24aa", cex=2 )
+abline(bmi_bssl_lm, lwd=4, col="#33333366")
 
 
 ################################################################################
