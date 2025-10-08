@@ -1,0 +1,39 @@
+# Xu 2024 The amino acid pattern and dynamics of body protein, body fat deposition in male and female broilers under different temperatures
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC10906514
+# Table 14: Amino acid pattern of broilers at different ages.
+AA	AA_abv	source	AA content_0-14d	lysine_ratio_0-14d	AA content_15-42d	lysine_ratio_15-42d
+Cys	C	Carcass	0.87	14	0.74	11
+Met	M	Carcass	2.56	40	2.75	40
+Asn	N	Carcass	7.95	125	8.43	122
+Thr	T	Carcass	3.95	62	3.82	55
+Ser	S	Carcass	3.98	62	3.62	53
+Gln	Q	Carcass	13.29	209	13.92	202
+Gly	G	Carcass	7	110	6.75	98
+Ala	A	Carcass	6.21	97	6.27	91
+Val	V	Carcass	5.2	82	4.64	67
+Ile	I	Carcass	4.25	67	4.21	61
+Leu	L	Carcass	7.16	112	6.75	98
+Tyr	Y	Carcass	2.08	33	1.98	29
+Phe	F	Carcass	3.96	62	3.76	55
+Lys	K	Carcass	6.37	100	6.9	100
+His	H	Carcass	2.14	34	2.5	36
+Arg	R	Carcass	6.95	109	7.25	105
+Pro	P	Carcass	4.3	67	4.59	66
+Cys	C	Feather	4.95	2.46	5.99	2.81
+Met	M	Feather	0.67	0.34	0.49	0.23
+Asn	N	Feather	6.11	3.04	6.28	2.95
+Thr	T	Feather	3.71	1.84	4.44	2.09
+Ser	S	Feather	9.1	4.53	10.29	4.84
+Gln	Q	Feather	9.31	4.63	10.77	5.06
+Gly	G	Feather	6.77	3.37	6.84	3.21
+Ala	A	Feather	3.11	1.55	4.15	1.95
+Val	V	Feather	5.14	2.56	6.63	3.11
+Ile	I	Feather	3.89	1.93	4.52	2.12
+Leu	L	Feather	6.39	3.18	7.63	3.59
+Tyr	Y	Feather	2.06	1.02	1.69	0.79
+Phe	F	Feather	4.3	2.14	4.46	2.1
+Lys	K	Feather	2.01	1	2.13	1
+His	H	Feather	1.38	0.68	0.74	0.35
+Arg	R	Feather	6.04	3.01	6.13	2.88
+Pro	P	Feather	7.4	3.68	8.51	4
+

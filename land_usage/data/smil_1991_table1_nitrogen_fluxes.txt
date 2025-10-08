@@ -1,0 +1,15 @@
+# TABLE 1 Estimated ranges of annual nitrogen fluxes in global croplands (all values in million tons of nitrogen)				
+Fluxes	direction	Minima_Mton_N	Averages_Mton_N	Maxima_Mton_N
+Total input	input	140	175	210
+Synthetic fertilizers	input	70	75	80
+Mineralization	input	20	30	40
+Animal wastes	input	10	15	20
+Biotic fixation	input	25	30	35
+Atmospheric deposition	input	10	15	20
+Crop residue recycling	input	5	10	15
+Total output	output	140	175	210
+Crops (including residues)	output	75	80	85
+Erosion	output	30	45	50
+Denitrification	output	15	20	35
+Volatilization	output	10	15	20
+Leaching	output	10	15	20

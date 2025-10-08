@@ -1,0 +1,11 @@
+Quadrants	population_1000s	pct_of population	pct_of planet biocapacity they control	pct_of Earth biocapacity they use	Footprint per person compared to global biocapacity per person	year
+1 - HR	 140672 	2	12	7	343	2016
+2 - LR	 887168 	12	37	18	150	2016
+3 - LD	 5224860 	71	33	91	129	2016
+4 - HD	 1144141 	15	18	55	353	2016
+Total	 7396839 	100	100	170	170	2016
+1 - HR	 142001 	2	12	7	352	2017
+2 - LR	 900607 	12	37	18	153	2017
+3 - LD	 5367984 	72	34	96	134	2017
+4 - HD	 1069380 	14	17	52	367	2017
+Total	 7479972 	100	100	173	173	2017
