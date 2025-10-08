@@ -97,6 +97,14 @@ dev.off()
 
 
 ################################################################################
+# Wordbank : An open database of children's vocabulary development
+
+# https://wordbank.stanford.edu/data/?name=vocab_norms
+
+
+
+
+################################################################################
 
 # data from
 # Seymour et al (2003) Foundation literacy acquisition in European orthographies
@@ -108,11 +116,14 @@ nonword_error_data = read.table( nonword_error_file, header=TRUE, sep="\t")
 # Pham 2020 Beginning to Read in Vietnamese: Kindergarten Precursors to First Grade Fluency and Reading Comprehension
 # https://pmc.ncbi.nlm.nih.gov/articles/PMC7963025/
 # from Figure 2. Reading fluency in kindergarten and first grade
+# Children were shown a 5x10 array of items and were given one minute to read aloud as many as possible.
 pham_2020_vietnamese.word = list("Vietnamese", 4, 28.8, 82 )
 
 # Winskel 2010 Reading and spelling acquisition in Thai children
 # https://link.springer.com/article/10.1007/s11145-009-9194-6
 # from Fig. 1 The percentage of correct responses for reading and spelling of words and nonwords across grade
+# The first list consisted of 28 vowel-related words and the second list consisted of 29 tone-related words.
+# The task did not appear to be timed, meaning children were only scored on correctness.
 winskel_2010_thai.word = list("Thai", 58, 75, 20 )
 
 nonword_error_data.c = rbind( nonword_error_data, pham_2020_vietnamese.word , winskel_2010_thai.word, 
@@ -149,5 +160,29 @@ dev.off()
 # Jap 2017 Towards identifying dyslexia in Standard Indonesian: the development of a reading assessment battery
 # https://pmc.ncbi.nlm.nih.gov/articles/PMC5574966/
 # tests 100 words per minute, not 50 like in Vietnamese study
+
+# Ogino 2011 Reading skills of Japanese second-graders
+# https://pubmed.ncbi.nlm.nih.gov/20723104/
+
+# Lee 2020 An Early Reading Assessment Battery for Multilingual Learners in Malaysia
+# https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01700/full
+
+
+################################################################################
+# Eriksson 1999 Swedish early communicative development inventories: words and gestures
+# https://journals.sagepub.com/doi/10.1177/014272379901905503
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #

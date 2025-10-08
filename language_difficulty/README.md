@@ -172,7 +172,7 @@ In this case, *CH* is now always *C*, more similar to [Malay](https://en.wikiped
 
 The letter *X* is now taking the *SH* sound in **all cases**, similar to [Chinese transliteration](https://en.wikipedia.org/wiki/Pinyin). This means that *fix* is now *fiks*, and *fish* is now *fix*. Most *-tion* endings would become *-xun*.
 
-Most double-consonant combinations are removed. Awful clumps like [*OUGH*](https://en.wikipedia.org/wiki/Ough_(orthography)) are replaced by the actual vowels in American English, so would be *aalthoe* *ruflee* *thot* *thrue* *plau*.
+Most double-consonant combinations are removed, like all the *ff*, *gg*, *ll*, *mm*, *ss*, *tt* words, *stuf*, *huging*, *speling*, *stamer*, *clas*, *leter*. Awful clumps like [*OUGH*](https://en.wikipedia.org/wiki/Ough_(orthography)) are replaced by the actual vowels in American English, so would be *aalthoe* *ruflee* *thot* *thrue* *plau*.
 
 | Letter      | Value      | Example (respelling)                             | Notes                            |
 | ----------- | ---------- | ------------------------------------------------ | -------------------------------- |
@@ -221,9 +221,9 @@ Most double-consonant combinations are removed. Awful clumps like [*OUGH*](https
 ### Example text ###
 This uses the above rules, with one exception, where the pronoun *I* is kept the same, just as the letter would be written, instead of the proposed phonetic *Ie*. The pronoun *you* potentially could be the same, converted to *u* instead of *yue*, which many people do in texting.
 
-> "Kaal mee Ixmael. Sum yeerz agoe—nevor miend hau long presieslee—having litel or noe muni in mie pers, and nothing partikyueler tue interest mee on xor, I thot I wud sael abaut a litel and see dhe woteri part ov dhe werld. It iz a wae I hav ov drieving of dhe spleen and regyuelaeting dhe serkyuelaexun. Wenever I fiend mieself groeing grim abaut dhe mauth; wenever it iz a damp, drizlee November in mie soel; wenever I fiend mieself involontaerilee pauzing bifor kofin waerhauzez, and bringing up dhe reer ov evree fueneraal I meet; and espexalee wenever mie hiepoez get suc an uper hand ov mee, dhat it rekwierz a strong morol prinsipel tue prevent mee frum deliboretlee steping into dhe street, and methodiklee noking peepel’s hats of - dhen, I akaunt it hie tiem tue get tue see az suen az I kan."
+> "Kaal mee Ixmael. Sum yeerz agoe—nevor miend hau long presieslee—having litul or noe muni in mie pers, and nothing partikyueler tue interest mee on xor, I thot I wud sael abaut a litul and see dhe woteri part uv dhe werld. It iz a wae I hav uv drieving of dhe spleen and regyuelaeting dhe serkyuelaexun. Wenever I fiend mieself groeing grim abaut dhe mauth; wenever it iz a damp, drizlee November in mie soel; wenever I fiend mieself involontaerilee pauzing bifor kofin waerhauzez, and bringing up dhe reer uv evree fueneraal I meet; and espexalee wenever mie hiepoez get suc an uper hand uv mee, dhat it rekwierz a strong morol prinsipul tue prevent mee frum deliboretlee steping into dhe street, and methodiklee noking peepul’s hats of - dhen, I akaunt it hie tiem tue get tue see az suen az I kan."
 
-
+> "Konfyuuxus (孔子; pinyin: Kongzi; lit. ‘Master Kong’; c. 551 – c. 479 BCE), born Kong Qiu (孔丘), wuz a Cieneez filosofer uv dhe Spring and Aatum pereeud hue iz tradixonalee konsiderd dhe paragon uv Cieneez saejez. Muc uv dhe xaerd kultuerul heritij uv dhe Sienosfeer orijinaets in dhe filosofee and teecings uv Konfyuuxus. Hiz filosofikul teecings, caald Konfyuuxunizm, emfasiezd personul and guvernmentul moralitee, haarmoeneeus soexal reelaexonxipz, rieceeusnes, kiendnes, sinseritee, and a rueler'z responsibiliteez tue leed bie vertue."
 
 
 
