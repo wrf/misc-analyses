@@ -160,25 +160,31 @@ Clearly, English stands out in a bad way, due to a [known-to-be-awful orthograph
 ### candidate scheme for redefining English letters ###
 English has a lot more vowels than letters (14 vs 5). [Danish/Swedish/Norwegian](https://en.wikipedia.org/wiki/Danish_and_Norwegian_alphabet) have an extra 3 vowel letters - Æ, Ø, and Å - which still would not be enough. The vowel reassignments were chosen to be those that would make sense to an adult English speaker. All 5 of the vowel-consonant-E sets moved the E to after the first vowel, so *date* would be *daet*. To me, this makes much more sense. A few others were very difficult:
 
-Most European languages have *A* as /ɑ/, like in *father* or *park*, not /æ/ like *cat* and *hat*. A is kept as the short A, and *AA* becomes the spelling open A.
+Most European languages have *A* as /ɑ/, like in *father* or *park*, not /æ/ like *cat* and *hat*. A is kept as the short A, AE is the long vowel (like in *make*, now as *maek*), and *AA* becomes the spelling open A. The A and AA potentially could be swapped.
 
-The double letter *OO* in English is another split: *good* vs. *food*. Here it is kept as /ʊ/ like *good*.
+The double letter *OO* in English is another split: *good* vs. *food*. Here it is kept as /ʊ/ like *good*, and *food* would become *fued*. The word [*feud*](https://en.wiktionary.org/wiki/feud) (i.e. a dispute) would then become *fyued*, just as [*fuel*](https://en.wiktionary.org/wiki/fuel) would become *fyuel*.
 
-As T and D represent a pair of unvoiced and voiced sounds, TH and DH are kept for the same pair of [unvoiced](https://en.wikipedia.org/wiki/Voiceless_dental_fricative) and [voiced dental fricative](https://en.wikipedia.org/wiki/Voiced_dental_fricative) sounds. This would then change *breath* and *breathe* as *breth* and *breedh*.
+As T and D represent a pair of unvoiced and voiced sounds, TH and DH are kept for the same pair of [unvoiced](https://en.wikipedia.org/wiki/Voiceless_dental_fricative) and [voiced dental fricative](https://en.wikipedia.org/wiki/Voiced_dental_fricative) sounds. This would then change *breath* and *breathe* as *breth* and *breedh*. Other pairs would be rendered like *thin* and *thik*, or *dhis* and *dhat*.
 
 Other letters, C, Q, X, are especially useless. These can be replaced by K/S, K, KS. 
 
-In this case, *CH* is now always *C*, more similar to [Malay](https://en.wikipedia.org/wiki/Malay_orthography) or [Turkish](https://en.wikipedia.org/wiki/Turkish_alphabet). 
+In this case, *CH* is now always *C*, more similar to [Malay](https://en.wikipedia.org/wiki/Malay_orthography) or [Turkish](https://en.wikipedia.org/wiki/Turkish_alphabet).
 
-The letter *X* is now taking the *SH* sound in **all cases**, similar to [Chinese transliteration](https://en.wikipedia.org/wiki/Pinyin). This means that *fix* is now *fiks*, and *fish* is now *fix*. Most *-tion* endings would become *-xun*.
+The letter *Q* is only used for borrowed words, mostly kept as a legacy. This is almost the case anyway.
 
-Most double-consonant combinations are removed, like all the *ff*, *gg*, *ll*, *mm*, *ss*, *tt* words, *stuf*, *huging*, *speling*, *stamer*, *clas*, *leter*. Awful clumps like [*OUGH*](https://en.wikipedia.org/wiki/Ough_(orthography)) are replaced by the actual vowels in American English, so would be *aalthoe* *ruflee* *thot* *thrue* *plau*.
+The letter *X* is now taking the *SH* sound in **all cases**, similar to [Chinese transliteration](https://en.wikipedia.org/wiki/Pinyin). This means that *CH* and *SH* are both then represented by a single letter. Fromt his, the word *fix* is now *fiks*, and *fish* is now *fix*. Most *-tion* endings would become *-xun*.
+
+Most double-consonant combinations are removed, like all the *ff*, *gg*, *ll*, *mm*, *ss*, *tt* words, *stuf*, *huging*, *speling*, *stamer*, *clas*, *leter*. 
+
+Awful clumps like [*OUGH*](https://en.wikipedia.org/wiki/Ough_(orthography)) are replaced by the actual vowels in American English, so would be *aalthoe* *ruflee* *thot* *thrue* *plau*.
 
 | Letter      | Value      | Example (respelling)                             | Notes                            |
 | ----------- | ---------- | ------------------------------------------------ | -------------------------------- |
 | **A**       | /æ/        | *cat, hat → cat, hat*                            | Short *a*                        |
 | **AA**      | /ɑ/        | *lot, hot, father → laat, haat, faather*         | Open back                        |
 | **AE**      | /eɪ/       | *make, rain → maek, raen*                        | Long *a*                         |
+| **AER**     | /ɛr/       | *bear, square → baer, skwaer*                    | Rhotic                           |
+| **AR**      | /ɑr/       | *car → kaar*                                     | Rhotic                           |
 | **AU**      | /aʊ/       | *house, down → haus, daun*                       | Diphthong                        |
 | **B**       | /b/        | *bat → bat*                                      | Standard                         |
 | **C**       | /tʃ/       | *church, each → curc, eec*                       | Repurposed for ch                |
@@ -186,12 +192,12 @@ Most double-consonant combinations are removed, like all the *ff*, *gg*, *ll*, *
 | **DH**      | /ð/        | *this → dhis*                                    | Voiced th                        |
 | **E**       | /ɛ/        | *men → men*                                      | Short *e*                        |
 | **EE**      | /iː/       | *meet, these → meet, dheez*                      | Long *ee*                        |
-| **ER**      | /ɝ/        | *bird → berd*                                    | Stressed rhotic                  |
+| **ER**      | /ɝ/        | *bird, urchin → berd, ercin*                     | Stressed rhotic                  |
 | **F**       | /f/        | *fish → fix* (since **x = sh**)                  | Standard                         |
 | **G**       | /g/        | *go → goe*                                       | Always /g/                       |
 | **H**       | /h/        | *hat → hat, hot → haat*                          | Standard                         |
 | **I**       | /ɪ/        | *sit → sit*                                      | Short *i*                        |
-| **IE**      | /aɪ/       | *time, my, I → tiem, mie, Ie*                    | Long *i*                         |
+| **IE**      | /aɪ/       | *pie, time, my, I → pie, tiem, mie, Ie*          | Long *i*                         |
 | **IR**      | /ɪr/       | *near → nir*                                     | Rhotic                           |
 | **J**       | /dʒ/       | *jam → jam*                                      | Standard                         |
 | **K**       | /k/        | *king → king*                                    | Always hard /k/                  |
@@ -203,6 +209,7 @@ Most double-consonant combinations are removed, like all the *ff*, *gg*, *ll*, *
 | **OE**      | /oʊ/       | *note, go → noet, goe*                           | Long *o*                         |
 | **OI**      | /ɔɪ/       | *boy → boi*                                      | Diphthong                        |
 | **OO**      | /ʊ/        | *put, foot, book → poot, foot, book*             | Short oo                         |
+| **OR**      | /or/       | *north → north*                                  | Rhotic                           |
 | **P**       | /p/        | *pen → pen*                                      | Standard                         |
 | **Q**       | (reserved) | *Qatar, Iraq → Qatar, Iraq*                      | For legacy/loanwords only        |
 | **R**       | /r/        | *red → red*                                      | Standard                         |
@@ -219,11 +226,23 @@ Most double-consonant combinations are removed, like all the *ff*, *gg*, *ll*, *
 | **ZH**      | /ʒ/        | *measure, vision → mezhor, vizhon*               | Rare sound                       |
 
 ### Example text ###
-This uses the above rules, with one exception, where the pronoun *I* is kept the same, just as the letter would be written, instead of the proposed phonetic *Ie*. The pronoun *you* potentially could be the same, converted to *u* instead of *yue*, which many people do in texting.
+The [classic English pangram](https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog) sentence (44 characters):
 
-> "Kaal mee Ixmael. Sum yeerz agoe—nevor miend hau long presieslee—having litul or noe muni in mie pers, and nothing partikyueler tue interest mee on xor, I thot I wud sael abaut a litul and see dhe woteri part uv dhe werld. It iz a wae I hav uv drieving of dhe spleen and regyuelaeting dhe serkyuelaexun. Wenever I fiend mieself groeing grim abaut dhe mauth; wenever it iz a damp, drizlee November in mie soel; wenever I fiend mieself involontaerilee pauzing bifor kofin waerhauzez, and bringing up dhe reer uv evree fueneraal I meet; and espexalee wenever mie hiepoez get suc an uper hand uv mee, dhat it rekwierz a strong morol prinsipul tue prevent mee frum deliboretlee steping into dhe street, and methodiklee noking peepul’s hats of - dhen, I akaunt it hie tiem tue get tue see az suen az I kan."
+> "The quick brown fox jumps over the lazy dog."
 
-> "Konfyuuxus (孔子; pinyin: Kongzi; lit. ‘Master Kong’; c. 551 – c. 479 BCE), born Kong Qiu (孔丘), wuz a Cieneez filosofer uv dhe Spring and Aatum pereeud hue iz tradixonalee konsiderd dhe paragon uv Cieneez saejez. Muc uv dhe xaerd kultuerul heritij uv dhe Sienosfeer orijinaets in dhe filosofee and teecings uv Konfyuuxus. Hiz filosofikul teecings, caald Konfyuuxunizm, emfasiezd personul and guvernmentul moralitee, haarmoeneeus soexal reelaexonxipz, rieceeusnes, kiendnes, sinseritee, and a rueler'z responsibiliteez tue leed bie vertue."
+then becomes (48 characters), and no longer contains all letters:
+
+> "Dhe kwik brown foks jumps oever dhe laezee dog."
+
+This text sample from [*Moby Dick*](https://www.gutenberg.org/ebooks/15) uses the above rules, with one exception, where the pronoun *I* is kept the same, just as the letter would be written, instead of the proposed phonetic *Ie*. The pronoun *you* potentially could be the same, converted to *u* instead of *yue*, which many people do in texting. In length, it is 1109 characters vs. 1120, so 1% longer.
+
+> "Call me Ishmael. Some years ago-never mind how long precisely-having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen, and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to sea as soon as I can. This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me."
+
+> "Kaal mee Ixmael. Sum yeerz agoe—nevor miend hau long presieslee—having litul or noe muni in mie pers, and nothing partikyueler tue interest mee on xor, I thot I wood sael abaut a litul and see dhe woteri part uv dhe werld. It iz a wae I hav uv drieving of dhe spleen and regyuelaeting dhe serkyuelaexun. Wenever I fiend mieself groeing grim abaut dhe mauth; wenever it iz a damp, drizlee November in mie soel; wenever I fiend mieself involontaerilee pauzing bifor kofin waerhauzez, and bringing up dhe reer uv evree fueneraal I meet; and espexalee wenever mie hiepoez get suc an uper hand uv mee, dhat it rekwierz a strong morol prinsipul tue prevent mee frum deliboretlee steping into dhe street, and methodiklee noking peepul’s hats of - dhen, I akaunt it hie tiem tue get tue see az suen az I kan. Dhis iz mie substituet for dhe pistol and baal. With a filosofikol floorix Cato throez himself upon hiz sord; I kwieitlee taek tue dhe ship. Dhaer iz nuthing serpriezing in dhis. If dhae but nue it, aalmoest aal men in dhaer degree, sum tiem or unuther, cerix veree neerlee dhe saem feelingz tuwordz dhe oxin with mee."
+
+A non-fiction example is below. 
+
+> "Konfyuuxus (孔子; pinyin: Kongzi; lit. ‘Master Kong’; c. 551 – c. 479 BCE), born Kong Qiu (孔丘), wuz a Cieneez filosofer uv dhe Spring and Aatum pereeud hue iz tradixonalee konsiderd dhe paragon uv Cieneez saejez. Muc uv dhe xaerd kultuerul heritij uv dhe Sienosfeer orijinaets in dhe filosofee and teecings uv Konfyuuxus. Hiz filosofikul teecings, caald Konfyuuxunizm, emfasiezd personul and guvernmentul moralitee, haarmoeneeus soexal reelaexonxipz, riecusnes, kiendnes, sinseritee, and a rueler'z responsibiliteez tue leed bie vertue."
 
 
 
