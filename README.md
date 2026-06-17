@@ -21,6 +21,11 @@ Measures of ecological diversity, and usage across real datasets
 
 ![shannon_diversity_model_v2.png](https://github.com/wrf/misc-analyses/blob/master/eco_diversity/images/shannon_diversity_model_v2.png)
 
+## [variability in weather](https://github.com/wrf/misc-analyses/tree/master/weather) ##
+Showing monthly and yearly variability in rainfall, which can be substantial
+
+![rainfall_ltk_2011-2024.png](https://github.com/wrf/misc-analyses/blob/master/weather/images/rainfall_ltk_2011-2024.png)
+
 ## [seasonality of human births - moved to own repo](https://github.com/wrf/birth_rate_by_month) ##
 Month of birth has real effects, like astrology, something known by all of humanity for thousands of years. Data from the [UN data portal](https://data.un.org/Data.aspx?d=POP&f=tableCode:55).
 
@@ -35,6 +40,11 @@ Replots of food aversions and cravings during pregnancy, [NVP](https://en.wikipe
 Replots of original data about the so-called "[tiger springs](https://da.wikipedia.org/wiki/Tigerspring)", from 15 women where only 3 provided data for the entire period in question, by [Plooij et al 1992](https://www.tandfonline.com/doi/abs/10.1080/02646839208403946)
 
 ![plooij1992_figure1_remake.png](https://github.com/wrf/misc-analyses/blob/master/baby_development/images/plooij1992_figure1_remake.png)
+
+## [education](https://github.com/wrf/misc-analyses/tree/master/education) ##
+Replots of education data, and country comparisons, including from [PISA](https://www.oecd.org/en/publications/pisa-2015-results-in-focus_aa9237e6-en.html). This is independent of the question of whether such tests are accurate, or useful for comparing education systems between countries.
+
+![pisa2015_spending_vs_math_score.png](https://github.com/wrf/misc-analyses/blob/master/education/images/pisa2015_spending_vs_math_score.png)
 
 ## [generic interactive plotter](https://github.com/wrf/misc-analyses/tree/master/shinyplot) ##
 Generic interactive plotter using [Rshiny](https://shiny.rstudio.com/). The app can read in a file, and plot any X against any Y (as a scatterplot). The graph can be printed as a PDF for easy sharing.
@@ -94,12 +104,17 @@ Some exploration of how randomness is viewed on plots
 ## [model of phylogenetic bootstrap as a random draw of marbles](https://github.com/wrf/misc-analyses/tree/master/random_bootstrap) ##
 A simple model about [bootstrapping in phylogenetics](https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29), showing that bootstrap replicates do not reflect the uncertainty in the data. This topic came up following the work of [Shen 2017](http://dx.doi.org/10.1038/s41559-017-0126).
 
-![bootstrap_marble_example_v1_w_results.png](https://github.com/wrf/misc-analyses/blob/master/random_bootstrap/bootstrap_marble_example_v1_w_results.png)
+![bootstrap_marble_example_v1_w_results.png](https://github.com/wrf/misc-analyses/blob/master/random_bootstrap/images/bootstrap_marble_example_v1_w_results.png)
 
 ## [oxygen usage in animals](https://github.com/wrf/misc-analyses/tree/master/animal_oxygen) ##
 Data digitized from *Ecology and Evolution in Anoxic Worlds* by Fenchel and Finlay (1995).
 
 ![fenchel_finlay_1995_km_by_size.png](https://github.com/wrf/misc-analyses/blob/master/animal_oxygen/images/fenchel_finlay_1995_km_by_size.png)
+
+## [other mammalian biology](https://github.com/wrf/misc-analyses/tree/master/mammal_biology) ##
+Replot of [Kenagy and Trombulak (1986)](https://www.jstor.org/stable/1380997).
+
+![mammal_testes_vs_body_size.png](https://github.com/wrf/misc-analyses/blob/master/mammal_biology/images/mammal_testes_vs_body_size.png)
 
 ## [bioluminescence spectra - on bitbucket](https://bitbucket.org/wrf/biolum-spectra) ##
 Collection of bioluminescence spectra, some original, and some digitized from old papers
