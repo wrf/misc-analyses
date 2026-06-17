@@ -225,4 +225,39 @@ text(freq_data$year, freq_data$nausea_pct, sub(" ", "\n", freq_data$country), ce
 
 
 
+
+################################################################################
+# hCG quantification, from
+# Korevaar 2015 Reference ranges and determinants of total hCG levels during pregnancy: the Generation R Study
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4584104/
+
+hcg_data_file = "~/git/misc-analyses/nausea_pregnancy/data/korevaar_2015_hCG_range_table1.txt"
+hcg_data = read.table(hcg_data_file, header=TRUE, sep="\t")
+
+sum(hcg_data$N)==8065
+
+pdf(file="~/git/misc-analyses/nausea_pregnancy/images/korevaar_2015_hCG_range_table1.pdf", width=7, height=5, title="hCG references ranges from 8065 women")
+par(mar=c(4.5,4.5,3,2))
+plot( hcg_data$Gestational.week, hcg_data$Maximum, type='n',
+      ylim=c(0,185000), cex.lab=1.4, axes=FALSE,
+      main="hCG references ranges from 8065 women", cex.main=1.5,
+      xlab="Gestational week (ultrasound derived)", ylab="hCG (IU/L)")
+axis(1, at=seq(9,25,2), cex.axis=1.3)
+axis(2, at=c(0,50000,100000,150000), cex.axis=1.1)
+polygon( c(hcg_data$Gestational.week, rev(hcg_data$Gestational.week) ),
+         c(hcg_data$X97.5th, rev(hcg_data$X2.5th) ),
+         col="#3452f833", border = FALSE )
+text(17, 150000, "hCG maximum range", col="#b8c3fdff" , pos=4)
+polygon( c(hcg_data$Gestational.week, rev(hcg_data$Gestational.week) ),
+         c(hcg_data$Maximum, rev(hcg_data$Minimum) ),
+         col="#3452f833", border = FALSE )
+text(15, 100000, "hCG 97th percentile", col="#8c9dfbff" , pos=4)
+lines(hcg_data$Gestational.week, hcg_data$Median, lwd=8, col="#14629888")
+text(13, 60000, "hCG median", col="#145288ff" , pos=4)
+dev.off()
+
+
+
+
+
 #
