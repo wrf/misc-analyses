@@ -24,6 +24,8 @@ table( atus2022_data$TUACTDUR24 )
 # https://www.oecd.org/en/about/programmes/piaac.html
 
 
+
+
 #Table A.4.16
 #Effect of qualification mismatches, skills mismatches and field of study mismatches on wages
 oecd_overqualified_data = read.table(text="OECD_country	overqualified_b100	overqualified_p-value
@@ -70,6 +72,9 @@ text(b+0.6, c(0,oecd_overqualified_data$overqualified_b100[oecd_overqualified_da
 
 ################################################################################
 # PISA 2015 Results
+# https://www.oecd.org/en/data/datasets/pisa-d-pisa-for-development.html
+# https://www.oecd.org/en/publications/pisa-for-development_c094b186-en.html
+# https://www.oecd.org/en/publications/pisa-2015-results-in-focus_aa9237e6-en.html
 
 pisa2015_math_data = read.table("~/git/misc-analyses/education/data/PISA 2015 Table 323 Cumulative expenditure.txt", header=TRUE, sep="\t")
 
@@ -84,13 +89,15 @@ region_areas = c("North America", "Latin America and Caribbean",
 region_colors.matched = region_colors[match(unique(pisa2015_math_data$region),region_areas)]
 region_matches = match( pisa2015_math_data$region, unique(pisa2015_math_data$region) )
 
-pdf(file="~/git/misc-analyses/education/images/pisa2015_spending_vs_math_score.pdf", height=6, width=9, title="PISA 2015")
+pdf(file="~/git/misc-analyses/education/images/pisa2015_spending_vs_math_score.pdf", height=5, width=7, title="PISA 2015")
+#png(file="~/git/misc-analyses/education/images/pisa2015_spending_vs_math_score.png", height=500, width=700, res=100, bg="white")
+par(mar=c(4,4,1,1))
 plot( pisa2015_math_data$Cumulative_expenditure_Total.6.to.15.year.olds , pisa2015_math_data$Math_Mean_score ,
-      xlim=c(0,200000),  ylim=c(250,600), axes=FALSE,
+      xlim=c(0,200000),  ylim=c(250,600), axes=FALSE, 
       xlab="Average spending per student, aged 6-15 (USD 2013, PPP)", ylab="Mean mathematics score (PISA 2015)",
       pch=16, cex=3, col=region_colors.matched[region_matches] )
 axis(1)
-axis(2, at=seq(250,550,50), labels=c(NA,300,NA,400,NA,500,NA))
+axis(2, at=seq(250,550,50), labels=c(NA,300,NA,400,NA,500,NA) , cex.axis=1.2 )
 text( pisa2015_math_data$Cumulative_expenditure_Total.6.to.15.year.olds , pisa2015_math_data$Math_Mean_score, 
       pisa2015_math_data$Country , pos=4 , col="#00000099")
 dev.off()
@@ -113,6 +120,8 @@ text( pisa2015_math_data$Reading_Mean_score , pisa2015_math_data$Math_Mean_score
 
 ################################################################################
 
+# OECD Tertiary Education Systems 2024
+# https://www.oecd.org/en/data/dashboards/tertiary-education-systems.html
 
 
 
