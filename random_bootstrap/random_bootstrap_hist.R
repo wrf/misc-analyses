@@ -25,19 +25,30 @@ for (i in 1:1000){
   bootstrap_table = table(bootstrap_sample)
   winner_counts = rbind(winner_counts, bootstrap_table)
 }
+
+# plot the random draws directly
+plot( winner_counts[,2], winner_counts[,3] , xlim=c(100,250), ylim=c(100,250), 
+      pch=16, cex=3, xlab="Number of drawn C sites (out of 200)", ylab="Number of drawn P sites (out of 150)", 
+      col=ifelse(winner_counts[,2]-winner_counts[,3]>0,"#fc8d6266", "#66c2a5aa") )
+segments(100,100,250,250, col="#00000066")
+
+# get histogram of each run for frequency of N sites drawn
 w_counts = apply(winner_counts, 2, FUN=table )
-w_merged_cp = merge( data.frame(label=as.integer(names(w_counts$c)),n=w_counts$c), data.frame(label=as.integer(names(w_counts$p)),n=w_counts$p), by="label", all=TRUE)
-#w_merged_cpa = merge( w_merged_cp, data.frame(label=names(w_counts$a),n=w_counts$a), by="label", all=TRUE)
-w_merged.b = w_merged_cp[,c(1,3,5)]
+w_merged_cp = merge( data.frame(label=as.integer(names(w_counts$c)),n_C=w_counts$c), data.frame(label=as.integer(names(w_counts$p)),n_P=w_counts$p), by="label", all=TRUE)
+w_merged_cpa = merge( w_merged_cp, data.frame(label=as.integer(names(w_counts$a)),n_A=w_counts$a), by="label", all=TRUE)
+w_merged.b = w_merged_cpa[,c(1,3,5,7)]
 
 pdf(file="~/git/misc-analyses/random_bootstrap/images/sample_twoway_1000x.pdf", width=6, height=5, title="Marble draw as bootstrap model")
 #png(file="~/git/misc-analyses/random_bootstrap/images/sample_twoway_1000x.png", width=600, height=500, res=100, bg="white" )
-plot(w_merged.b$label, w_merged.b$n.Freq.x, type='n', ylab="Frequency", xlab="Number of sites favoring hypothesis from 1000 draws", frame.plot = FALSE )
-segments(as.integer(w_merged.b$label), rep(0,length(w_merged.b$n.Freq.x)), as.integer(w_merged.b$label), w_merged.b$n.Freq.x, 
+plot(w_merged.b$label, w_merged.b$n.Freq.x, type='n', xlim=c(0,250), ylim=c(0,50), frame.plot = FALSE ,
+     ylab="Frequency", xlab="Number of sites favoring hypothesis from 1000 draws" )
+segments(as.integer(w_merged.b$label), rep(0,length(w_merged.b$n_C.Freq)), as.integer(w_merged.b$label), w_merged.b$n_C.Freq, 
          lwd=2, col="#fc8d62" )
-segments(as.integer(w_merged.b$label), rep(0,length(w_merged.b$n.Freq.x))+ifelse(is.na(w_merged.b$n.Freq.x),0,w_merged.b$n.Freq.x),
-         as.integer(w_merged.b$label), w_merged.b$n.Freq.y+ifelse(is.na(w_merged.b$n.Freq.x),0,w_merged.b$n.Freq.x), 
+segments(as.integer(w_merged.b$label), rep(0,length(w_merged.b$n_P.Freq))+ifelse(is.na(w_merged.b$n_C.Freq),0,w_merged.b$n_C.Freq),
+         as.integer(w_merged.b$label), w_merged.b$n_P.Freq+ifelse(is.na(w_merged.b$n_C.Freq),0,w_merged.b$n_C.Freq), 
          lwd=2, col="#66c2a5" )
+segments(as.integer(w_merged.b$label), rep(0,length(w_merged.b$n_A.Freq)), as.integer(w_merged.b$label), w_merged.b$n_A.Freq, 
+         lwd=2, col="#377eb8" )
 dev.off()
 
 
@@ -57,7 +68,15 @@ sitewise_rowmaxs = apply( sitewise_data[,2:4], 1, which.max)
 sitewise_maxsitelnl = apply( sitewise_data[,2:4], 1, max)
 sitewise_medianln = apply( sitewise_data[,2:4], 1, median )
 sitewise_first_v_second_lnl = sitewise_maxsitelnl - sitewise_medianln
+sitewise_tr1_wins = sitewise_first_v_second_lnl[sitewise_rowmaxs==1]
+sitewise_tr2_wins = sitewise_first_v_second_lnl[sitewise_rowmaxs==2]
+sitewise_tr3_wins = sitewise_first_v_second_lnl[sitewise_rowmaxs==3]
+sum(sitewise_tr1_wins)
+sum(sitewise_tr2_wins)
+sum(sitewise_tr3_wins)
 
+sitewinner_text_big = rep(c("u","p","c","a"),c(sum(sitewise_first_v_second_lnl<=0.5),sum(sitewise_tr2_wins>0.5),sum(sitewise_tr1_wins>0.5),sum(sitewise_tr3_wins>0.5)))
+table(sitewinner_text_big)
 
 # lambda_hat = 1 / mean(sitewise_first_v_second_lnl)
 # sd(sitewise_first_v_second_lnl)
