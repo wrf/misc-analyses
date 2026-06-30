@@ -153,11 +153,86 @@ legend("topright", legend=c("Interquartile\nrange"), pt.cex = 2, col="#592db2ff"
 dev.off()
 
 
+################################################################################
+################################################################################
+
+# Wilcox et al (1995) Timing of sexual intercourse in relation to ovulation. Effects on the probability of conception, survival of the pregnancy, and sex of the baby
+# https://www.nejm.org/doi/10.1056/NEJM199512073332301
+
+wilcox1995_text = "condition	count
+women	221
+total_cycles	786
+menstrual_cycles	713
+anovulatory_cycles	5
+data_missing_cycles	48
+ovulation_cycles	660
+analysis_cycles	625
+detected_pregnancy	199
+miscarriage_6wks	48
+molar_pregnancy	1
+ectopic_pregnancy	1
+spontaneous_abortion	13
+births	136"
+wilcox1995_data = read.table(text=wilcox1995_text, header=TRUE, sep="\t")
+
+# Table 1: Probability of Conception Based on 129 Menstrual Cycles 
+# in Which Sexual Intercourse Occurred on Only One Day during the Six-Day Interval Ending 
+# with the Day of Ovulation and on All 625 Cycles.
+wilcox1995_table1_text = "day_relative_to_ovulation	n_cycles_w_intercourse_only_on_this_day	n_pregnancies	single_day_conception	estimated_rate
+-5	12	1	0.08	0.10
+-4	24	4	0.17	0.16
+-3	13	1	0.08	0.14
+-2	28	10	0.36	0.27
+-1	38	13	0.34	0.31
+0	14	5	0.36	0.33"
+wilcox1995_table1 = read.table(text=wilcox1995_table1_text, header=TRUE, sep="\t")
+barplot( wilcox1995_table1$single_day_conception, xlab="Days before ovulation",
+         names.arg=wilcox1995_table1$day_relative_to_ovulation , ylab="Pregnancy chance",
+         col="#592db2ff" )
+
+################################################################################
+
+# Weinberg 1995 The sex of the baby may be related to the length of the follicular phase in the conception cycle 
+# https://pubmed.ncbi.nlm.nih.gov/7769053/
+
+#Table I. Day of the intercourse closest to estimated day of ovulation (day 0), by sex of baby
+weinberg_table1_text = "sex	day_minus_2	day_minus_1	day_0
+Boy	15	25	26
+Girl	11	23	27"
+weinberg_table1_data = read.table(text=weinberg_table1_text, header=TRUE, sep="\t", row.names = 1 )
+weinberg_table1_data
+barplot( as.matrix(weinberg_table1_data), beside=TRUE )
+
+# Fig. 2. Sex ratio (100 times the number of boy pregnancies divided
+# by number of girl pregnancies) by follicular phase length.
+# Confidence intervals (95% coverage) are shown for each point.
+# There were 20 conception cycles with follicular phase <12 days,
+# and 25, 23, 23. 19 and 23 in the other respective groups, as
+# shown. The dashed line shows the overall sex ratio for the 133
+# pregnancies included in the analysis
+weinberg_figure2_text="follicular_phase_len	sex_ratio	sex_ratio_lower	sex_ratio_upper	raw_births
+less_than_12	297.4	108.0	818.8	20
+d12_13	91.4	41.6	203.3	25
+d14_15	231.3	93.8	556.0	23
+d16_17	107.4	47.6	243.5	23
+d18_19	57.8	23.0	145.4	19
+d20	43.8	18.1	106.7	23"
+weinberg_figure2_data = read.table(text=weinberg_figure2_text, header=TRUE, sep="\t")
+boys = round( weinberg_figure2_data$sex_ratio/(weinberg_figure2_data$sex_ratio+100) * weinberg_figure2_data$raw_births )
+girls = weinberg_figure2_data$raw_births - boys
+sum(weinberg_figure2_data$raw_births) == sum(girls_and_boys)
+
+girls_and_boys = rbind( boys, girls)
+
+barplot( as.matrix(girls_and_boys), beside=TRUE, names.arg = c("<12", "12-13", "14-15", "16-17", "18-19", ">20"), 
+         xlab="Follicular phase length (days)", ylab="Births",
+         col=c("#1b2a9aff","#bd379bff") )
 
 
+##########
 
-
-
+# https://pubmed.ncbi.nlm.nih.gov/2687028/
+# https://pmc.ncbi.nlm.nih.gov/articles/PMC6001750/
 
 
 #
