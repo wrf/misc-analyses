@@ -1,6 +1,10 @@
-#
+# monthly rainfall
+# and other weather
 
+library(tidyr)
+library(dplyr)
 
+# datasets from Danmarks Meteorologiske Institut
 # https://www.dmi.dk/vejrarkiv/
 dmi_rain_text.lyngby="month	2024	2023	2022	2021	2020	2019	2018	2017	2016	2015	2014	2013	2012	2011
 1	65	113	50	69	70	56	59	19	29	90	62	46	91	50
@@ -70,9 +74,55 @@ segments(yearly_average,0,yearly_average, max(b), col="#12993466", lwd=3)
 text(rev(colSums(dmi_rain_data)),b,rev(colSums(dmi_rain_data)), pos=2, col="#ddddee")
 dev.off()
 
+################################################################################
+# data from Malaysian Meteorological Department
+# https://data.gov.my/dashboard/weather-and-climate/
+# extracted from the HTML
+
+mys_rainfall_file = "~/git/misc-analyses/weather/data/malaysia_weather_monthly_2013-2022.tsv.gz"
+mys_rainfall_data.all_province = read.table(mys_rainfall_file, header = TRUE, sep="\t")
+
+table(mys_rainfall_data.all_province$state)
+
+mys_rainfall_data.sarawak = mys_rainfall_data.all_province[mys_rainfall_data.all_province$station=="Kuching, Sarawak",]
+head(mys_rainfall_data.sarawak)
+
+mys_rainfall_data.sarawak.pivot = mys_rainfall_data.sarawak %>% 
+  select(year, month, rainfall_mm) %>% 
+  pivot_wider(names_from = year, values_from = rainfall_mm ) %>%
+  select(-month)
+
+month_abbvs = c("J","F","M","A","M","J","J","A","S","O","N","D")
+heavy_rain_colors = colorRampPalette(c("#99bbee", "#6677bb", "#123499", "#2b22aa", "#4a02aa" ))(50)
+overall_mean = mean(mys_rainfall_data.sarawak$rainfall_mm)
+yearly_average = mean(colSums(mys_rainfall_data.sarawak.pivot))
+rainfall_averages = data.frame( mins = apply(mys_rainfall_data.sarawak.pivot, 1, min) , 
+                                means = apply(mys_rainfall_data.sarawak.pivot, 1, mean) ,
+                                maxs = apply(mys_rainfall_data.sarawak.pivot, 1, max) )
+
+pdf(file = "~/git/misc-analyses/weather/images/sarawak_rainfall_2013-2022.pdf", width=7, height=7, title = "Rainfall in Kuching, Sarawak 2013-2022" )
+#png(file = "~/git/misc-analyses/weather/images/sarawak_rainfall_2013-2022.png", width=700, height=700, res=100, bg="#eeeeee" )
+layout(matrix(c(1,2,3,4),ncol=2), widths = c(3,1), heights = c(1.2,3))
+par(mar=c(0,3,1,0))
+b = barplot( rbind(rainfall_averages$mins,
+                   rainfall_averages$means-rainfall_averages$mins,
+                   rainfall_averages$maxs-rainfall_averages$means) ,
+             col=c("#6677bb", "#123499", "#120368") , names.arg = month_abbvs )
+segments(0,overall_mean,14.6, overall_mean, col="#12993466", lwd=3)
+par(mar=c(4,4,1,1))
+image(as.matrix(mys_rainfall_data.sarawak.pivot) , col = heavy_rain_colors , axes=FALSE )
+axis(1,at=c(0,(1:11)/11 ), labels=month_abbvs, tick = FALSE )
+axis(2,at=c(0,(1:9)/9 ), labels=names(mys_rainfall_data.sarawak.pivot), tick=FALSE , las=2)
+text( rep(c(0,(1:11)/11),14), rep(c(0,(1:9)/9),each=12 ), round(mys_rainfall_data.sarawak$rainfall_mm ) )
+par(mar=c(1,1,1,1))
+plot(0,0,type='n', xlab=NA, ylab=NA, axes=FALSE)
+legend("left", legend=c("Max", "Average", "Min"), title = "Monthly", col=rev(c("#ddddee", "#6677bb", "#123499")), pch=15, pt.cex = 2 )
+par(mar=c(3.2,0,0.2,1))
+b = barplot( colSums(mys_rainfall_data.sarawak.pivot), col="#123499", las=2, horiz=TRUE, xlim=c(0,6000),
+             names.arg = NA)
+segments(yearly_average,0,yearly_average, max(b), col="#12993466", lwd=3)
+text( colSums(mys_rainfall_data.sarawak.pivot),b, round(colSums(mys_rainfall_data.sarawak.pivot)), pos=2, col="#ddddee")
+dev.off()
 
 
-
-
-
-
+#
